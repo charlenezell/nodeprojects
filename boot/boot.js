@@ -167,6 +167,7 @@ inquirer.prompt([{
         .pipe(map(ldTemplate))
         .pipe(fs.dest(path.join(dest,"/src/")));
     fs.src("D:/oldf/nodeprojects/boot/root/gulpfile.js","D:/oldf/nodeprojects/boot/root/package.json").pipe(map(ldTemplate)).pipe(fs.dest(dest));
+    fs.src("D:/oldf/nodeprojects/boot/root/**/*.{jpg,png}").pipe(fs.dest(path.join(dest,"/src/")));
 });
 
 function precompile(obj, cb) {
