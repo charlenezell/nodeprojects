@@ -13,6 +13,9 @@
   "author": "z.w",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^0.8.5"
+    "datef": "^2.0.0",
+    "inquirer": "^0.8.5",
+    "map-stream": "^0.1.0",
+    "vinyl-fs": "^1.0.0"
   }
 }
