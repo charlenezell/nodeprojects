@@ -148,9 +148,10 @@ gulp.task("rev",["makerevfile"],function(){
          }))
          .pipe(gulp.dest("reved"));
 });
-gulp.task("deploy", ["build"], function() {
-    return gulp.src(["dest/**/*"]).pipe(gulp.dest("<%= deployRootPath%><%= siteName%>/<%= activityPath%><%=sitePath%>")).pipe(gulp.dest("./"));
+gulp.task("deploy", ["rev"], function() {
+    return gulp.src(["reved/**/*"]).pipe(gulp.dest("<%= deployRootPath%><%= siteName%>/<%= activityPath%><%=sitePath%>")).pipe(gulp.dest("./"));
 });
+
 
 gulp.task('watch', function() {
     return gulp.watch(['./src/**/*.{jpg,png,js,coffee,less,css,gif}', 'src/*.html'], ['deploy']);
