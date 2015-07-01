@@ -18,7 +18,9 @@ var streamqueue = require('streamqueue');
 var del = require("del");
 var ld = require("lodash/");
 var fs = require("fs");
+var rev=require("gulp-rev");
 var useref = require('gulp-useref');
+var replace = require("zell-grr");
 gulp.task("clean", function(cb) {
     del("dest/**/*", {force:true},cb);
 });
@@ -122,9 +124,32 @@ gulp.task("resource", ["clean"], function() {
 
 gulp.task("build", ["clean", "css", "js", "html", "resource", "sprite"]);
 // gulp.task("build", ["clean", "js", "html", "resource"]);
-
+gulp.task("makerevfile",["build"],function(){
+    /*make rev configFile*/
+    return gulp.src("dest/**/*.{html,css,js,png,jpg,swf,mp4,mp3}").pipe(rev()).pipe(rev.manifest()).pipe(gulp.dest("./"))
+    // return gulp.src("dest/**/*.html").pipe()
+});
+gulp.task("rev",["makerevfile"],function(){
+    var mani = gulp.src("rev-manifest.json");
+     return gulp.src("dest/**/*.{html,css,js}")
+         .pipe(replace({
+             manifest: mani,
+             modifyUnreved:function(name,base){
+                 var a=p.relative(p.dirname(base),p.resolve("dest",name));
+                 a=a.replace(/\\/g,"/");
+                 return a;
+             },
+             modifyReved:function(name,unrevName,base){
+                 var rev=p.basename(name).split("-").pop().split(".")[0];
+                 var a=p.relative(p.dirname(base),p.resolve("dest",unrevName))+"?"+rev;
+                 a=a.replace(/\\/g,"/");
+                 return a;
+             }
+         }))
+         .pipe(gulp.dest("reved"));
+});
 gulp.task("deploy", ["build"], function() {
-    return merge(gulp.src(["dest/**/*"]).pipe(gulp.dest("<%= deployRootPath%><%= siteName%>/<%= activityPath%><%=sitePath%>")).pipe(gulp.dest("./"));
+    return gulp.src(["dest/**/*"]).pipe(gulp.dest("<%= deployRootPath%><%= siteName%>/<%= activityPath%><%=sitePath%>")).pipe(gulp.dest("./"));
 });
 
 gulp.task('watch', function() {
@@ -132,6 +157,9 @@ gulp.task('watch', function() {
 });
 
 gulp.task("default", ["watch", "deploy"]);
+
+
+
 
 
 

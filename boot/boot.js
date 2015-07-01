@@ -155,12 +155,14 @@ inquirer.prompt([{
     console.log(config);
 
     var buildCollection=["D:/oldf/nodeprojects/boot/root/**/*.{html,js,css}","!D:/oldf/nodeprojects/boot/root/gulpfile.js"];
-
+	var buildCollection2=["D:/oldf/nodeprojects/boot/root/**/*.{jpg,png}"];
     if(!answers.hasWap){
         buildCollection.push('!D:/oldf/nodeprojects/boot/root/wap/**/*');
+		buildCollection2.push('!D:/oldf/nodeprojects/boot/root/wap/**/*');
     }
     if(!answers.hasWeb){
         buildCollection.push('!D:/oldf/nodeprojects/boot/root/web/**/*');
+		buildCollection2.push('!D:/oldf/nodeprojects/boot/root/web/**/*');
     }
 
     fs.src(buildCollection)
@@ -168,7 +170,7 @@ inquirer.prompt([{
         .pipe(fs.dest(path.join(dest,"/src/")));
 
     fs.src(["D:/oldf/nodeprojects/boot/root/gulpfile.js","D:/oldf/nodeprojects/boot/root/package.json"]).pipe(map(ldTemplate)).pipe(fs.dest(dest));
-    fs.src("D:/oldf/nodeprojects/boot/root/**/*.{jpg,png}").pipe(fs.dest(path.join(dest,"/src/")));
+    fs.src(buildCollection2).pipe(fs.dest(path.join(dest,"/src/")));
 
 });
 
