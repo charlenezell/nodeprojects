@@ -154,21 +154,21 @@ inquirer.prompt([{
     });
     console.log(config);
 
-    var buildCollection=["D:/devSites/gitprojects/nodeprojects/boot/root/**/*.{html,js,css}","!D:/devSites/gitprojects/nodeprojects/boot/root/gulpfile.js"];
+    var buildCollection=["D:/oldf/nodeprojects/boot/root/**/*.{html,js,css}","!D:/oldf/nodeprojects/boot/root/gulpfile.js"];
 
     if(!answers.hasWap){
-        buildCollection.push('!D:/devSites/gitprojects/nodeprojects/boot/root/wap/**/*');
+        buildCollection.push('!D:/oldf/nodeprojects/boot/root/wap/**/*');
     }
     if(!answers.hasWeb){
-        buildCollection.push('!D:/devSites/gitprojects/nodeprojects/boot/root/web/**/*');
+        buildCollection.push('!D:/oldf/nodeprojects/boot/root/web/**/*');
     }
 
     fs.src(buildCollection)
         .pipe(map(ldTemplate))
         .pipe(fs.dest(path.join(dest,"/src/")));
 
-    fs.src(["D:/devSites/gitprojects/nodeprojects/boot/root/gulpfile.js","D:/devSites/gitprojects/nodeprojects/boot/root/package.json"]).pipe(map(ldTemplate)).pipe(fs.dest(dest));
-    fs.src("D:/devSites/gitprojects/nodeprojects/boot/root/**/*.{jpg,png}").pipe(fs.dest(path.join(dest,"/src/")));
+    fs.src(["D:/oldf/nodeprojects/boot/root/gulpfile.js","D:/oldf/nodeprojects/boot/root/package.json"]).pipe(map(ldTemplate)).pipe(fs.dest(dest));
+    fs.src("D:/oldf/nodeprojects/boot/root/**/*.{jpg,png}").pipe(fs.dest(path.join(dest,"/src/")));
 
 });
 

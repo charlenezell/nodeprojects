@@ -20,7 +20,7 @@ var ld = require("lodash/");
 var fs = require("fs");
 var useref = require('gulp-useref');
 gulp.task("clean", function(cb) {
-    del("dest/**/*", cb);
+    del("dest/**/*", {force:true},cb);
 });
 gulp.task("css", ["sprite"], function() {
     return gulp.src("src/**/*.css")
@@ -46,10 +46,11 @@ gulp.task("html", ["clean", "js", "css"], function() {
     });
     return merge(
         gulp.src("src/wap/*.html").pipe(assets2).pipe(gulp.dest("dest/wap/"))
-        .pipe(gulp.dest("dest/wap/")).pipe(assets2.restore()).pipe(useref()).pipe(gulp.dest("dest/wap/")),
+        .pipe(gulp.dest("dest/wap/")).pipe(assets2.restore()).pipe(useref()).pipe(htmlmin()).pipe(gulp.dest("dest/wap/")),
         gulp.src("src/web/*.html").pipe(assets1).pipe(gulp.dest("dest/web/"))
-        .pipe(gulp.dest("dest/web/")).pipe(assets1.restore()).pipe(useref()).pipe(gulp.dest("dest/web/"))
-    );
+        .pipe(gulp.dest("dest/web/")).pipe(assets1.restore()).pipe(useref()).pipe(htmlmin()).pipe(gulp.dest("dest/web/")),
+        gulp.src("src/*.html").pipe(htmlmin()).pipe(gulp.dest("dest/"))
+    )
 });
 gulp.task("sprite", ["clean"], function() {
     var subSites = ld.compact(glob.sync("src/*").map(function(v) {
@@ -123,13 +124,14 @@ gulp.task("build", ["clean", "css", "js", "html", "resource", "sprite"]);
 // gulp.task("build", ["clean", "js", "html", "resource"]);
 
 gulp.task("deploy", ["build"], function() {
-    return merge(gulp.src(["dest/**/*"]).pipe(gulp.dest("<%= deployRootPath%><%= siteName%>/<%= siteData.activityPath%><%=sitePath%>")));
+    return merge(gulp.src(["dest/**/*"]).pipe(gulp.dest("<%= deployRootPath%><%= siteName%>/<%= activityPath%><%=sitePath%>")).pipe(gulp.dest("./"));
 });
-
 
 gulp.task('watch', function() {
     return gulp.watch(['./src/**/*.{jpg,png,js,coffee,less,css,gif}', 'src/*.html'], ['deploy']);
 });
 
 gulp.task("default", ["watch", "deploy"]);
+
+
 
