@@ -1,6 +1,6 @@
 {
   "name": "zell-boot",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "boot for bt simple website",
   "main": "boot.js",
   "scripts": {
@@ -20,5 +20,11 @@
   },
   "scripts":{
     "postinstall":"node ./installEnv.js"
+  },
+  "bin": {
+    "zell-boot": "./bin/zell-boot.js"
+  },
+  "engines": {
+    "node": ">= 0.9"
   }
 }
