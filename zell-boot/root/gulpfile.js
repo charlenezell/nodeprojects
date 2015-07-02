@@ -108,7 +108,7 @@ gulp.task("sprite", ["clean"], function() {
         var imgJob = es.concat.apply(null, _map);
         jobs.push(imgJob);
         // console.log(cssBundles[v])
-        console.log("whatisv->%s", v);
+        // console.log("whatisv->%s", v);
         var cssJob = streamqueue.apply(null, [{
             objectMode: true
         }].concat(cssBundles[v])).pipe(concat("sprite.css")).pipe(cssmin({
@@ -146,15 +146,15 @@ gulp.task("rev",["makerevfile"],function(){
                  return a;
              }
          }))
-         .pipe(gulp.dest("reved"));
+         .pipe(gulp.dest("dest/"));
 });
 gulp.task("deploy", ["rev"], function() {
-    return gulp.src(["reved/**/*"]).pipe(gulp.dest("<%= deployRootPath%><%= siteName%>/<%= activityPath%><%=sitePath%>")).pipe(gulp.dest("./"));
+    return gulp.src(["dest/**/*"]).pipe(gulp.dest("<%= deployRootPath%><%= siteName%>/<%= activityPath%><%=sitePath%>")).pipe(gulp.dest("./"));
 });
 
 
 gulp.task('watch', function() {
-    return gulp.watch(['./src/**/*.{jpg,png,js,coffee,less,css,gif}', 'src/*.html'], ['deploy']);
+    return gulp.watch(['./src/**/*.{jpg,png,js,coffee,less,css,gif,html}'], ['deploy']);
 });
 
 gulp.task("default", ["watch", "deploy"]);

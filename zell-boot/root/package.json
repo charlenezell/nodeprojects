@@ -1,11 +1,8 @@
 {
-  "name": "zbooting",
+  "name": "zell-boot-site",
   "version": "0.0.1",
   "description": "boot for activity",
   "main": "gulpfile.js",
-  "scripts": {
-    "test": "gulp"
-  },
   "dependencies": {
     "del": "1.2.0",
     "event-stream": "3.3.1",

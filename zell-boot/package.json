@@ -1,6 +1,6 @@
 {
   "name": "zell-boot",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "boot for bt simple website",
   "main": "boot.js",
   "scripts": {
@@ -17,9 +17,6 @@
     "inquirer": "^0.8.5",
     "map-stream": "^0.1.0",
     "vinyl-fs": "^1.0.0"
-  },
-  "scripts":{
-    "postinstall":"node ./installEnv.js"
   },
   "bin": {
     "zell-boot": "./bin/zell-boot.js"
