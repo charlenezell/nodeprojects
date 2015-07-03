@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 var inquirer = require("inquirer");
 var datef = require('datef');
 // var gulp = require("gulp");
