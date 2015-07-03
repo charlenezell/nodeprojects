@@ -154,7 +154,7 @@ inquirer.prompt([{
         activityPath: 'gwActivity/',
     });
     console.log(config);
-
+	var envPath=path.resolve(__dirname,"..").replace(/\\/,"/")+"/";
     var buildCollection=[envPath+"root/**/*.{html,js,css}","!"+envPath+"root/gulpfile.js"];
 	var buildCollection2=[envPath+"root/**/*.{jpg,png}"];
     if(!answers.hasWap){
