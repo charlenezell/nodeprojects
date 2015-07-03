@@ -7,6 +7,7 @@ var dest = process.cwd();
 var path=require("path");
 var fs = require('vinyl-fs');
 var map = require('map-stream');
+var asciify=require("asciify");
 var config = {};
 var templateData = {
     aobi: {
@@ -75,6 +76,8 @@ var templateData = {
         url: "http://ac.100bt.com/"
     }
 };
+asciify('Z-Boot', {color:"green",font: 'larry3d', maxWidth: 90 }, function (err, result) {
+ console.log(result);
 inquirer.prompt([{
     type: "list",
     name: "siteName",
@@ -173,6 +176,7 @@ inquirer.prompt([{
     fs.src([envPath+"root/gulpfile.js",envPath+"root/package.json"]).pipe(map(ldTemplate)).pipe(fs.dest(dest));
     fs.src(buildCollection2).pipe(fs.dest(path.join(dest,"/src/")));
 
+});
 });
 
 function precompile(obj, cb) {
