@@ -22,7 +22,7 @@ var rev=require("gulp-rev");
 var useref = require('gulp-useref');
 var replace = require("zell-grr");
 gulp.task("clean", function(cb) {
-    del("dest/**/*", {force:true},cb);
+    del("dest/", {force:true},cb);
 });
 gulp.task("css", ["sprite"], function() {
     return gulp.src("src/**/*.css")
