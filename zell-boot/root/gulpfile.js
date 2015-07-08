@@ -1,3 +1,4 @@
+var isDebug=true;
 var gulp = require('gulp');
 var gulpif = require('gulp-if');
 var concat = require("gulp-concat");
@@ -21,10 +22,15 @@ var fs = require("fs");
 var rev=require("gulp-rev");
 var useref = require('gulp-useref');
 var replace = require("zell-grr");
+var os=require("os");
 gulp.task("clean", function(cb) {
-    del("dest/", {force:true},cb);
+    del("dest/",cb);
 });
 gulp.task("css", ["sprite"], function() {
+     var g=btnsHtmlArray.map(function(v){
+         return "<a class='actcommonbtns icon-"+v+"' href='###'></a>"+os.EOL;
+    }).join("");
+     fs.writeFileSync("btns.html",g);
     return gulp.src("src/**/*.css")
         .pipe(autoprefixer())
         .pipe(cssmin({
@@ -48,12 +54,13 @@ gulp.task("html", ["clean", "js", "css"], function() {
     });
     return merge(
         gulp.src("src/wap/*.html").pipe(assets2).pipe(gulp.dest("dest/wap/"))
-        .pipe(gulp.dest("dest/wap/")).pipe(assets2.restore()).pipe(useref()).pipe(htmlmin()).pipe(gulp.dest("dest/wap/")),
+        .pipe(gulp.dest("dest/wap/")).pipe(assets2.restore()).pipe(useref()).pipe(htmlmin({conditionals:true,quotes:false})).pipe(gulp.dest("dest/wap/")),
         gulp.src("src/web/*.html").pipe(assets1).pipe(gulp.dest("dest/web/"))
-        .pipe(gulp.dest("dest/web/")).pipe(assets1.restore()).pipe(useref()).pipe(htmlmin()).pipe(gulp.dest("dest/web/")),
-        gulp.src("src/*.html").pipe(htmlmin()).pipe(gulp.dest("dest/"))
+        .pipe(gulp.dest("dest/web/")).pipe(assets1.restore()).pipe(useref()).pipe(htmlmin({conditionals:true,quotes:false})).pipe(gulp.dest("dest/web/")),
+        gulp.src("src/*.html").pipe(htmlmin({conditionals:true,quotes:false})).pipe(gulp.dest("dest/"))
     )
 });
+var btnsHtmlArray=[];
 gulp.task("sprite", ["clean"], function() {
     var subSites = ld.compact(glob.sync("src/*").map(function(v) {
         if (fs.statSync(v).isDirectory()) {
@@ -64,6 +71,7 @@ gulp.task("sprite", ["clean"], function() {
     }));
     var jobs = [];
     var cssBundles = {};
+    btnsHtmlArray=[];
     subSites.forEach(function(v) {
         cssBundles[v] = [];
         var _map = glob.sync(v + "/**/img/sprite/*").map(function(a) {
@@ -73,8 +81,9 @@ gulp.task("sprite", ["clean"], function() {
                 return realName;
             }
 
-            function getParamList(a) {
+             function getParamList(_a) {
                 /*p8,v,h,s  默认用_分割，潜规则是图片命名不能有_*/
+                var a=p.basename(_a);
                 var arg = a.split("_");
                 arg.pop();
                 return arg;
@@ -90,6 +99,7 @@ gulp.task("sprite", ["clean"], function() {
                 cssVarMap: function(sp) {
                     var name = p.basename(p.resolve(sp.source_image, "..")).split("_").pop();
                     sp.name = name + "_" + sp.name;
+                    btnsHtmlArray.push(sp.name);
                 }
             }));
 
@@ -101,8 +111,8 @@ gulp.task("sprite", ["clean"], function() {
             };
             cssBundles[v].push(d.css);
             // console.log("hello",_basePath.join("/"))
-            return (ld.contains(getParamList(a), "p8") ? d.img.pipe(pngmin()) : d.img.pipe(imagemin({
-                optimizationLevel: 5
+             return (ld.contains(getParamList(a), "p8") ? d.img.pipe(pngmin()) : d.img.pipe(imagemin({
+                optimizationLevel: isDebug?0:5
             }))).pipe(gulp.dest("dest/" + _basePath.join("/")));
         });
         var imgJob = es.concat.apply(null, _map);
@@ -119,7 +129,8 @@ gulp.task("sprite", ["clean"], function() {
     return merge.apply(this, jobs);
 });
 gulp.task("resource", ["clean"], function() {
-    return gulp.src(["src/**/*.{mp3,jpg,png,swf,gif}", "!src/**/img/sprite/**/*"]).pipe(gulp.dest("dest/"));
+    return merge(gulp.src(["src/**/*.{mp3,jpg,png,swf,gif}", "!src/**/img/sprite/**/*","!src/**/img/bg/**/*"]).pipe(gulp.dest("dest/")),
+        gulp.src("src/**/img/bg/**/*").pipe(imagemin({progressive:true,optimizationLevel: isDebug?0:5})).pipe(gulp.dest("dest/")));
 });
 
 gulp.task("build", ["clean", "css", "js", "html", "resource", "sprite"]);
