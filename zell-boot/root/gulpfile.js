@@ -129,7 +129,7 @@ gulp.task("sprite", ["clean"], function() {
     return merge.apply(this, jobs);
 });
 gulp.task("resource", ["clean"], function() {
-    return merge(gulp.src(["src/**/*.{mp3,jpg,png,swf,gif}", "!src/**/img/sprite/**/*","!src/**/img/bg/**/*"]).pipe(gulp.dest("dest/")),
+    return merge(gulp.src(["src/**/*.{mp3,jpg,png,swf,gif,mp4,flv}", "!src/**/img/sprite/**/*","!src/**/img/bg/**/*"]).pipe(gulp.dest("dest/")),
         gulp.src("src/**/img/bg/**/*").pipe(imagemin({progressive:true,optimizationLevel: isDebug?0:5})).pipe(gulp.dest("dest/")));
 });
 
@@ -137,7 +137,7 @@ gulp.task("build", ["clean", "css", "js", "html", "resource", "sprite"]);
 // gulp.task("build", ["clean", "js", "html", "resource"]);
 gulp.task("makerevfile",["build"],function(){
     /*make rev configFile*/
-    return gulp.src("dest/**/*.{html,css,js,png,jpg,swf,mp4,mp3}").pipe(rev()).pipe(rev.manifest()).pipe(gulp.dest("./"))
+    return gulp.src("dest/**/*.{html,css,js,png,jpg,swf,mp4,mp3,flv}").pipe(rev()).pipe(rev.manifest()).pipe(gulp.dest("./"))
     // return gulp.src("dest/**/*.html").pipe()
 });
 gulp.task("rev",["makerevfile"],function(){
