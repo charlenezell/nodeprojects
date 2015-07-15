@@ -2,7 +2,6 @@
   "name": "zell-boot",
   "version": "0.0.12",
   "description": "boot for bt simple website",
-  "main": "boot.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

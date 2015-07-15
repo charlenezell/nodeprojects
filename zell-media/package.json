@@ -1,0 +1,18 @@
+{
+  "name": "zell-media",
+  "version": "0.0.1",
+  "description": "transcode medias",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "zell-trans": "./bin/index.js"
+  },
+  "author": "z.w",
+  "license": "ISC",
+  "dependencies": {
+    "asciify": "^1.3.5",
+    "fluent-ffmpeg": "^2.0.1",
+    "inquirer": "^0.9.0"
+  }
+}
