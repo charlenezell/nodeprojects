@@ -6,7 +6,7 @@ var lodash = require("lodash");
 var glob = require("glob");
 // var dest = process.cwd();
 var path = require("path");
-// var fs = require('vinyl-fs');
+var fs = require('fs');
 // var map = require('map-stream');
 var asciify = require("asciify");
 
@@ -18,7 +18,7 @@ var defaultAudioFrequency = 22050;
 var defaultAudioChannels = 2;
 var defaultVideoPaddingColor = "#000";
 var pix_fmt = "yuv420p";
-
+var totalLength=0;
 
 asciify('Z-Trans', {
     color: "green",
@@ -96,32 +96,73 @@ asciify('Z-Trans', {
             return lodash.contains(answers.mediaType, "video");
         }
     }], function(answers) {
-        console.log("final:", answers);
-        var queue = [];
-        console.log(answers.srcGlob);
+        var _outputPath=path.dirname(answers.outputPath)+"\\"+path.basename(answers.outputPath)+"\\";
+        // console.log("_outputPath:",_outputPath);
+         console.log("输入配置:", answers);
 
+        var queue = [];
+        // console.log(answers.srcGlob);
+        var videos=[];
+        var i=1;
         glob.sync(answers.srcGlob).forEach(function(v, k) {
+            var video=[];
+            var webmDestPath=mp4DestPath=""
             if (lodash.contains(answers.targetContainer, "mp4")) {
-                queue.push(getMp4Command(answers, v, queue));
+                mp4DestPath=path.basename(v).replace(new RegExp(path.extname(v) + "$"), ".mp4");
+                video.push({type:"mp4",src:mp4DestPath});
+                // console.log(mp4DestPath)
+                queue.push(getMp4Command(answers, v, queue,_outputPath,mp4DestPath,i++));
             }
             if (lodash.contains(answers.targetContainer, "webm")) {
-                queue.push(getWebmCommand(answers, v, queue));
+                var webmDestPath=path.basename(v).replace(new RegExp(path.extname(v) + "$"), ".webm");
+                video.push({type:"webm",src:webmDestPath});
+                // console.log(webmDestPath)
+                queue.push(getWebmCommand(answers, v, queue,_outputPath,webmDestPath,i++));
             }
+            videos.push(video);
         });
-
+        makeHTMLDemoFile(videos,_outputPath);
         if (queue.length > 0) {
-            queue.pop()._run();
+            totalLength=queue.length;
+            queue.shift()._run();
         } else {
             console.log("no file are selected ! ....hehe check the glob");
         }
     });
 });
 
-function getWebmCommand(answers, v, queueRef) {
-    var outputPathFileName=path.basename(v).replace(new RegExp(path.extname(v) + "$"), ".webm")
+function makeHTMLDemoFile (videos,outputPath) {
+    var p=path.resolve(__dirname,"..");
+    var htmlT=fs.readFileSync(p+"/template/html.html".replace(/\//g,path.sep)).toString();
+    var videoT=fs.readFileSync(p+"/template/video.html".replace(/\//g,path.sep)).toString();
+    var sourceT=fs.readFileSync(p+"/template/source.html".replace(/\//g,path.sep)).toString();
+    var htmlTC = lodash.template(htmlT);
+    var videoTC = lodash.template(videoT);
+    var sourceTC = lodash.template(sourceT);
+    var typeMap={
+        mp4:"video/mp4",
+        webm:'video/webm; codecs="vp8, vorbis"'
+    };
+    var destHTML=videos.map(function(v,k){
+        var sources=v.map(function(v,k){
+            return sourceTC({
+                src:v.src,
+                type:typeMap[v.type]
+            });
+        }).join("");
+        return videoTC({
+            attributes:"autoplay preload='auto' controls",
+            sources:sources
+        });
+    }).join("")
+
+    fs.writeFileSync(outputPath+"demo.html",htmlTC({htmlContent:destHTML}));
+}
+function getWebmCommand(answers, v, queueRef,_outputPath,outputPathFileName,cur) {
+
     var command = ffmpeg(v)
         .videoBitrate(answers.vbitrate)
-        .inputOption("-threads 0")
+        .inputOption("-threads 20")
         .fps(answers.fps)
         .on('progress', function(progress) {
             command._bar.tick(progress.percent - command._lastTime);
@@ -129,7 +170,7 @@ function getWebmCommand(answers, v, queueRef) {
         })
         .on("end", function() {
             var w = null;
-            w = queueRef.pop();
+            w = queueRef.shift();
             if (w) {
                 w._run();
             }
@@ -140,13 +181,12 @@ function getWebmCommand(answers, v, queueRef) {
         total: 100
     });
     command._run = function() {
-        command.save(answers.outputPath + outputPathFileName);
+        command.save(_outputPath + outputPathFileName);
     };
     return command;
 }
 
-function getMp4Command(answers, v, queueRef) {
-    var outputPathFileName=path.basename(v).replace(new RegExp(path.extname(v) + "$"), ".mp4");
+function getMp4Command(answers, v, queueRef,_outputPath,outputPathFileName,cur) {
     var customString = "";
     var customStringArray = [];
     var command = ffmpeg(v)
@@ -174,18 +214,18 @@ function getMp4Command(answers, v, queueRef) {
         })
         .on("end", function() {
             var w = null;
-            w = queueRef.pop();
+            w = queueRef.shift();
             if (w) {
                 w._run();
             }
         });
 
     command._lastTime = 0;
-    command._bar = new ProgressBar(" processing "+outputPathFileName+"[:bar] :percent :etas", {
+    command._bar = new ProgressBar(" processing " + outputPathFileName + " [:bar] :percent :etas", {
         total: 100
     });
     command._run = function() {
-        command.save(answers.outputPath + path.basename(v));
+        command.save(_outputPath + outputPathFileName);
     };
     return command;
 }

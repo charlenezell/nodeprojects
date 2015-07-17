@@ -187,7 +187,16 @@ gulp.task("rev", ["makerevfile"], function() {
         .pipe(gulp.dest("dest/"));
 });
 gulp.task("deploy", ["rev"], function() {
-    return gulp.src(["dest/**/*"]).pipe(gulp.dest("<%= deployRootPath%><%= siteName%>/<%= activityPath%><%=sitePath%>")).pipe(gulp.dest("./"));
+    var targetPath="c:/defaultZbootDeploypath/"
+    if(fs.existsSync("env.json")){
+        try{
+            targetPath=JSON.parse(fs.readFileSync("env.json").toString()).deployPath;
+        }catch(e){
+            console.log("请检查env.json是否为合法的json格式")
+        }
+    }
+
+    return gulp.src(["dest/**/*"]).pipe(gulp.dest(targetPath)).pipe(gulp.dest("./"));
 });
 
 
