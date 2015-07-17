@@ -1,0 +1,712 @@
+[ // Convert to Expanded Format (Break Selectors)
+    {
+        "keys": ["ctrl+1"],
+        "command": "css_format",
+        "args": {
+            "action": "expand-bs"
+        }
+    }, // Convert to Compact Format (Break Selectors and No Spaces)
+    {
+        "keys": ["ctrl+2"],
+        "command": "css_format",
+        "args": {
+            "action": "compact-bs-ns"
+        }
+    }, {
+        "keys": ["ctrl+shift+alt+p"],
+        "command": "show_panel",
+        "args": {
+            "panel": "find_in_files",
+            "where": "<open files>"
+        }
+    }, {
+        "keys": ["ctrl+alt+z"],
+        "command": "check_out"
+    }, {
+        "keys": ["ctrl+alt+g"],
+        "command": "get"
+    }, {
+        "keys": ["ctrl+alt+d"],
+        "command": "dsave"
+    }, {
+        "keys": ["ctrl+alt+x"],
+        "command": "tfs_one",
+        "args": {
+            "itype": "checkin",
+            "iarg": ""
+        }
+    }, {
+        "keys": ["ctrl+alt+c"],
+        "command": "tfs_one",
+        "args": {
+            "itype": "difference",
+            "iarg": ""
+        }
+    }, {
+        "keys": ["ctrl+alt+e"],
+        "command": "evaluate_pop"
+    },
+    // Search to end of file for bracket
+    {
+        "keys": ["ctrl+alt+super+b"],
+        "command": "bh_key",
+        "args": {
+            "lines": true
+        }
+    },
+    // Go to left bracket
+    {
+        "keys": ["ctrl+alt+super+h"],
+        "command": "bh_key",
+        "args": {
+            "no_outside_adj": true,
+            "lines": true,
+            "plugin": {
+                "type": ["__all__"],
+                "command": "bh_modules.bracketselect",
+                "args": {
+                    "select": "left"
+                }
+            }
+        }
+    }, // Go to right bracket
+    {
+        "keys": ["ctrl+alt+super+l"],
+        "command": "bh_key",
+        "args": {
+            "no_outside_adj": true,
+            "lines": true,
+            "plugin": {
+                "type": ["__all__"],
+                "command": "bh_modules.bracketselect",
+                "args": {
+                    "select": "right"
+                }
+            }
+        }
+    },
+    // Remove brackets
+    {
+        "keys": ["ctrl+alt+super+k"],
+        "command": "bh_remove_brackets"
+    }, // Select text between brackets
+    {
+        "no_outside_adj": true,
+        "keys": ["ctrl+alt+super+n"],
+        "command": "bh_key",
+        "args": {
+            "lines": true,
+            "plugin": {
+                "type": ["__all__"],
+                "command": "bh_modules.bracketselect"
+            }
+        }
+    },
+    // Select text including brackets
+    {
+        "keys": ["ctrl+alt+super+m"],
+        "command": "bh_key",
+        "args": {
+            "no_outside_adj": true,
+            "lines": true,
+            "plugin": {
+                "type": ["__all__"],
+                "command": "bh_modules.bracketselect",
+                "args": {
+                    "always_include_brackets": true
+                }
+            }
+        }
+    },
+    // Select tag name of HTML/XML tag (both opening name and closing)
+    {
+        "keys": ["ctrl+shift+super+a"],
+        "command": "bh_key",
+        "args": {
+            "plugin": {
+                "type": ["cfml", "html", "angle"],
+                "command": "bh_modules.tagnameselect"
+            }
+        }
+    },
+    // Select the attribute to the right of the cursor (will wrap inside the tag)
+    {
+        "keys": ["ctrl+alt+super+o"],
+        "command": "bh_key",
+        "args": {
+            "plugin": {
+                "type": ["cfml", "html", "angle"],
+                "command": "bh_modules.tagattrselect",
+                "args": {
+                    "direction": "right"
+                }
+            }
+        }
+    },
+    // Select the attribute to the left of the cursor (will wrap inside the tag)
+    {
+        "keys": ["ctrl+alt+super+i"],
+        "command": "bh_key",
+        "args": {
+            "plugin": {
+                "type": ["cfml", "html", "angle"],
+                "command": "bh_modules.tagattrselect",
+                "args": {
+                    "direction": "left"
+                }
+            }
+        }
+    }, // Fold contents between brackets
+    {
+        "keys": ["ctrl+alt+super+,"],
+        "command": "bh_key",
+        "args": {
+            "plugin": {
+                "type": ["__all__"],
+                "command": "bh_modules.foldbracket"
+            }
+        }
+    }, // Surround selection with brackets from quick panel
+    {
+        "keys": ["ctrl+alt+super+w"],
+        "command": "wrap_brackets"
+    }, // up down left right i j k l
+    {
+        "keys": ["alt+l"],
+        "command": "move",
+        "args": {
+            "by": "characters",
+            "forward": true
+        }
+    }, {
+        "keys": ["alt+h"],
+        "command": "move",
+        "args": {
+            "by": "characters",
+            "forward": false
+        }
+    }, {
+        "keys": ["alt+k"],
+        "command": "move",
+        "args": {
+            "by": "lines",
+            "forward": false
+        }
+    }, {
+        "keys": ["alt+j"],
+        "command": "move",
+        "args": {
+            "by": "lines",
+            "forward": true
+        }
+    }, {
+        "keys": ["alt+,"],
+        "command": "move",
+        "args": {
+            "by": "pages",
+            "forward": false
+        }
+    }, {
+        "keys": ["alt+."],
+        "command": "move",
+        "args": {
+            "by": "pages",
+            "forward": true
+        }
+    },
+
+    // move beginnig/end of line
+    {
+        "keys": ["alt+i"],
+        "command": "move_to",
+        "args": {
+            "to": "bol",
+            "forward": true
+        }
+    }, {
+        "keys": ["alt+o"],
+        "command": "move_to",
+        "args": {
+            "to": "eol",
+            "forward": false
+        }
+    },
+
+    // move with words
+    {
+        "keys": ["alt+ctrl+l"],
+        "command": "move",
+        "args": {
+            "by": "words",
+            "forward": true
+        }
+    }, {
+        "keys": ["alt+ctrl+h"],
+        "command": "move",
+        "args": {
+            "by": "words",
+            "forward": false
+        }
+    },
+
+    // move and select
+    {
+        "keys": ["alt+shift+l"],
+        "command": "move",
+        "args": {
+            "by": "characters",
+            "forward": true,
+            "extend": true
+        }
+    }, {
+        "keys": ["alt+shift+h"],
+        "command": "move",
+        "args": {
+            "by": "characters",
+            "forward": false,
+            "extend": true
+        }
+    }, {
+        "keys": ["alt+shift+k"],
+        "command": "move",
+        "args": {
+            "by": "lines",
+            "forward": false,
+            "extend": true
+        }
+    }, {
+        "keys": ["alt+shift+j"],
+        "command": "move",
+        "args": {
+            "by": "lines",
+            "forward": true,
+            "extend": true
+        }
+    }, {
+        "keys": ["alt+shift+,"],
+        "command": "move",
+        "args": {
+            "by": "pages",
+            "forward": false,
+            "extend": true
+        }
+    }, {
+        "keys": ["alt+shift+."],
+        "command": "move",
+        "args": {
+            "by": "pages",
+            "forward": true,
+            "extend": true
+        }
+    },
+
+    // move beginning/end of line and select
+    {
+        "keys": ["alt+shift+i"],
+        "command": "move_to",
+        "args": {
+            "to": "bol",
+            "forward": true,
+            "extend": true
+        }
+    }, {
+        "keys": ["alt+shift+o"],
+        "command": "move_to",
+        "args": {
+            "to": "eol",
+            "forward": false,
+            "extend": true
+        }
+    },
+
+    // move and select words
+    {
+        "keys": ["alt+ctrl+shift+l"],
+        "command": "move",
+        "args": {
+            "by": "words",
+            "forward": true,
+            "extend": true
+        }
+    }, {
+        "keys": ["alt+ctrl+shift+h"],
+        "command": "move",
+        "args": {
+            "by": "words",
+            "forward": false,
+            "extend": true
+        }
+    }, {
+        "keys": [
+            "alt+y"
+        ],
+        "args": {
+            "action": "prev_edit_point"
+        },
+        "command": "run_emmet_action",
+        "context": [{
+            "key": "emmet_action_enabled.prev_edit_point"
+        }]
+    }, {
+        "keys": [
+            "alt+u"
+        ],
+        "args": {
+            "action": "next_edit_point"
+        },
+        "command": "run_emmet_action",
+        "context": [{
+            "key": "emmet_action_enabled.next_edit_point"
+        }]
+    },
+
+    {
+        "keys": ["ctrl+,", "s"],
+        "command": "repl_transfer_current",
+        "args": {
+            "scope": "selection"
+        }
+    }, {
+        "keys": ["ctrl+shift+,", "s"],
+        "command": "repl_transfer_current",
+        "args": {
+            "scope": "selection",
+            "action": "view_write"
+        }
+    }, {
+        "keys": ["ctrl+,", "f"],
+        "command": "repl_transfer_current",
+        "args": {
+            "scope": "file"
+        }
+    }, {
+        "keys": ["shift+ctrl+,", "f"],
+        "command": "repl_transfer_current",
+        "args": {
+            "scope": "file",
+            "action": "view_write"
+        }
+    }, {
+        "keys": ["ctrl+,", "l"],
+        "command": "repl_transfer_current",
+        "args": {
+            "scope": "lines"
+        }
+    }, {
+        "keys": ["shift+ctrl+,", "l"],
+        "command": "repl_transfer_current",
+        "args": {
+            "scope": "lines",
+            "action": "view_write"
+        }
+    }, {
+        "keys": ["ctrl+,", "b"],
+        "command": "repl_transfer_current",
+        "args": {
+            "scope": "block"
+        }
+    }, {
+        "keys": ["shift+ctrl+,", "b"],
+        "command": "repl_transfer_current",
+        "args": {
+            "scope": "block",
+            "action": "view_write"
+        }
+    }, {
+        "keys": ["f5"],
+        "caption": "SublimeREPL: Python - RUN current file",
+        "command": "run_existing_window_command",
+        "args": {
+            "id": "repl_python_run",
+            "file": "config/Python/Main.sublime-menu"
+        }
+    }, {
+        "keys": ["f6"],
+        "caption": "SublimeREPL: Python - PDB current file",
+        "command": "run_existing_window_command",
+        "args": {
+            "id": "repl_python_pdb",
+            "file": "config/Python/Main.sublime-menu"
+        }
+    },
+    { "keys": ["ctrl+alt+space"], "command": "auto_complete" },
+    { "keys": ["ctrl+alt+space"], "command": "replace_completion_with_auto_complete", "context":
+        [
+            { "key": "last_command", "operator": "equal", "operand": "insert_best_completion" },
+            { "key": "auto_complete_visible", "operator": "equal", "operand": false },
+            { "key": "setting.tab_completion", "operator": "equal", "operand": true }
+        ]
+    },{
+        "keys": ["alt+shift+1"],
+        "command": "set_layout",
+        "args":
+        {
+            "cols": [0.0, 1.0],
+            "rows": [0.0, 1.0],
+            "cells": [[0, 0, 1, 1]]
+        }
+    },
+    {
+        "keys": ["alt+shift+6"],
+        "command": "set_layout",
+        "args":
+        {
+            "cols": [0.0, 0.7, 1.0],
+            "rows": [0.0, 1.0],
+            "cells": [[0, 0, 1, 1], [1, 0, 2, 2]]
+        }
+    },
+    {
+        "keys": ["alt+shift+2"],
+        "command": "set_layout",
+        "args":
+        {
+            "cols": [0.0, 1.0],
+            "rows": [0.0, 0.7, 1.0],
+            "cells": [[0, 0, 1, 1], [0, 1, 1, 2]]
+        }
+    },
+    {
+        "keys": ["alt+shift+3"],
+        "command": "set_layout",
+        "args":
+        {
+            "cols": [0.0,1],
+            "rows": [0.0, 0.5, 0.75, 1.0],
+            "cells": [[0, 0, 1, 1], [0, 1, 1, 2], [0, 2, 1, 3]]
+        }
+    },
+    {
+        "keys": ["alt+shift+4"],
+        "command": "set_layout",
+        "args":
+        {
+            "cols": [0.0, 1.0],
+            "rows": [0.0, 0.5,0.68,0.85,1.0],
+            "cells": [[0, 0, 1, 1], [0, 1, 1, 2],[0, 2, 1, 3],[0, 3, 1, 4]]
+        }
+    },
+    {
+        "keys": ["alt+shift+5"],
+        "command": "set_layout",
+        "args":
+        {
+            "cols": [0.0, 1.0],
+            "rows": [0.0,0.2, 0.3,0.6,0.9,1.0],
+            "cells": [[0, 0, 1, 1], [0, 1, 1, 2],[0, 2, 1, 3],[0, 3, 1, 4],[0, 4, 1, 5]]
+        }
+    },
+    {
+        "keys": ["alt+shift+7"],
+        "command": "set_layout",
+        "args":
+        {
+            "cols": [0.0, 0.7, 1.0],
+            "rows": [0.0, 0.7, 1.0],
+            "cells":
+            [
+                [0, 0, 1, 1], [1, 0, 2, 1],
+                [0, 1, 1, 2], [1, 1, 2, 2]
+            ]
+        }
+    },
+        {
+            "keys": ["alt+c", "b"],
+            "command": "insert_snippet",
+            "args": {
+                "name": "Packages/User/callbacksnipet.sublime-snippet"
+            }
+        }, {
+            "keys": ["alt+c", "l"],
+            "command": "insert_snippet",
+            "args": {
+                "name": "Packages/User/consolelogsnipet.sublime-snippet"
+            }
+        }, {
+            "keys": ["alt+c", "f"],
+            "command": "insert_snippet",
+            "args": {
+                "name": "Packages/User/flashsnippet.sublime-snippet"
+            }
+        }, { "keys": ["ctrl+win+1"], "command": "insert_snippet", "args": {"contents": "# $0"}, "context":
+     [
+         { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+         { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+         { "key": "following_text", "operator": "regex_contains", "operand": "^(?:\t| |\\)|]|\\}|$)", "match_all": true },
+         { "key": "preceding_text", "operator": "not_regex_contains", "operand": "['a-zA-Z0-9_]$", "match_all": true },
+         { "key": "eol_selector", "operator": "not_equal", "operand": "string.quoted.single", "match_all": true },
+         { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true }
+     ]
+    },
+    { "keys": ["ctrl+win+1"], "command": "insert_snippet", "args": {"contents": "#${0: ${SELECTION/(^( +)?(#+)?\\s*|\\s*(#+)?( +)?$)//g}}$1"}, "context":
+        [
+            { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+            { "key": "setting.mde.match_header_hashes", "operator": "equal", "operand": false },
+            { "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true },
+            { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true }
+        ]
+    },
+    { "keys": ["ctrl+win+1"], "command": "insert_snippet", "args": {"contents": "#${0: ${SELECTION/(^( +)?(#+)?\\s*|\\s*(#+)?( +)?$)//g} }#$1"}, "context":
+        [
+            { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+            { "key": "setting.mde.match_header_hashes", "operator": "equal", "operand": true },
+            { "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true },
+            { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true }
+        ]
+    },
+    { "keys": ["ctrl+win+2"], "command": "insert_snippet", "args": {"contents": "## $0"}, "context":
+     [
+         { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+         { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+         { "key": "following_text", "operator": "regex_contains", "operand": "^(?:\t| |\\)|]|\\}|$)", "match_all": true },
+         { "key": "preceding_text", "operator": "not_regex_contains", "operand": "['a-zA-Z0-9_]$", "match_all": true },
+         { "key": "eol_selector", "operator": "not_equal", "operand": "string.quoted.single", "match_all": true },
+         { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true }
+     ]
+    },
+    { "keys": ["ctrl+win+2"], "command": "insert_snippet", "args": {"contents": "##${0: ${SELECTION/(^( +)?(#+)?\\s*|\\s*(#+)?( +)?$)//g}}$1"}, "context":
+        [
+            { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+            { "key": "setting.mde.match_header_hashes", "operator": "equal", "operand": false },
+            { "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true },
+            { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true }
+        ]
+    },
+    { "keys": ["ctrl+win+2"], "command": "insert_snippet", "args": {"contents": "##${0: ${SELECTION/(^( +)?(#+)?\\s*|\\s*(#+)?( +)?$)//g} }##$1"}, "context":
+        [
+            { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+            { "key": "setting.mde.match_header_hashes", "operator": "equal", "operand": true },
+            { "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true },
+            { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true }
+        ]
+    },
+    { "keys": ["ctrl+win+3"], "command": "insert_snippet", "args": {"contents": "### $0"}, "context":
+     [
+         { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+         { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+         { "key": "following_text", "operator": "regex_contains", "operand": "^(?:\t| |\\)|]|\\}|$)", "match_all": true },
+         { "key": "preceding_text", "operator": "not_regex_contains", "operand": "['a-zA-Z0-9_]$", "match_all": true },
+         { "key": "eol_selector", "operator": "not_equal", "operand": "string.quoted.single", "match_all": true },
+         { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true }
+     ]
+    },
+    { "keys": ["ctrl+win+3"], "command": "insert_snippet", "args": {"contents": "###${0: ${SELECTION/(^( +)?(#+)?\\s*|\\s*(#+)?( +)?$)//g}}$1"}, "context":
+        [
+            { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+            { "key": "setting.mde.match_header_hashes", "operator": "equal", "operand": false },
+            { "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true },
+            { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true }
+        ]
+    },
+    { "keys": ["ctrl+win+3"], "command": "insert_snippet", "args": {"contents": "###${0: ${SELECTION/(^( +)?(#+)?\\s*|\\s*(#+)?( +)?$)//g} }###$1"}, "context":
+        [
+            { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+            { "key": "setting.mde.match_header_hashes", "operator": "equal", "operand": true },
+            { "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true },
+            { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true }
+        ]
+    },
+    { "keys": ["ctrl+win+4"], "command": "insert_snippet", "args": {"contents": "#### $0"}, "context":
+     [
+         { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+         { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+         { "key": "following_text", "operator": "regex_contains", "operand": "^(?:\t| |\\)|]|\\}|$)", "match_all": true },
+         { "key": "preceding_text", "operator": "not_regex_contains", "operand": "['a-zA-Z0-9_]$", "match_all": true },
+         { "key": "eol_selector", "operator": "not_equal", "operand": "string.quoted.single", "match_all": true },
+         { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true }
+     ]
+    },
+    { "keys": ["ctrl+win+4"], "command": "insert_snippet", "args": {"contents": "####${0: ${SELECTION/(^( +)?(#+)?\\s*|\\s*(#+)?( +)?$)//g}}$1"}, "context":
+        [
+            { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+            { "key": "setting.mde.match_header_hashes", "operator": "equal", "operand": false },
+            { "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true },
+            { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true }
+        ]
+    },
+    { "keys": ["ctrl+win+4"], "command": "insert_snippet", "args": {"contents": "####${0: ${SELECTION/(^( +)?(#+)?\\s*|\\s*(#+)?( +)?$)//g} }####$1"}, "context":
+        [
+            { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+            { "key": "setting.mde.match_header_hashes", "operator": "equal", "operand": true },
+            { "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true },
+            { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true }
+        ]
+    },
+    { "keys": ["ctrl+win+5"], "command": "insert_snippet", "args": {"contents": "##### $0"}, "context":
+     [
+         { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+         { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+         { "key": "following_text", "operator": "regex_contains", "operand": "^(?:\t| |\\)|]|\\}|$)", "match_all": true },
+         { "key": "preceding_text", "operator": "not_regex_contains", "operand": "['a-zA-Z0-9_]$", "match_all": true },
+         { "key": "eol_selector", "operator": "not_equal", "operand": "string.quoted.single", "match_all": true },
+         { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true }
+     ]
+    },
+    { "keys": ["ctrl+win+5"], "command": "insert_snippet", "args": {"contents": "#####${0: ${SELECTION/(^( +)?(#+)?\\s*|\\s*(#+)?( +)?$)//g}}$1"}, "context":
+        [
+            { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+            { "key": "setting.mde.match_header_hashes", "operator": "equal", "operand": false },
+            { "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true },
+            { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true }
+        ]
+    },
+    { "keys": ["ctrl+win+5"], "command": "insert_snippet", "args": {"contents": "#####${0: ${SELECTION/(^( +)?(#+)?\\s*|\\s*(#+)?( +)?$)//g} }#####$1"}, "context":
+        [
+            { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+            { "key": "setting.mde.match_header_hashes", "operator": "equal", "operand": true },
+            { "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true },
+            { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true }
+        ]
+    },
+    { "keys": ["ctrl+win+6"], "command": "insert_snippet", "args": {"contents": "###### $0"}, "context":
+     [
+         { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+         { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+         { "key": "following_text", "operator": "regex_contains", "operand": "^(?:\t| |\\)|]|\\}|$)", "match_all": true },
+         { "key": "preceding_text", "operator": "not_regex_contains", "operand": "['a-zA-Z0-9_]$", "match_all": true },
+         { "key": "eol_selector", "operator": "not_equal", "operand": "string.quoted.single", "match_all": true },
+         { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true }
+     ]
+    },
+    { "keys": ["ctrl+win+6"], "command": "insert_snippet", "args": {"contents": "######${0: ${SELECTION/(^( +)?(#+)?\\s*|\\s*(#+)?( +)?$)//g}}$1"}, "context":
+        [
+            { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+            { "key": "setting.mde.match_header_hashes", "operator": "equal", "operand": false },
+            { "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true },
+            { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true }
+        ]
+    },
+    { "keys": ["ctrl+win+6"], "command": "insert_snippet", "args": {"contents": "######${0: ${SELECTION/(^( +)?(#+)?\\s*|\\s*(#+)?( +)?$)//g} }######$1"}, "context":
+        [
+            { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+            { "key": "setting.mde.match_header_hashes", "operator": "equal", "operand": true },
+            { "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true },
+            { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true }
+        ]
+    }
+]
+
+
+
+
+
+
+
+
+{
+     "github_mode": "gfm"
+}
+
+
+{
+    "extensions":
+    [
+        "md", "markdown", "mdown"
+    ],
+    "color_scheme": "Packages/MarkdownEditing/MarkdownEditor-Dark.tmTheme",
+    "line_numbers": true,
+    "highlight_line": true,
+    "mde.match_header_hashes": true,
+    "draw_centered": false,
+    "mde.keep_centered": true
+}
