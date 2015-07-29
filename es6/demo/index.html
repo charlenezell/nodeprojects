@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WXsharebinder</title>
+    <link rel="stylesheet" href="sc/mocha.css">
+</head>
+<body>
+<script src="http://resource.a0bi.com/resource/js/lib/zepto.min.all.js"></script>
+<script src="http://resource.a0bi.com/resource/js/lib/util/dist/util.js"></script>
+<script src="http://resource.a0bi.com/resource/js/lib/jweixin-1.0.0.js"></script>
+<script src="sc/core.min.js"></script>
+<!-- <script src="system-polyfills.js"></script> -->
+<script src="system.js"></script>
+<!-- <script src="http://resource.a0bi.com/resource/js/lib/wxsharebinder/dest/traceur-runtime.js"></script> -->
+<!-- <script src="require.js" data-main="main"></script> -->
+<a href="http://aola.100bt.com/demo/">reload</a>
+<div id="mocha"></div>
+<script src="sc/chai.js"></script>
+<script src="sc/mocha.js"></script>
+<script>mocha.setup('bdd')</script>
+<script>
+System.config({
+    baseURL: 'sc',
+    transpiler: 'babel',
+    map: {
+        main:"http://www.100bt.com/resource/js/lib/es6test/index.js",
+       babel: 'http://aola.100bt.com/demo/sc/browser.js'
+    }
+  });
+</script>
+<script>
+  var assert = chai.assert;
+  chai.Assertion()
+</script>
+<script src="sc/index.js"></script>
+<script>
+mocha.setup({
+  timeout:200
+})
+   mocha.run();
+ </script>
+</body>
+</html>
