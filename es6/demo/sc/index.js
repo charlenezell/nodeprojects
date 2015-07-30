@@ -21,7 +21,17 @@ describe('ecma262 6th feature test', function() {
 
         });
     });
+    it('arrow Func this fixed and string template', function(done) {
+        System.import("main").then(function(a) {
+            try {
+                assert.equal(new a.Classname("fff").getColorZells().join(""), "#fff:小明#fff:小红");
+                done();
+            } catch (e) {
+                done(e);
+            }
 
+        });
+    });
     it('extend Class extend a instance method extend getter', function(done) {
         System.import("main").then(function(a) {
             window.theobj = a;
@@ -32,17 +42,6 @@ describe('ecma262 6th feature test', function() {
             } catch (e) {
                 done(e)
             }
-        });
-    });
-    it('arrow Func this fixed and string template', function(done) {
-        System.import("main").then(function(a) {
-            try {
-                assert.equal(new a.Classname("fff").getColorZells().join(""), "#fff:小明#fff:小红");
-                done();
-            } catch (e) {
-                done(e);
-            }
-
         });
     });
     it('destructure param and default value and template methods', function(done) {
