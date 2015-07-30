@@ -1,0 +1,29 @@
+{
+  "name": "webpacktest",
+  "version": "0.0.1",
+  "description": "test wp",
+  "main": " ",
+  "scripts": {
+    "start": "webpack-dev-server --inline -h"
+  },
+  "author": "z.w",
+  "license": "ISC",
+  "dependencies": {
+    "css-loader": "^0.15.6",
+    "jquery": "^2.1.4",
+    "sass-loader": "^1.0.3",
+    "style-loader": "^0.12.3",
+    "underscore": "^1.8.3",
+    "url-loader": "^0.5.6"
+  },
+  "devDependencies": {
+    "css-loader": "^0.15.6",
+    "extract-text-webpack-plugin": "^0.8.2",
+    "file-loader": "^0.8.4",
+    "node-sass": "^3.2.0",
+    "sass-loader": "^1.0.3",
+    "style-loader": "^0.12.3",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.10.5"
+  }
+}
