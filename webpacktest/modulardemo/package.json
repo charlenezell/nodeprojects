@@ -5,7 +5,8 @@
   "main": " ",
   "scripts": {
     "start": "webpack-dev-server --inline -h --devtool sourcemap",
-    "nohot": "webpack-dev-server --inline --devtool sourcemap"
+    "nohot": "webpack-dev-server --inline --devtool sourcemap",
+    "deploy": "webpack -p --devtool sourcemap"
   },
   "author": "z.w",
   "license": "ISC",
