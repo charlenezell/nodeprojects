@@ -5,3 +5,5 @@ wxsharebinder/node_modules/*
 es6/es6modules/node_modules/*
 webpacktest/node_modules/*
 workflow/node_modules/*
+webpacktest/modulardemo/dest/*
+webpacktest/multipage/build/*
