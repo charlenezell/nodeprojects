@@ -683,8 +683,13 @@
             { "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true },
             { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true }
         ]
-    }
+    },
+    { "keys": ["ctrl+o"], "command": "fuzzy_start_from_file" },
+    { "keys": ["ctrl+shift+o"], "command": "fuzzy_bookmarks_load" },
+    { "keys": ["ctrl+alt+o"], "command": "next_view" },
+    { "keys": ["ctrl+alt+i"], "command": "prev_view" }
 ]
+
 
 
 
@@ -710,3 +715,55 @@
     "draw_centered": false,
     "mde.keep_centered": true
 }
+
+
+# Your keymap
+#
+# Atom keymaps work similarly to style sheets. Just as style sheets use
+# selectors to apply styles to elements, Atom keymaps use selectors to associate
+# keystrokes with events in specific contexts.
+#
+# You can create a new keybinding in this file by typing "key" and then hitting
+# tab.
+#
+# Here's an example taken from Atom's built-in keymap:
+#
+# 'atom-text-editor':
+#   'enter': 'editor:newline'
+#
+# 'atom-workspace':
+#   'ctrl-shift-p': 'core:move-up'
+#   'ctrl-p': 'core:move-down'
+#
+# You can find more information about keymaps in these guides:
+# * https://atom.io/docs/latest/using-atom-basic-customization#customizing-key-bindings
+# * https://atom.io/docs/latest/behind-atom-keymaps-in-depth
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it here:
+# https://github.com/bevry/cson#what-is-cson
+
+'body':
+  'alt-l': 'core:move-right'
+  'alt-h': 'core:move-left'
+  'alt-j': 'core:move-down'
+  'alt-k': 'core:move-up'
+  'shift-alt-l': 'core:select-right'
+  'shift-alt-h': 'core:select-left'
+  'shift-alt-k': 'core:select-up'
+  'shift-alt-j': 'core:select-down'
+'atom-text-editor':
+  'alt-h': 'core:move-left'
+  'alt-ctrl-l': 'editor:move-to-next-subword-boundary'
+  'alt-ctrl-h': 'editor:move-to-previous-subword-boundary'
+  'alt-o': 'editor:move-to-end-of-screen-line'
+  'alt-i': 'editor:move-to-beginning-of-screen-line'
+  'alt-ctrl-h': 'editor:move-to-previous-subword-boundary'
+  'alt-ctrl-l': 'editor:move-to-next-subword-boundary'
+  'ctrl-alt-n': 'bracket-matcher:select-inside-brackets'
+  'shift-alt-o': 'editor:select-to-end-of-line'
+  'shift-alt-i': 'editor:select-to-beginning-of-line'
+  'shift-alt-ctrl-l': 'editor:select-to-next-subword-boundary'
+  'shift-alt-ctrl-h': 'editor:select-to-previous-subword-boundary'
+'atom-workspace, atom-workspace atom-text-editor':
+  'ctrl-m d': 'markdown-preview:toggle'
