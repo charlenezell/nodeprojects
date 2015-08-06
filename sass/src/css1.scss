@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+@import "../lib/css2";
+
+//SouceComment
+/*OutputComment*/
+$fontsizesmall: 14px;
+$fontfamilycontent: "宋体", Arial;
+$fontfamilytitle: "微软雅黑", Arial;
+$mainbgcolor: blue;
+$navConfig: (home: (name: "home", color: blue), list: (name: "list", color: green));
+
+@debug type-of($fontfamilycontent);
+
+@debug type-of($mainbgcolor);
+
+@debug type-of($fontsizesmall);
+
+@debug type-of($navConfig);
+
+@each $a, $b in $navConfig {
+    .#{$a} {
+        background-color: map-get($b, "color");
+    }
+}
+
+@mixin font {
+    font-size: $fontsizesmall;
+    font-family: $fontfamilycontent;
+}
+
+html {
+    @include font;
+
+    background-color: $mainbgcolor;
+}
+
+@include BLOCK(nav) {
+    $btnC: blue;
+
+    font-family: $fontfamilytitle;
+
+    $btnHoverC: yellow;
+
+    @include ELEMENT(button) {
+        width: 200px;
+        height: 20px;
+        background-color: $btnC;
+    }
+
+
+    @include MODIFIER(hover) {
+        @include ELEMENT(button) {
+            background-color: $btnHoverC;
+        }
+    }
+}
+
+
+@for $a from 1 to 10 {
+    @if $a % 2 != 0 {
+        .item_odd_#{$a} {
+            height: 2rem * $a;
+        }
+    } @else {
+        .item_even_#{$a} {
+            height: 2rem * $a;
+        }
+    }
+}
