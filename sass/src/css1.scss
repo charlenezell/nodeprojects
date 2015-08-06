@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+@import "../lib/css2";
+
+$fontsizesmall: 14px;
+$fontfamilycontent: "宋体", Arial;
+$fontfamilytitle: "微软雅黑", Arial;
+$mainbgcolor: blue;
+
+@mixin font {
+    font-size: $fontsizesmall;
+    font-family: $fontfamilycontent;
+}
+
+html {
+    @include font;
+
+    background-color: $mainbgcolor;
+}
+
+@include BLOCK(nav) {
+    $btnC: blue;
+
+    font-family: $fontfamilytitle;
+
+    $btnHoverC: yellow;
+
+    @include ELEMENT(button) {
+        width: 200px;
+        height: 20px;
+        background-color: $btnC;
+    }
+
+    @include MODIFIER(hover) {
+        @include ELEMENT(button) {
+            background-color: $btnHoverC;
+        }
+    }
+}
