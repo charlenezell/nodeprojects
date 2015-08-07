@@ -48,7 +48,6 @@ html {
         background-color: $btnC;
     }
 
-
     @include MODIFIER(hover) {
         @include ELEMENT(button) {
             background-color: $btnHoverC;
