@@ -6,6 +6,8 @@ es6/es6modules/node_modules/*
 webpacktest/node_modules/*
 workflow/node_modules/*
 sass/node_modules/*
+es.next/node_modules/*
+es.next/dest/*
 sass/.sass-cache/*
 sass/dest/*
 webpacktest/modulardemo/dest/*
