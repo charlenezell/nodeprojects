@@ -1,6 +1,80 @@
 @charset "utf-8";
 
 @import "../lib/css2";
+$font:"arial";
+%hello{
+    border:1px solid red;
+    .b{
+        color:red;
+    }
+}
+
+.c{
+    @extend %hello;
+    @extend %hello2!optional;
+}
+
+$a1:("hehehehe",2,3);
+@debug call("nth",$a1,1);
+
+/*
+                      __           ___
+                     /\ \         /\_ \    __
+  ___ ___     ___    \_\ \  __  __\//\ \  /\_\  ____      __
+/' __` __`\  / __`\  /'_` \/\ \/\ \ \ \ \ \/\ \/\_ ,`\  /'__`\
+/\ \/\ \/\ \/\ \L\ \/\ \L\ \ \ \_\ \ \_\ \_\ \ \/_/  /_/\  __/
+\ \_\ \_\ \_\ \____/\ \___,_\ \____/ /\____\\ \_\/\____\ \____\
+ \/_/\/_/\/_/\/___/  \/__,_ /\/___/  \/____/ \/_/\/____/\/____/
+
+*/
+ .moduleA{
+    &__title{
+        color:red;
+    }
+    &__desc{
+        color:#333;
+    }
+}
+.moduleB{
+    &__title{
+        color:blue;
+    }
+    &__title--hover{
+        color:brown;
+    }
+    &__desc{
+        color:#333;
+    }
+    @at_root .moduleC &__title{
+        margin-left:20px;
+    }
+    @at_root .moduleD .moduleE.moduleF &__title{
+        margin-left:20px;
+    }
+}
+.moduleC{
+    &__top{
+        height:200px;
+    }
+    &__ctn{
+        height:100px;
+    }
+    &__bottom{
+        height:100px;
+    }
+}
+.a{
+    @media screen and (min-width: 20px){
+      color:red
+    }
+}
+
+// in simpleCss you need to say
+// @media screen and (min-width: 20px) {
+//   .a {
+//     color: red; } }
+
+
 
 //SouceComment
 /*OutputComment*/
@@ -8,6 +82,7 @@ $fontsizesmall: 14px;
 $fontfamilycontent: "宋体", Arial;
 $fontfamilytitle: "微软雅黑", Arial;
 $mainbgcolor: blue;
+$style:"background:red";
 $navConfig: (home: (name: "home", color: blue), list: (name: "list", color: green));
 
 @debug type-of($fontfamilycontent);
@@ -17,7 +92,14 @@ $navConfig: (home: (name: "home", color: blue), list: (name: "list", color: gree
 @debug type-of($fontsizesmall);
 
 @debug type-of($navConfig);
-
+@debug type-of($style);
+@debug (3/2+1)rem;
+@debug  (1em + 2em) * 3;
+@debug #{3}-#{2};
+@function happyplus($a,$b:10) {
+    @return $a - $b;
+}
+@debug happyplus(10);
 @each $a, $b in $navConfig {
     .#{$a} {
         background-color: map-get($b, "color");
@@ -47,7 +129,6 @@ html {
         height: 20px;
         background-color: $btnC;
     }
-
 
     @include MODIFIER(hover) {
         @include ELEMENT(button) {

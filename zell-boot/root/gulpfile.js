@@ -1,5 +1,9 @@
-var isDebug = true;
 var gulp = require('gulp');
+
+var sass = require('gulp-ruby-sass');
+var sourcemaps = require('gulp-sourcemaps');
+var livereload = require('gulp-livereload');
+
 var gulpif = require('gulp-if');
 var concat = require("gulp-concat");
 var cssmin = require('gulp-minify-css');
@@ -26,28 +30,27 @@ var os = require("os");
 gulp.task("clean", function(cb) {
     del("dest/", cb);
 });
+
+
 gulp.task("css", ["sprite"], function() {
     var g = btnsHtmlArray.map(function(v) {
         return "<a class='actcommonbtns icon-" + v + "' href='###'></a>" + os.EOL;
     }).join("");
     fs.writeFileSync("btns.html", g);
-    var stream = gulp.src("src/**/*.css");
-    if (!isDebug) {
-        stream.pipe(autoprefixer())
-            .pipe(cssmin({
+    return gulp.src("src/**/*.css")
+        .pipe(autoprefixer())
+        .pipe(cssmin({
                 compatibility: "ie6,ie7,ie8,+selectors.ie7Hack,+properties.iePrefixHack"
-            }))
-    }
-    return stream.pipe(gulp.dest("dest/"));
+           }))
+        .pipe(gulp.dest("dest/"));
 });
 gulp.task("js", ["clean"], function() {
-    var stream = gulp.src("src/**/*.js")
+    return gulp.src("src/**/*.js")
+        .pipe(jshint())
         .pipe(jshint())
         .pipe(jshint.reporter(stylish))
-    if (!isDebug) {
-        stream.pipe(uglify());
-    }
-    return stream.pipe(gulp.dest("dest/"));
+        .pipe(uglify())
+        .pipe(gulp.dest("dest/"));
 });
 gulp.task("html", ["clean", "js", "css"], function() {
     var assets1 = useref.assets({
@@ -71,15 +74,15 @@ gulp.task("html", ["clean", "js", "css"], function() {
             conditionals: true,
             quotes: false
         })).pipe(gulp.dest("dest/"))
-    )
+    );
 });
 var btnsHtmlArray = [];
 gulp.task("sprite", ["clean"], function() {
     var subSites = ld.compact(glob.sync("src/*").map(function(v) {
         if (fs.statSync(v).isDirectory()) {
-            return v
+            return v;
         } else {
-            return false
+            return false;
         }
     }));
     var jobs = [];
@@ -102,7 +105,7 @@ gulp.task("sprite", ["clean"], function() {
                 return arg;
             }
             var imgName = getRealName(a),
-                cssName = p.basename(a) + ".css";
+                cssName = p.basename(a) + ".scss";
             // console.log("what is a?",a,imgName);
             var d = gulp.src(a + "**/*.{jpg,png}").pipe(sp({
                 imgName: imgName,
@@ -113,7 +116,8 @@ gulp.task("sprite", ["clean"], function() {
                     var name = p.basename(p.resolve(sp.source_image, "..")).split("_").pop();
                     sp.name = name + "_" + sp.name;
                     btnsHtmlArray.push(sp.name);
-                }
+                },
+                cssTemplate:"sptemplate.hb"
             }));
 
             var _basePath = a.split("/");
@@ -136,7 +140,7 @@ gulp.task("sprite", ["clean"], function() {
         // console.log("whatisv->%s", v);
         var cssJob = streamqueue.apply(null, [{
             objectMode: true
-        }].concat(cssBundles[v])).pipe(concat("sprite.css")).pipe(cssmin({
+        }].concat(cssBundles[v])).pipe(concat("sprite.scss")).pipe(cssmin({
             compatibility: "ie6,ie7,ie8,+selectors.ie7Hack,+properties.iePrefixHack"
         }));
         if (cssBundles[v].extraData && cssBundles[v].extraData.basePath) {
@@ -149,22 +153,18 @@ gulp.task("sprite", ["clean"], function() {
     }
 });
 gulp.task("resource", ["clean"], function() {
-    var imgStream = gulp.src("src/**/img/bg/**/*");
-    if (!isDebug) {
-        imgStream.pipe(imagemin({
+    return merge(gulp.src(["src/**/*.{mp3,jpg,png,swf,gif,mp4,flv}", "!src/**/img/sprite/**/*", "!src/**/img/bg/**/*"]).pipe(gulp.dest("dest/")),
+        gulp.src("src/**/img/bg/**/*").pipe(imagemin({
             progressive: true,
             optimizationLevel: 0
-        }));
-    }
-    return merge(gulp.src(["src/**/*.{mp3,jpg,png,swf,gif,mp4,flv}", "!src/**/img/sprite/**/*", "!src/**/img/bg/**/*"]).pipe(gulp.dest("dest/")),
-        imgStream.pipe(gulp.dest("dest/")));
+        })).pipe(gulp.dest("dest/")));
 });
 
 gulp.task("build", ["clean", "css", "js", "html", "resource", "sprite"]);
 // gulp.task("build", ["clean", "js", "html", "resource"]);
 gulp.task("makerevfile", ["build"], function() {
     /*make rev configFile*/
-    return gulp.src("dest/**/*.{html,css,js,png,jpg,swf,mp4,mp3,flv}").pipe(rev()).pipe(rev.manifest()).pipe(gulp.dest("./"))
+    return gulp.src("dest/**/*.{css,js,png,jpg,swf,mp4,mp3,flv}").pipe(rev()).pipe(rev.manifest()).pipe(gulp.dest("./"));
         // return gulp.src("dest/**/*.html").pipe()
 });
 gulp.task("rev", ["makerevfile"], function() {
@@ -187,12 +187,12 @@ gulp.task("rev", ["makerevfile"], function() {
         .pipe(gulp.dest("dest/"));
 });
 gulp.task("deploy", ["rev"], function() {
-    var targetPath="c:/defaultZbootDeploypath/"
+    var targetPath="c:/defaultZbootDeploypath/";
     if(fs.existsSync("env.json")){
         try{
             targetPath=JSON.parse(fs.readFileSync("env.json").toString()).deployPath;
         }catch(e){
-            console.log("请检查env.json是否为合法的json格式")
+            throw new Error("请检查env.json是否为合法的json格式");
         }
     }
 
@@ -201,7 +201,7 @@ gulp.task("deploy", ["rev"], function() {
 
 
 gulp.task('watch', function() {
-    return gulp.watch(['./src/**/*.{jpg,png,js,coffee,less,css,gif,html}'], ['deploy']);
+    return gulp.watch(['./src/**/*.{jpg,png,js,coffee,less,css,gif,html,scss}'], ['deploy']);
 });
 
 gulp.task("default", ["watch", "deploy"]);

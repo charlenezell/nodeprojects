@@ -687,83 +687,131 @@
     { "keys": ["ctrl+o"], "command": "fuzzy_start_from_file" },
     { "keys": ["ctrl+shift+o"], "command": "fuzzy_bookmarks_load" },
     { "keys": ["ctrl+alt+o"], "command": "next_view" },
-    { "keys": ["ctrl+alt+i"], "command": "prev_view" }
+    { "keys": ["ctrl+alt+i"], "command": "prev_view" },
+    { "keys": ["ctrl+shift+s"], "command": "save_all" },
+    { "keys": ["ctrl+j","f"], "command": "fix" },
+    { "keys": ["ctrl+alt+enter"], "command": "max_pane" },
+    { "keys": ["ctrl+shift+super+space"], "command": "code_intel_auto_complete" },
 ]
 
 
 
-
-
-
-
-
-
 {
-     "github_mode": "gfm"
-}
-
-
-{
-    "extensions":
-    [
-        "md", "markdown", "mdown"
-    ],
-    "color_scheme": "Packages/MarkdownEditing/MarkdownEditor-Dark.tmTheme",
-    "line_numbers": true,
+    "auto_complete_selector": "source, comment, text.plain, meta.tag, punctuation.definition.tag.begin, css",
+    "caret_extra_bottom": 1,
+    "caret_extra_top": 1,
+    "caret_extra_width": 1,
+    "color_scheme": "Packages/User/SublimeLinter/Monokai Bright (SL).tmTheme",
+    "ensure_newline_at_eof_on_save": true,
+    "fallback_encoding": "UTF-8",
+    "font_face": "Consolas",
+    "font_size": 10,
     "highlight_line": true,
-    "mde.match_header_hashes": true,
-    "draw_centered": false,
-    "mde.keep_centered": true
+    "highlight_modified_tabs": true,
+    "ignored_packages":
+    [
+        "TypeScript",
+        "Markdown",
+        "Web Inspector",
+        "SCSS Snippets",
+        "ES6-Toolkit",
+        "Babel",
+        "Bootstrap 3 Snippets",
+        "Gutter Color",
+        "SublimeLinter-jscs",
+        "JSHint",
+        "Babel Snippets",
+        "ColorPicker"
+    ],
+    "indent_guide_options":
+    [
+        "draw_active"
+    ],
+    "index_exclude_patterns":
+    [
+        "E:\\projectA\\source\\web\\resource\\qq\\gwActivity\\20150814\\dest*",
+        "*.log"
+    ],
+    "rulers":
+    [
+        80,
+        100,
+        120
+    ],
+    "show_tab_close_buttons": false,
+    "theme": "Soda Dark.sublime-theme",
+    "translate_tabs_to_spaces": true,
+    "trim_trailing_white_space_on_save": true,
+    "word_highlights_color_scope_name": "wordhighlight",
+    "word_highlights_draw_outlined": false,
+    "word_highlights_when_selection_is_empty": true,
+    "word_separators": "./\\()\"':,.;<>~!#%^&*|+=[]{}`~?",
+    "wrap_width": 0
 }
 
 
-# Your keymap
-#
-# Atom keymaps work similarly to style sheets. Just as style sheets use
-# selectors to apply styles to elements, Atom keymaps use selectors to associate
-# keystrokes with events in specific contexts.
-#
-# You can create a new keybinding in this file by typing "key" and then hitting
-# tab.
-#
-# Here's an example taken from Atom's built-in keymap:
-#
-# 'atom-text-editor':
-#   'enter': 'editor:newline'
-#
-# 'atom-workspace':
-#   'ctrl-shift-p': 'core:move-up'
-#   'ctrl-p': 'core:move-down'
-#
-# You can find more information about keymaps in these guides:
-# * https://atom.io/docs/latest/using-atom-basic-customization#customizing-key-bindings
-# * https://atom.io/docs/latest/behind-atom-keymaps-in-depth
-#
-# This file uses CoffeeScript Object Notation (CSON).
-# If you are unfamiliar with CSON, you can read more about it here:
-# https://github.com/bevry/cson#what-is-cson
 
-'body':
-  'alt-l': 'core:move-right'
-  'alt-h': 'core:move-left'
-  'alt-j': 'core:move-down'
-  'alt-k': 'core:move-up'
-  'shift-alt-l': 'core:select-right'
-  'shift-alt-h': 'core:select-left'
-  'shift-alt-k': 'core:select-up'
-  'shift-alt-j': 'core:select-down'
-'atom-text-editor':
-  'alt-h': 'core:move-left'
-  'alt-ctrl-l': 'editor:move-to-next-subword-boundary'
-  'alt-ctrl-h': 'editor:move-to-previous-subword-boundary'
-  'alt-o': 'editor:move-to-end-of-screen-line'
-  'alt-i': 'editor:move-to-beginning-of-screen-line'
-  'alt-ctrl-h': 'editor:move-to-previous-subword-boundary'
-  'alt-ctrl-l': 'editor:move-to-next-subword-boundary'
-  'ctrl-alt-n': 'bracket-matcher:select-inside-brackets'
-  'shift-alt-o': 'editor:select-to-end-of-line'
-  'shift-alt-i': 'editor:select-to-beginning-of-line'
-  'shift-alt-ctrl-l': 'editor:select-to-next-subword-boundary'
-  'shift-alt-ctrl-h': 'editor:select-to-previous-subword-boundary'
-'atom-workspace, atom-workspace atom-text-editor':
-  'ctrl-m d': 'markdown-preview:toggle'
+{
+    "user": {
+        "debug": false,
+        "delay": 0.25,
+        "error_color": "D02000",
+        "gutter_theme": "",
+        "gutter_theme_excludes": [],
+        "lint_mode": "save only",
+        "linters": {
+            "csslint": {
+                "@disable": true,
+                "args": [],
+                "errors": "",
+                "excludes": [],
+                "ignore": "",
+                "warnings": ""
+            },
+            "jscs": {
+                "@disable": true,
+                "args": [],
+                "excludes": []
+            },
+            "jshint": {
+                "@disable": false,
+                "args": [],
+                "excludes": []
+            },
+            "scss": {
+                "@disable": false,
+                "args": [],
+                "exclude-linter": "HexLength: Color,ColorVariable,SelectorFormat,ColorKeyword,StringQuotes,EmptyLineBetweenBlocks,PropertySortOrder,Indentation,SpaceBeforeBrace,NameFormat,SpaceAfterPropertyColon,Comment,SpaceAfterComma",
+                "excludes": [],
+                "include-linter": ""
+            }
+        },
+        "mark_style": "outline",
+        "no_column_highlights_line": false,
+        "passive_warnings": false,
+        "paths": {
+            "linux": [],
+            "osx": [],
+            "windows": []
+        },
+        "python_paths": {
+            "linux": [],
+            "osx": [],
+            "windows": []
+        },
+        "rc_search_limit": 3,
+        "shell_timeout": 10,
+        "show_errors_on_save": false,
+        "show_marks_in_minimap": true,
+        "syntax_map": {
+            "html (django)": "html",
+            "html (rails)": "html",
+            "html 5": "html",
+            "javascript (babel)": "javascript",
+            "php": "html",
+            "python django": "python"
+        },
+        "warning_color": "DDB700",
+        "wrap_find": true
+    }
+}
