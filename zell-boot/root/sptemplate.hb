@@ -1,8 +1,16 @@
 {{#block "sprites"}}
 {{#each sprites}}
-{{{selector}}} {
+@mixin {{{strings.name}}}($x:null,$y:null) {
   background-image: url({{{escaped_image}}});
-  background-position: {{px.offset_x}} {{px.offset_y}};
+  $ix:{{px.offset_x}};
+  $iy:{{px.offset_y}};
+  @if $x != null {
+  $ix:$x;
+  }
+  @if $y !=null{
+    $iy:$y;
+  }
+  background-position: $ix $iy;
   width: {{px.width}};
   height: {{px.height}};
 }

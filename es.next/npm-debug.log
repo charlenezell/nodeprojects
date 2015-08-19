@@ -1,0 +1,1521 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'i' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 verbose readDependencies loading dependencies from D:\oldf\nodeprojects\es.next\package.json
+5 warn package.json es.next@0.0.1 No repository field.
+6 warn package.json es.next@0.0.1 No README data
+7 verbose install where, deps [ 'D:\\oldf\\nodeprojects\\es.next',
+7 verbose install   [ 'gulp',
+7 verbose install     'gulp-babel',
+7 verbose install     'gulp-changed',
+7 verbose install     'gulp-mocha',
+7 verbose install     'gulp-traceur' ] ]
+8 verbose install where, peers [ 'D:\\oldf\\nodeprojects\\es.next', [] ]
+9 verbose installManyTop reading for lifecycle D:\oldf\nodeprojects\es.next\package.json
+10 info preinstall es.next@0.0.1
+11 verbose readDependencies loading dependencies from D:\oldf\nodeprojects\es.next\package.json
+12 silly cache add args [ 'gulp@3.*', null ]
+13 verbose cache add spec gulp@3.*
+14 silly cache add args [ 'gulp-babel@*', null ]
+15 verbose cache add spec gulp-babel@*
+16 silly cache add parsed spec { raw: 'gulp@3.*',
+16 silly cache add   scope: null,
+16 silly cache add   name: 'gulp',
+16 silly cache add   rawSpec: '3.*',
+16 silly cache add   spec: '>=3.0.0 <4.0.0',
+16 silly cache add   type: 'range' }
+17 silly addNamed gulp@>=3.0.0 <4.0.0
+18 verbose addNamed ">=3.0.0 <4.0.0" is a valid semver range for gulp
+19 silly addNameRange { name: 'gulp', range: '>=3.0.0 <4.0.0', hasData: false }
+20 silly mapToRegistry name gulp
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/gulp
+24 verbose addNameRange registry:https://registry.npmjs.org/gulp not in flight; fetching
+25 silly cache add parsed spec { raw: 'gulp-babel@*',
+25 silly cache add   scope: null,
+25 silly cache add   name: 'gulp-babel',
+25 silly cache add   rawSpec: '*',
+25 silly cache add   spec: '*',
+25 silly cache add   type: 'range' }
+26 silly addNamed gulp-babel@*
+27 verbose addNamed "*" is a valid semver range for gulp-babel
+28 silly addNameRange { name: 'gulp-babel', range: '*', hasData: false }
+29 silly mapToRegistry name gulp-babel
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry https://registry.npmjs.org/
+32 silly mapToRegistry uri https://registry.npmjs.org/gulp-babel
+33 verbose addNameRange registry:https://registry.npmjs.org/gulp-babel not in flight; fetching
+34 silly cache add args [ 'gulp-changed@^1.2.1', null ]
+35 verbose cache add spec gulp-changed@^1.2.1
+36 silly cache add parsed spec { raw: 'gulp-changed@^1.2.1',
+36 silly cache add   scope: null,
+36 silly cache add   name: 'gulp-changed',
+36 silly cache add   rawSpec: '^1.2.1',
+36 silly cache add   spec: '>=1.2.1 <2.0.0',
+36 silly cache add   type: 'range' }
+37 silly addNamed gulp-changed@>=1.2.1 <2.0.0
+38 verbose addNamed ">=1.2.1 <2.0.0" is a valid semver range for gulp-changed
+39 silly addNameRange { name: 'gulp-changed', range: '>=1.2.1 <2.0.0', hasData: false }
+40 silly mapToRegistry name gulp-changed
+41 silly mapToRegistry using default registry
+42 silly mapToRegistry registry https://registry.npmjs.org/
+43 silly mapToRegistry uri https://registry.npmjs.org/gulp-changed
+44 verbose addNameRange registry:https://registry.npmjs.org/gulp-changed not in flight; fetching
+45 silly cache add args [ 'gulp-mocha@^2.1.3', null ]
+46 verbose cache add spec gulp-mocha@^2.1.3
+47 silly cache add parsed spec { raw: 'gulp-mocha@^2.1.3',
+47 silly cache add   scope: null,
+47 silly cache add   name: 'gulp-mocha',
+47 silly cache add   rawSpec: '^2.1.3',
+47 silly cache add   spec: '>=2.1.3 <3.0.0',
+47 silly cache add   type: 'range' }
+48 silly addNamed gulp-mocha@>=2.1.3 <3.0.0
+49 verbose addNamed ">=2.1.3 <3.0.0" is a valid semver range for gulp-mocha
+50 silly addNameRange { name: 'gulp-mocha', range: '>=2.1.3 <3.0.0', hasData: false }
+51 silly mapToRegistry name gulp-mocha
+52 silly mapToRegistry using default registry
+53 silly mapToRegistry registry https://registry.npmjs.org/
+54 silly mapToRegistry uri https://registry.npmjs.org/gulp-mocha
+55 verbose addNameRange registry:https://registry.npmjs.org/gulp-mocha not in flight; fetching
+56 silly cache add args [ 'gulp-traceur@*', null ]
+57 verbose cache add spec gulp-traceur@*
+58 silly cache add parsed spec { raw: 'gulp-traceur@*',
+58 silly cache add   scope: null,
+58 silly cache add   name: 'gulp-traceur',
+58 silly cache add   rawSpec: '*',
+58 silly cache add   spec: '*',
+58 silly cache add   type: 'range' }
+59 silly addNamed gulp-traceur@*
+60 verbose addNamed "*" is a valid semver range for gulp-traceur
+61 silly addNameRange { name: 'gulp-traceur', range: '*', hasData: false }
+62 silly mapToRegistry name gulp-traceur
+63 silly mapToRegistry using default registry
+64 silly mapToRegistry registry https://registry.npmjs.org/
+65 silly mapToRegistry uri https://registry.npmjs.org/gulp-traceur
+66 verbose addNameRange registry:https://registry.npmjs.org/gulp-traceur not in flight; fetching
+67 verbose request uri https://registry.npmjs.org/gulp-babel
+68 verbose request no auth needed
+69 info attempt registry request try #1 at 14:04:06
+70 verbose request using bearer token for auth
+71 verbose request id 377dab9a8ca50725
+72 http request GET https://registry.npmjs.org/gulp-babel
+73 verbose request uri https://registry.npmjs.org/gulp-mocha
+74 verbose request no auth needed
+75 info attempt registry request try #1 at 14:04:06
+76 verbose request using bearer token for auth
+77 http request GET https://registry.npmjs.org/gulp-mocha
+78 verbose request uri https://registry.npmjs.org/gulp-traceur
+79 verbose request no auth needed
+80 info attempt registry request try #1 at 14:04:06
+81 verbose request using bearer token for auth
+82 http request GET https://registry.npmjs.org/gulp-traceur
+83 verbose request uri https://registry.npmjs.org/gulp-changed
+84 verbose request no auth needed
+85 info attempt registry request try #1 at 14:04:06
+86 verbose request using bearer token for auth
+87 verbose etag "5S116317UZXELQV96T0GJD95D"
+88 http request GET https://registry.npmjs.org/gulp-changed
+89 verbose request uri https://registry.npmjs.org/gulp
+90 verbose request no auth needed
+91 info attempt registry request try #1 at 14:04:06
+92 verbose request using bearer token for auth
+93 verbose etag "7VSNC2DN718IDAZ8BPWPE4LQC"
+94 http request GET https://registry.npmjs.org/gulp
+95 http 200 https://registry.npmjs.org/gulp-babel
+96 silly get cb [ 200,
+96 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+96 silly get     etag: '"AUAET0DKNNDNOB4OB4A1T5PNX"',
+96 silly get     'content-type': 'application/json',
+96 silly get     'cache-control': 'max-age=60',
+96 silly get     'content-length': '10461',
+96 silly get     'accept-ranges': 'bytes',
+96 silly get     date: 'Wed, 19 Aug 2015 05:59:55 GMT',
+96 silly get     via: '1.1 varnish',
+96 silly get     connection: 'keep-alive',
+96 silly get     'x-served-by': 'cache-nrt6135-NRT',
+96 silly get     'x-cache': 'MISS',
+96 silly get     'x-cache-hits': '0',
+96 silly get     'x-timer': 'S1439963995.824486,VS0,VE135',
+96 silly get     vary: 'Accept' } ]
+97 verbose get saving gulp-babel to C:\Users\huangguangyao\AppData\Roaming\npm-cache\registry.npmjs.org\gulp-babel\.cache.json
+98 silly addNameRange number 2 { name: 'gulp-babel', range: '*', hasData: true }
+99 silly addNameRange versions [ 'gulp-babel',
+99 silly addNameRange   [ '4.0.0', '4.0.1', '5.0.0', '5.1.0', '5.2.0' ] ]
+100 silly addNamed gulp-babel@5.2.0
+101 verbose addNamed "5.2.0" is a plain semver version for gulp-babel
+102 silly cache afterAdd gulp-babel@5.2.0
+103 verbose afterAdd C:\Users\huangguangyao\AppData\Roaming\npm-cache\gulp-babel\5.2.0\package\package.json not in flight; writing
+104 verbose afterAdd C:\Users\huangguangyao\AppData\Roaming\npm-cache\gulp-babel\5.2.0\package\package.json written
+105 http 304 https://registry.npmjs.org/gulp
+106 silly get cb [ 304,
+106 silly get   { 'cache-control': 'max-age=60',
+106 silly get     'accept-ranges': 'bytes',
+106 silly get     date: 'Wed, 19 Aug 2015 06:00:16 GMT',
+106 silly get     via: '1.1 varnish',
+106 silly get     connection: 'keep-alive',
+106 silly get     'x-served-by': 'cache-nrt6122-NRT',
+106 silly get     'x-cache': 'MISS',
+106 silly get     'x-cache-hits': '0',
+106 silly get     'x-timer': 'S1439964015.962592,VS0,VE129' } ]
+107 verbose etag https://registry.npmjs.org/gulp from cache
+108 verbose get saving gulp to C:\Users\huangguangyao\AppData\Roaming\npm-cache\registry.npmjs.org\gulp\.cache.json
+109 silly addNameRange number 2 { name: 'gulp', range: '>=3.0.0 <4.0.0', hasData: true }
+110 silly addNameRange versions [ 'gulp',
+110 silly addNameRange   [ '0.0.1',
+110 silly addNameRange     '0.0.2',
+110 silly addNameRange     '0.0.3',
+110 silly addNameRange     '0.0.4',
+110 silly addNameRange     '0.0.5',
+110 silly addNameRange     '0.0.7',
+110 silly addNameRange     '0.0.8',
+110 silly addNameRange     '0.0.9',
+110 silly addNameRange     '0.1.0',
+110 silly addNameRange     '0.2.0',
+110 silly addNameRange     '1.0.0',
+110 silly addNameRange     '1.1.0',
+110 silly addNameRange     '1.2.0',
+110 silly addNameRange     '1.2.1',
+110 silly addNameRange     '2.0.0',
+110 silly addNameRange     '2.0.1',
+110 silly addNameRange     '2.1.0',
+110 silly addNameRange     '2.2.0',
+110 silly addNameRange     '2.3.0',
+110 silly addNameRange     '2.4.0',
+110 silly addNameRange     '2.4.1',
+110 silly addNameRange     '2.6.0',
+110 silly addNameRange     '2.6.1',
+110 silly addNameRange     '2.7.0',
+110 silly addNameRange     '3.0.0',
+110 silly addNameRange     '3.1.1',
+110 silly addNameRange     '3.1.2',
+110 silly addNameRange     '3.1.3',
+110 silly addNameRange     '3.1.4',
+110 silly addNameRange     '3.2.0',
+110 silly addNameRange     '3.2.1',
+110 silly addNameRange     '3.2.2',
+110 silly addNameRange     '3.2.3',
+110 silly addNameRange     '3.2.4',
+110 silly addNameRange     '3.2.5',
+110 silly addNameRange     '3.3.0',
+110 silly addNameRange     '3.3.1',
+110 silly addNameRange     '3.3.2',
+110 silly addNameRange     '3.3.4',
+110 silly addNameRange     '3.4.0',
+110 silly addNameRange     '3.5.0',
+110 silly addNameRange     '3.5.1',
+110 silly addNameRange     '3.5.2',
+110 silly addNameRange     '3.5.5',
+110 silly addNameRange     '3.5.6',
+110 silly addNameRange     '3.6.0',
+110 silly addNameRange     '3.6.1',
+110 silly addNameRange     '3.6.2',
+110 silly addNameRange     '3.7.0',
+110 silly addNameRange     '3.8.0',
+110 silly addNameRange     '3.8.1',
+110 silly addNameRange     '3.8.2',
+110 silly addNameRange     '3.8.3',
+110 silly addNameRange     '3.8.4',
+110 silly addNameRange     '3.8.5',
+110 silly addNameRange     '3.8.6',
+110 silly addNameRange     '3.8.7',
+110 silly addNameRange     '3.8.8',
+110 silly addNameRange     '3.8.9',
+110 silly addNameRange     '3.8.10',
+110 silly addNameRange     '3.8.11',
+110 silly addNameRange     '3.9.0' ] ]
+111 silly addNamed gulp@3.9.0
+112 verbose addNamed "3.9.0" is a plain semver version for gulp
+113 silly cache afterAdd gulp@3.9.0
+114 verbose afterAdd C:\Users\huangguangyao\AppData\Roaming\npm-cache\gulp\3.9.0\package\package.json not in flight; writing
+115 verbose afterAdd C:\Users\huangguangyao\AppData\Roaming\npm-cache\gulp\3.9.0\package\package.json written
+116 http 200 https://registry.npmjs.org/gulp-changed
+117 silly get cb [ 200,
+117 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+117 silly get     etag: '"D9YO15ZHWDNGBACMR1PTDA8ZO"',
+117 silly get     'content-type': 'application/json',
+117 silly get     'cache-control': 'max-age=60',
+117 silly get     'content-length': '21655',
+117 silly get     'accept-ranges': 'bytes',
+117 silly get     date: 'Wed, 19 Aug 2015 06:00:16 GMT',
+117 silly get     via: '1.1 varnish',
+117 silly get     connection: 'keep-alive',
+117 silly get     'x-served-by': 'cache-nrt6123-NRT',
+117 silly get     'x-cache': 'MISS',
+117 silly get     'x-cache-hits': '0',
+117 silly get     'x-timer': 'S1439964015.963593,VS0,VE257',
+117 silly get     vary: 'Accept' } ]
+118 verbose get saving gulp-changed to C:\Users\huangguangyao\AppData\Roaming\npm-cache\registry.npmjs.org\gulp-changed\.cache.json
+119 silly addNameRange number 2 { name: 'gulp-changed', range: '>=1.2.1 <2.0.0', hasData: true }
+120 silly addNameRange versions [ 'gulp-changed',
+120 silly addNameRange   [ '0.1.0',
+120 silly addNameRange     '0.2.0',
+120 silly addNameRange     '0.2.1',
+120 silly addNameRange     '0.3.0',
+120 silly addNameRange     '0.4.0',
+120 silly addNameRange     '0.4.1',
+120 silly addNameRange     '1.0.0',
+120 silly addNameRange     '1.1.0',
+120 silly addNameRange     '1.1.1',
+120 silly addNameRange     '1.2.0',
+120 silly addNameRange     '1.2.1',
+120 silly addNameRange     '1.3.0' ] ]
+121 silly addNamed gulp-changed@1.3.0
+122 verbose addNamed "1.3.0" is a plain semver version for gulp-changed
+123 silly cache afterAdd gulp-changed@1.3.0
+124 verbose afterAdd C:\Users\huangguangyao\AppData\Roaming\npm-cache\gulp-changed\1.3.0\package\package.json not in flight; writing
+125 verbose afterAdd C:\Users\huangguangyao\AppData\Roaming\npm-cache\gulp-changed\1.3.0\package\package.json written
+126 http 200 https://registry.npmjs.org/gulp-mocha
+127 silly get cb [ 200,
+127 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+127 silly get     etag: '"ALRR7WPZ602I6NR7MBXLD9UQI"',
+127 silly get     'content-type': 'application/json',
+127 silly get     'cache-control': 'max-age=60',
+127 silly get     'content-length': '27419',
+127 silly get     'accept-ranges': 'bytes',
+127 silly get     date: 'Wed, 19 Aug 2015 06:00:16 GMT',
+127 silly get     via: '1.1 varnish',
+127 silly get     connection: 'keep-alive',
+127 silly get     'x-served-by': 'cache-nrt6122-NRT',
+127 silly get     'x-cache': 'MISS',
+127 silly get     'x-cache-hits': '0',
+127 silly get     'x-timer': 'S1439964015.959196,VS0,VE232',
+127 silly get     vary: 'Accept' } ]
+128 verbose get saving gulp-mocha to C:\Users\huangguangyao\AppData\Roaming\npm-cache\registry.npmjs.org\gulp-mocha\.cache.json
+129 silly addNameRange number 2 { name: 'gulp-mocha', range: '>=2.1.3 <3.0.0', hasData: true }
+130 silly addNameRange versions [ 'gulp-mocha',
+130 silly addNameRange   [ '0.1.0',
+130 silly addNameRange     '0.1.1',
+130 silly addNameRange     '0.1.2',
+130 silly addNameRange     '0.1.3',
+130 silly addNameRange     '0.2.0',
+130 silly addNameRange     '0.3.0',
+130 silly addNameRange     '0.4.0',
+130 silly addNameRange     '0.4.1',
+130 silly addNameRange     '0.5.0',
+130 silly addNameRange     '0.5.1',
+130 silly addNameRange     '0.5.2',
+130 silly addNameRange     '1.0.0',
+130 silly addNameRange     '1.1.0',
+130 silly addNameRange     '1.1.1',
+130 silly addNameRange     '1.1.2',
+130 silly addNameRange     '2.0.0',
+130 silly addNameRange     '2.0.1',
+130 silly addNameRange     '2.1.0',
+130 silly addNameRange     '2.1.1',
+130 silly addNameRange     '2.1.2',
+130 silly addNameRange     '2.1.3' ] ]
+131 silly addNamed gulp-mocha@2.1.3
+132 verbose addNamed "2.1.3" is a plain semver version for gulp-mocha
+133 silly mapToRegistry name gulp-mocha
+134 silly mapToRegistry using default registry
+135 silly mapToRegistry registry https://registry.npmjs.org/
+136 silly mapToRegistry uri https://registry.npmjs.org/gulp-mocha
+137 verbose addRemoteTarball https://registry.npmjs.org/gulp-mocha/-/gulp-mocha-2.1.3.tgz not in flight; adding
+138 verbose addRemoteTarball [ 'https://registry.npmjs.org/gulp-mocha/-/gulp-mocha-2.1.3.tgz',
+138 verbose addRemoteTarball   'e906f2515ead1b273277003f60d584aceb94f362' ]
+139 info retry fetch attempt 1 at 14:04:42
+140 info attempt registry request try #1 at 14:04:42
+141 http fetch GET https://registry.npmjs.org/gulp-mocha/-/gulp-mocha-2.1.3.tgz
+142 verbose request using bearer token for auth
+143 http 200 https://registry.npmjs.org/gulp-traceur
+144 silly get cb [ 200,
+144 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+144 silly get     etag: '"3SKCJSV9Q4FT1HOX80K6NJAFB"',
+144 silly get     'content-type': 'application/json',
+144 silly get     'cache-control': 'max-age=60',
+144 silly get     'content-length': '32150',
+144 silly get     'accept-ranges': 'bytes',
+144 silly get     date: 'Wed, 19 Aug 2015 06:00:18 GMT',
+144 silly get     via: '1.1 varnish',
+144 silly get     connection: 'keep-alive',
+144 silly get     'x-served-by': 'cache-nrt6135-NRT',
+144 silly get     'x-cache': 'MISS',
+144 silly get     'x-cache-hits': '0',
+144 silly get     'x-timer': 'S1439964018.383382,VS0,VE591',
+144 silly get     vary: 'Accept' } ]
+145 verbose get saving gulp-traceur to C:\Users\huangguangyao\AppData\Roaming\npm-cache\registry.npmjs.org\gulp-traceur\.cache.json
+146 silly addNameRange number 2 { name: 'gulp-traceur', range: '*', hasData: true }
+147 silly addNameRange versions [ 'gulp-traceur',
+147 silly addNameRange   [ '0.1.0',
+147 silly addNameRange     '0.1.1',
+147 silly addNameRange     '0.1.2',
+147 silly addNameRange     '0.1.3',
+147 silly addNameRange     '0.2.0',
+147 silly addNameRange     '0.3.0',
+147 silly addNameRange     '0.4.0',
+147 silly addNameRange     '0.5.0',
+147 silly addNameRange     '0.6.0',
+147 silly addNameRange     '0.7.0',
+147 silly addNameRange     '0.8.0',
+147 silly addNameRange     '0.9.0',
+147 silly addNameRange     '0.10.0',
+147 silly addNameRange     '0.11.0',
+147 silly addNameRange     '0.12.0',
+147 silly addNameRange     '0.13.0',
+147 silly addNameRange     '0.14.0',
+147 silly addNameRange     '0.14.1',
+147 silly addNameRange     '0.15.0',
+147 silly addNameRange     '0.16.0',
+147 silly addNameRange     '0.17.0',
+147 silly addNameRange     '0.17.1' ] ]
+148 silly addNamed gulp-traceur@0.17.1
+149 verbose addNamed "0.17.1" is a plain semver version for gulp-traceur
+150 silly cache afterAdd gulp-traceur@0.17.1
+151 verbose afterAdd C:\Users\huangguangyao\AppData\Roaming\npm-cache\gulp-traceur\0.17.1\package\package.json not in flight; writing
+152 verbose afterAdd C:\Users\huangguangyao\AppData\Roaming\npm-cache\gulp-traceur\0.17.1\package\package.json written
+153 http fetch 200 https://registry.npmjs.org/gulp-mocha/-/gulp-mocha-2.1.3.tgz
+154 silly fetchAndShaCheck shasum e906f2515ead1b273277003f60d584aceb94f362
+155 verbose addTmpTarball C:\Users\HUANGG~1\AppData\Local\Temp\npm-2252-a655c72c\registry.npmjs.org\gulp-mocha\-\gulp-mocha-2.1.3.tgz not in flight; adding
+156 verbose addTmpTarball already have metadata; skipping unpack for gulp-mocha@2.1.3
+157 silly cache afterAdd gulp-mocha@2.1.3
+158 verbose afterAdd C:\Users\huangguangyao\AppData\Roaming\npm-cache\gulp-mocha\2.1.3\package\package.json not in flight; writing
+159 verbose afterAdd C:\Users\huangguangyao\AppData\Roaming\npm-cache\gulp-mocha\2.1.3\package\package.json written
+160 silly install resolved [ { name: 'gulp-babel',
+160 silly install resolved     version: '5.2.0',
+160 silly install resolved     description: 'Turn ES6 code into vanilla ES5 with no runtime required',
+160 silly install resolved     license: 'MIT',
+160 silly install resolved     repository:
+160 silly install resolved      { type: 'git',
+160 silly install resolved        url: 'git+https://github.com/babel/gulp-babel.git' },
+160 silly install resolved     author:
+160 silly install resolved      { name: 'Sindre Sorhus',
+160 silly install resolved        email: 'sindresorhus@gmail.com',
+160 silly install resolved        url: 'sindresorhus.com' },
+160 silly install resolved     engines: { node: '>=0.10.0' },
+160 silly install resolved     scripts: { test: 'mocha' },
+160 silly install resolved     files: [ 'index.js' ],
+160 silly install resolved     keywords:
+160 silly install resolved      [ 'gulpplugin',
+160 silly install resolved        'rewriting',
+160 silly install resolved        'transformation',
+160 silly install resolved        'syntax',
+160 silly install resolved        'codegen',
+160 silly install resolved        'desugaring',
+160 silly install resolved        'javascript',
+160 silly install resolved        'ecmascript',
+160 silly install resolved        'language',
+160 silly install resolved        'es5',
+160 silly install resolved        'es6',
+160 silly install resolved        'ES.next',
+160 silly install resolved        'harmony',
+160 silly install resolved        'compiler',
+160 silly install resolved        'transpiler',
+160 silly install resolved        '6to5' ],
+160 silly install resolved     dependencies:
+160 silly install resolved      { 'babel-core': '^5.8.19',
+160 silly install resolved        'gulp-util': '^3.0.0',
+160 silly install resolved        'object-assign': '^3.0.0',
+160 silly install resolved        'replace-ext': '0.0.1',
+160 silly install resolved        through2: '^2.0.0',
+160 silly install resolved        'vinyl-sourcemaps-apply': '^0.1.1' },
+160 silly install resolved     devDependencies: { 'gulp-sourcemaps': '^1.1.1', mocha: '*' },
+160 silly install resolved     gitHead: 'f08dd948032598921cd6db47ec6b9934c019194b',
+160 silly install resolved     bugs: { url: 'https://github.com/babel/gulp-babel/issues' },
+160 silly install resolved     homepage: 'https://github.com/babel/gulp-babel',
+160 silly install resolved     _id: 'gulp-babel@5.2.0',
+160 silly install resolved     _shasum: '88dbd970d9280e01d235e125001212d976520267',
+160 silly install resolved     _from: 'gulp-babel@*',
+160 silly install resolved     _npmVersion: '2.11.2',
+160 silly install resolved     _nodeVersion: '0.12.5',
+160 silly install resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+160 silly install resolved     dist:
+160 silly install resolved      { shasum: '88dbd970d9280e01d235e125001212d976520267',
+160 silly install resolved        size: 2408,
+160 silly install resolved        noattachment: false,
+160 silly install resolved        tarball: 'http://registry.npm.taobao.org/gulp-babel/download/gulp-babel-5.2.0.tgz' },
+160 silly install resolved     maintainers: [ [Object], [Object] ],
+160 silly install resolved     directories: {},
+160 silly install resolved     publish_time: 1438270618172,
+160 silly install resolved     _cnpm_publish_time: 1438270618172,
+160 silly install resolved     _resolved: 'http://registry.npm.taobao.org/gulp-babel/download/gulp-babel-5.2.0.tgz',
+160 silly install resolved     readme: 'ERROR: No README data found!' },
+160 silly install resolved   { name: 'gulp',
+160 silly install resolved     description: 'The streaming build system',
+160 silly install resolved     version: '3.9.0',
+160 silly install resolved     homepage: 'http://gulpjs.com',
+160 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/gulpjs/gulp.git' },
+160 silly install resolved     author:
+160 silly install resolved      { name: 'Fractal',
+160 silly install resolved        email: 'contact@wearefractal.com',
+160 silly install resolved        url: 'http://wearefractal.com/' },
+160 silly install resolved     tags: [ 'build', 'stream', 'system', 'make', 'tool', 'asset', 'pipeline' ],
+160 silly install resolved     files: [ 'index.js', 'lib', 'bin', 'completion' ],
+160 silly install resolved     bin: { gulp: './bin/gulp.js' },
+160 silly install resolved     man: [ 'gulp.1' ],
+160 silly install resolved     dependencies:
+160 silly install resolved      { archy: '^1.0.0',
+160 silly install resolved        chalk: '^1.0.0',
+160 silly install resolved        deprecated: '^0.0.1',
+160 silly install resolved        'gulp-util': '^3.0.0',
+160 silly install resolved        interpret: '^0.6.2',
+160 silly install resolved        liftoff: '^2.1.0',
+160 silly install resolved        minimist: '^1.1.0',
+160 silly install resolved        orchestrator: '^0.3.0',
+160 silly install resolved        'pretty-hrtime': '^1.0.0',
+160 silly install resolved        semver: '^4.1.0',
+160 silly install resolved        tildify: '^1.0.0',
+160 silly install resolved        v8flags: '^2.0.2',
+160 silly install resolved        'vinyl-fs': '^0.3.0' },
+160 silly install resolved     devDependencies:
+160 silly install resolved      { coveralls: '^2.7.0',
+160 silly install resolved        'graceful-fs': '^3.0.0',
+160 silly install resolved        istanbul: '^0.3.0',
+160 silly install resolved        jscs: '~1.12.0',
+160 silly install resolved        jshint: '^2.5.0',
+160 silly install resolved        'jshint-stylish': '^1.0.0',
+160 silly install resolved        'marked-man': '^0.1.3',
+160 silly install resolved        mkdirp: '^0.5.0',
+160 silly install resolved        mocha: '^2.0.1',
+160 silly install resolved        'mocha-lcov-reporter': '^0.0.1',
+160 silly install resolved        q: '^1.0.0',
+160 silly install resolved        rimraf: '^2.2.5',
+160 silly install resolved        should: '^5.0.1' },
+160 silly install resolved     scripts:
+160 silly install resolved      { prepublish: 'marked-man --name gulp docs/CLI.md > gulp.1',
+160 silly install resolved        lint: 'jshint lib bin test index.js --reporter node_modules/jshint-stylish/stylish.js --exclude node_modules && jscs lib bin test index.js',
+160 silly install resolved        test: 'npm run-script lint && mocha --reporter spec',
+160 silly install resolved        coveralls: 'istanbul cover _mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage' },
+160 silly install resolved     engines: { node: '>= 0.9' },
+160 silly install resolved     license: 'MIT',
+160 silly install resolved     gitHead: '657213a52d5e9c19b85df6a42f76341a98c08ae8',
+160 silly install resolved     bugs: { url: 'https://github.com/gulpjs/gulp/issues' },
+160 silly install resolved     _id: 'gulp@3.9.0',
+160 silly install resolved     _shasum: 'cf1fba4cb558bb8c6ae6c9613f583ae2620d214a',
+160 silly install resolved     _from: 'gulp@>=3.0.0 <4.0.0',
+160 silly install resolved     _npmVersion: '2.8.3',
+160 silly install resolved     _nodeVersion: '0.10.36',
+160 silly install resolved     _npmUser: { name: 'phated', email: 'blaine@iceddev.com' },
+160 silly install resolved     maintainers: [ [Object], [Object] ],
+160 silly install resolved     dist:
+160 silly install resolved      { shasum: 'cf1fba4cb558bb8c6ae6c9613f583ae2620d214a',
+160 silly install resolved        size: 9480,
+160 silly install resolved        noattachment: false,
+160 silly install resolved        tarball: 'http://registry.npm.taobao.org/gulp/download/gulp-3.9.0.tgz' },
+160 silly install resolved     directories: {},
+160 silly install resolved     publish_time: 1433195447221,
+160 silly install resolved     _cnpm_publish_time: 1433195447221,
+160 silly install resolved     _resolved: 'https://registry.npm.taobao.org/gulp/download/gulp-3.9.0.tgz',
+160 silly install resolved     readme: 'ERROR: No README data found!' },
+160 silly install resolved   { name: 'gulp-changed',
+160 silly install resolved     version: '1.3.0',
+160 silly install resolved     description: 'Only pass through changed files',
+160 silly install resolved     license: 'MIT',
+160 silly install resolved     repository:
+160 silly install resolved      { type: 'git',
+160 silly install resolved        url: 'git+https://github.com/sindresorhus/gulp-changed.git' },
+160 silly install resolved     author:
+160 silly install resolved      { name: 'Sindre Sorhus',
+160 silly install resolved        email: 'sindresorhus@gmail.com',
+160 silly install resolved        url: 'http://sindresorhus.com' },
+160 silly install resolved     contributors: [ [Object], [Object], [Object] ],
+160 silly install resolved     engines: { node: '>=0.10.0' },
+160 silly install resolved     scripts: { test: 'mocha' },
+160 silly install resolved     files: [ 'index.js' ],
+160 silly install resolved     keywords:
+160 silly install resolved      [ 'gulpplugin',
+160 silly install resolved        'file',
+160 silly install resolved        'files',
+160 silly install resolved        'changed',
+160 silly install resolved        'newer',
+160 silly install resolved        'modified',
+160 silly install resolved        'modification',
+160 silly install resolved        'updated',
+160 silly install resolved        'time',
+160 silly install resolved        'mtime',
+160 silly install resolved        'stat',
+160 silly install resolved        'cache',
+160 silly install resolved        'cached',
+160 silly install resolved        'passthrough' ],
+160 silly install resolved     dependencies: { 'gulp-util': '^3.0.0', through2: '^2.0.0' },
+160 silly install resolved     devDependencies:
+160 silly install resolved      { 'concat-stream': '^1.4.6',
+160 silly install resolved        gulp: '^3.0.0',
+160 silly install resolved        mocha: '*',
+160 silly install resolved        rimraf: '^2.2.6' },
+160 silly install resolved     gitHead: 'e3da44f268d2580493aa9ef38f086eb69ba7b54a',
+160 silly install resolved     bugs: { url: 'https://github.com/sindresorhus/gulp-changed/issues' },
+160 silly install resolved     homepage: 'https://github.com/sindresorhus/gulp-changed',
+160 silly install resolved     _id: 'gulp-changed@1.3.0',
+160 silly install resolved     _shasum: '0ef1fd5edf599cd7dccd03b90585b57ffab82110',
+160 silly install resolved     _from: 'gulp-changed@>=1.2.1 <2.0.0',
+160 silly install resolved     _npmVersion: '2.11.2',
+160 silly install resolved     _nodeVersion: '0.12.5',
+160 silly install resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+160 silly install resolved     dist:
+160 silly install resolved      { shasum: '0ef1fd5edf599cd7dccd03b90585b57ffab82110',
+160 silly install resolved        size: 3085,
+160 silly install resolved        noattachment: false,
+160 silly install resolved        tarball: 'http://registry.npm.taobao.org/gulp-changed/download/gulp-changed-1.3.0.tgz' },
+160 silly install resolved     maintainers: [ [Object] ],
+160 silly install resolved     directories: {},
+160 silly install resolved     publish_time: 1438608604268,
+160 silly install resolved     _cnpm_publish_time: 1438608604268,
+160 silly install resolved     _resolved: 'http://registry.npm.taobao.org/gulp-changed/download/gulp-changed-1.3.0.tgz',
+160 silly install resolved     readme: 'ERROR: No README data found!' },
+160 silly install resolved   { name: 'gulp-traceur',
+160 silly install resolved     version: '0.17.1',
+160 silly install resolved     description: 'Traceur is a JavaScript.next to JavaScript-of-today compiler',
+160 silly install resolved     license: 'MIT',
+160 silly install resolved     repository:
+160 silly install resolved      { type: 'git',
+160 silly install resolved        url: 'git+https://github.com/sindresorhus/gulp-traceur.git' },
+160 silly install resolved     author:
+160 silly install resolved      { name: 'Sindre Sorhus',
+160 silly install resolved        email: 'sindresorhus@gmail.com',
+160 silly install resolved        url: 'sindresorhus.com' },
+160 silly install resolved     engines: { node: '>=0.10.0' },
+160 silly install resolved     scripts: { test: 'mocha' },
+160 silly install resolved     files: [ 'index.js' ],
+160 silly install resolved     keywords:
+160 silly install resolved      [ 'gulpplugin',
+160 silly install resolved        'traceur',
+160 silly install resolved        'rewriting',
+160 silly install resolved        'transformation',
+160 silly install resolved        'syntax',
+160 silly install resolved        'codegen',
+160 silly install resolved        'desugaring',
+160 silly install resolved        'javascript',
+160 silly install resolved        'ecmascript',
+160 silly install resolved        'language',
+160 silly install resolved        'es5',
+160 silly install resolved        'es6',
+160 silly install resolved        'ES.next',
+160 silly install resolved        'harmony',
+160 silly install resolved        'compiler',
+160 silly install resolved        'transpiler' ],
+160 silly install resolved     dependencies:
+160 silly install resolved      { 'gulp-util': '^3.0.0',
+160 silly install resolved        'object-assign': '^2.0.0',
+160 silly install resolved        through2: '^0.6.1',
+160 silly install resolved        traceur: '~0.0.88',
+160 silly install resolved        'vinyl-sourcemaps-apply': '^0.1.1' },
+160 silly install resolved     devDependencies: { 'gulp-sourcemaps': '^1.2.8', mocha: '*' },
+160 silly install resolved     gitHead: '20343aa9f9b6025a2f39ca1ad4c1677d6a032654',
+160 silly install resolved     bugs: { url: 'https://github.com/sindresorhus/gulp-traceur/issues' },
+160 silly install resolved     homepage: 'https://github.com/sindresorhus/gulp-traceur',
+160 silly install resolved     _id: 'gulp-traceur@0.17.1',
+160 silly install resolved     _shasum: '3b774a4cb23712850eb1c854aabb0cb43b3b231e',
+160 silly install resolved     _from: 'gulp-traceur@*',
+160 silly install resolved     _npmVersion: '2.7.4',
+160 silly install resolved     _nodeVersion: '0.12.2',
+160 silly install resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+160 silly install resolved     maintainers: [ [Object] ],
+160 silly install resolved     dist:
+160 silly install resolved      { shasum: '3b774a4cb23712850eb1c854aabb0cb43b3b231e',
+160 silly install resolved        size: 2408,
+160 silly install resolved        noattachment: false,
+160 silly install resolved        tarball: 'http://registry.cnpmjs.org/gulp-traceur/download/gulp-traceur-0.17.1.tgz' },
+160 silly install resolved     directories: {},
+160 silly install resolved     publish_time: 1429117568416,
+160 silly install resolved     _cnpm_publish_time: 1429117568416,
+160 silly install resolved     _resolved: 'http://registry.cnpmjs.org/gulp-traceur/download/gulp-traceur-0.17.1.tgz',
+160 silly install resolved     readme: 'ERROR: No README data found!' },
+160 silly install resolved   { name: 'gulp-mocha',
+160 silly install resolved     version: '2.1.3',
+160 silly install resolved     description: 'Run Mocha tests',
+160 silly install resolved     license: 'MIT',
+160 silly install resolved     repository:
+160 silly install resolved      { type: 'git',
+160 silly install resolved        url: 'git+https://github.com/sindresorhus/gulp-mocha.git' },
+160 silly install resolved     author:
+160 silly install resolved      { name: 'Sindre Sorhus',
+160 silly install resolved        email: 'sindresorhus@gmail.com',
+160 silly install resolved        url: 'sindresorhus.com' },
+160 silly install resolved     engines: { node: '>=0.10.0' },
+160 silly install resolved     scripts: { test: 'mocha' },
+160 silly install resolved     files: [ 'index.js' ],
+160 silly install resolved     keywords:
+160 silly install resolved      [ 'gulpplugin',
+160 silly install resolved        'mocha',
+160 silly install resolved        'test',
+160 silly install resolved        'testing',
+160 silly install resolved        'unit',
+160 silly install resolved        'framework',
+160 silly install resolved        'runner',
+160 silly install resolved        'tdd',
+160 silly install resolved        'bdd',
+160 silly install resolved        'qunit',
+160 silly install resolved        'spec',
+160 silly install resolved        'tap' ],
+160 silly install resolved     dependencies:
+160 silly install resolved      { 'gulp-util': '^3.0.0',
+160 silly install resolved        mocha: '^2.0.1',
+160 silly install resolved        plur: '^1.0.0',
+160 silly install resolved        'resolve-from': '^1.0.0',
+160 silly install resolved        temp: '^0.8.3',
+160 silly install resolved        through: '^2.3.4' },
+160 silly install resolved     gitHead: '3ca5413ff235f7cf433541a141035cc64ea6e5db',
+160 silly install resolved     bugs: { url: 'https://github.com/sindresorhus/gulp-mocha/issues' },
+160 silly install resolved     homepage: 'https://github.com/sindresorhus/gulp-mocha#readme',
+160 silly install resolved     _id: 'gulp-mocha@2.1.3',
+160 silly install resolved     _shasum: 'e906f2515ead1b273277003f60d584aceb94f362',
+160 silly install resolved     _from: 'gulp-mocha@>=2.1.3 <3.0.0',
+160 silly install resolved     _npmVersion: '2.11.2',
+160 silly install resolved     _nodeVersion: '0.12.5',
+160 silly install resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+160 silly install resolved     dist:
+160 silly install resolved      { shasum: 'e906f2515ead1b273277003f60d584aceb94f362',
+160 silly install resolved        tarball: 'http://registry.npmjs.org/gulp-mocha/-/gulp-mocha-2.1.3.tgz' },
+160 silly install resolved     maintainers: [ [Object], [Object] ],
+160 silly install resolved     directories: {},
+160 silly install resolved     _resolved: 'https://registry.npmjs.org/gulp-mocha/-/gulp-mocha-2.1.3.tgz' } ]
+161 info install gulp-babel@5.2.0 into D:\oldf\nodeprojects\es.next
+162 info install gulp@3.9.0 into D:\oldf\nodeprojects\es.next
+163 info install gulp-changed@1.3.0 into D:\oldf\nodeprojects\es.next
+164 info install gulp-traceur@0.17.1 into D:\oldf\nodeprojects\es.next
+165 info install gulp-mocha@2.1.3 into D:\oldf\nodeprojects\es.next
+166 info installOne gulp-babel@5.2.0
+167 verbose installOne of gulp-babel to D:\oldf\nodeprojects\es.next not in flight; installing
+168 info installOne gulp@3.9.0
+169 verbose installOne of gulp to D:\oldf\nodeprojects\es.next not in flight; installing
+170 info installOne gulp-changed@1.3.0
+171 verbose installOne of gulp-changed to D:\oldf\nodeprojects\es.next not in flight; installing
+172 info installOne gulp-traceur@0.17.1
+173 verbose installOne of gulp-traceur to D:\oldf\nodeprojects\es.next not in flight; installing
+174 info installOne gulp-mocha@2.1.3
+175 verbose installOne of gulp-mocha to D:\oldf\nodeprojects\es.next not in flight; installing
+176 verbose lock using C:\Users\huangguangyao\AppData\Roaming\npm-cache\_locks\gulp-babel-bf9840cb2385157f.lock for D:\oldf\nodeprojects\es.next\node_modules\gulp-babel
+177 verbose lock using C:\Users\huangguangyao\AppData\Roaming\npm-cache\_locks\gulp-715a331719f51b01.lock for D:\oldf\nodeprojects\es.next\node_modules\gulp
+178 silly install write writing gulp-babel 5.2.0 to D:\oldf\nodeprojects\es.next\node_modules\gulp-babel
+179 silly install write writing gulp 3.9.0 to D:\oldf\nodeprojects\es.next\node_modules\gulp
+180 verbose lock using C:\Users\huangguangyao\AppData\Roaming\npm-cache\_locks\gulp-changed-498f31053ca03743.lock for D:\oldf\nodeprojects\es.next\node_modules\gulp-changed
+181 verbose lock using C:\Users\huangguangyao\AppData\Roaming\npm-cache\_locks\gulp-traceur-48a554deee07034a.lock for D:\oldf\nodeprojects\es.next\node_modules\gulp-traceur
+182 verbose lock using C:\Users\huangguangyao\AppData\Roaming\npm-cache\_locks\gulp-mocha-3159e7ed11e41f34.lock for D:\oldf\nodeprojects\es.next\node_modules\gulp-mocha
+183 silly install write writing gulp-changed 1.3.0 to D:\oldf\nodeprojects\es.next\node_modules\gulp-changed
+184 silly install write writing gulp-traceur 0.17.1 to D:\oldf\nodeprojects\es.next\node_modules\gulp-traceur
+185 silly install write writing gulp-mocha 2.1.3 to D:\oldf\nodeprojects\es.next\node_modules\gulp-mocha
+186 verbose unbuild node_modules\gulp-babel
+187 verbose unbuild node_modules\gulp
+188 verbose unbuild node_modules\gulp-changed
+189 verbose unbuild node_modules\gulp-traceur
+190 verbose unbuild node_modules\gulp-mocha
+191 silly gentlyRm D:\oldf\nodeprojects\es.next\node_modules\gulp-babel is being purged from base D:\oldf\nodeprojects\es.next
+192 verbose gentlyRm don't care about contents; nuking D:\oldf\nodeprojects\es.next\node_modules\gulp-babel
+193 verbose tar unpack C:\Users\huangguangyao\AppData\Roaming\npm-cache\gulp-babel\5.2.0\package.tgz
+194 verbose tar unpacking to D:\oldf\nodeprojects\es.next\node_modules\gulp-babel
+195 silly gentlyRm D:\oldf\nodeprojects\es.next\node_modules\gulp-babel is being purged
+196 verbose gentlyRm don't care about contents; nuking D:\oldf\nodeprojects\es.next\node_modules\gulp-babel
+197 silly gentlyRm D:\oldf\nodeprojects\es.next\node_modules\gulp is being purged from base D:\oldf\nodeprojects\es.next
+198 verbose gentlyRm don't care about contents; nuking D:\oldf\nodeprojects\es.next\node_modules\gulp
+199 silly gentlyRm D:\oldf\nodeprojects\es.next\node_modules\gulp-changed is being purged from base D:\oldf\nodeprojects\es.next
+200 verbose gentlyRm don't care about contents; nuking D:\oldf\nodeprojects\es.next\node_modules\gulp-changed
+201 silly gentlyRm D:\oldf\nodeprojects\es.next\node_modules\gulp-traceur is being purged from base D:\oldf\nodeprojects\es.next
+202 verbose gentlyRm don't care about contents; nuking D:\oldf\nodeprojects\es.next\node_modules\gulp-traceur
+203 silly gentlyRm D:\oldf\nodeprojects\es.next\node_modules\gulp-mocha is being purged from base D:\oldf\nodeprojects\es.next
+204 verbose gentlyRm don't care about contents; nuking D:\oldf\nodeprojects\es.next\node_modules\gulp-mocha
+205 silly gunzTarPerm modes [ '777', '666' ]
+206 verbose tar unpack C:\Users\huangguangyao\AppData\Roaming\npm-cache\gulp\3.9.0\package.tgz
+207 verbose tar unpacking to D:\oldf\nodeprojects\es.next\node_modules\gulp
+208 silly gentlyRm D:\oldf\nodeprojects\es.next\node_modules\gulp is being purged
+209 verbose gentlyRm don't care about contents; nuking D:\oldf\nodeprojects\es.next\node_modules\gulp
+210 verbose tar unpack C:\Users\huangguangyao\AppData\Roaming\npm-cache\gulp-changed\1.3.0\package.tgz
+211 verbose tar unpacking to D:\oldf\nodeprojects\es.next\node_modules\gulp-changed
+212 silly gentlyRm D:\oldf\nodeprojects\es.next\node_modules\gulp-changed is being purged
+213 verbose gentlyRm don't care about contents; nuking D:\oldf\nodeprojects\es.next\node_modules\gulp-changed
+214 verbose tar unpack C:\Users\huangguangyao\AppData\Roaming\npm-cache\gulp-traceur\0.17.1\package.tgz
+215 verbose tar unpacking to D:\oldf\nodeprojects\es.next\node_modules\gulp-traceur
+216 silly gentlyRm D:\oldf\nodeprojects\es.next\node_modules\gulp-traceur is being purged
+217 verbose gentlyRm don't care about contents; nuking D:\oldf\nodeprojects\es.next\node_modules\gulp-traceur
+218 verbose tar unpack C:\Users\huangguangyao\AppData\Roaming\npm-cache\gulp-mocha\2.1.3\package.tgz
+219 verbose tar unpacking to D:\oldf\nodeprojects\es.next\node_modules\gulp-mocha
+220 silly gentlyRm D:\oldf\nodeprojects\es.next\node_modules\gulp-mocha is being purged
+221 verbose gentlyRm don't care about contents; nuking D:\oldf\nodeprojects\es.next\node_modules\gulp-mocha
+222 silly gunzTarPerm modes [ '777', '666' ]
+223 silly gunzTarPerm modes [ '777', '666' ]
+224 silly gunzTarPerm modes [ '777', '666' ]
+225 silly gunzTarPerm modes [ '777', '666' ]
+226 silly gunzTarPerm extractEntry package.json
+227 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+228 silly gunzTarPerm extractEntry package.json
+229 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+230 silly gunzTarPerm extractEntry index.js
+231 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+232 silly gunzTarPerm extractEntry license
+233 silly gunzTarPerm modified mode [ 'license', 420, 438 ]
+234 silly gunzTarPerm extractEntry index.js
+235 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+236 silly gunzTarPerm extractEntry license
+237 silly gunzTarPerm modified mode [ 'license', 420, 438 ]
+238 silly gunzTarPerm extractEntry package.json
+239 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+240 silly gunzTarPerm extractEntry index.js
+241 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+242 silly gunzTarPerm extractEntry license
+243 silly gunzTarPerm modified mode [ 'license', 420, 438 ]
+244 silly gunzTarPerm extractEntry readme.md
+245 silly gunzTarPerm modified mode [ 'readme.md', 420, 438 ]
+246 silly gunzTarPerm extractEntry readme.md
+247 silly gunzTarPerm modified mode [ 'readme.md', 420, 438 ]
+248 silly gunzTarPerm extractEntry readme.md
+249 silly gunzTarPerm modified mode [ 'readme.md', 420, 438 ]
+250 silly gunzTarPerm extractEntry package.json
+251 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+252 verbose write writing to D:\oldf\nodeprojects\es.next\node_modules\gulp-babel\package.json
+253 verbose write writing to D:\oldf\nodeprojects\es.next\node_modules\gulp-mocha\package.json
+254 silly gunzTarPerm extractEntry README.md
+255 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+256 silly gunzTarPerm extractEntry LICENSE
+257 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+258 info preinstall gulp-babel@5.2.0
+259 info preinstall gulp-mocha@2.1.3
+260 silly gunzTarPerm extractEntry package.json
+261 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+262 verbose readDependencies loading dependencies from D:\oldf\nodeprojects\es.next\node_modules\gulp-babel\package.json
+263 verbose write writing to D:\oldf\nodeprojects\es.next\node_modules\gulp-changed\package.json
+264 verbose readDependencies loading dependencies from D:\oldf\nodeprojects\es.next\node_modules\gulp-mocha\package.json
+265 silly gunzTarPerm extractEntry index.js
+266 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+267 silly gunzTarPerm extractEntry license
+268 silly gunzTarPerm modified mode [ 'license', 420, 438 ]
+269 silly prepareForInstallMany adding babel-core@^5.8.19 from gulp-babel dependencies
+270 silly prepareForInstallMany adding gulp-util@^3.0.0 from gulp-babel dependencies
+271 silly prepareForInstallMany adding object-assign@^3.0.0 from gulp-babel dependencies
+272 silly prepareForInstallMany adding replace-ext@0.0.1 from gulp-babel dependencies
+273 silly prepareForInstallMany adding through2@^2.0.0 from gulp-babel dependencies
+274 silly prepareForInstallMany adding vinyl-sourcemaps-apply@^0.1.1 from gulp-babel dependencies
+275 verbose readDependencies loading dependencies from D:\oldf\nodeprojects\es.next\node_modules\gulp-babel\package.json
+276 info preinstall gulp-changed@1.3.0
+277 silly gunzTarPerm extractEntry index.js
+278 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+279 silly gunzTarPerm extractEntry CHANGELOG.md
+280 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 438 ]
+281 verbose readDependencies loading dependencies from D:\oldf\nodeprojects\es.next\node_modules\gulp-changed\package.json
+282 silly gunzTarPerm extractEntry readme.md
+283 silly gunzTarPerm modified mode [ 'readme.md', 420, 438 ]
+284 silly prepareForInstallMany adding gulp-util@^3.0.0 from gulp-mocha dependencies
+285 silly prepareForInstallMany adding mocha@^2.0.1 from gulp-mocha dependencies
+286 silly prepareForInstallMany adding plur@^1.0.0 from gulp-mocha dependencies
+287 silly prepareForInstallMany adding resolve-from@^1.0.0 from gulp-mocha dependencies
+288 silly prepareForInstallMany adding temp@^0.8.3 from gulp-mocha dependencies
+289 silly prepareForInstallMany adding through@^2.3.4 from gulp-mocha dependencies
+290 verbose readDependencies loading dependencies from D:\oldf\nodeprojects\es.next\node_modules\gulp-mocha\package.json
+291 silly prepareForInstallMany adding gulp-util@^3.0.0 from gulp-changed dependencies
+292 silly prepareForInstallMany adding through2@^2.0.0 from gulp-changed dependencies
+293 verbose readDependencies loading dependencies from D:\oldf\nodeprojects\es.next\node_modules\gulp-changed\package.json
+294 silly cache add args [ 'object-assign@^3.0.0', null ]
+295 verbose cache add spec object-assign@^3.0.0
+296 silly cache add parsed spec { raw: 'object-assign@^3.0.0',
+296 silly cache add   scope: null,
+296 silly cache add   name: 'object-assign',
+296 silly cache add   rawSpec: '^3.0.0',
+296 silly cache add   spec: '>=3.0.0 <4.0.0',
+296 silly cache add   type: 'range' }
+297 silly addNamed object-assign@>=3.0.0 <4.0.0
+298 verbose addNamed ">=3.0.0 <4.0.0" is a valid semver range for object-assign
+299 silly addNameRange { name: 'object-assign',
+299 silly addNameRange   range: '>=3.0.0 <4.0.0',
+299 silly addNameRange   hasData: false }
+300 silly mapToRegistry name object-assign
+301 silly mapToRegistry using default registry
+302 silly mapToRegistry registry https://registry.npmjs.org/
+303 silly mapToRegistry uri https://registry.npmjs.org/object-assign
+304 verbose addNameRange registry:https://registry.npmjs.org/object-assign not in flight; fetching
+305 silly cache add args [ 'replace-ext@0.0.1', null ]
+306 verbose cache add spec replace-ext@0.0.1
+307 silly cache add parsed spec { raw: 'replace-ext@0.0.1',
+307 silly cache add   scope: null,
+307 silly cache add   name: 'replace-ext',
+307 silly cache add   rawSpec: '0.0.1',
+307 silly cache add   spec: '0.0.1',
+307 silly cache add   type: 'version' }
+308 silly addNamed replace-ext@0.0.1
+309 verbose addNamed "0.0.1" is a plain semver version for replace-ext
+310 silly mapToRegistry name replace-ext
+311 silly mapToRegistry using default registry
+312 silly mapToRegistry registry https://registry.npmjs.org/
+313 silly mapToRegistry uri https://registry.npmjs.org/replace-ext
+314 verbose addNameVersion registry:https://registry.npmjs.org/replace-ext not in flight; fetching
+315 silly cache add args [ 'through2@^2.0.0', null ]
+316 verbose cache add spec through2@^2.0.0
+317 silly cache add parsed spec { raw: 'through2@^2.0.0',
+317 silly cache add   scope: null,
+317 silly cache add   name: 'through2',
+317 silly cache add   rawSpec: '^2.0.0',
+317 silly cache add   spec: '>=2.0.0 <3.0.0',
+317 silly cache add   type: 'range' }
+318 silly addNamed through2@>=2.0.0 <3.0.0
+319 verbose addNamed ">=2.0.0 <3.0.0" is a valid semver range for through2
+320 silly addNameRange { name: 'through2', range: '>=2.0.0 <3.0.0', hasData: false }
+321 silly mapToRegistry name through2
+322 silly mapToRegistry using default registry
+323 silly mapToRegistry registry https://registry.npmjs.org/
+324 silly mapToRegistry uri https://registry.npmjs.org/through2
+325 verbose addNameRange registry:https://registry.npmjs.org/through2 not in flight; fetching
+326 silly cache add args [ 'vinyl-sourcemaps-apply@^0.1.1', null ]
+327 verbose cache add spec vinyl-sourcemaps-apply@^0.1.1
+328 silly cache add parsed spec { raw: 'vinyl-sourcemaps-apply@^0.1.1',
+328 silly cache add   scope: null,
+328 silly cache add   name: 'vinyl-sourcemaps-apply',
+328 silly cache add   rawSpec: '^0.1.1',
+328 silly cache add   spec: '>=0.1.1 <0.2.0',
+328 silly cache add   type: 'range' }
+329 silly addNamed vinyl-sourcemaps-apply@>=0.1.1 <0.2.0
+330 verbose addNamed ">=0.1.1 <0.2.0" is a valid semver range for vinyl-sourcemaps-apply
+331 silly addNameRange { name: 'vinyl-sourcemaps-apply',
+331 silly addNameRange   range: '>=0.1.1 <0.2.0',
+331 silly addNameRange   hasData: false }
+332 silly mapToRegistry name vinyl-sourcemaps-apply
+333 silly mapToRegistry using default registry
+334 silly mapToRegistry registry https://registry.npmjs.org/
+335 silly mapToRegistry uri https://registry.npmjs.org/vinyl-sourcemaps-apply
+336 verbose addNameRange registry:https://registry.npmjs.org/vinyl-sourcemaps-apply not in flight; fetching
+337 silly cache add args [ 'babel-core@^5.8.19', null ]
+338 verbose cache add spec babel-core@^5.8.19
+339 silly cache add parsed spec { raw: 'babel-core@^5.8.19',
+339 silly cache add   scope: null,
+339 silly cache add   name: 'babel-core',
+339 silly cache add   rawSpec: '^5.8.19',
+339 silly cache add   spec: '>=5.8.19 <6.0.0',
+339 silly cache add   type: 'range' }
+340 silly addNamed babel-core@>=5.8.19 <6.0.0
+341 verbose addNamed ">=5.8.19 <6.0.0" is a valid semver range for babel-core
+342 silly addNameRange { name: 'babel-core', range: '>=5.8.19 <6.0.0', hasData: false }
+343 silly mapToRegistry name babel-core
+344 silly mapToRegistry using default registry
+345 silly mapToRegistry registry https://registry.npmjs.org/
+346 silly mapToRegistry uri https://registry.npmjs.org/babel-core
+347 verbose addNameRange registry:https://registry.npmjs.org/babel-core not in flight; fetching
+348 silly cache add args [ 'gulp-util@^3.0.0', null ]
+349 verbose cache add spec gulp-util@^3.0.0
+350 silly cache add parsed spec { raw: 'gulp-util@^3.0.0',
+350 silly cache add   scope: null,
+350 silly cache add   name: 'gulp-util',
+350 silly cache add   rawSpec: '^3.0.0',
+350 silly cache add   spec: '>=3.0.0 <4.0.0',
+350 silly cache add   type: 'range' }
+351 silly addNamed gulp-util@>=3.0.0 <4.0.0
+352 verbose addNamed ">=3.0.0 <4.0.0" is a valid semver range for gulp-util
+353 silly addNameRange { name: 'gulp-util', range: '>=3.0.0 <4.0.0', hasData: false }
+354 silly mapToRegistry name gulp-util
+355 silly mapToRegistry using default registry
+356 silly mapToRegistry registry https://registry.npmjs.org/
+357 silly mapToRegistry uri https://registry.npmjs.org/gulp-util
+358 verbose addNameRange registry:https://registry.npmjs.org/gulp-util not in flight; fetching
+359 verbose request uri https://registry.npmjs.org/object-assign
+360 verbose request no auth needed
+361 info attempt registry request try #1 at 14:04:47
+362 verbose request using bearer token for auth
+363 verbose etag "4CGXBX5T2SZTNR0TB3DNE2Z31"
+364 http request GET https://registry.npmjs.org/object-assign
+365 verbose request uri https://registry.npmjs.org/replace-ext
+366 verbose request no auth needed
+367 info attempt registry request try #1 at 14:04:47
+368 verbose request using bearer token for auth
+369 verbose etag "8WESKT806YJX3PNOIKCXR7C3N"
+370 http request GET https://registry.npmjs.org/replace-ext
+371 silly gunzTarPerm extractEntry bin/gulp.js
+372 silly gunzTarPerm modified mode [ 'bin/gulp.js', 493, 511 ]
+373 verbose request uri https://registry.npmjs.org/through2
+374 verbose request no auth needed
+375 info attempt registry request try #1 at 14:04:47
+376 verbose request using bearer token for auth
+377 verbose etag "6IG3LL35U3YRX9Y7XFH3DTAUH"
+378 http request GET https://registry.npmjs.org/through2
+379 verbose request uri https://registry.npmjs.org/gulp-util
+380 verbose request no auth needed
+381 info attempt registry request try #1 at 14:04:47
+382 verbose request using bearer token for auth
+383 verbose etag "BVXNWBNNV9ROBJUYBH815TGS5"
+384 http request GET https://registry.npmjs.org/gulp-util
+385 silly cache add args [ 'gulp-util@^3.0.0', null ]
+386 verbose cache add spec gulp-util@^3.0.0
+387 silly cache add parsed spec { raw: 'gulp-util@^3.0.0',
+387 silly cache add   scope: null,
+387 silly cache add   name: 'gulp-util',
+387 silly cache add   rawSpec: '^3.0.0',
+387 silly cache add   spec: '>=3.0.0 <4.0.0',
+387 silly cache add   type: 'range' }
+388 silly addNamed gulp-util@>=3.0.0 <4.0.0
+389 verbose addNamed ">=3.0.0 <4.0.0" is a valid semver range for gulp-util
+390 silly addNameRange { name: 'gulp-util', range: '>=3.0.0 <4.0.0', hasData: false }
+391 silly mapToRegistry name gulp-util
+392 silly mapToRegistry using default registry
+393 silly mapToRegistry registry https://registry.npmjs.org/
+394 silly mapToRegistry uri https://registry.npmjs.org/gulp-util
+395 verbose addNameRange registry:https://registry.npmjs.org/gulp-util already in flight; waiting
+396 silly cache add args [ 'through2@^2.0.0', null ]
+397 verbose cache add spec through2@^2.0.0
+398 silly cache add parsed spec { raw: 'through2@^2.0.0',
+398 silly cache add   scope: null,
+398 silly cache add   name: 'through2',
+398 silly cache add   rawSpec: '^2.0.0',
+398 silly cache add   spec: '>=2.0.0 <3.0.0',
+398 silly cache add   type: 'range' }
+399 silly addNamed through2@>=2.0.0 <3.0.0
+400 verbose addNamed ">=2.0.0 <3.0.0" is a valid semver range for through2
+401 silly addNameRange { name: 'through2', range: '>=2.0.0 <3.0.0', hasData: false }
+402 silly mapToRegistry name through2
+403 silly mapToRegistry using default registry
+404 silly mapToRegistry registry https://registry.npmjs.org/
+405 silly mapToRegistry uri https://registry.npmjs.org/through2
+406 verbose addNameRange registry:https://registry.npmjs.org/through2 already in flight; waiting
+407 silly cache add args [ 'gulp-util@^3.0.0', null ]
+408 verbose cache add spec gulp-util@^3.0.0
+409 silly cache add args [ 'mocha@^2.0.1', null ]
+410 verbose cache add spec mocha@^2.0.1
+411 silly cache add parsed spec { raw: 'gulp-util@^3.0.0',
+411 silly cache add   scope: null,
+411 silly cache add   name: 'gulp-util',
+411 silly cache add   rawSpec: '^3.0.0',
+411 silly cache add   spec: '>=3.0.0 <4.0.0',
+411 silly cache add   type: 'range' }
+412 silly addNamed gulp-util@>=3.0.0 <4.0.0
+413 verbose addNamed ">=3.0.0 <4.0.0" is a valid semver range for gulp-util
+414 silly addNameRange { name: 'gulp-util', range: '>=3.0.0 <4.0.0', hasData: false }
+415 silly mapToRegistry name gulp-util
+416 silly mapToRegistry using default registry
+417 silly mapToRegistry registry https://registry.npmjs.org/
+418 silly mapToRegistry uri https://registry.npmjs.org/gulp-util
+419 verbose addNameRange registry:https://registry.npmjs.org/gulp-util already in flight; waiting
+420 silly cache add parsed spec { raw: 'mocha@^2.0.1',
+420 silly cache add   scope: null,
+420 silly cache add   name: 'mocha',
+420 silly cache add   rawSpec: '^2.0.1',
+420 silly cache add   spec: '>=2.0.1 <3.0.0',
+420 silly cache add   type: 'range' }
+421 silly addNamed mocha@>=2.0.1 <3.0.0
+422 verbose addNamed ">=2.0.1 <3.0.0" is a valid semver range for mocha
+423 silly addNameRange { name: 'mocha', range: '>=2.0.1 <3.0.0', hasData: false }
+424 silly mapToRegistry name mocha
+425 silly mapToRegistry using default registry
+426 silly mapToRegistry registry https://registry.npmjs.org/
+427 silly mapToRegistry uri https://registry.npmjs.org/mocha
+428 verbose addNameRange registry:https://registry.npmjs.org/mocha not in flight; fetching
+429 silly cache add args [ 'plur@^1.0.0', null ]
+430 verbose cache add spec plur@^1.0.0
+431 silly cache add parsed spec { raw: 'plur@^1.0.0',
+431 silly cache add   scope: null,
+431 silly cache add   name: 'plur',
+431 silly cache add   rawSpec: '^1.0.0',
+431 silly cache add   spec: '>=1.0.0 <2.0.0',
+431 silly cache add   type: 'range' }
+432 silly addNamed plur@>=1.0.0 <2.0.0
+433 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for plur
+434 silly addNameRange { name: 'plur', range: '>=1.0.0 <2.0.0', hasData: false }
+435 silly mapToRegistry name plur
+436 silly mapToRegistry using default registry
+437 silly mapToRegistry registry https://registry.npmjs.org/
+438 silly mapToRegistry uri https://registry.npmjs.org/plur
+439 verbose addNameRange registry:https://registry.npmjs.org/plur not in flight; fetching
+440 verbose request uri https://registry.npmjs.org/mocha
+441 verbose request no auth needed
+442 info attempt registry request try #1 at 14:04:47
+443 verbose request using bearer token for auth
+444 http request GET https://registry.npmjs.org/mocha
+445 silly cache add args [ 'resolve-from@^1.0.0', null ]
+446 verbose cache add spec resolve-from@^1.0.0
+447 silly cache add parsed spec { raw: 'resolve-from@^1.0.0',
+447 silly cache add   scope: null,
+447 silly cache add   name: 'resolve-from',
+447 silly cache add   rawSpec: '^1.0.0',
+447 silly cache add   spec: '>=1.0.0 <2.0.0',
+447 silly cache add   type: 'range' }
+448 silly addNamed resolve-from@>=1.0.0 <2.0.0
+449 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for resolve-from
+450 silly addNameRange { name: 'resolve-from', range: '>=1.0.0 <2.0.0', hasData: false }
+451 silly mapToRegistry name resolve-from
+452 silly mapToRegistry using default registry
+453 silly mapToRegistry registry https://registry.npmjs.org/
+454 silly mapToRegistry uri https://registry.npmjs.org/resolve-from
+455 verbose addNameRange registry:https://registry.npmjs.org/resolve-from not in flight; fetching
+456 silly cache add args [ 'temp@^0.8.3', null ]
+457 verbose cache add spec temp@^0.8.3
+458 silly cache add parsed spec { raw: 'temp@^0.8.3',
+458 silly cache add   scope: null,
+458 silly cache add   name: 'temp',
+458 silly cache add   rawSpec: '^0.8.3',
+458 silly cache add   spec: '>=0.8.3 <0.9.0',
+458 silly cache add   type: 'range' }
+459 silly addNamed temp@>=0.8.3 <0.9.0
+460 verbose addNamed ">=0.8.3 <0.9.0" is a valid semver range for temp
+461 silly addNameRange { name: 'temp', range: '>=0.8.3 <0.9.0', hasData: false }
+462 silly mapToRegistry name temp
+463 silly mapToRegistry using default registry
+464 silly mapToRegistry registry https://registry.npmjs.org/
+465 silly mapToRegistry uri https://registry.npmjs.org/temp
+466 verbose addNameRange registry:https://registry.npmjs.org/temp not in flight; fetching
+467 silly cache add args [ 'through@^2.3.4', null ]
+468 verbose cache add spec through@^2.3.4
+469 silly cache add parsed spec { raw: 'through@^2.3.4',
+469 silly cache add   scope: null,
+469 silly cache add   name: 'through',
+469 silly cache add   rawSpec: '^2.3.4',
+469 silly cache add   spec: '>=2.3.4 <3.0.0',
+469 silly cache add   type: 'range' }
+470 silly addNamed through@>=2.3.4 <3.0.0
+471 verbose addNamed ">=2.3.4 <3.0.0" is a valid semver range for through
+472 silly addNameRange { name: 'through', range: '>=2.3.4 <3.0.0', hasData: false }
+473 silly mapToRegistry name through
+474 silly mapToRegistry using default registry
+475 silly mapToRegistry registry https://registry.npmjs.org/
+476 silly mapToRegistry uri https://registry.npmjs.org/through
+477 verbose addNameRange registry:https://registry.npmjs.org/through not in flight; fetching
+478 verbose request uri https://registry.npmjs.org/babel-core
+479 verbose request no auth needed
+480 info attempt registry request try #1 at 14:04:47
+481 verbose request using bearer token for auth
+482 verbose etag "183RZ9MVK4SH5X462C63DXO20"
+483 http request GET https://registry.npmjs.org/babel-core
+484 verbose request uri https://registry.npmjs.org/resolve-from
+485 verbose request no auth needed
+486 info attempt registry request try #1 at 14:04:47
+487 verbose request using bearer token for auth
+488 http request GET https://registry.npmjs.org/resolve-from
+489 verbose request uri https://registry.npmjs.org/temp
+490 verbose request no auth needed
+491 info attempt registry request try #1 at 14:04:47
+492 verbose request using bearer token for auth
+493 http request GET https://registry.npmjs.org/temp
+494 verbose request uri https://registry.npmjs.org/vinyl-sourcemaps-apply
+495 verbose request no auth needed
+496 info attempt registry request try #1 at 14:04:47
+497 verbose request using bearer token for auth
+498 verbose etag "5X4J1NU3C03WVQ353SIUCFT90"
+499 http request GET https://registry.npmjs.org/vinyl-sourcemaps-apply
+500 silly gunzTarPerm extractEntry completion/README.md
+501 silly gunzTarPerm modified mode [ 'completion/README.md', 420, 438 ]
+502 silly gunzTarPerm extractEntry completion/bash
+503 silly gunzTarPerm modified mode [ 'completion/bash', 420, 438 ]
+504 verbose request uri https://registry.npmjs.org/through
+505 verbose request no auth needed
+506 info attempt registry request try #1 at 14:04:47
+507 verbose request using bearer token for auth
+508 verbose etag "B1POSHOBO00OJ6F61G3E4VXR"
+509 http request GET https://registry.npmjs.org/through
+510 silly gunzTarPerm extractEntry completion/fish
+511 silly gunzTarPerm modified mode [ 'completion/fish', 420, 438 ]
+512 silly gunzTarPerm extractEntry completion/powershell
+513 silly gunzTarPerm modified mode [ 'completion/powershell', 420, 438 ]
+514 verbose write writing to D:\oldf\nodeprojects\es.next\node_modules\gulp-traceur\package.json
+515 silly gunzTarPerm extractEntry completion/zsh
+516 silly gunzTarPerm modified mode [ 'completion/zsh', 420, 438 ]
+517 silly gunzTarPerm extractEntry lib/completion.js
+518 silly gunzTarPerm modified mode [ 'lib/completion.js', 420, 438 ]
+519 info preinstall gulp-traceur@0.17.1
+520 verbose readDependencies loading dependencies from D:\oldf\nodeprojects\es.next\node_modules\gulp-traceur\package.json
+521 silly prepareForInstallMany adding gulp-util@^3.0.0 from gulp-traceur dependencies
+522 silly prepareForInstallMany adding object-assign@^2.0.0 from gulp-traceur dependencies
+523 silly prepareForInstallMany adding through2@^0.6.1 from gulp-traceur dependencies
+524 silly prepareForInstallMany adding traceur@~0.0.88 from gulp-traceur dependencies
+525 silly prepareForInstallMany adding vinyl-sourcemaps-apply@^0.1.1 from gulp-traceur dependencies
+526 verbose readDependencies loading dependencies from D:\oldf\nodeprojects\es.next\node_modules\gulp-traceur\package.json
+527 verbose request uri https://registry.npmjs.org/plur
+528 verbose request no auth needed
+529 info attempt registry request try #1 at 14:04:47
+530 verbose request using bearer token for auth
+531 verbose etag "4NU1YKZ8U5VGOYFZPP7YEZKUT"
+532 http request GET https://registry.npmjs.org/plur
+533 silly gunzTarPerm extractEntry lib/taskTree.js
+534 silly gunzTarPerm modified mode [ 'lib/taskTree.js', 420, 438 ]
+535 silly cache add args [ 'object-assign@^2.0.0', null ]
+536 verbose cache add spec object-assign@^2.0.0
+537 silly cache add parsed spec { raw: 'object-assign@^2.0.0',
+537 silly cache add   scope: null,
+537 silly cache add   name: 'object-assign',
+537 silly cache add   rawSpec: '^2.0.0',
+537 silly cache add   spec: '>=2.0.0 <3.0.0',
+537 silly cache add   type: 'range' }
+538 silly addNamed object-assign@>=2.0.0 <3.0.0
+539 verbose addNamed ">=2.0.0 <3.0.0" is a valid semver range for object-assign
+540 silly addNameRange { name: 'object-assign',
+540 silly addNameRange   range: '>=2.0.0 <3.0.0',
+540 silly addNameRange   hasData: false }
+541 silly mapToRegistry name object-assign
+542 silly mapToRegistry using default registry
+543 silly mapToRegistry registry https://registry.npmjs.org/
+544 silly mapToRegistry uri https://registry.npmjs.org/object-assign
+545 verbose addNameRange registry:https://registry.npmjs.org/object-assign already in flight; waiting
+546 silly cache add args [ 'through2@^0.6.1', null ]
+547 verbose cache add spec through2@^0.6.1
+548 silly cache add parsed spec { raw: 'through2@^0.6.1',
+548 silly cache add   scope: null,
+548 silly cache add   name: 'through2',
+548 silly cache add   rawSpec: '^0.6.1',
+548 silly cache add   spec: '>=0.6.1 <0.7.0',
+548 silly cache add   type: 'range' }
+549 silly addNamed through2@>=0.6.1 <0.7.0
+550 verbose addNamed ">=0.6.1 <0.7.0" is a valid semver range for through2
+551 silly addNameRange { name: 'through2', range: '>=0.6.1 <0.7.0', hasData: false }
+552 silly mapToRegistry name through2
+553 silly mapToRegistry using default registry
+554 silly mapToRegistry registry https://registry.npmjs.org/
+555 silly mapToRegistry uri https://registry.npmjs.org/through2
+556 verbose addNameRange registry:https://registry.npmjs.org/through2 already in flight; waiting
+557 silly cache add args [ 'traceur@~0.0.88', null ]
+558 verbose cache add spec traceur@~0.0.88
+559 silly cache add parsed spec { raw: 'traceur@~0.0.88',
+559 silly cache add   scope: null,
+559 silly cache add   name: 'traceur',
+559 silly cache add   rawSpec: '~0.0.88',
+559 silly cache add   spec: '>=0.0.88 <0.1.0',
+559 silly cache add   type: 'range' }
+560 silly addNamed traceur@>=0.0.88 <0.1.0
+561 verbose addNamed ">=0.0.88 <0.1.0" is a valid semver range for traceur
+562 silly addNameRange { name: 'traceur', range: '>=0.0.88 <0.1.0', hasData: false }
+563 silly mapToRegistry name traceur
+564 silly mapToRegistry using default registry
+565 silly mapToRegistry registry https://registry.npmjs.org/
+566 silly mapToRegistry uri https://registry.npmjs.org/traceur
+567 verbose addNameRange registry:https://registry.npmjs.org/traceur not in flight; fetching
+568 silly cache add args [ 'vinyl-sourcemaps-apply@^0.1.1', null ]
+569 verbose cache add spec vinyl-sourcemaps-apply@^0.1.1
+570 silly cache add parsed spec { raw: 'vinyl-sourcemaps-apply@^0.1.1',
+570 silly cache add   scope: null,
+570 silly cache add   name: 'vinyl-sourcemaps-apply',
+570 silly cache add   rawSpec: '^0.1.1',
+570 silly cache add   spec: '>=0.1.1 <0.2.0',
+570 silly cache add   type: 'range' }
+571 silly addNamed vinyl-sourcemaps-apply@>=0.1.1 <0.2.0
+572 verbose addNamed ">=0.1.1 <0.2.0" is a valid semver range for vinyl-sourcemaps-apply
+573 silly addNameRange { name: 'vinyl-sourcemaps-apply',
+573 silly addNameRange   range: '>=0.1.1 <0.2.0',
+573 silly addNameRange   hasData: false }
+574 silly mapToRegistry name vinyl-sourcemaps-apply
+575 silly mapToRegistry using default registry
+576 silly mapToRegistry registry https://registry.npmjs.org/
+577 silly mapToRegistry uri https://registry.npmjs.org/vinyl-sourcemaps-apply
+578 verbose addNameRange registry:https://registry.npmjs.org/vinyl-sourcemaps-apply already in flight; waiting
+579 silly cache add args [ 'gulp-util@^3.0.0', null ]
+580 verbose cache add spec gulp-util@^3.0.0
+581 silly cache add parsed spec { raw: 'gulp-util@^3.0.0',
+581 silly cache add   scope: null,
+581 silly cache add   name: 'gulp-util',
+581 silly cache add   rawSpec: '^3.0.0',
+581 silly cache add   spec: '>=3.0.0 <4.0.0',
+581 silly cache add   type: 'range' }
+582 silly addNamed gulp-util@>=3.0.0 <4.0.0
+583 verbose addNamed ">=3.0.0 <4.0.0" is a valid semver range for gulp-util
+584 silly addNameRange { name: 'gulp-util', range: '>=3.0.0 <4.0.0', hasData: false }
+585 silly mapToRegistry name gulp-util
+586 silly mapToRegistry using default registry
+587 silly mapToRegistry registry https://registry.npmjs.org/
+588 silly mapToRegistry uri https://registry.npmjs.org/gulp-util
+589 verbose addNameRange registry:https://registry.npmjs.org/gulp-util already in flight; waiting
+590 verbose write writing to D:\oldf\nodeprojects\es.next\node_modules\gulp\package.json
+591 info preinstall gulp@3.9.0
+592 verbose request uri https://registry.npmjs.org/traceur
+593 verbose request no auth needed
+594 info attempt registry request try #1 at 14:04:47
+595 verbose request using bearer token for auth
+596 verbose etag "9ENI9OZ57M4RL230BF18XQ25V"
+597 http request GET https://registry.npmjs.org/traceur
+598 verbose readDependencies loading dependencies from D:\oldf\nodeprojects\es.next\node_modules\gulp\package.json
+599 silly prepareForInstallMany adding archy@^1.0.0 from gulp dependencies
+600 silly prepareForInstallMany adding chalk@^1.0.0 from gulp dependencies
+601 silly prepareForInstallMany adding deprecated@^0.0.1 from gulp dependencies
+602 silly prepareForInstallMany adding gulp-util@^3.0.0 from gulp dependencies
+603 silly prepareForInstallMany adding interpret@^0.6.2 from gulp dependencies
+604 silly prepareForInstallMany adding liftoff@^2.1.0 from gulp dependencies
+605 silly prepareForInstallMany adding minimist@^1.1.0 from gulp dependencies
+606 silly prepareForInstallMany adding orchestrator@^0.3.0 from gulp dependencies
+607 silly prepareForInstallMany adding pretty-hrtime@^1.0.0 from gulp dependencies
+608 silly prepareForInstallMany adding semver@^4.1.0 from gulp dependencies
+609 silly prepareForInstallMany adding tildify@^1.0.0 from gulp dependencies
+610 silly prepareForInstallMany adding v8flags@^2.0.2 from gulp dependencies
+611 silly prepareForInstallMany adding vinyl-fs@^0.3.0 from gulp dependencies
+612 verbose readDependencies loading dependencies from D:\oldf\nodeprojects\es.next\node_modules\gulp\package.json
+613 silly cache add args [ 'chalk@^1.0.0', null ]
+614 verbose cache add spec chalk@^1.0.0
+615 silly cache add parsed spec { raw: 'chalk@^1.0.0',
+615 silly cache add   scope: null,
+615 silly cache add   name: 'chalk',
+615 silly cache add   rawSpec: '^1.0.0',
+615 silly cache add   spec: '>=1.0.0 <2.0.0',
+615 silly cache add   type: 'range' }
+616 silly addNamed chalk@>=1.0.0 <2.0.0
+617 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for chalk
+618 silly addNameRange { name: 'chalk', range: '>=1.0.0 <2.0.0', hasData: false }
+619 silly mapToRegistry name chalk
+620 silly mapToRegistry using default registry
+621 silly mapToRegistry registry https://registry.npmjs.org/
+622 silly mapToRegistry uri https://registry.npmjs.org/chalk
+623 verbose addNameRange registry:https://registry.npmjs.org/chalk not in flight; fetching
+624 silly cache add args [ 'deprecated@^0.0.1', null ]
+625 verbose cache add spec deprecated@^0.0.1
+626 silly cache add parsed spec { raw: 'deprecated@^0.0.1',
+626 silly cache add   scope: null,
+626 silly cache add   name: 'deprecated',
+626 silly cache add   rawSpec: '^0.0.1',
+626 silly cache add   spec: '>=0.0.1 <0.0.2',
+626 silly cache add   type: 'range' }
+627 silly addNamed deprecated@>=0.0.1 <0.0.2
+628 verbose addNamed ">=0.0.1 <0.0.2" is a valid semver range for deprecated
+629 silly addNameRange { name: 'deprecated', range: '>=0.0.1 <0.0.2', hasData: false }
+630 silly mapToRegistry name deprecated
+631 silly mapToRegistry using default registry
+632 silly mapToRegistry registry https://registry.npmjs.org/
+633 silly mapToRegistry uri https://registry.npmjs.org/deprecated
+634 verbose addNameRange registry:https://registry.npmjs.org/deprecated not in flight; fetching
+635 silly cache add args [ 'gulp-util@^3.0.0', null ]
+636 verbose cache add spec gulp-util@^3.0.0
+637 silly cache add parsed spec { raw: 'gulp-util@^3.0.0',
+637 silly cache add   scope: null,
+637 silly cache add   name: 'gulp-util',
+637 silly cache add   rawSpec: '^3.0.0',
+637 silly cache add   spec: '>=3.0.0 <4.0.0',
+637 silly cache add   type: 'range' }
+638 silly addNamed gulp-util@>=3.0.0 <4.0.0
+639 verbose addNamed ">=3.0.0 <4.0.0" is a valid semver range for gulp-util
+640 silly addNameRange { name: 'gulp-util', range: '>=3.0.0 <4.0.0', hasData: false }
+641 silly mapToRegistry name gulp-util
+642 silly mapToRegistry using default registry
+643 silly mapToRegistry registry https://registry.npmjs.org/
+644 silly mapToRegistry uri https://registry.npmjs.org/gulp-util
+645 verbose addNameRange registry:https://registry.npmjs.org/gulp-util already in flight; waiting
+646 silly cache add args [ 'interpret@^0.6.2', null ]
+647 verbose cache add spec interpret@^0.6.2
+648 silly cache add parsed spec { raw: 'interpret@^0.6.2',
+648 silly cache add   scope: null,
+648 silly cache add   name: 'interpret',
+648 silly cache add   rawSpec: '^0.6.2',
+648 silly cache add   spec: '>=0.6.2 <0.7.0',
+648 silly cache add   type: 'range' }
+649 silly addNamed interpret@>=0.6.2 <0.7.0
+650 verbose addNamed ">=0.6.2 <0.7.0" is a valid semver range for interpret
+651 silly addNameRange { name: 'interpret', range: '>=0.6.2 <0.7.0', hasData: false }
+652 silly mapToRegistry name interpret
+653 silly mapToRegistry using default registry
+654 silly mapToRegistry registry https://registry.npmjs.org/
+655 silly mapToRegistry uri https://registry.npmjs.org/interpret
+656 verbose addNameRange registry:https://registry.npmjs.org/interpret not in flight; fetching
+657 silly cache add args [ 'liftoff@^2.1.0', null ]
+658 verbose cache add spec liftoff@^2.1.0
+659 silly cache add parsed spec { raw: 'liftoff@^2.1.0',
+659 silly cache add   scope: null,
+659 silly cache add   name: 'liftoff',
+659 silly cache add   rawSpec: '^2.1.0',
+659 silly cache add   spec: '>=2.1.0 <3.0.0',
+659 silly cache add   type: 'range' }
+660 silly addNamed liftoff@>=2.1.0 <3.0.0
+661 verbose addNamed ">=2.1.0 <3.0.0" is a valid semver range for liftoff
+662 silly addNameRange { name: 'liftoff', range: '>=2.1.0 <3.0.0', hasData: false }
+663 silly mapToRegistry name liftoff
+664 silly mapToRegistry using default registry
+665 silly mapToRegistry registry https://registry.npmjs.org/
+666 silly mapToRegistry uri https://registry.npmjs.org/liftoff
+667 verbose addNameRange registry:https://registry.npmjs.org/liftoff not in flight; fetching
+668 silly cache add args [ 'minimist@^1.1.0', null ]
+669 verbose cache add spec minimist@^1.1.0
+670 silly cache add parsed spec { raw: 'minimist@^1.1.0',
+670 silly cache add   scope: null,
+670 silly cache add   name: 'minimist',
+670 silly cache add   rawSpec: '^1.1.0',
+670 silly cache add   spec: '>=1.1.0 <2.0.0',
+670 silly cache add   type: 'range' }
+671 silly addNamed minimist@>=1.1.0 <2.0.0
+672 verbose addNamed ">=1.1.0 <2.0.0" is a valid semver range for minimist
+673 silly addNameRange { name: 'minimist', range: '>=1.1.0 <2.0.0', hasData: false }
+674 silly mapToRegistry name minimist
+675 silly mapToRegistry using default registry
+676 silly mapToRegistry registry https://registry.npmjs.org/
+677 silly mapToRegistry uri https://registry.npmjs.org/minimist
+678 verbose addNameRange registry:https://registry.npmjs.org/minimist not in flight; fetching
+679 silly cache add args [ 'orchestrator@^0.3.0', null ]
+680 verbose cache add spec orchestrator@^0.3.0
+681 silly cache add parsed spec { raw: 'orchestrator@^0.3.0',
+681 silly cache add   scope: null,
+681 silly cache add   name: 'orchestrator',
+681 silly cache add   rawSpec: '^0.3.0',
+681 silly cache add   spec: '>=0.3.0 <0.4.0',
+681 silly cache add   type: 'range' }
+682 silly addNamed orchestrator@>=0.3.0 <0.4.0
+683 verbose addNamed ">=0.3.0 <0.4.0" is a valid semver range for orchestrator
+684 silly addNameRange { name: 'orchestrator', range: '>=0.3.0 <0.4.0', hasData: false }
+685 silly mapToRegistry name orchestrator
+686 silly mapToRegistry using default registry
+687 silly mapToRegistry registry https://registry.npmjs.org/
+688 silly mapToRegistry uri https://registry.npmjs.org/orchestrator
+689 verbose addNameRange registry:https://registry.npmjs.org/orchestrator not in flight; fetching
+690 silly cache add args [ 'pretty-hrtime@^1.0.0', null ]
+691 verbose cache add spec pretty-hrtime@^1.0.0
+692 silly cache add parsed spec { raw: 'pretty-hrtime@^1.0.0',
+692 silly cache add   scope: null,
+692 silly cache add   name: 'pretty-hrtime',
+692 silly cache add   rawSpec: '^1.0.0',
+692 silly cache add   spec: '>=1.0.0 <2.0.0',
+692 silly cache add   type: 'range' }
+693 silly addNamed pretty-hrtime@>=1.0.0 <2.0.0
+694 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for pretty-hrtime
+695 silly addNameRange { name: 'pretty-hrtime',
+695 silly addNameRange   range: '>=1.0.0 <2.0.0',
+695 silly addNameRange   hasData: false }
+696 silly mapToRegistry name pretty-hrtime
+697 silly mapToRegistry using default registry
+698 silly mapToRegistry registry https://registry.npmjs.org/
+699 silly mapToRegistry uri https://registry.npmjs.org/pretty-hrtime
+700 verbose addNameRange registry:https://registry.npmjs.org/pretty-hrtime not in flight; fetching
+701 silly cache add args [ 'semver@^4.1.0', null ]
+702 verbose cache add spec semver@^4.1.0
+703 silly cache add parsed spec { raw: 'semver@^4.1.0',
+703 silly cache add   scope: null,
+703 silly cache add   name: 'semver',
+703 silly cache add   rawSpec: '^4.1.0',
+703 silly cache add   spec: '>=4.1.0 <5.0.0',
+703 silly cache add   type: 'range' }
+704 silly addNamed semver@>=4.1.0 <5.0.0
+705 verbose addNamed ">=4.1.0 <5.0.0" is a valid semver range for semver
+706 silly addNameRange { name: 'semver', range: '>=4.1.0 <5.0.0', hasData: false }
+707 silly mapToRegistry name semver
+708 silly mapToRegistry using default registry
+709 silly mapToRegistry registry https://registry.npmjs.org/
+710 silly mapToRegistry uri https://registry.npmjs.org/semver
+711 verbose addNameRange registry:https://registry.npmjs.org/semver not in flight; fetching
+712 silly cache add args [ 'tildify@^1.0.0', null ]
+713 verbose cache add spec tildify@^1.0.0
+714 silly cache add parsed spec { raw: 'tildify@^1.0.0',
+714 silly cache add   scope: null,
+714 silly cache add   name: 'tildify',
+714 silly cache add   rawSpec: '^1.0.0',
+714 silly cache add   spec: '>=1.0.0 <2.0.0',
+714 silly cache add   type: 'range' }
+715 silly addNamed tildify@>=1.0.0 <2.0.0
+716 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for tildify
+717 silly addNameRange { name: 'tildify', range: '>=1.0.0 <2.0.0', hasData: false }
+718 silly mapToRegistry name tildify
+719 silly mapToRegistry using default registry
+720 silly mapToRegistry registry https://registry.npmjs.org/
+721 silly mapToRegistry uri https://registry.npmjs.org/tildify
+722 verbose addNameRange registry:https://registry.npmjs.org/tildify not in flight; fetching
+723 silly cache add args [ 'v8flags@^2.0.2', null ]
+724 verbose cache add spec v8flags@^2.0.2
+725 silly cache add parsed spec { raw: 'v8flags@^2.0.2',
+725 silly cache add   scope: null,
+725 silly cache add   name: 'v8flags',
+725 silly cache add   rawSpec: '^2.0.2',
+725 silly cache add   spec: '>=2.0.2 <3.0.0',
+725 silly cache add   type: 'range' }
+726 silly addNamed v8flags@>=2.0.2 <3.0.0
+727 verbose addNamed ">=2.0.2 <3.0.0" is a valid semver range for v8flags
+728 silly addNameRange { name: 'v8flags', range: '>=2.0.2 <3.0.0', hasData: false }
+729 silly mapToRegistry name v8flags
+730 silly mapToRegistry using default registry
+731 silly mapToRegistry registry https://registry.npmjs.org/
+732 silly mapToRegistry uri https://registry.npmjs.org/v8flags
+733 verbose addNameRange registry:https://registry.npmjs.org/v8flags not in flight; fetching
+734 silly cache add args [ 'vinyl-fs@^0.3.0', null ]
+735 verbose cache add spec vinyl-fs@^0.3.0
+736 silly cache add parsed spec { raw: 'vinyl-fs@^0.3.0',
+736 silly cache add   scope: null,
+736 silly cache add   name: 'vinyl-fs',
+736 silly cache add   rawSpec: '^0.3.0',
+736 silly cache add   spec: '>=0.3.0 <0.4.0',
+736 silly cache add   type: 'range' }
+737 silly addNamed vinyl-fs@>=0.3.0 <0.4.0
+738 verbose addNamed ">=0.3.0 <0.4.0" is a valid semver range for vinyl-fs
+739 silly addNameRange { name: 'vinyl-fs', range: '>=0.3.0 <0.4.0', hasData: false }
+740 silly mapToRegistry name vinyl-fs
+741 silly mapToRegistry using default registry
+742 silly mapToRegistry registry https://registry.npmjs.org/
+743 silly mapToRegistry uri https://registry.npmjs.org/vinyl-fs
+744 verbose addNameRange registry:https://registry.npmjs.org/vinyl-fs not in flight; fetching
+745 silly cache add args [ 'archy@^1.0.0', null ]
+746 verbose cache add spec archy@^1.0.0
+747 silly cache add parsed spec { raw: 'archy@^1.0.0',
+747 silly cache add   scope: null,
+747 silly cache add   name: 'archy',
+747 silly cache add   rawSpec: '^1.0.0',
+747 silly cache add   spec: '>=1.0.0 <2.0.0',
+747 silly cache add   type: 'range' }
+748 silly addNamed archy@>=1.0.0 <2.0.0
+749 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for archy
+750 silly addNameRange { name: 'archy', range: '>=1.0.0 <2.0.0', hasData: false }
+751 silly mapToRegistry name archy
+752 silly mapToRegistry using default registry
+753 silly mapToRegistry registry https://registry.npmjs.org/
+754 silly mapToRegistry uri https://registry.npmjs.org/archy
+755 verbose addNameRange registry:https://registry.npmjs.org/archy not in flight; fetching
+756 verbose request uri https://registry.npmjs.org/chalk
+757 verbose request no auth needed
+758 info attempt registry request try #1 at 14:04:47
+759 verbose request using bearer token for auth
+760 verbose etag "CZ1HJYNG1F9RAZKRLFO6MEJ6E"
+761 http request GET https://registry.npmjs.org/chalk
+762 verbose request uri https://registry.npmjs.org/minimist
+763 verbose request no auth needed
+764 info attempt registry request try #1 at 14:04:47
+765 verbose request using bearer token for auth
+766 verbose etag "23L9PAN3EJ180BNMVG99PUFEG"
+767 http request GET https://registry.npmjs.org/minimist
+768 verbose request uri https://registry.npmjs.org/deprecated
+769 verbose request no auth needed
+770 info attempt registry request try #1 at 14:04:47
+771 verbose request using bearer token for auth
+772 verbose etag "4ST2K9G9PP2UO3MRNVO9JKG1A"
+773 http request GET https://registry.npmjs.org/deprecated
+774 verbose request uri https://registry.npmjs.org/interpret
+775 verbose request no auth needed
+776 info attempt registry request try #1 at 14:04:47
+777 verbose request using bearer token for auth
+778 verbose etag "602CHD0WBUOL5MH0RH7DQLWM5"
+779 http request GET https://registry.npmjs.org/interpret
+780 verbose request uri https://registry.npmjs.org/semver
+781 verbose request no auth needed
+782 info attempt registry request try #1 at 14:04:47
+783 verbose request using bearer token for auth
+784 verbose etag "7B74ULVMR1G8DYXWY7UP9GXP8"
+785 http request GET https://registry.npmjs.org/semver
+786 verbose request uri https://registry.npmjs.org/liftoff
+787 verbose request no auth needed
+788 info attempt registry request try #1 at 14:04:47
+789 verbose request using bearer token for auth
+790 verbose etag "92OVKQA59ULX7ZCWI7BPAXF5C"
+791 http request GET https://registry.npmjs.org/liftoff
+792 verbose request uri https://registry.npmjs.org/pretty-hrtime
+793 verbose request no auth needed
+794 info attempt registry request try #1 at 14:04:47
+795 verbose request using bearer token for auth
+796 verbose etag "CF4MV7VI33ZW0UW51QX81EDAQ"
+797 http request GET https://registry.npmjs.org/pretty-hrtime
+798 verbose request uri https://registry.npmjs.org/vinyl-fs
+799 verbose request no auth needed
+800 info attempt registry request try #1 at 14:04:47
+801 verbose request using bearer token for auth
+802 verbose etag "8KO2C6LHP0DZYWTLOO1LMEKMG"
+803 http request GET https://registry.npmjs.org/vinyl-fs
+804 verbose request uri https://registry.npmjs.org/tildify
+805 verbose request no auth needed
+806 info attempt registry request try #1 at 14:04:47
+807 verbose request using bearer token for auth
+808 verbose etag "9B2APQWGJ4D2DZG6FOX7B6JVO"
+809 http request GET https://registry.npmjs.org/tildify
+810 verbose request uri https://registry.npmjs.org/orchestrator
+811 verbose request no auth needed
+812 info attempt registry request try #1 at 14:04:47
+813 verbose request using bearer token for auth
+814 verbose etag "E8Q6FDYF25XWVEVSG7TVNUUF2"
+815 http request GET https://registry.npmjs.org/orchestrator
+816 verbose request uri https://registry.npmjs.org/archy
+817 verbose request no auth needed
+818 info attempt registry request try #1 at 14:04:47
+819 verbose request using bearer token for auth
+820 verbose etag "6EZY7G1TMK6WGDEBYX95ZZVW2"
+821 http request GET https://registry.npmjs.org/archy
+822 verbose request uri https://registry.npmjs.org/v8flags
+823 verbose request no auth needed
+824 info attempt registry request try #1 at 14:04:47
+825 verbose request using bearer token for auth
+826 verbose etag "967NB6R8Y9YA5JBADTEK9CNIP"
+827 http request GET https://registry.npmjs.org/v8flags
+828 verbose stack Error: read ECONNRESET
+828 verbose stack     at exports._errnoException (util.js:746:11)
+828 verbose stack     at TCP.onread (net.js:559:26)
+829 verbose cwd D:\oldf\nodeprojects\es.next
+830 error Windows_NT 6.1.7601
+831 error argv "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "i"
+832 error node v0.12.7
+833 error npm  v2.11.3
+834 error code ECONNRESET
+835 error errno ECONNRESET
+836 error syscall read
+837 error network read ECONNRESET
+837 error network This is most likely not a problem with npm itself
+837 error network and is related to network connectivity.
+837 error network In most cases you are behind a proxy or have bad network settings.
+837 error network
+837 error network If you are behind a proxy, please make sure that the
+837 error network 'proxy' config is set properly.  See: 'npm help config'
+838 verbose exit [ 1, true ]

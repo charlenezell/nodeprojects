@@ -47,7 +47,6 @@ gulp.task("css", ["sprite"], function() {
 gulp.task("js", ["clean"], function() {
     return gulp.src("src/**/*.js")
         .pipe(jshint())
-        .pipe(jshint())
         .pipe(jshint.reporter(stylish))
         .pipe(uglify())
         .pipe(gulp.dest("dest/"));

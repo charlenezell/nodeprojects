@@ -15,7 +15,7 @@ var defaultVideoCodec = "libx264";
 var defaultAudioCodec = "libvo_aacenc";
 var defaultAudioBitrate = 64;
 var defaultAudioFrequency = 22050;
-var defaultAudioChannels = 2;
+var defaultAudioChannels = 1;
 var defaultVideoPaddingColor = "#000";
 var pix_fmt = "yuv420p";
 var totalLength=0;
@@ -70,7 +70,15 @@ asciify('Z-Trans', {
         when: function(answers) {
             return lodash.contains(answers.mediaType, "video");
         }
-    }, {
+    },/*{
+        type: "input",
+        name: "size",
+        message: "视频大小(number*number,number*?,?*number,percentage)",
+        default:"100%",
+        when: function(answers) {
+            return lodash.contains(answers.mediaType, "video");
+        }
+    },*/ {
         type: "list",
         name: "mp4_profile",
         message: "MP4产出Profile选择:",
@@ -196,9 +204,11 @@ function getMp4Command(answers, v, queueRef,_outputPath,outputPathFileName,cur) 
     command
         .audioCodec(defaultAudioCodec)
         .audioBitrate(defaultAudioBitrate)
+        // .size(answers.size)
+        .aspect(answers.aspect)
+        .autopad(defaultVideoPaddingColor)
         .keepDAR()
         .audioFrequency(defaultAudioFrequency)
-        .aspect(answers.aspect)
         .audioChannels(defaultAudioChannels)
         .videoCodec(defaultVideoCodec)
         .videoBitrate(answers.vbitrate)
@@ -207,7 +217,6 @@ function getMp4Command(answers, v, queueRef,_outputPath,outputPathFileName,cur) 
         // .outputOption("-passlogfile d:/video/passlog")
         .inputOption("-threads 0")
         .outputOption("-pix_fmt " + pix_fmt)
-        .autopad(defaultVideoPaddingColor)
         .on('progress', function(progress) {
             command._bar.tick(progress.percent - command._lastTime);
             command._lastTime = progress.percent;

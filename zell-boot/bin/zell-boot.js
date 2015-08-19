@@ -173,7 +173,13 @@ inquirer.prompt([{
         .pipe(map(ldTemplate))
         .pipe(fs.dest(path.join(dest,"/src/")));
 
-    fs.src([envPath+"root/gulpfile.js",envPath+"root/package.json"]).pipe(map(ldTemplate)).pipe(fs.dest(dest));
+    fs.src([
+        envPath+"root/gulpfile.js",
+        envPath+"root/package.json",
+        envPath+"root/sptemplate.hb",
+        envPath+"root/readme.md",
+        envPath+"root/env.json"
+        ]).pipe(map(ldTemplate)).pipe(fs.dest(dest));
     fs.src(buildCollection2).pipe(fs.dest(path.join(dest,"/src/")));
 
 });
