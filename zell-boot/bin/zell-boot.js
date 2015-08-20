@@ -8,6 +8,7 @@ var path=require("path");
 var fs = require('vinyl-fs');
 var map = require('map-stream');
 var asciify=require("asciify");
+var cfs=require("fs");
 var config = {};
 var templateData = {
     aobi: {
@@ -76,149 +77,177 @@ var templateData = {
         url: "http://ac.100bt.com/"
     }
 };
-asciify('Z-Boot', {color:"green",font: 'larry3d', maxWidth: 90 }, function (err, result) {
- console.log(result);
-inquirer.prompt([{
-    type: "list",
-    name: "siteName",
-    message: "哥，这是神马专题？",
-    choices: lodash.keys(templateData)
-}, {
-    type: "input",
-    name: "T",
-    message: "页面标题",
-    default: "百田网页面标题"
-}, {
-    type: "input",
-    name: "D",
-    message: "页面描述",
-    default: "百田网页面描述"
-}, {
-    type: "input",
-    name: "K",
-    message: "页面关键字",
-    default: "百田网页面关键字"
-}, {
-    type: "checkbox",
-    message: "选择站点类型",
-    name: "siteType",
-    choices: [{
-        name: "web",
-        checked: true
-    }, {
-        name: "wap"
-    }],
-    validate: function(answer) {
-        if (answer.length < 1) {
-            return "You must choose at least one topping.";
-        }
-        return true;
-    }
-}, {
+asciify('Z-Boot', {
+    color: "green",
+    font: 'larry3d',
+    maxWidth: 90
+}, function(err, result) {
+    console.log(result);
+    inquirer.prompt([{
+            type: "list",
+            name: "siteName",
+            message: "这是神马专题？",
+            choices: lodash.keys(templateData)
+        }, {
+            type: "input",
+            name: "T",
+            message: "页面标题",
+            default: "百田网页面标题"
+        }, {
+            type: "input",
+            name: "D",
+            message: "页面描述",
+            default: "百田网页面描述"
+        }, {
+            type: "input",
+            name: "K",
+            message: "页面关键字",
+            default: "百田网页面关键字"
+        }, {
+            type: "input",
+            name: "siteRootPath",
+            message: "网页根路径",
+            default: "http://www.100bt.com/some/site/path/"
+        }, {
+            type: "checkbox",
+            message: "选择站点类型",
+            name: "siteType",
+            choices: [{
+                name: "web",
+                checked: true
+            }, {
+                name: "wap"
+            }],
+            validate: function(answer) {
+                if (answer.length < 1) {
+                    return "You must choose at least one topping.";
+                }
+                return true;
+            }
+        },
+        /*{
     type: "input",
     name: "sitePath",
     message: "站点相对于相应站点gwActivity下的路径:形如'20150701/'",
     default: function() {
         return datef('YYYYMMdd/', new Date());
     }
-}, {
-    type: "input",
-    name: "shareWord",
-    message: "分享语",
-    default: "这是分享语"
-}, {
-    type: "input",
-    name: "sharePic",
-    message: "分享图",
-    default: "<%= siteData.url %>gwActivity/<%= sitePath %>resource/share.jpg"
-}, {
-    type: "input",
-    name: "shareTitle",
-    message: "分享标题",
-    default: "分享标题"
-},{
-    type: "input",
-    name: "deployRootPath",
-    message: "本地Deploy的根路径",
-    default: "D:/home/site/web/"
-}], function(answers) {
-    answers.hasWap=lodash.contains(answers.siteType,"wap")?"ok":"";
-    answers.hasWeb=lodash.contains(answers.siteType,"web")?"ok":"";
-    answers.siteData = templateData[answers.siteName];
-    config = precompile(answers, function(str) {
-        try {
-            var compiled = lodash.template(str);
-            return compiled(answers);
-        } catch (e) {
-            return str;
+},*/
+        {
+            type: "input",
+            name: "shareWord",
+            message: "分享语",
+            default: "这是分享语"
+        }, {
+            type: "input",
+            name: "sharePic",
+            message: "分享图路径",
+            default: "share.jpg"
+        }, {
+            type: "input",
+            name: "shareTitle",
+            message: "分享标题",
+            default: "分享标题"
         }
-    });
-    lodash.extend(config, {
-        activityPath: 'gwActivity/',
-    });
-    console.log(config);
-	var envPath=path.resolve(__dirname,"..").replace(/\\/,"/")+"/";
-    var buildCollection=[envPath+"root/**/*.{html,js,css}","!"+envPath+"root/gulpfile.js"];
-	var buildCollection2=[envPath+"root/**/*.{jpg,png}"];
-    if(!answers.hasWap){
-        buildCollection.push('!'+envPath+'root/wap/**/*');
-		buildCollection2.push('!'+envPath+'root/wap/**/*');
-    }
-    if(!answers.hasWeb){
-        buildCollection.push('!'+envPath+'root/web/**/*');
-		buildCollection2.push('!'+envPath+'root/web/**/*');
-    }
+        /*,{
+            type: "input",
+            name: "deployRootPath",
+            message: "本地Deploy的根路径",
+            default: "D:/home/site/web/"
+        }*/
+    ], function(answers) {
+        answers.hasWap = lodash.contains(answers.siteType, "wap") ? "ok" : "";
+        answers.hasWeb = lodash.contains(answers.siteType, "web") ? "ok" : "";
+        answers.siteData = templateData[answers.siteName];
+        /*取消配置的编译，因为最后输出到模板里面会以配置形式去
+        修改，这里可以不需这么智能*/
+        // console.log(answers);
+        // config = precompile(answers, function(str) {
+        //     try {
+        //         var compiled = lodash.template(str);
+        //         return compiled(answers);
+        //     } catch (e) {
+        //         return str;
+        //     }
+        // });
+        /*lodash.extend(config, {
+            activityPath: 'gwActivity/',
+        });*/
+        config = answers;
+        console.log(config);
+        var envPath = path.join(__dirname, "..");
 
-    fs.src(buildCollection)
-        .pipe(map(ldTemplate))
-        .pipe(fs.dest(path.join(dest,"/src/")));
+        var buildCollection = [path.join(envPath , "root/**/*.{html,js,css,scss}"), path.join("!" + envPath , "root/gulpfile.js")];
 
-    fs.src([
-        envPath+"root/gulpfile.js",
-        envPath+"root/package.json",
-        envPath+"root/sptemplate.hb",
-        envPath+"root/readme.md",
-        envPath+"root/env.json"
-        ]).pipe(map(ldTemplate)).pipe(fs.dest(dest));
-    fs.src(buildCollection2).pipe(fs.dest(path.join(dest,"/src/")));
+        var buildCollection3 = [path.join(envPath , "root/resource/**/*.{jpg,png}")];
 
-});
-});
-
-function precompile(obj, cb) {
-    var rst = {};
-
-    function envPath(path, k, value) {
-        //         console.log(path,k,value);
-        var w = eval(path);
-        w[k] = value;
-    }
-
-    function mergePath(base, path) {
-        if (lodash.isNumber(path)) {
-            return base + "[" + path + "]";
-        } else {
-            return base + "['" + path.toString().trim() + "']";
+        if (!answers.hasWap) {
+            buildCollection.push(path.join('!' + envPath , 'root/wap/**/*'));
+            buildCollection3.push(path.join('!' + envPath , 'root/resource/wap/**/*.{jpg,png}'));
+        }
+        if (!answers.hasWeb) {
+            buildCollection.push(path.join('!' + envPath , 'root/web/**/*'));
+            buildCollection3.push(path.join('!' + envPath , 'root/resource/web/**/*.{jpg,png}'));
         }
 
-    }
+        fs.src(buildCollection)
+            // .pipe(map(ldTemplate))
+            .pipe(fs.dest(path.join(dest, "/src/")));
 
-    function a(path, value) {
-        lodash.forEach(value, function(v, k) {
-            if (lodash.isArray(v)) {
-                envPath(path, k, []);
-                a(mergePath(path, k), v)
-            } else if (lodash.isPlainObject(v)) {
-                envPath(path, k, {});
-                a(mergePath(path, k), v)
-            } else {
-                envPath(path, k, cb(v));
-            }
-        });
-    }
-    a("rst", obj);
-    return rst;
-}
+        fs.src(buildCollection3)
+            .pipe(fs.dest(path.join(dest, "./resource")));
+
+        var envjsonData = JSON.parse(cfs.readFileSync(path.join(envPath , "root/env.json")).toString());
+
+        lodash.extend(envjsonData, config);
+
+        cfs.writeFileSync(path.join(envPath,"root/env.json"), JSON.stringify(envjsonData, null, "\t"));
+
+        fs.src([
+                path.join(envPath, "root/gulpfile.js"),
+                path.join(envPath, "root/package.json"),
+                path.join(envPath, "root/sptemplate.hb"),
+                path.join(envPath, "root/readme.md"),
+                path.join(envPath, "root/env.json")
+            ]).pipe(map(ldTemplate))
+            .pipe(fs.dest(dest));
+
+    });
+});
+
+// function precompile(obj, cb) {
+//     var rst = {};
+
+//     function envPath(path, k, value) {
+//         var w = eval(path);
+//         w[k] = value;
+//     }
+
+//     function mergePath(base, path) {
+//         if (lodash.isNumber(path)) {
+//             return base + "[" + path + "]";
+//         } else {
+//             return base + "['" + path.toString().trim() + "']";
+//         }
+
+//     }
+
+//     function a(path, value) {
+//         lodash.forEach(value, function(v, k) {
+//             if (lodash.isArray(v)) {
+//                 envPath(path, k, []);
+//                 a(mergePath(path, k), v)
+//             } else if (lodash.isPlainObject(v)) {
+//                 envPath(path, k, {});
+//                 a(mergePath(path, k), v)
+//             } else {
+//                 envPath(path, k, cb(v));
+//             }
+//         });
+//     }
+//     a("rst", obj);
+//     return rst;
+// }
 
 function ldTemplate(file, cb) {
     var content = file.contents;

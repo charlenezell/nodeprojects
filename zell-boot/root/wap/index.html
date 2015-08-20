@@ -18,7 +18,7 @@
         <% if (hasWeb) {%>
         <script>
             if (!/(android|iphone|windows phone)/.test(window.navigator.userAgent.toLowerCase())) {
-                location.href = "<%= siteData.url%><%= activityPath%><%= sitePath%>web/";
+                location.href = "<%= siteRootPath%>web/";
             }
         </script>
         <% } %>

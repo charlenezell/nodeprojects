@@ -8,20 +8,20 @@
         <% if (hasWap&&hasWeb) {%>
         <script>
             if (/(android|iphone|windows phone)/.test(window.navigator.userAgent.toLowerCase())) {
-                location.href = "<%= siteData.url%><%= activityPath%><%= sitePath%>wap/";
+                location.href = "<%= siteRootPath%>wap/";
             }else{
-                location.href = "<%= siteData.url%><%= activityPath%><%= sitePath%>web/";
+                location.href = "<%= siteRootPath%>web/";
             }
         </script>
         <% } %>
         <% if (hasWeb&&!hasWap) {%>
         <script>
-            location.href = "<%= siteData.url%><%= activityPath%><%= sitePath%>web/";
+            location.href = "<%= siteRootPath%>web/";
         </script>
         <% } %>
         <% if (hasWap&&!hasWeb) {%>
         <script>
-            location.href = "<%= siteData.url%><%= activityPath%><%= sitePath%>wap/";
+            location.href = "<%= siteRootPath%>wap/";
         </script>
         <% } %>
     </head>

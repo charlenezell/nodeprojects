@@ -14,7 +14,7 @@
         <% if (hasWap) {%>
         <script>
             if (/(android|iphone|windows phone)/.test(window.navigator.userAgent.toLowerCase())) {
-                location.href = "<%= siteData.url%><%= activityPath%><%= sitePath%>wap/";
+                location.href = "<%= siteRootPath%>wap/";
             }
         </script>
         <% } %>
