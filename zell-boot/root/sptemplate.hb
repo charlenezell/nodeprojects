@@ -15,7 +15,7 @@
   height: {{px.height}};
 }
 
-@function  {{{strings.name}}}_inspect($attrName) {
+@function  {{{strings.name}}}_inspect() {
   $ix:{{px.offset_x}};
   $iy:{{px.offset_y}};
   $iw:{{px.width}};
