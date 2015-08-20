@@ -4,6 +4,7 @@ var gulp = require('gulp'),
     sourcemaps = require('gulp-sourcemaps'),
     livereload = require('gulp-livereload'),
     wrap = require("gulp-wrap"),
+    runSequence = require('run-sequence'),
     mkdirp=require("mkdirp"),
     gulpif = require('gulp-if'),
     concat = require("gulp-concat"),
@@ -55,29 +56,38 @@ if (!configjson.resourcePath) {
         耗时资源编译watchResource(sprite生成sass和less中间代码,图片生成与部署)
         文本资源编译watchSrcCode(jsmin,cssmin,htmlmin,bundle生成,rev,replace)
 */
-gulp.task("default",["watchSrcCode","watchResource","watchConfig"]);
+
+
+
+gulp.task("default",function(cb){
+  runSequence("build","watchConfig","watchResource","watchSrcCode",cb);
+});
+
 gulp.task("watchConfig",function(){
     return gulp.watch("./env.json",["reloadConfig"]);
 });
-gulp.task("reloadConfig",function(){
+gulp.task("reloadConfig",function(cb){
     try {
     configjson = JSON.parse(fs.readFileSync("env.json").toString());
     console.log("env.json Reloaded");
     } catch (e) {
         throw e;
     }
+    runSequence("deploySrcCode",cb);
 });
-gulp.task("watchResource",["deployResource"],function(){
-    return gulp.watch(path.join(configjson.resourcePath,"**/*.{jpg,png}"),["deployResource"]);
+gulp.task("build",function(cb){
+  runSequence(["sprite","optimizeBackgroundImage"],"deploySrcCode",cb);
 });
-gulp.task("watchSrcCode",["deploySrcCode","watchResource"],function(){
-    return gulp.watch(path.join(__dirname,"/src/**/*.{html,js,css,scss}"),["deploySrcCode"]);
+gulp.task("watchResource",function(){
+    return gulp.watch(path.join(configjson.resourcePath,"**/*.{jpg,png}"),["build"]);
 });
-gulp.task("deployResource",["buildResource"]);
-gulp.task("deploySrcCode",["buildSrcCode"],function(cb){
+gulp.task("watchSrcCode",function(){
+    return gulp.watch([path.join(__dirname,"/src/**/*.{html,js,css,scss}"),"!"+path.join(__dirname,"/src/**/sprite.scss")],["deploySrcCode"]);
+});
+
+gulp.task("deploySrcCode",["rev"],function(cb){
         return gulp.src("./dest/**/*").pipe(gulp.dest("./")).pipe(gulp.dest(configjson.deployPath));
     });
-gulp.task("buildResource",["sprite","optimizeBackgroundImage"]);
 gulp.task("sprite",function(){
     var resourceGlob=path.join(configjson.resourcePath,"*");
     var subSites = ld.compact(glob.sync(resourceGlob)
@@ -194,7 +204,6 @@ gulp.task("optimizeBackgroundImage",function(){
         optimizationLevel: 3
     })).pipe(gulp.dest("./dest/"));
 });
-gulp.task("buildSrcCode",["rev"],function(cb){cb()});
 gulp.task("rev",["makeRevMap"],function(){
     var mani = gulp.src("./rev-manifest.json");
     return gulp.src("./dest/**/*.{html,css,js}")
@@ -277,7 +286,7 @@ gulp.task("css",["sass"],function(){
            }))
         .pipe(gulp.dest("dest/"));
 });
-gulp.task("sass", function() {
+gulp.task("sass",function() {
     var jobs=[];
     /*sass 不支持glob...*/
     function makeSass(siteName){
