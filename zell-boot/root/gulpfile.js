@@ -54,9 +54,13 @@ if (!configjson.resourcePath) {
         耗时资源编译watchResource(sprite生成sass和less中间代码,图片生成与部署)
         文本资源编译watchSrcCode(jsmin,cssmin,htmlmin,bundle生成,rev,replace)
 */
-// gulp.task("default",["buildResource"]);
-gulp.task("watchResource",["deployResource"])
-gulp.task("watchSrcCode",["deploySrcCode"])
+gulp.task("default",["watchSrcCode","watchSrcCode"]);
+gulp.task("watchResource",["deployResource"],function(){
+    return gulp.watch(path.join(configjson.resourcePath,"**/*.{jpg,png}"),["deployResource"]);
+});
+gulp.task("watchSrcCode",["deploySrcCode","watchResource"],function(){
+    return gulp.watch(path.join(__dirname,"/src/**/*.{html,js,css,scss}"),["deploySrcCode"]);
+});
 gulp.task("deployResource",["buildResource"]);
 gulp.task("deploySrcCode",["buildSrcCode"]);
 gulp.task("buildResource",["sprite","optimizeBackgroundImage"]);
@@ -129,7 +133,8 @@ gulp.task("sprite",function(){
                 algorithm: chooseAlgorithm(a),
                 cssVarMap: function(sp) {
                     var spriteImgName = getRealName(a);
-                    sp.name = spriteImgName.replace(path.extname(spriteImgName),"") + "_" + sp.name;
+                    sp.name = spriteImgName.replace(path.extname(spriteImgName),"")
+                     + "_" + sp.name;
                 },
                 cssTemplate: configjson.spriteGeneratTemplate
             }));
@@ -175,16 +180,70 @@ gulp.task("optimizeBackgroundImage",function(){
         optimizationLevel: 3
     })).pipe(gulp.dest("./dest/"));
 });
-gulp.task("buildSrcCode",["replace"]);
-gulp.task("replace",["rev"],function(){
-
-});
+gulp.task("buildSrcCode",["rev"],function(cb){cb()});
 gulp.task("rev",["makeRevMap"],function(){
-
+    var mani = gulp.src("./rev-manifest.json");
+    return gulp.src("./dest/**/*.{html,css,js}")
+        .pipe(replace({
+            manifest: mani,
+            modifyUnreved: function(name, base) {
+                // console.log(2,name,base)
+                var a = path.relative(path.dirname(base), path.resolve("dest", name));
+                a = a.replace(/\\/g, "/");
+                return a;
+            },
+            modifyReved: function(name, unrevName, base) {
+                // console.log(1,name,unrevName,base)
+                var rev = path.basename(name).split("-").pop().split(".")[0];
+                var a = path.relative(path.dirname(base), path.resolve("dest", unrevName)) + "?" + rev;
+                a = a.replace(/\\/g, "/");
+                return a;
+            }
+        }))
+        .pipe(gulp.dest("./dest/"));
 });
-gulp.task("makeRevMap",["javascript","stylesheet"],function(){
-
+gulp.task("makeRevMap",["html"],function(){
+    return gulp.src("dest/**/*.{html,css,js,png,jpg,swf,mp4,mp3,flv,gif}")
+                .pipe(rev())
+                .pipe(rev.manifest())
+                .pipe(gulp.dest("./"));
 });
+gulp.task("html",["javascript","css"],function(){
+    var assets1 = useref.assets({
+        searchPath: "./dest/web/"
+    });
+    var assets2 = useref.assets({
+        searchPath: "./dest/wap/"
+    });
+    /*makeBundleJSs/CSSs*/
+    return merge(
+        gulp.src("./src/wap/*.html")
+        .pipe(assets2)
+        .pipe(gulp.dest("./dest/wap/"))
+        .pipe(assets2.restore())
+        .pipe(useref())
+        .pipe(htmlmin({
+            conditionals: true,
+            quotes: false
+        }))
+        .pipe(gulp.dest("./dest/wap/")),
+        gulp.src("./src/web/*.html")
+        .pipe(assets1)
+        .pipe(gulp.dest("./dest/web/"))
+        .pipe(assets1.restore())
+        .pipe(useref())
+        .pipe(htmlmin({
+            conditionals: true,
+            quotes: false
+        }))
+        .pipe(gulp.dest("./dest/web/")),
+        gulp.src("./src/*.html").pipe(htmlmin({
+            conditionals: true,
+            quotes: false
+        })).pipe(gulp.dest("./dest/"))
+    );
+});
+
 gulp.task("javascript",function(){
     return gulp.src("src/**/*.js")
         .pipe(jshint())
@@ -192,9 +251,7 @@ gulp.task("javascript",function(){
         .pipe(uglify())
         .pipe(gulp.dest("dest/"));
 });
-gulp.task("stylesheet",["css"],function(){
 
-});
 gulp.task("css",["sass"],function(){
     return gulp.src("src/**/*.css")
         .pipe(autoprefixer())
