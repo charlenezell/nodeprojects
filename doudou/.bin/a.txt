@@ -1,0 +1,17 @@
+cscript
+[D] [35mfiltered to Be:43-zjxxtest[39m
+[32m>> [39m1 games are going to be builded
+[D] [35m43-zjxxtest[39m
+[32m>> [39myou are building : 43-zjxxtest
+[D] [35m本地不存在[39m
+Reading E:/projectA/source/doudou/WebRoot/play/config.ftl...[32mOK[39m
+Writing E:/projectA/source/doudou/WebRoot/play/43-zjxxtest/config.ftl...[32mOK[39m
+[D] [35mgetting index.html attr[39m
+[D] [35min doit[39m
+[D] [35mcmd fmpp -s E:\projectA\source\doudou\WebRoot\play\43-zjxxtest\content.ftl -o E:\projectA\source\doudou\WebRoot\play\43-zjxxtest\index.html -C E:\projectA\source\doudou\WebRoot\play\locals.config[39m
+Deleting E:/projectA/source/doudou/WebRoot/play/43-zjxxtest/config.ftl...[32mOK[39m
+exec error: Error: Command failed: C:\Windows\system32\cmd.exe /s /c "fmpp -s E:\projectA\source\doudou\WebRoot\play\43-zjxxtest\content.ftl -o E:\projectA\source\doudou\WebRoot\play\43-zjxxtest\index.html -C E:\projectA\source\doudou\WebRoot\play\locals.config"
+'fmpp' �����ڲ����ⲿ���Ҳ���ǿ����еĳ���
+���������ļ���
+
+[31m>> [39myou may not checkout or the index.html file is readonly? checkout your self or use -c automactically checkout for you
