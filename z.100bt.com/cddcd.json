@@ -1,0 +1,207 @@
+{
+  "games": [
+    {
+      "name": "疯狂外星人",
+      "reflink": "http://flash.7k7k.com/h5/2015/alien/index.html",
+      "shareword": "直接分享title",
+      "priority": 1,
+      "id": "efdf315a-1dcc-47c6-aecd-4559539ba8c2"
+    },
+    {
+      "name": "简单到爆了",
+      "reflink": "http://flash1.7k7k.com/h5/2015/jddbl/game.html",
+      "shareword": "我在《简单到爆了》中得到xx分，快来挑战吧！",
+      "priority": 1,
+      "id": "a5c0cbc7-6bf7-4891-b795-3f9fd6fa57fd"
+    },
+    {
+      "name": "奶油仓鼠吃糖果",
+      "reflink": "http://flash1.7k7k.com/h5/2015/creamhamster/index.html",
+      "shareword": "直接分享title",
+      "priority": 1,
+      "id": "8a93bf33-0778-4356-99a8-cc0b31e00694"
+    },
+    {
+      "name": "寿司挑战",
+      "reflink": "http://flash1.7k7k.com/h5/2015/sushichallange/index.html",
+      "shareword": "直接分享title",
+      "priority": 1,
+      "id": "7f1c87af-e43f-48c2-8c9b-0376d2f93f44"
+    },
+    {
+      "name": "萌兔夜晚装",
+      "reflink": "http://flash1.7k7k.com/h5/2015/nightsout/game.htm",
+      "shareword": "直接分享title",
+      "priority": 1,
+      "id": "357c617a-d8db-42ff-89fe-a5a8fdddb9f0"
+    },
+    {
+      "name": "照顾甜心宝贝",
+      "reflink": "http://flash1.7k7k.com/h5/2015/sweetbaby/game.htm",
+      "shareword": "直接分享title",
+      "priority": 1,
+      "id": "4ec2e977-312f-42fe-8205-ef9f63d88f7a"
+    },
+    {
+      "name": "学做美味意粉",
+      "reflink": "http://flash1.7k7k.com/h5/2015/zucchini/game.htm",
+      "shareword": "直接分享title",
+      "priority": 1,
+      "id": "a29652bb-b81e-47a3-8b8f-639a4dbe2819"
+    },
+    {
+      "name": "学做法式华夫饼",
+      "reflink": "http://sda.4399.com/4399swf/upload_swf/ftp15/ssj/20150403/h3/p2/game.html",
+      "shareword": "直接分享title",
+      "priority": 1,
+      "id": "e334d79e-f1bd-4394-bba2-0626a1e434c4"
+    },
+    {
+      "name": "我和狗狗的游戏时间",
+      "reflink": "http://flash.7k7k.com/h5/2014/mypuppyplayday1/game.html",
+      "shareword": "直接分享title",
+      "priority": 1,
+      "id": "e238b999-fd0d-44dd-a6fb-d0c34e91bbe9"
+    },
+    {
+      "name": "电影明星装扮",
+      "reflink": "http://flash1.7k7k.com/h5/2015/sosakuramoviestar/game.html",
+      "shareword": "直接分享title",
+      "priority": 1,
+      "id": "dbd7462e-7127-4eb6-8e07-2926fcfa3469"
+    },
+    {
+      "name": "超级飞翔猫",
+      "reflink": "http://szhong.4399.com/4399swf/upload_swf/ftp15/ssj/20150402/j3a/index.html",
+      "shareword": "我在《超级飞翔猫》中得到xx分，来挑战下吧！",
+      "priority": 2,
+      "id": "327f7418-5f1f-4902-9850-e2a27fb97314"
+    },
+    {
+      "name": "宇宙战士",
+      "reflink": "http://szhong.4399.com/4399swf/upload_swf/ftp15/yzg/20150405/3/game.htm",
+      "shareword": "直接分享title",
+      "priority": 2,
+      "id": "526c25cf-3d72-4b17-a9aa-9ffef8040149"
+    },
+    {
+      "name": "疯狂打兔子",
+      "reflink": "http://sda.4399.com/4399swf/upload_swf/ftp15/ssj/20150331/h3/game.htm",
+      "shareword": "直接分享title",
+      "priority": 2,
+      "id": "5475ddb0-1557-46a4-a897-3491937d930a"
+    },
+    {
+      "name": "上课偷懒玩",
+      "reflink": "http://flash1.7k7k.com/h5/2015/slackingschool/game.htm",
+      "shareword": "直接分享title",
+      "priority": 2,
+      "id": "d1494e45-ab30-404c-a03c-4945fb76ba2c"
+    },
+    {
+      "name": "冰淇淋农场",
+      "reflink": "http://sda.4399.com/4399swf/upload_swf/ftp15/ssj/20150330/j1/index.htm",
+      "shareword": "直接分享title",
+      "priority": 2,
+      "id": "65cf2350-f407-491f-ab98-176a312f2b22"
+    },
+    {
+      "name": "我要回家",
+      "reflink": "http://szhong.4399.com/4399swf/upload_swf/ftp15/yzg/20150304/1/game.htm",
+      "shareword": "直接分享title",
+      "priority": 2,
+      "id": "a595b9f1-23ac-4e5c-af34-e1c12970902d"
+    },
+    {
+      "name": "樱桃派达人",
+      "reflink": "http://flash1.7k7k.com/h5/2015/master/game.html",
+      "shareword": "直接分享title",
+      "priority": 2,
+      "id": "4f61dfa9-dd47-49d6-ac36-012a92041804"
+    },
+    {
+      "name": "彩虹弹球机",
+      "reflink": "http://flash1.7k7k.com/h5/2015/rainbowpinball/game.htm",
+      "shareword": "我在《彩虹弹球机》中得到xx分，来挑战下吧！",
+      "priority": 2,
+      "id": "071c104d-1a26-4dfe-88af-00684cf74172"
+    },
+    {
+      "name": "果汁飞溅狂欢",
+      "reflink": "http://szhong.4399.com/4399swf/upload_swf/ftp15/ssj/20150318/j2aa/index.htm",
+      "shareword": "直接分享title",
+      "priority": 2,
+      "id": "9caf6b11-2762-4751-acd0-014a5a350b71"
+    },
+    {
+      "name": "农场泡泡传奇",
+      "reflink": "http://sda.4399.com/4399swf/upload_swf/ftp15/ssj/20150216/h1/game.html",
+      "shareword": "直接分享title",
+      "priority": 3,
+      "id": "4a25f92c-ef89-4bd0-be27-96828e956244"
+    },
+    {
+      "name": "拯救美人鱼",
+      "reflink": "http://sda.4399.com/4399swf/upload_swf/ftp14/ck/20150105/8/index.html",
+      "shareword": "直接分享title",
+      "priority": 3,
+      "id": "358386c3-9b6e-4105-8e5a-68d91c93ae05"
+    },
+    {
+      "name": "星际摩托车",
+      "reflink": "http://flash1.7k7k.com/h5/2015/xjmt/game.html",
+      "shareword": "直接分享title",
+      "priority": 3,
+      "id": "cbaa1b81-926e-43d8-8b18-46ac6e4e5009"
+    },
+    {
+      "name": "美人鱼的故事书",
+      "reflink": "http://sda.4399.com/4399swf/upload_swf/ftp14/yzg/20141103/3/game.htm",
+      "shareword": "直接分享title",
+      "priority": 3,
+      "id": "0806bcc3-c901-40df-b87b-0b92234f1993"
+    },
+    {
+      "name": "果汁呼叫转移",
+      "reflink": "http://flash1.7k7k.com/h5/2015/gzhjzy/game.html",
+      "shareword": "直接分享title",
+      "priority": 3,
+      "id": "5f8c3a0a-7133-49f7-84cf-802151ad87f4"
+    },
+    {
+      "name": "逗比大测试",
+      "reflink": "http://m.3366.com/gamefile/30130/h5/weixin/doubi/game.shtml",
+      "shareword": "直接分享title",
+      "priority": 3,
+      "id": "64bdb39c-646b-4a33-b873-e81a5bd6d3be"
+    },
+    {
+      "name": "测试你的潜在性格",
+      "reflink": "http://m.3366.com/gamefile/30161/weit4/42/index.shtml",
+      "shareword": "直接分享title",
+      "priority": 3,
+      "id": "470af8ae-5807-464b-bc0e-da3bac212c07"
+    },
+    {
+      "name": "逃出疯人院",
+      "reflink": "http://m.3366.com/gamefile/30120/h5/2014/felixtheloony/game.shtml",
+      "shareword": "直接分享title",
+      "priority": 3,
+      "id": "8324315f-d7ba-4698-b29e-c30b5de1db38"
+    },
+    {
+      "name": "泡泡消除",
+      "reflink": "http://flash1.7k7k.com/h5/2015/qpxc/game.html",
+      "shareword": "直接分享title",
+      "priority": 3,
+      "id": "a82bc29a-518f-487a-ae5c-3047af2bb63c"
+    },
+    {
+      "name": "农场大营救",
+      "reflink": "http://sda.4399.com/4399swf/upload_swf/ftp14/ly/20140709/1/game.htm",
+      "shareword": "直接分享title",
+      "priority": 3,
+      "id": "b294dd0c-5efd-4063-a486-ce7498cb40d3"
+    }
+  ]
+}

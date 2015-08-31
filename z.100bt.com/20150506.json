@@ -1,0 +1,263 @@
+{
+  "games": [
+    {
+      "name": "天天酷飞vbvvv",
+      "reflink": 1,
+      "shareword": "我在《天天酷飞》中飞翔xx米，谁敢来挑战下？",
+      "priority": 1,
+      "id": "9c1d309a-17f8-4711-837f-c56a5dc2039b"
+    },
+    {
+      "name": "天天切蛋糕",
+      "reflink": 2,
+      "shareword": "我在《天天切蛋糕》中获得xx分，小伙伴快来切蛋糕咯！",
+      "priority": 1,
+      "id": "22218773-982c-42d6-b617-5ea63a31c1ad"
+    },
+    {
+      "name": "奔跑吧兔子",
+      "reflink": 3,
+      "shareword": "直接分享title",
+      "priority": 1,
+      "id": "18f69989-40f7-4e9a-ae46-8367607b9ecd"
+    },
+    {
+      "name": "美味寿司卷",
+      "reflink": 4,
+      "shareword": "直接分享title",
+      "priority": 2,
+      "id": "5c40e2a8-bc5c-4a2d-a45c-56ab56f21b15"
+    },
+    {
+      "name": "超能战机",
+      "reflink": 5,
+      "shareword": "直接分享title",
+      "priority": 2,
+      "id": "c35419d6-899c-45c4-8e3c-958f8dc8e0c6"
+    },
+    {
+      "name": "美味樱桃蛋糕",
+      "reflink": 6,
+      "shareword": "直接分享title",
+      "priority": 2,
+      "id": "f9649861-6266-4074-8c58-cfce68f5690a"
+    },
+    {
+      "name": "熊熊保卫战",
+      "reflink": 7,
+      "shareword": "直接分享title",
+      "priority": 2,
+      "id": "dc6ba0c1-a8b7-49e6-9ab1-c383d066b56c"
+    },
+    {
+      "name": "动物消消乐",
+      "reflink": 8,
+      "shareword": "我在《动物消消乐》中消除xx分，快来一起消消乐吧！",
+      "priority": 2,
+      "id": "91c2e96d-9af5-4c82-a9e7-7fefcd545859"
+    },
+    {
+      "name": "电影明星换装",
+      "reflink": 9,
+      "shareword": "直接分享title",
+      "priority": 3,
+      "id": "f2045541-006f-4ca7-ad09-d40e1d649307"
+    },
+    {
+      "name": "万圣节奇异装",
+      "reflink": 10,
+      "shareword": "直接分享title",
+      "priority": 3,
+      "id": "77a39892-9c01-41cd-83e0-bf3c23ee6e93"
+    },
+    {
+      "name": "精灵泡泡龙",
+      "reflink": 11,
+      "shareword": "直接分享title",
+      "priority": 2,
+      "id": "8fd95199-a303-4ee1-a4ff-0fbfbdd7e67e"
+    },
+    {
+      "name": "漂亮手链DIY",
+      "reflink": 12,
+      "shareword": "直接分享title",
+      "priority": 3,
+      "id": "96b8ccce-e1af-4569-b440-d5f118110e5a"
+    },
+    {
+      "name": "可爱形象沙龙",
+      "reflink": 13,
+      "shareword": "直接分享title",
+      "priority": 3,
+      "id": "784dc72d-00b4-48cd-9ba5-e360cbbe5c26"
+    },
+    {
+      "name": "女孩爱购物",
+      "reflink": 14,
+      "shareword": "直接分享title",
+      "priority": 3,
+      "id": "9b3ec21d-4157-401c-99d1-45c7b180289a"
+    },
+    {
+      "name": "宠物美容院3",
+      "reflink": 15,
+      "shareword": "直接分享title",
+      "priority": 3,
+      "id": "fac1fad0-3f7e-4a65-a185-c8ff0883fe12"
+    },
+    {
+      "name": "宠物圣诞装扮",
+      "reflink": 16,
+      "shareword": "直接分享title",
+      "priority": 3,
+      "id": "56fa289c-4455-4356-8159-6523dd7f7e0b"
+    },
+    {
+      "name": "打扮未来的自己",
+      "reflink": 17,
+      "shareword": "直接分享title",
+      "priority": 3,
+      "id": "4f6aede3-a60e-4936-a678-3475ad431639"
+    },
+    {
+      "name": "欢乐曲奇工坊",
+      "reflink": 18,
+      "shareword": "我在《欢乐曲奇工坊》中获得xx分，一起来做曲奇吧！",
+      "priority": 2,
+      "id": "270d51a7-6bea-4d6c-b28c-a7479b62774f"
+    },
+    {
+      "name": "恐龙推草机",
+      "reflink": 19,
+      "shareword": "直接分享title",
+      "priority": 2,
+      "id": "a669025f-8076-4e5e-a38b-535cbcbc5506"
+    },
+    {
+      "name": "野猪的点心",
+      "reflink": 20,
+      "shareword": "直接分享title",
+      "priority": 2,
+      "id": "b7bca9c2-4646-43ca-b8c0-89d4aef7a503"
+    },
+    {
+      "name": "可爱猫咪沙龙",
+      "reflink": 21,
+      "shareword": "直接分享title",
+      "priority": 3,
+      "id": "1d8e0b6d-9bc5-43dc-8c93-058557acc6f2"
+    },
+    {
+      "name": "美丽糖罐DIY",
+      "reflink": 22,
+      "shareword": "直接分享title",
+      "priority": 3,
+      "id": "0801337d-703f-4b7c-8323-da41ec07f9e7"
+    },
+    {
+      "name": "小猪医生的诊所",
+      "reflink": 23,
+      "shareword": "直接分享title",
+      "priority": 3,
+      "id": "35c6f563-443e-496d-a714-03fcf5fe8512"
+    },
+    {
+      "name": "史上最坑游戏",
+      "reflink": 24,
+      "shareword": "直接分享title",
+      "priority": 2,
+      "id": "a684223d-21bf-4e1d-8627-5dbcfc4f5379"
+    },
+    {
+      "name": "绿野小精灵装扮",
+      "reflink": 25,
+      "shareword": "直接分享title",
+      "priority": 3,
+      "id": "195edf6a-9545-482a-a0f2-5452dd07252f"
+    },
+    {
+      "name": "萌宠大乐透",
+      "reflink": 26,
+      "shareword": "直接分享title",
+      "priority": 3,
+      "id": "ee1f4e0f-dc28-4979-92eb-ccd5b21b2de0"
+    },
+    {
+      "name": "时尚巴黎模特秀",
+      "reflink": 27,
+      "shareword": "直接分享title",
+      "priority": 3,
+      "id": "bf8cab32-16a3-4564-a836-b2bec55b3017"
+    },
+    {
+      "name": "女孩约会日记",
+      "reflink": 28,
+      "shareword": "直接分享title",
+      "priority": 3,
+      "id": "d5428a38-9dcb-40bd-94e3-49c08e08395d"
+    },
+    {
+      "name": "草莓面膜DIY",
+      "reflink": 29,
+      "shareword": "直接分享title",
+      "priority": 3,
+      "id": "16be4cfd-e42c-4d74-bddd-139aa47f938c"
+    },
+    {
+      "name": "时尚嘉年华",
+      "reflink": 30,
+      "shareword": "直接分享title",
+      "priority": 3,
+      "id": "139c9e33-6a78-41bd-9380-8e28c1396c34"
+    },
+    {
+      "name": "换皮游戏：熊出没连连看",
+      "reflink": 31,
+      "shareword": "直接分享title",
+      "priority": 1,
+      "id": "addb8197-b9ee-4710-829f-c003c7c5dc82"
+    },
+    {
+      "name": "换皮游戏：巧虎捉迷藏",
+      "reflink": 32,
+      "shareword": "直接分享title",
+      "priority": 1,
+      "id": "a5bfb18f-03ee-438c-8bd4-5c2021149460"
+    },
+    {
+      "name": "换皮游戏：巧虎连连看",
+      "reflink": 33,
+      "shareword": "直接分享title",
+      "priority": 1,
+      "id": "ce33913c-26bd-41a7-bd03-877f3247ec2e"
+    },
+    {
+      "name": "换皮游戏：海绵宝宝捉迷藏",
+      "reflink": 34,
+      "shareword": "直接分享title",
+      "priority": 1,
+      "id": "1a7e9177-9c53-4b89-9613-ae7813cf3fd7"
+    },
+    {
+      "name": "换皮游戏：海绵宝宝连连看",
+      "reflink": 35,
+      "shareword": "直接分享title",
+      "priority": 1,
+      "id": "c9b70faf-1672-4bc1-90aa-f3184f05f6f8"
+    },
+    {
+      "name": "换皮游戏：巧虎益智数字消除",
+      "reflink": 36,
+      "shareword": "直接分享title",
+      "priority": 1,
+      "id": "8db3a6bc-4a87-4d47-b437-452be93ad933"
+    },
+    {
+      "name": "消消乐换皮游戏需求",
+      "reflink": 37,
+      "shareword": "直接分享title",
+      "priority": 1,
+      "id": "0f11b20b-cf19-4133-a487-2942f733e329"
+    }
+  ]
+}

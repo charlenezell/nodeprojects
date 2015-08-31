@@ -1,0 +1,32 @@
+{
+  "games": [
+    {
+      "name": "天天酷飞",
+      "reflink": 1,
+      "shareword": "我在《天天酷飞》中飞翔xx米，谁敢来挑战下？",
+      "priority": 1,
+      "id": "81d510d4-7655-48a3-98ac-cdeba726334d"
+    },
+    {
+      "name": "天天酷飞2",
+      "reflink": 1,
+      "shareword": "我在《天天酷飞》中飞翔xx米，谁敢来挑战下？",
+      "priority": 1,
+      "id": "831dabc7-aaae-4815-8332-89a6afc157c6"
+    },
+    {
+      "name": "天天酷飞",
+      "reflink": 1,
+      "shareword": "我在《天天酷飞》中飞翔xx米，谁敢来挑战下？",
+      "priority": 1,
+      "id": "7e54e0b1-8517-4597-9e3c-7985013dabe1"
+    },
+    {
+      "name": "天天酷飞2",
+      "reflink": 1,
+      "shareword": "我在《天天酷飞》中飞翔xx米，谁敢来挑战下？",
+      "priority": 1,
+      "id": "7624ff2a-ac76-4130-a72a-7f7a3b34d15a"
+    }
+  ]
+}

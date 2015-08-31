@@ -1,0 +1,14 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.class_1 {color:red;}
+.class_2{color:blue;}
+.class_3 {color: rgb(199, 196, 0);}
+.art_true{background-color: #C3F5BD;}
+.art_false{background-color: #fff;}

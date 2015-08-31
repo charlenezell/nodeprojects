@@ -1,0 +1,506 @@
+{
+  "games": [
+    {
+      "name": "简单到爆了",
+      "reflink": "http://flash1.7k7k.com/h5/2015/jddbl/game.html",
+      "shareword": "我在《简单到爆了》中得到xx分，快来挑战吧！",
+      "priority": 1,
+      "id": "53c7a1f1-cd35-4add-9595-69cc0fd1deef",
+      "actcomplete": false,
+      "sharecomplete": false,
+      "testIp": [
+        "10.18.6.82",
+        "127.0.0.1"
+      ],
+      "link": "http://wwfw.doufdou.in/play/40-jddbl/",
+      "ip": "127.0.0.1",
+      "memo": "fefef",
+      "红米测试2_浏览器_content": "吃的撒",
+      "红米测试2_微信_content": " 范德萨",
+      "绿米测试_浏览器_content": "额飞吃的撒啊",
+      "绿米测试_微信_content": "范德萨",
+      "白米测试_浏览器_content": "",
+      "白米测试_微信_content": "",
+      "黑米测试_浏览器_content": "",
+      "黑米测试_微信_content": "",
+      "红米测试\t_浏览器_content": "范德萨啊发送  范德萨\n噶<br><ol><li><ol class=\" _wysihtml5-temp-1430384694715\"><li class=\" _wysihtml5-temp-1430384694715\"><span class=\"wysiwyg-color-green\">发大水范德萨</span></li></ol></li></ol><ol><li><span class=\"wysiwyg-color-red\">jfa jklfdsa</span></li><li><span class=\"wysiwyg-color-blue\">fdsjaklfdjs </span>a</li><li><span class=\"wysiwyg-color-red\">fs</span><span class=\"wysiwyg-color-green\">df</span><span class=\"wysiwyg-color-blue\">d</span></li></ol>",
+      "红米测试\t_微信_content": " 范德萨十大",
+      "三星测试_浏览器_content": "的  斯蒂芬十大fe<span class=\"wysiwyg-color-green\">fefeeffee</span><br><ol><li>fdsa</li><li><span class=\"wysiwyg-color-green\">fdsa</span></li><li>fdsaf</li><li><span class=\"wysiwyg-color-red\">fdsa</span></li><li>fdsa<span class=\"wysiwyg-color-red\"></span></li></ol>fdsa<br><span class=\"wysiwyg-color-red\">fdcfcccccc<span class=\"wysiwyg-color-green\">fdsfsfdf</span></span><br>saf<br><span class=\"wysiwyg-color-green\">dsaf</span>",
+      "三星测试_微信_content": " 但是ds",
+      "华为3C测试_浏览器_content": " 范德萨",
+      "华为3C测试_微信_content": " 范德萨",
+      "i5s测试_浏览器_content": "范德萨范德萨ds",
+      "i5s测试_微信_content": " 倒萨飞洒啊"
+    },
+    {
+      "name": "奶油仓鼠吃糖果",
+      "reflink": "http://flash1.7k7k.com/h5/2015/creamhamster/index.html",
+      "shareword": "直接分享title",
+      "priority": 1,
+      "id": "c54638a4-615e-4274-a202-3d1dbfcf92aa",
+      "ip": "10.18.6.71",
+      "link": "http://www.doudou.in/play/40-nycsctg/",
+      "actcomplete": false,
+      "sharecomplete": true,
+      "testIp": [
+        "10.18.6.82",
+        "127.0.0.1"
+      ],
+      "红米测试\t_浏览器_content": "545454654",
+      "红米测试\t_微信_content": "凉快凉快凉快【",
+      "三星测试_浏览器_content": "23456454",
+      "三星测试_微信_content": "。看，ll",
+      "华为3C测试_浏览器_content": "",
+      "华为3C测试_微信_content": "",
+      "i5s测试_浏览器_content": "",
+      "i5s测试_微信_content": ""
+    },
+    {
+      "name": "寿司挑战",
+      "reflink": "http://flash1.7k7k.com/h5/2015/sushichallange/index.html",
+      "shareword": "直接分享title",
+      "priority": 1,
+      "id": "92b32486-bacd-4bf9-acd5-735873522200",
+      "ip": "10.18.6.65",
+      "actcomplete": false,
+      "sharecomplete": true,
+      "link": "http://www.doudou.in/play/40-sstz",
+      "testIp": "10.18.6.82"
+    },
+    {
+      "name": "萌兔夜晚装",
+      "reflink": "http://flash1.7k7k.com/h5/2015/nightsout/game.htm",
+      "shareword": "直接分享title",
+      "priority": 1,
+      "id": "ab75a086-bfb5-4a84-98b5-6dec6baa9309",
+      "ip": "10.18.6.65",
+      "actcomplete": true,
+      "sharecomplete": false,
+      "link": "http://www.doudou.in/play/40-mtywz/",
+      "testIp": "10.18.6.82"
+    },
+    {
+      "name": "照顾甜心宝贝",
+      "reflink": "http://flash1.7k7k.com/h5/2015/sweetbaby/game.htm",
+      "shareword": "直接分享title",
+      "priority": 1,
+      "id": "73fe600e-0afc-438b-a80a-d2ecc27ea22f",
+      "ip": "10.18.6.65",
+      "actcomplete": false,
+      "sharecomplete": true,
+      "link": "http://www.doudou.in/play/40-zgtxbb/",
+      "testIp": "10.18.6.82",
+      "memo": ""
+    },
+    {
+      "name": "学做美味意粉",
+      "reflink": "http://flash1.7k7k.com/h5/2015/zucchini/game.htm",
+      "shareword": "直接分享title",
+      "priority": 1,
+      "id": "0473a714-a375-40bd-a894-cec3397e97ff",
+      "ip": "10.18.6.22",
+      "link": "http://www.doudou.in/play/40-mwyf/",
+      "sharecomplete": true,
+      "actcomplete": true,
+      "testIp": "10.18.6.82",
+      "memo": "1.华为微信与原生浏览器上游戏背景是黑的 2.三星微信上玩到切番茄时不能继续玩"
+    },
+    {
+      "name": "学做法式华夫饼",
+      "reflink": "http://sda.4399.com/4399swf/upload_swf/ftp15/ssj/20150403/h3/p2/game.html",
+      "shareword": "直接分享title",
+      "priority": 1,
+      "id": "9427541d-0bf2-40c8-99df-a5ea0d0a3664",
+      "ip": "10.18.6.65",
+      "actcomplete": true,
+      "sharecomplete": true,
+      "link": "http://www.doudou.in/play/40-xzhshfb",
+      "testIp": "10.18.6.82",
+      "memo": "1.三星微信上玩界面向右下角偏移，点击不到游戏按钮，无法进行游戏。"
+    },
+    {
+      "name": "我和狗狗的游戏时间",
+      "reflink": "http://flash.7k7k.com/h5/2014/mypuppyplayday1/game.html",
+      "shareword": "直接分享title",
+      "priority": 1,
+      "id": "543c1f98-fe2d-47b5-a2fa-40e0ebcd1a66",
+      "ip": "10.18.6.65",
+      "actcomplete": true,
+      "sharecomplete": true,
+      "link": "http://www.doudou.in/play/40-whggyxsj",
+      "testIp": "10.18.6.82",
+      "memo": "1.华为上加载后开始界面显示不全并且一直在闪动  2.5s safari 上横屏时ui显示不全"
+    },
+    {
+      "name": "电影明星装扮",
+      "reflink": "http://flash1.7k7k.com/h5/2015/sosakuramoviestar/game.html",
+      "shareword": "直接分享title",
+      "priority": 1,
+      "id": "c60160a6-ef5f-4157-9dda-87a8c73ddf8c",
+      "ip": "10.18.6.71",
+      "link": "http://www.doudou.in/play/40-dymxzb",
+      "actcomplete": true,
+      "sharecomplete": true,
+      "testIp": "10.18.6.82"
+    },
+    {
+      "name": "超级飞翔猫",
+      "reflink": "http://szhong.4399.com/4399swf/upload_swf/ftp15/ssj/20150402/j3a/index.html",
+      "shareword": "我在《超级飞翔猫》中得到xx分，来挑战下吧！",
+      "priority": 2,
+      "id": "514a23e5-7470-4416-ac0b-d2294aef17a6",
+      "ip": "10.18.6.22",
+      "sharecomplete": true,
+      "link": "http://www.doudou.in/play/40-fxm/",
+      "actcomplete": true,
+      "testIp": "10.18.6.82"
+    },
+    {
+      "name": "宇宙战士",
+      "reflink": "http://szhong.4399.com/4399swf/upload_swf/ftp15/yzg/20150405/3/game.htm",
+      "shareword": "直接分享title",
+      "priority": 2,
+      "id": "91cb415a-c1b4-4ced-9531-2824d69e722e",
+      "ip": "10.18.6.22",
+      "link": "http://www.doudou.in/play/40-zs/",
+      "memo": "1.三星微信经常加载失败,偶尔加载成功也看不到游戏开始界面的豆豆游戏logo和声音图标，点击开始按钮无反应 2.5s上UI显示不全，无法进行游戏",
+      "actcomplete": true,
+      "sharecomplete": true,
+      "testIp": "10.18.6.82"
+    },
+    {
+      "name": "疯狂打兔子",
+      "reflink": "http://sda.4399.com/4399swf/upload_swf/ftp15/ssj/20150331/h3/game.htm",
+      "shareword": "直接分享title",
+      "priority": 2,
+      "id": "ad92e9e2-54b2-4e35-ada0-330fa91a46f1",
+      "ip": "10.18.6.65",
+      "memo": "三星微信、华为微信、原生浏览器上兔子与人出现了两三次后再也没有出现",
+      "actcomplete": true,
+      "sharecomplete": true,
+      "link": "http://www.doudou.in/play/40-fkdtz",
+      "testIp": "10.18.6.82"
+    },
+    {
+      "name": "上课偷懒玩",
+      "reflink": "http://flash1.7k7k.com/h5/2015/slackingschool/game.htm",
+      "shareword": "直接分享title",
+      "priority": 2,
+      "id": "59a53d6a-a522-443b-9da2-3444bab013dc",
+      "ip": "10.18.6.12",
+      "actcomplete": true,
+      "sharecomplete": true,
+      "link": "http://www.doudou.in/play/40-sktlw/index.html",
+      "testIp": [
+        "10.18.6.63"
+      ]
+    },
+    {
+      "name": "冰淇淋农场",
+      "reflink": "http://sda.4399.com/4399swf/upload_swf/ftp15/ssj/20150330/j1/index.htm",
+      "shareword": "直接分享title",
+      "priority": 2,
+      "id": "a391bead-42d7-4097-8df1-fafc30803502",
+      "ip": "10.18.6.22",
+      "actcomplete": true,
+      "sharecomplete": true,
+      "link": "http://www.doudou.in/play/40-bql/",
+      "testIp": [
+        "10.18.6.63"
+      ]
+    },
+    {
+      "name": "我要回家",
+      "reflink": "http://szhong.4399.com/4399swf/upload_swf/ftp15/yzg/20150304/1/game.htm",
+      "shareword": "直接分享title",
+      "priority": 2,
+      "id": "b003d4b4-061b-4f4c-81a5-c48ca67a463f",
+      "ip": "10.18.6.22",
+      "link": "http://www.doudou.in/play/40-wyhj/",
+      "sharecomplete": true,
+      "actcomplete": true,
+      "testIp": [
+        "10.18.6.63"
+      ]
+    },
+    {
+      "name": "樱桃派达人",
+      "reflink": "http://flash1.7k7k.com/h5/2015/master/game.html",
+      "shareword": "直接分享title",
+      "priority": 2,
+      "id": "885fce5d-6c43-424b-9f2d-8a4ea365ff2e",
+      "ip": "10.18.6.12",
+      "sharecomplete": true,
+      "link": "http://www.doudou.in/play/40-ytpdr/",
+      "actcomplete": true,
+      "testIp": [
+        "10.18.6.63"
+      ]
+    },
+    {
+      "name": "彩虹弹球机",
+      "reflink": "http://flash1.7k7k.com/h5/2015/rainbowpinball/game.htm",
+      "shareword": "我在《彩虹弹球机》中得到xx分，来挑战下吧！",
+      "priority": 2,
+      "id": "c7528b6a-414f-49cf-bb4a-ff0031b75a35",
+      "ip": "10.18.6.65",
+      "actcomplete": true,
+      "sharecomplete": true,
+      "link": "http://www.doudou.in/play/40-chdqj/",
+      "testIp": [
+        "10.18.6.63"
+      ]
+    },
+    {
+      "name": "果汁飞溅狂欢",
+      "reflink": "http://szhong.4399.com/4399swf/upload_swf/ftp15/ssj/20150318/j2aa/index.htm",
+      "shareword": "直接分享title",
+      "priority": 2,
+      "id": "fc91a267-a5ba-4cb0-a1f4-2017e480eba4",
+      "ip": "10.18.6.12",
+      "link": "http://www.doudou.in/play/40-gzfjkh/",
+      "sharecomplete": true,
+      "actcomplete": true,
+      "testIp": [
+        "10.18.6.63"
+      ]
+    },
+    {
+      "name": "农场泡泡传奇",
+      "reflink": "http://sda.4399.com/4399swf/upload_swf/ftp15/ssj/20150216/h1/game.html",
+      "shareword": "直接分享title",
+      "priority": 3,
+      "id": "3afacab8-4d8e-4d54-b5bf-05d4646850f0",
+      "ip": "10.18.6.22",
+      "testIp": [
+        "10.18.6.63"
+      ],
+      "actcomplete": true,
+      "sharecomplete": true,
+      "memo": "根据屏幕分三种尺寸，过大或者过小的不提供美术翻译",
+      "link": "http://www.doudou.in/play/40-ncpp/"
+    },
+    {
+      "name": "拯救美人鱼",
+      "reflink": "http://sda.4399.com/4399swf/upload_swf/ftp14/ck/20150105/8/index.html",
+      "shareword": "直接分享title",
+      "priority": 3,
+      "id": "c7b0f3a4-3613-4264-87a8-cc008ba26d8a",
+      "ip": "10.18.6.12",
+      "sharecomplete": true,
+      "actcomplete": true,
+      "link": "http://www.doudou.in/play/40-zjmry/",
+      "testIp": [
+        "10.18.6.246"
+      ]
+    },
+    {
+      "name": "星际摩托车",
+      "reflink": "http://flash1.7k7k.com/h5/2015/xjmt/game.html",
+      "shareword": "直接分享title",
+      "priority": 3,
+      "id": "efb2e4f1-d82c-4555-9288-51018e5b2090",
+      "ip": "10.18.6.65",
+      "actcomplete": true,
+      "sharecomplete": true,
+      "link": "http://www.doudou.in/play/40-xjmt/",
+      "testIp": [
+        "10.18.6.246"
+      ]
+    },
+    {
+      "name": "美人鱼的故事书",
+      "reflink": "http://sda.4399.com/4399swf/upload_swf/ftp14/yzg/20141103/3/game.htm",
+      "shareword": "直接分享title",
+      "priority": 3,
+      "id": "02c9578c-95ee-4a3d-ae90-3b2abb962465",
+      "ip": "10.18.6.12",
+      "link": "http://www.doudou.in/play/40-mrygss/",
+      "actcomplete": true,
+      "sharecomplete": true,
+      "testIp": [
+        "10.18.6.246"
+      ]
+    },
+    {
+      "name": "果汁呼叫转移",
+      "reflink": "http://flash1.7k7k.com/h5/2015/gzhjzy/game.html",
+      "shareword": "直接分享title",
+      "priority": 3,
+      "id": "fb90960c-85a7-41a5-ace9-b446cde8b1e0",
+      "ip": "10.18.6.65",
+      "actcomplete": true,
+      "sharecomplete": true,
+      "link": "http://www.doudou.in/play/40-gzhjzy/",
+      "testIp": [
+        "10.18.6.246"
+      ]
+    },
+    {
+      "name": "逗比大测试",
+      "reflink": "http://m.3366.com/gamefile/30130/h5/weixin/doubi/game.shtml",
+      "shareword": "直接分享title",
+      "priority": 3,
+      "id": "fa9b8c00-03e4-4f85-979b-106e7eaa2ecd",
+      "ip": "10.18.6.65",
+      "actcomplete": true,
+      "sharecomplete": true,
+      "link": "http://www.doudou.in/play/40-dbdcs/",
+      "testIp": [
+        "10.18.6.246"
+      ]
+    },
+    {
+      "name": "测试你的潜在性格",
+      "reflink": "http://m.3366.com/gamefile/30161/weit4/42/index.shtml",
+      "shareword": "直接分享title",
+      "priority": 3,
+      "id": "e59ea368-1fe4-4770-99ae-92dfda64e153",
+      "ip": "10.18.6.65",
+      "actcomplete": true,
+      "sharecomplete": true,
+      "link": "http://www.doudou.in/play/40-csqzxg/",
+      "testIp": [
+        "10.18.6.63"
+      ]
+    },
+    {
+      "name": "逃出疯人院",
+      "reflink": "http://m.3366.com/gamefile/30120/h5/2014/felixtheloony/game.shtml",
+      "shareword": "直接分享title",
+      "priority": 3,
+      "id": "9af005f7-d539-4168-8007-c8a8ccaa9d6e",
+      "ip": "10.18.6.65",
+      "actcomplete": true,
+      "sharecomplete": true,
+      "link": "http://www.doudou.in/play/40-tcfry/",
+      "testIp": [
+        "10.18.6.63"
+      ]
+    },
+    {
+      "name": "泡泡消除",
+      "reflink": "http://flash1.7k7k.com/h5/2015/qpxc/game.html",
+      "shareword": "直接分享title",
+      "priority": 3,
+      "id": "f27de20f-a304-4614-ace6-3b223e6ee498",
+      "ip": "10.18.6.65",
+      "actcomplete": true,
+      "sharecomplete": true,
+      "link": "http://www.doudou.in/play/40-ppxc/",
+      "testIp": [
+        "10.18.6.63"
+      ]
+    },
+    {
+      "name": "农场大营救",
+      "reflink": "http://sda.4399.com/4399swf/upload_swf/ftp14/ly/20140709/1/game.htm",
+      "shareword": "直接分享title",
+      "priority": 3,
+      "id": "11a7765b-0382-499f-8b73-5abd485d7330",
+      "ip": "10.18.6.65",
+      "actcomplete": true,
+      "sharecomplete": true,
+      "link": "http://www.doudou.in/play/40-ncdyj/",
+      "testIp": [
+        "10.18.6.63"
+      ]
+    }
+  ],
+  "info": {
+    "testCaseConfig": [
+      {
+        "name": "红米测试\t",
+        "child": [
+          {
+            "name": "浏览器"
+          },
+          {
+            "name": "微信"
+          }
+        ]
+      },
+      {
+        "name": "三星测试",
+        "child": [
+          {
+            "name": "浏览器"
+          },
+          {
+            "name": "微信"
+          }
+        ]
+      },
+      {
+        "name": "华为3C测试",
+        "child": [
+          {
+            "name": "浏览器"
+          },
+          {
+            "name": "微信"
+          }
+        ]
+      },
+      {
+        "name": "i5s测试",
+        "child": [
+          {
+            "name": "浏览器"
+          },
+          {
+            "name": "微信"
+          }
+        ]
+      }
+    ]
+  },
+  "_bkinfo": {
+    "testCaseConfig": [
+      {
+        "name": "红米测试\t",
+        "child": [
+          {
+            "name": "浏览器"
+          },
+          {
+            "name": "微信"
+          }
+        ]
+      },
+      {
+        "name": "三星测试",
+        "child": [
+          {
+            "name": "浏览器"
+          },
+          {
+            "name": "微信"
+          }
+        ]
+      },
+      {
+        "name": "华为3C测试",
+        "child": [
+          {
+            "name": "浏览器"
+          },
+          {
+            "name": "微信"
+          }
+        ]
+      },
+      {
+        "name": "i5s测试",
+        "child": [
+          {
+            "name": "浏览器"
+          },
+          {
+            "name": "微信"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns=http://www.w3.org/1999/xhtml ng-app="myapp"><head><meta http-equiv=Content-Type content="text/html; charset=utf-8"><title>豆豆游戏协作页</title>
+<link rel="stylesheet" href="stylesheets/common.css" />
+<script type=text/javascript src=http://www.100bt.com/resource/js/lib/jquery-mig-min.js></script><script type=text/javascript src=http://www.100bt.com/resource/js/nav/in-min.js></script></head>
+<body ng-controller="bodyController">
+<div class="container" ng-controller="gameList">
+	<div class="descriptor">
+    <span class="priority_1"><span class="gameName">高优先</span></span>
+    <span class="priority_2"><span class="gameName">中优先</span></span>
+    <span class="priority_3"><span class="gameName">低优先</span></span>
+	<span class="lessthan5"><span class="gameName">小于5个时候剩余的项</span></span>
+	<span class="noTest"><span class="gameName">做完但是没有测试</span></span>
+	<span class="noLink"><span class="gameName">做完但是没填链接</span></span>
+	<a href="" ng-click="toggleInfo()" class="btn">more detail</a>
+	<a href="" ng-click="toggleFlash()" class="btn">不闪</a>
+	<a href="{{exportLink}}" class="btn">导出表格</a>
+    <a href="{{exportNoCompleteLink}}" class="btn">导出未完成表格</a>
+    <a href="" ng-click="toggleTestCaseView()" class="btn" ng-class="{btn_falsy:testCaseView}">{{testCaseView?"切换游戏列表模式":"切换测试案例模式"}}</a>
+	<div class="gameInfo" ng-if="infoFlag">
+		<div>周冠军:duang!-->{{weekMost}}</div>
+        <div>本期共有{{games.length}}个游戏</div>
+        <div ng-if="leaveAllocateCount>0">剩下{{leaveAllocateCount}}个游戏没有开发认领</div>
+        <div ng-if="leaveAllocateTestorCount>0">剩下{{leaveAllocateTestorCount}}个游戏没有测试认领</div>
+        <div ng-if="noActCount>0">剩下{{noActCount}}个游戏没有美术资源</div>
+        <div ng-if="noActIntCount>0">剩下{{noActIntCount}}个游戏没有集成美术</div>
+        <div ng-if="noShareIntCount>0">剩下{{noShareIntCount}}个游戏没有集成分享</div>
+    </div>
+	</div>
+    <table class="gameStateTable" ng-show="!testCaseView">
+        <thead>
+        <tr>
+            <th class="iconC">美术资源</th><th class="iconC">美术集成</th><th class="iconC">分享集成</th><th class="iconC">完成测试</th><th class="gameNameC">游戏名</th><th class="nameC">开发</th><th  class="nameC">测试</th><th class="btnC">可选操作</th><th>备注</th><th>doudou链接</th><th>分享文案</th><th>参考链接</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="game in games track by game.id" class="gameItem priority_{{game.priority}}" ng-class="{complateAll:game.actcomplete&&game.sharecomplete,lessthan5:lessthan5&&!game.author&&flash}">
+            <td><span ng-if="game.hasArt" class='tickicon'>√</span><span ng-if="!game.hasArt" class='crossicon'>×</span></td>
+            <td><span class='tickicon' ng-if="game.actcomplete">√</span><span class='crossicon' ng-if="!game.actcomplete">×</span></td>
+            <td><span ng-if="game.sharecomplete" class='tickicon'>√</span><span ng-if="!game.sharecomplete" class='crossicon'>×</span></td>
+            <td><span ng-if="game.testcomplete" class='tickicon'>√</span><span ng-if="!game.testcomplete" class='crossicon'>×</span></td>
+            <td class="gameName">{{game.name}}</td>
+            <td>{{game.author||"待定"}}</td>
+            <td ng-class="{noTest:game.actcomplete&&game.sharecomplete&&(ipstrisNull(game.testIp))&&flash}">{{game.testor||"待定"}}</td>
+            <td>
+                <a href="" ng-if="!game.ip||myRule=='admin'" ng-click="lockGame(game.id,1)" class="btn">开发占有</a>
+                <a href="" ng-if="game.ip&&game.ip==myIp||myRule=='admin'" ng-click="lockGame(game.id,0)" class="btn btn_falsy">撤销开发占有</a>
+                <a href="" ng-if="!hasMyIp(game.testIp,myIp)||myRule=='admin'" ng-click="assignTestor(game.id,1)" class="btn">测试占有</a>
+                <a href="" ng-if="hasMyIp(game.testIp,myIp)||myRule=='admin'" ng-click="assignTestor(game.id,0,myIp)" class="btn btn_falsy">撤销测试占有</a>
+                <a href="" ng-if="!game.actcomplete&&game.ip==myIp||myRule=='admin'" ng-click="completeAct(game.id,1)" class="btn">完成美术集成</a>
+                <a href="" ng-if="game.actcomplete&&game.ip==myIp||myRule=='admin'" ng-click="completeAct(game.id,0)" class="btn btn_falsy">撤销美术集成</a>
+                <a href="" ng-if="!game.sharecomplete&&game.ip==myIp||myRule=='admin'" ng-click="completeShare(game.id,1)" class="btn">完成分享集成</a>
+                <a href="" ng-if="game.sharecomplete&&game.ip==myIp||myRule=='admin'" ng-click="completeShare(game.id,0)" class="btn btn_falsy">撤销分享集成</a>
+                <a href="" ng-if="!game.testcomplete&&game.ip==myIp||myRule=='admin'" ng-click="completeTest(game.id,1)" class="btn">完成测试</a>
+                <a href="" ng-if="game.testcomplete&&game.ip==myIp||myRule=='admin'" ng-click="completeTest(game.id,0)" class="btn btn_falsy">撤销完成测试</a>
+                <a href="" ng-if="myRule=='dev'||myRule=='admin'" ng-click="showTestCasePop(game.id)" class="btn btn_testcase">测试案例设置</a>
+            </td>
+            <td>
+                <input type="text" name="" id="" ng-model="game.memo" ng-if="game.editMemo" ng-blur="confirmIt(game.id,'editMemo','memo')" />
+                <span ng-if="!game.editMemo">{{game.memo||"(没有备忘)"}}<br/><a href="" class="btn" ng-click="editIt(game.id,'editMemo')">修改</a></span>
+            </td>
+            <td ng-class="{noLink:game.actcomplete&&game.sharecomplete&&!game.link&&flash}">
+                <input type="text" name="" id="" ng-model="game.link" ng-if="game.editLink" ng-blur="confirmIt(game.id,'editLink','link')" />
+                <span ng-if="!game.editLink&&game.link"><a href="{{game.link}}" target="_blank">{{game.link}}</a><br/><a href="" class="btn" ng-click="editIt(game.id,'editLink')">修改</a></span>
+                <span ng-if="!game.editLink&&!game.link">(没有填写)<br/><a href="" class="btn" ng-click="editIt(game.id,'editLink')">修改</a></span>
+            </td>
+			<td><input type="text" value='{{game.shareword||"待定"}}'/></td>
+			<td><a href="{{game.reflink}}" target="_blank">点击</a></td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="gameStateTable testCaseTable" ng-show="testCaseView">
+
+    </table>
+</div>
+<div ng-if="loadingIsShow" class="loading">loading...</div>
+<div ng-if="overlayIsShow" class="overlay"></div>
+<div ng-include="popupUrl" ng-if="testCasePop.isShow" class="testCasePop"></div>
+<script src="javascripts/util.js"></script>
+<script src="javascripts/wysihtml5-master/parser_rules/advanced.js"></script>
+<script src="javascripts/wysihtml5-master/dist/wysihtml5-0.4.0pre.js"></script>
+<script src="javascripts/lodash.min.js"></script>
+<script src="javascripts/angular.js"></script>
+<script src="javascripts/angular-animate.min.js"></script>
+<script src="javascripts/index.js"></script>
+<script src="javascripts/directive/testcaseview.js"></script>
+</body></html>
+
+

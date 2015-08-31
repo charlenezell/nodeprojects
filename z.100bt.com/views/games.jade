@@ -1,0 +1,7 @@
+extends layout
+
+block content
+    each val, key in games
+        li(class='class_#{val.factor} art_#{val.hasArt}' id='#{val.id}')
+            span #{val.name}
+            a(href="http://z.100bt.com/gamestate/20150410/update/#{val.id}/") 我做的

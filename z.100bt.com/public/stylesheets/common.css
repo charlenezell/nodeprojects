@@ -1,0 +1,195 @@
+.hasArt{
+    background: aquamarine;
+}
+.cleanboth{clear:both;}
+.clearfix:after {
+  content: "\20";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  overflow:hidden;
+}
+.clearfix{display: block;}
+.container{}
+.gameStateTable {
+  text-align: center;
+  border-collapse: collapse;
+  margin-top:50px;
+  table-layout: fixed;
+}
+@-webkit-keyframes flash{
+  0%{background:#FFFE9E}
+  50%{background:white}
+  100%{background:#FFFE9E}
+}
+@-webkit-keyframes flash2{
+  0%{background:#B5E8FF}
+  50%{background:white}
+  100%{background:#B5E8FF}
+}
+@-webkit-keyframes flash3{
+  0%{background:#FFA5A5}
+  50%{background:white}
+  100%{background:#FFA5A5}
+}
+.lessthan5{
+  -webkit-animation: flash 2s infinite;
+}
+.noTest{
+  -webkit-animation: flash2 2s infinite;
+}
+.noLink{
+  -webkit-animation: flash3 2s infinite;
+}
+.iconC{width:3em;min-width:3em;}
+.nameC{width:3em;min-width:3em;}
+.btnC{width:6em;min-width:6em;}
+.gameNameC{min-width:8em;}
+.gameItem{height: 30px;line-height: 30px;margin:5px 0;}
+.gameItem:hover{background: #EAEAEA;}
+
+.priority_1 .gameName{color:red;}
+.priority_2 .gameName{color:blue;}
+.priority_3 .gameName{color:#000;}
+.btn{background: #88C9FF;color: #fff;padding: 0 6px;text-decoration: none;border-radius: 3px;display: inline-block;margin: 3px 0;height: 22px;line-height: 22px;font-size: 12px;}
+.complateAll{background-color: rgb(150, 247, 150);}
+.complateAll:hover{background-color: rgb(150, 247, 150);}
+.gameStateTable thead{
+    background: rgb(163, 0, 0);
+    color: white;
+}
+.gameStateTable th,.gameStateTable td{
+    border: 1px solid #CFCFCF;
+    padding: 0 12px;
+}
+.gameStateTable th{padding:10px}
+.descriptor{
+  top: 0;
+    display: inline-block;
+  margin-bottom:5px;
+    padding: 10px;
+    border-radius: 8px;
+  position:fixed;
+    box-shadow: 1px 4px 21px -5px black;
+  background-color:#fff;
+}
+.gameInfo {
+    background: rgb(216, 254, 255);
+    margin: 10px 0;
+    padding: 20px 5px;
+    font-family: "微软雅黑";
+}
+.tickicon{color:green;font-weight: bold;font-family: tahoma;font-size: 18px;}
+.crossicon{color:red;font-weight: bold;font-family: tahoma;font-size: 18px;}
+
+.configItem .name{display:block;}
+.configItem{float:left;padding:3px;margin-right:3px;}
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background: black;
+  opacity: 0.5;
+}
+.loading{
+    background: url(../images/loading.gif);
+    width: 32px;
+    height: 32px;
+    position: fixed;
+    z-index: 101;
+    top: 50%;
+    left: 50%;
+    margin-left: -36px;
+    text-indent: -1000000px;
+}
+.testCasePop{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -400px;
+    width: 800px;
+    z-index: 102;
+    background: white;
+    box-shadow: 1px 1px 41px -9px black;
+    border-radius: 5px;
+    padding: 30px 37px 20px 20px;
+    height: 500px;
+    margin-top: -250px;
+    overflow-y: scroll;
+}
+
+.closeBtn:after{
+  content: "×";
+  position: absolute;
+  top: 4px;
+  right: 2px;
+  font-size: 50px;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  color: green;
+}
+@-webkit-keyframes showPop{
+  from{
+    opacity:0;
+    transform: translateY(30px);
+  }
+  to{
+        opacity:1;
+        transform: translateY(0px);
+  }
+}
+@-webkit-keyframes hidePop{
+  to{
+      opacity:0;
+      transform: translateY(30px);
+  }
+  from{
+        opacity:1;
+        transform: translateY(0px);
+  }
+}
+.testCasePop.ng-enter{
+  -webkit-animation:showPop 200ms 1;
+}
+.testCasePop.ng-leave{
+  -webkit-animation:hidePop 200ms 1;
+}
+.stringLongarea{width: 26em;height: 7em;display: block;}
+.testCasePop .testconfigpreviewer>.configItem>.configItem{
+  width:48%;
+}
+.testCasePop .btn {
+  position: absolute;
+  right: 0;
+  top: 40px;
+}
+
+.toolbarbtns{float:left;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  text-indent: -9999px;
+  background: url(../images/icons.png) 0 0 no-repeat;
+}
+.toolbarbtns.htmlswitch{
+background-position: -520px 0px;
+}
+a[data-wysihtml5-command=bold]{
+  background-position: 0px 0px;
+}
+a[data-wysihtml5-command=italic]{
+    background-position: -61px 0px;
+}
+a[data-wysihtml5-command=insertOrderedList]{
+    background-position: -81px 0px;
+}
+a[data-wysihtml5-command].colorred{background: red;}
+a[data-wysihtml5-command].colorgreen{background: green;}
+a[data-wysihtml5-command].colorblue{background: blue;}
+.btn_falsy{  background: rgb(192, 139, 139);}
+.btn_testcase{background: rgb(239, 0, 255);}

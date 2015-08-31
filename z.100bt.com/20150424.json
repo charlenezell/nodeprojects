@@ -1,0 +1,249 @@
+{
+  "games": [
+    {
+      "name": "时尚女孩装",
+      "reflink": "http://flash1.7k7k.com/h5/2015/ameliadressup/game.htm",
+      "priority": 1,
+      "id": "4008028b-bf9e-4103-a983-72a1fe5cb0b0",
+      "ip": "10.18.6.67",
+      "testIp": [
+        "10.18.6.82"
+      ]
+    },
+    {
+      "name": "海贼王找别扭",
+      "reflink": "http://m.3366.com/gamefile/30222/act/wxhtml5/hzwzbn/index.shtml",
+      "shareword": "我在《海贼王找别扭》中获得xx分，敢来挑战下吗？",
+      "priority": 1,
+      "id": "c66f6993-acad-4420-b7c7-2c4c1e391a22",
+      "ip": "10.18.6.67",
+      "testIp": [
+        "10.18.6.82"
+      ]
+    },
+    {
+      "name": "大战半兽人",
+      "reflink": "http://sda.4399.com/4399swf/upload_swf/ftp15/ssj/20150411/h5a/game.html",
+      "priority": 1,
+      "id": "d54c643f-0667-49c1-b12b-fa704c54c903",
+      "ip": "10.18.6.67",
+      "testIp": [
+        "10.18.6.82"
+      ]
+    },
+    {
+      "name": "快乐飞行",
+      "reflink": "http://sda.4399.com/4399swf/upload_swf/ftp15/ssj/20150411/h1a/index.html",
+      "shareword": "我在《快乐飞行》中飞行xx米，快来试试看吧！",
+      "priority": 1,
+      "id": "fcb0b215-309c-4330-a302-27d6f3dfcf4e",
+      "ip": "10.18.6.209",
+      "testIp": [
+        "10.18.6.82"
+      ]
+    },
+    {
+      "name": "蜗牛历险记3",
+      "reflink": "http://flash1.7k7k.com/h5/2015/wnbob3/game.html",
+      "shareword": "直接分享title",
+      "priority": 1,
+      "id": "61938f61-ded7-4300-8bab-f58930ad106d",
+      "ip": "10.18.6.22",
+      "testIp": [
+        "10.18.6.82"
+      ],
+      "memo": "资源缺失太多和产品商议，已放弃此游戏"
+    },
+    {
+      "name": "古庙逃亡",
+      "reflink": "http://flash1.7k7k.com/h5/2015/temple/index.html",
+      "shareword": "我在《古庙逃亡》中获得xx分，快来挑战下吧！",
+      "priority": 1,
+      "id": "6a5605e0-04d3-4bb3-88cf-e5bb95f924c0",
+      "ip": "10.18.6.22",
+      "memo": "http://www.doudou.in/play/41-gmtw/"
+    },
+    {
+      "name": "汽车拼装厂",
+      "reflink": "http://flash1.7k7k.com/h5/2015/carfactory/game.html",
+      "shareword": "直接分享title",
+      "priority": 1,
+      "id": "d4a4a036-085e-4b22-a541-2b9557ff9dfb",
+      "ip": "10.18.6.22"
+    },
+    {
+      "name": "西部牛仔射击",
+      "reflink": "http://flash1.7k7k.com/h5/2015/wildwest/index.html",
+      "shareword": "直接分享title",
+      "priority": 1,
+      "id": "8253fcd1-6659-4a2a-866d-881bc8965604",
+      "ip": "10.18.6.67"
+    },
+    {
+      "name": "拯救潜水员",
+      "reflink": "http://m.3366.com/gamefile/30323/3366swf/upload_swf/ftp15/ssj/20150207/l1/p2/game.shtml",
+      "shareword": "直接分享title",
+      "priority": 2,
+      "id": "79bb562a-d52d-4ed3-9ea3-7b64b5b637fc",
+      "ip": "10.18.6.67"
+    },
+    {
+      "name": "泡泡小镇",
+      "reflink": "http://m.3366.com/gamefile/30355/h5/2015/bubbletown/game.shtml",
+      "shareword": "直接分享title",
+      "priority": 2,
+      "id": "d4a44ba5-1ebb-4a3c-991c-1c3df62b344a",
+      "ip": "10.18.6.209"
+    },
+    {
+      "name": "射击星星",
+      "reflink": "http://m.3366.com/gamefile/30295/h5/2014/shootthestar/game.shtml",
+      "shareword": "直接分享title",
+      "priority": 2,
+      "id": "8523dfb9-12c7-4e59-b521-877b5e16acbd",
+      "ip": "10.18.6.67"
+    },
+    {
+      "name": "萌宠养成记",
+      "reflink": "http://flash1.7k7k.com/h5/2015/mcczjj/index.html",
+      "shareword": "直接分享title",
+      "priority": 2,
+      "id": "e371c192-4ecd-42e3-857f-cb587e3d79be",
+      "ip": "10.18.6.209"
+    },
+    {
+      "name": "聪明的出租车",
+      "reflink": "http://flash1.7k7k.com/h5/2015/dszka/game.html",
+      "shareword": "直接分享title",
+      "priority": 2,
+      "id": "8a923599-c2bb-48d9-a352-30e7c698b661",
+      "ip": "10.18.6.67"
+    },
+    {
+      "name": "飞檐走壁机器人",
+      "reflink": "http://sda.4399.com/4399swf/upload_swf/ftp15/ssj/20150411/j2/index.html",
+      "shareword": "我在《飞檐走壁机器人》中获得xx分，快来挑战下吧！",
+      "priority": 2,
+      "id": "c232eec3-caf1-4d73-b40e-0468aaaeff3c",
+      "ip": "10.18.6.209"
+    },
+    {
+      "name": "美丽沙画DIY",
+      "reflink": "http://sda.4399.com/4399swf/upload_swf/ftp14/yzg/20140920/3/game.htm",
+      "shareword": "直接分享title",
+      "priority": 2,
+      "id": "55b2c253-79b6-4e4b-a612-ccc21aa5c835",
+      "ip": "10.18.6.209"
+    },
+    {
+      "name": "全民叠汉堡",
+      "reflink": "http://flash1.7k7k.com/h5/2015/hamburger/game.html",
+      "shareword": "我在《全民叠汉堡》中叠了xx层汉堡，快来试试吧！",
+      "priority": 2,
+      "id": "49a21ec1-0b38-4f4c-9687-03fb11fda55a",
+      "ip": "10.18.6.209",
+      "testIp": [
+        "10.18.6.63"
+      ]
+    },
+    {
+      "name": "我是歌手来投票",
+      "reflink": "http://szhong.4399.com/4399swf/upload_swf/ftp15/ssj/20150401/h2/game.html",
+      "shareword": "我在《我是歌手来投票》中投了xx票，快来为喜欢的歌手投票吧！",
+      "priority": 2,
+      "id": "be8fc8ad-5179-40ca-a688-477eb263bdb2",
+      "ip": "10.18.6.209",
+      "testIp": [
+        "10.18.6.63"
+      ]
+    },
+    {
+      "name": "火车指挥官",
+      "reflink": "http://szhong.4399.com/4399swf/upload_swf/ftp14/wangc/20140804/1/game.html",
+      "shareword": "直接分享title",
+      "priority": 2,
+      "id": "c80c0e31-fecb-4a16-a987-92be6f740690",
+      "ip": "10.18.6.67",
+      "testIp": [
+        "10.18.6.63"
+      ]
+    },
+    {
+      "name": "雪人回家",
+      "reflink": "http://flash1.7k7k.com/h5/2015/xueren/index.htm",
+      "shareword": "直接分享title",
+      "priority": 3,
+      "id": "7bdd9dcd-6b40-4755-85dd-d2dfd0be17ec",
+      "ip": "10.18.6.209",
+      "testIp": [
+        "10.18.6.63"
+      ]
+    },
+    {
+      "name": "回转甜品店",
+      "reflink": "http://sxiao.4399.com/4399swf/upload_swf/ftp15/ssj/20150412/j1/1y/index.html",
+      "shareword": "直接分享title",
+      "priority": 3,
+      "id": "e26dc7a9-7475-46ab-a8b0-d4e27b01c706",
+      "ip": "10.18.6.22",
+      "testIp": [
+        "10.18.6.63"
+      ]
+    },
+    {
+      "name": "骑士闯城堡",
+      "reflink": "http://flash1.7k7k.com/h5/2015/knightower/game.htm",
+      "shareword": "我在《骑士闯城堡》中闯过xx层，快来挑战下吧！",
+      "priority": 3,
+      "id": "24db41e4-b2ce-4d7a-9578-b60a764bf9f0",
+      "ip": "10.18.6.22",
+      "testIp": [
+        "10.18.6.63"
+      ]
+    },
+    {
+      "name": "涂鸦旋转",
+      "reflink": "http://flash1.7k7k.com/h5/2015/kitchenstar/game.htm",
+      "shareword": "直接分享title",
+      "priority": 3,
+      "id": "a273d5bd-fd55-462e-88c2-03b4b4ad754e",
+      "ip": "10.18.6.22",
+      "testIp": [
+        "10.18.6.63"
+      ]
+    },
+    {
+      "name": "跳跃的小羊",
+      "reflink": "http://flash1.7k7k.com/h5/2015/gsddz/game.html",
+      "shareword": "我在《跳跃的小羊》中获得xx分，快来挑战下吧！",
+      "priority": 3,
+      "id": "ddfa1e45-8022-45a3-8907-0848cea217b4",
+      "ip": "10.18.6.209",
+      "testIp": [
+        "10.18.6.63"
+      ]
+    },
+    {
+      "name": "苦笑不得",
+      "reflink": "http://flash1.7k7k.com/h5/2015/cryorsmile/game.html",
+      "shareword": "我在《苦笑不得》中获得xx分，快来挑战下吧！",
+      "priority": 3,
+      "id": "aa9f88c2-7fd7-4808-9bc3-8046cf80a1e3",
+      "ip": "10.18.6.67",
+      "testIp": [
+        "10.18.6.63"
+      ]
+    },
+    {
+      "name": "狂点蜜蜂",
+      "reflink": "http://flash1.7k7k.com/h5/2015/honeybee/index.html",
+      "shareword": "我在《狂点蜜蜂》中获得xx分，快来挑战下吧！",
+      "priority": 3,
+      "id": "74f043ce-396a-4d31-927b-9d740ab54aa1",
+      "ip": "10.18.6.209",
+      "testIp": [
+        "10.18.6.63"
+      ]
+    }
+  ]
+}

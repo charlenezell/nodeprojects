@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns=http://www.w3.org/1999/xhtml ng-app="myapp"><head><meta http-equiv=Content-Type content="text/html; charset=utf-8"><title>豆豆游戏协作页</title>
+<link rel="stylesheet" href="stylesheets/common.css" />
+<script type=text/javascript src=http://www.100bt.com/resource/js/lib/jquery-mig-min.js></script><script type=text/javascript src=http://www.100bt.com/resource/js/nav/in-min.js></script></head>
+<div class="container" ng-controller="weekgamesInfo">
+    <div>本期游戏的配置信息如下:</div>
+    <div>使用的数据文件:{{info.dataPath}}</div>
+    <pre>格式形如:外层是一个数组，支持属性为name,child,非name和child的字段为内容字段可自定义加入
+        [{
+            name: "红米测试",
+            child: [{
+                name: "浏览器"
+            }, {
+                name: "微信"
+            }]
+        }, ...]
+    </pre>
+    <div>测试案例配置: <textarea name="" id="" cols="30" rows="10" ng-model="info.testCaseConfigStr">{{info.testCaseConfigStr}}</textarea></div>
+    <div ng-if="error" style="color:red;">{{error}}</div>
+    <div test-config-previewer="info.testCaseConfigStr" data-mode="read" class="clearfix"></div>
+    <div><a href="" ng-if="!error" class="btn" ng-click="submitform()">提交</a></div>
+</div>
+<link rel="stylesheet" href="stylesheets/edit.css" />
+<script src="javascripts/util.js"></script>
+<script src="javascripts/lodash.min.js"></script>
+<script src="javascripts/angular.min.js"></script>
+<script src="javascripts/edit.js"></script>
+<script src="javascripts/directive/testcaseview.js"></script>
+</body></html>
