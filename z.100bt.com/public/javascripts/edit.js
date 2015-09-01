@@ -12,7 +12,7 @@ myapp.controller('weekgamesInfo', function($scope, $http, $filter, $location) {
         db = $location.search().db;
     }
     $scope.getInfoByDbStr = function(str) {
-        $http.get("http://z.100bt.com/gamestate/" + db + "/manage/").success(function(data) {
+        $http.get("/gamestate/" + db + "/manage/").success(function(data) {
             $scope.info = data.result;
             $scope.info.testCaseConfig=$scope.info.testCaseConfig||defcfg;
             console.log($scope.info.testCaseConfig)
@@ -20,7 +20,7 @@ myapp.controller('weekgamesInfo', function($scope, $http, $filter, $location) {
         });
     }
     $scope.submitform=function(){
-        $http.post("http://z.100bt.com/gamestate/"+db+"/manage/",{
+        $http.post("/gamestate/"+db+"/manage/",{
             testCaseConfig:$scope.info.testCaseConfigStr
         }).success(function(data){
             alert(data);

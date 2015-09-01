@@ -68,4 +68,4 @@ function getPriorityName(name){
     };
     return g[name]||g["低"];
 }
-obj[0].data.slice(1).forEach(function(v){games.insert({name:v[0],reflink:v[1],shareword:v[2],priority:getPriorityName(v[3])})})
+obj[0].data.slice(1).forEach(function(v){games.insert({name:v[0],link:v[1],shareword:v[2],priority:getPriorityName(v[3])})})

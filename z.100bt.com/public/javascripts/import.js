@@ -23,7 +23,7 @@ $(function(){
                     }
                 }
          };
-        oReq.open("POST", "http://z.100bt.com/gamestate/"+dbName+"/import");
+        oReq.open("POST", "/gamestate/"+dbName+"/import");
         oReq.send(oMyForm);
         return false;
     })

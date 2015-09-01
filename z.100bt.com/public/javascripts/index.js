@@ -18,7 +18,7 @@ myapp.controller('gameList', function($scope, $http, $filter, $location) {
             });
         }
         a(config.testCaseConfig,0);
-        console.log(cellArray);
+        // console.log(cellArray);
         // g=data.map(function(v,k){
         //     // return Util.template()
         //     return "ccc"
@@ -41,6 +41,8 @@ myapp.controller('gameList', function($scope, $http, $filter, $location) {
             $scope.flash = true;
             $scope.games = data.result;
             $scope.myIp = data.clientIp;
+            $scope.info=data.info||{};
+            $scope.info.testCaseConfigStr=JSON.stringify($scope.info.testCaseConfig);
             $scope.myRule = data.clientRule;
             $scope.exportLink = "/gamestate/" + db + "/export";
             $scope.exportNoCompleteLink = "/gamestate/" + db + "/export?type=nocomplete";
@@ -154,7 +156,7 @@ myapp.controller('gameList', function($scope, $http, $filter, $location) {
             $scope.updateGameData();
         });
     }
-    $scope.completeShare = function(id, flag) {
+    $scope.completeTest = function(id, flag) {
         $http.post("/gamestate/" + db + "/update/" + id, {
             testcomplete: flag == 0 ? false : true
         }).success(function(data) {
@@ -224,7 +226,7 @@ myapp.controller('bodyController', function($scope, $http, $filter, $location, $
         $scope["testCasePop"]=$scope["testCasePop"]={};
         $scope["testCasePop"].confirm=function(id){
             $http.post("/gamestate/" + db + "/update/"+id,$scope["testCasePop"].viewvalue).success(function(data) {
-                alert(data.result);
+                alert(JSON.stringify(data.result));
                 $scope["testCasePop"]["isShow"] = false;
                 $scope.overlayIsShow = false;
                 $scope.updateGameData();

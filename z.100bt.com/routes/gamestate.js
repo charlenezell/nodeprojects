@@ -4,12 +4,13 @@ var child_process = require("child_process");
 var url = require("url");
 var GPath = require("path");
 var glob = require("glob");
+var fs=require("fs");
 var low = require('lowdb');
 low.mixin(require('underscore-db'))
 var ld = require("lodash");
 var multipart = require('connect-multiparty');
 var multipartMiddleware = multipart();
-
+var path=require("path");
 var ip2Name = {
     "10.18.6.209": {
         name: "浩源",
@@ -20,8 +21,8 @@ var ip2Name = {
         rule:"dev"
     },
     "127.0.0.1": {
-        name: "oss",
-        rule:"admin"
+        name: "光耀",
+        rule:"dev"
     },
     "10.18.6.12": {
         name: "光耀",
@@ -54,13 +55,16 @@ var ip2Name = {
 };
 
 /* GET users listing. */
-process.chdir("..");
+process.chdir(path.join(__dirname,"..","data"));
 
 function getClientIp(req) {
-    return req.headers['x-forwarded-for'] ||
+    var g= req.headers['x-forwarded-for'] ||
         req.connection.remoteAddress ||
         req.socket.remoteAddress ||
         req.connection.socket.remoteAddress;
+    if(g=g.match(/\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/)){
+        return g[0]
+    }else{return ""}
 }
 
 router.get('/', function(req, res, next) {
@@ -73,31 +77,10 @@ router.get('/:datestr', function(req, res, next) {
 router.get('/:datestr/query', function(req, res, next) {
     var _date = req.params.datestr;
     var db = low(_date + '.json');
-    var source = glob.sync("Z:/豆豆游戏/" + _date + "/*").map(function(v) {
-        return GPath.basename(v)
-    });
+
     var clones = ld(db("games").cloneDeep());
     var data = clones.sortBy("priority").map(function(v) {
-        v.author = ip2Name[v.ip + ""] ? ip2Name[v.ip + ""].name : v.ip;
-        v.testor = (function() {
-            var str = null;
-            if (!v.testIp) {
-
-            } else if (ld.isString(v.testIp)) {
-                str = ip2Name[v.testIp + ""] ? ip2Name[v.testIp + ""].name : v.testIp;
-            } else if (ld.isArray(v.testIp)) {
-                str = v.testIp.map(function(iv) {
-                    return ip2Name[iv + ""] ? ip2Name[iv + ""].name : iv;
-                }).join("")
-            }
-            return str;
-        })();
-        if (ld.contains(source, v.name)) {
-            v.hasArt = true;
-        } else {
-            v.hasArt = false;
-        }
-        return v
+        return parseData(v,_date);
     }).value();
     res.json({
         result: data,
@@ -107,15 +90,33 @@ router.get('/:datestr/query', function(req, res, next) {
     });
 });
 router.get('/:datestr/export', function(req, res, next) {
-    console.log(req);
     var _date = req.params.datestr;
     var db = low(_date + '.json');
     var xlsx = require('node-xlsx');
-    var data = [
-        ["名字", "链接", "备注", "开发","测试"]
-    ];
+
+    function a(obj, name) {
+        if (obj.child && obj.child.length > 0) {
+            obj.child.forEach(function(v, k) {
+                a(v, name + "_" + v.name)
+            })
+        } else {
+            gobj.push(name)
+        }
+    }
+
     var _query=req.query;
     var clones = ld(db("games").cloneDeep()).value();
+    var gobj=[];
+    var configArray=ld(db("info").cloneDeep()).value();
+    configArray.testCaseConfig.forEach(function(v, k) {
+      a(v, v.name)
+    })
+
+
+    var data = [
+        ["名字", "链接", "备注", "开发","测试"].concat(gobj)
+    ];
+
     if(_query.type&&_query.type=="nocomplete"){
         clones=clones.filter(function(v){
             if(!v.testcomplete){return true;}else{return false;}
@@ -136,15 +137,31 @@ router.get('/:datestr/export', function(req, res, next) {
             return str
         })();
         var author = ip2Name[v.ip + ""] ? ip2Name[v.ip + ""].name : v.ip;
-        data.push([v.name, v.link || "空", v.memo || "空", author||"空", testor||"空"]);
+        var _temp=[v.name, v.link || "空", v.memo || "空", author||"空", testor||"空"].concat(gobj.map(function(value){
+            return v[value+"_content"]||"-";
+        }));
+        data.push(_temp);
     });
 
-    var buffer = xlsx.build([{
-        name: "豆豆游戏",
-        data: data
-    }]); // returns a buffer
-    res.set('Content-Type', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
-    res.send(buffer);
+    // var buffer = xlsx.build([{
+    //     name: "豆豆游戏",
+    //     data: data
+    // }]); // returns a buffer
+    // res.set('Content-Type', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
+    function parse(str){
+        return str.replace(/(http:\/\/.*?)(?:([\s]|$))/,"<a href='$1' target='_blank'>$1</a>");
+    }
+var str="<link rel='stylesheet' href='/stylesheets/editstylesheet.css' /><style>table{text-align:center;border-collapse:collapse;margin-top:50px;table-layout:fixed;}th{background:rgb(163,0,0);color:white;}th,td{border:1px solid #CFCFCF;padding:0 12px;}th{padding:5px;font-size:12px;}</style>";
+    str+="<h1 style='text-align:center;'>"+_date+"豆豆游戏集成和测试状况</h1>";
+    str+="<table>"
+    str+=data.map(function(v,k){
+        return "<tr>"+v.map(function(v,ik){
+            return k==0?"<th>"+v+"</th>":"<td>"+parse(v)+"</td>";
+        }).join("")+"</tr>";
+    }).join("");
+    str+="</table>"
+    res.set('Content-Type', 'text/html');
+    res.send(str);
 });
 router.get('/:datestr/manage', function(req, res, next) {
     var _date = req.params.datestr;
@@ -163,8 +180,6 @@ router.get('/:datestr/:action', function(req, res, next) {
         result: "no this action"
     });
 });
-
-
 
 router.post('/:datestr/create', multipartMiddleware, function(req, res, next) {
     var _date = req.params.datestr;
@@ -275,6 +290,36 @@ router.get('/:datestr/:action/:id', function(req, res, next) {
     }
 });
 
+function parseData(data,_date){
+    var artRoot=path.join("Z:/豆豆游戏/",_date);
+     var source = glob.sync( path.join(artRoot, "/*")).map(function(v) {
+        return GPath.basename(v)
+    });
+    data.author = ip2Name[data.ip + ""] ? ip2Name[data.ip + ""].name : data.ip;
+    data.testor = (function() {
+        var str = null;
+        if (!data.testIp) {
+
+        } else if (ld.isString(data.testIp)) {
+            str = ip2Name[data.testIp + ""] ? ip2Name[data.testIp + ""].name : data.testIp;
+        } else if (ld.isArray(data.testIp)) {
+            str = data.testIp.map(function(iv) {
+                return ip2Name[iv + ""] ? ip2Name[iv + ""].name : iv;
+            }).join("")
+        }
+        return str;
+    })();
+    if (ld.contains(source, data.name)) {
+        data.hasArt = true;
+    } else {
+        data.hasArt = false;
+    }
+
+    if(fs.existsSync(path.join(artRoot,data.name))){
+        data.artFolderchangeTime=fs.statSync(path.join(artRoot,data.name)).ctime;
+    }
+    return data;
+}
 router.get('/:datestr/delete/:id', function(req, res, next) {
     var _date = req.___date;
     var _id = req.___id;
@@ -287,31 +332,11 @@ router.get('/:datestr/delete/:id', function(req, res, next) {
 });
 function getDataById(_date,_id){
     var db = low(_date + '.json');
-    var source = glob.sync("Z:/豆豆游戏/" + _date + "/*").map(function(v) {
-        return GPath.basename(v)
-    });
+
     var clones = ld(db("games").cloneDeep());
     var data = clones.find({id:_id});
     if(data){
-        data.author = ip2Name[data.ip + ""] ? ip2Name[data.ip + ""].name : data.ip;
-        data.testor = (function() {
-            var str = null;
-            if (!data.testIp) {
-
-            } else if (ld.isString(data.testIp)) {
-                str = ip2Name[data.testIp + ""] ? ip2Name[data.testIp + ""].name : data.testIp;
-            } else if (ld.isArray(data.testIp)) {
-                str = data.testIp.map(function(iv) {
-                    return ip2Name[iv + ""] ? ip2Name[iv + ""].name : iv;
-                }).join("")
-            }
-            return str;
-        })();
-        if (ld.contains(source, data.name)) {
-            data.hasArt = true;
-        } else {
-            data.hasArt = false;
-        }
+        data=parseData(data, _date);
     }else{
         data={}
     }
@@ -353,10 +378,6 @@ router.get('/:datestr/:action/:id', function(req, res, next) {
         });
 });
 
-
-
-
-
 /*filter*/
 router.post('/:datestr/:action/:id', function(req, res, next) {
     var _id = req.params.id;
@@ -379,7 +400,6 @@ router.post('/:datestr/:action/:id', function(req, res, next) {
         next();
     }
 })
-
 router.post('/:datestr/update/:id', function(req, res, next) {
     var _date = req.___date;
     var _id = req.___id;

@@ -1,0 +1,198 @@
+{
+  "games": [
+    {
+      "name": "花千骨找茬",
+      "reflink": "http://play.7724.com/olgames/hqgzc/",
+      "link": "http://www.doudou.in/play/44-hqgzc/",
+      "shareword": "花千骨找茬，试试看你能过几关？",
+      "priority": 3,
+      "id": "fefe0a76-20d0-45b6-89f2-80645a8bb447",
+      "ip": "127.0.0.1",
+      "actcomplete": true,
+      "sharecomplete": true,
+      "红米测试_浏览器_content": "1x",
+      "红米测试_微信_content": "3",
+      "三星测试_浏览器_content": "2",
+      "三星测试_微信_content": "4",
+      "华为测试_浏览器_content": "5",
+      "华为测试_微信_content": "7",
+      "iphone5s测试_浏览器_content": "6",
+      "iphone5s测试_微信_content": "8",
+      "iphone5s测试_浏览器_xxxmoshi1_content": "",
+      "iphone5s测试_浏览器_xxxmoshi2_content": "",
+      "iphone6plus测试_浏览器_content": "jpojlpkl<br><ol><li>asdf</li><li>fdj<span class=\"wysiwyg-color-red\">kf</span></li></ol><span class=\"wysiwyg-color-green\"></span>",
+      "iphone6plus测试_微信_content": "",
+      "testIp": [
+        "10.18.6.63"
+      ]
+    },
+    {
+      "name": "爱就块一起吧",
+      "reflink": "http://play.7724.com/olgames/ajkyq/",
+      "link": "http://www.doudou.in/play/44-ajkzyqb/",
+      "shareword": "爱就块一起吧，狂虐单身狗的节奏…",
+      "priority": 3,
+      "id": "a69f9fd7-96a6-49e8-ae11-296ef4a95cc2",
+      "ip": "127.0.0.1",
+      "sharecomplete": true,
+      "actcomplete": true,
+      "testIp": [
+        "10.18.6.63"
+      ]
+    },
+    {
+      "name": "周杰伦歌迷测试",
+      "reflink": "http://play.7724.com/olgames/zjlhsyzc/",
+      "link": "http://www.doudou.in/play/44-zjlgmcs/",
+      "shareword": "你是杰迷吗？来测试看吧！！！",
+      "priority": 3,
+      "id": "a7c40604-640c-4cf2-9d60-4e949ff88fb9",
+      "ip": "127.0.0.1",
+      "actcomplete": true,
+      "sharecomplete": true,
+      "testIp": [
+        "10.18.6.63"
+      ]
+    },
+    {
+      "name": "芭比娃娃换装睡衣派对",
+      "reflink": "http://play.7724.com/olgames/bbwwdsypd/",
+      "link": "http://www.doudou.in/play/44-bbwwhzsypd/",
+      "shareword": "想参加睡衣派对吗？穿一身芭比娃娃睡衣来吧！",
+      "priority": 3,
+      "id": "69eb4235-3bce-42b9-837a-3390d46300f0",
+      "memo": "留给平姐"
+    },
+    {
+      "name": "家禽卡丁车",
+      "reflink": "http://play.7724.com/olgames/jqkdc/",
+      "link": "http://www.doudou.in/play/44-jqkdc/",
+      "shareword": "试过360度漂移吗？家禽卡丁车满足你漂移梦！",
+      "priority": 3,
+      "id": "98778a5a-0694-4bdf-a22b-37535b165f9f",
+      "memo": "留给建强",
+      "ip": "10.18.6.67",
+      "sharecomplete": true,
+      "actcomplete": true,
+      "testcomplete": false
+    }
+  ],
+  "info": {
+    "testCaseConfig": [
+      {
+        "name": "红米测试",
+        "child": [
+          {
+            "name": "浏览器"
+          },
+          {
+            "name": "微信"
+          }
+        ]
+      },
+      {
+        "name": "三星测试",
+        "child": [
+          {
+            "name": "浏览器"
+          },
+          {
+            "name": "微信"
+          }
+        ]
+      },
+      {
+        "name": "华为测试",
+        "child": [
+          {
+            "name": "浏览器"
+          },
+          {
+            "name": "微信"
+          }
+        ]
+      },
+      {
+        "name": "iphone5s测试",
+        "child": [
+          {
+            "name": "浏览器"
+          },
+          {
+            "name": "微信"
+          }
+        ]
+      },
+      {
+        "name": "iphone6plus测试",
+        "child": [
+          {
+            "name": "浏览器"
+          },
+          {
+            "name": "微信"
+          }
+        ]
+      }
+    ]
+  },
+  "_bkinfo": {
+    "testCaseConfig": [
+      {
+        "name": "红米测试",
+        "child": [
+          {
+            "name": "浏览器"
+          },
+          {
+            "name": "微信"
+          }
+        ]
+      },
+      {
+        "name": "三星测试",
+        "child": [
+          {
+            "name": "浏览器"
+          },
+          {
+            "name": "微信"
+          }
+        ]
+      },
+      {
+        "name": "华为测试",
+        "child": [
+          {
+            "name": "浏览器"
+          },
+          {
+            "name": "微信"
+          }
+        ]
+      },
+      {
+        "name": "iphone5s测试",
+        "child": [
+          {
+            "name": "浏览器"
+          },
+          {
+            "name": "微信"
+          }
+        ]
+      },
+      {
+        "name": "iphone6plus测试",
+        "child": [
+          {
+            "name": "浏览器"
+          },
+          {
+            "name": "微信"
+          }
+        ]
+      }
+    ]
+  }
+}

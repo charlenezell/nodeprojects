@@ -14,7 +14,7 @@
 	<a href="" ng-click="toggleFlash()" class="btn">不闪</a>
 	<a href="{{exportLink}}" class="btn">导出表格</a>
     <a href="{{exportNoCompleteLink}}" class="btn">导出未完成表格</a>
-    <a href="" ng-click="toggleTestCaseView()" class="btn" ng-class="{btn_falsy:testCaseView}">{{testCaseView?"切换游戏列表模式":"切换测试案例模式"}}</a>
+    <!-- <a href="" ng-click="toggleTestCaseView()" class="btn" ng-class="{btn_falsy:testCaseView}">{{testCaseView?"切换游戏列表模式":"切换测试案例模式"}}</a> -->
 	<div class="gameInfo" ng-if="infoFlag">
 		<div>周冠军:duang!-->{{weekMost}}</div>
         <div>本期共有{{games.length}}个游戏</div>
@@ -32,7 +32,7 @@
         </tr>
         </thead>
         <tbody>
-        <tr ng-repeat="game in games track by game.id" class="gameItem priority_{{game.priority}}" ng-class="{complateAll:game.actcomplete&&game.sharecomplete,lessthan5:lessthan5&&!game.author&&flash}">
+        <tr ng-repeat="game in games track by game.id" class="gameItem priority_{{game.priority}}" ng-class="{complateAll:game.actcomplete&&game.sharecomplete&&game.testcomplete,lessthan5:lessthan5&&!game.author&&flash}" title="美术资源文件上次更新于{{game.artFolderchangeTime}}">
             <td><span ng-if="game.hasArt" class='tickicon'>√</span><span ng-if="!game.hasArt" class='crossicon'>×</span></td>
             <td><span class='tickicon' ng-if="game.actcomplete">√</span><span class='crossicon' ng-if="!game.actcomplete">×</span></td>
             <td><span ng-if="game.sharecomplete" class='tickicon'>√</span><span ng-if="!game.sharecomplete" class='crossicon'>×</span></td>
@@ -41,17 +41,17 @@
             <td>{{game.author||"待定"}}</td>
             <td ng-class="{noTest:game.actcomplete&&game.sharecomplete&&(ipstrisNull(game.testIp))&&flash}">{{game.testor||"待定"}}</td>
             <td>
-                <a href="" ng-if="!game.ip||myRule=='admin'" ng-click="lockGame(game.id,1)" class="btn">开发占有</a>
-                <a href="" ng-if="game.ip&&game.ip==myIp||myRule=='admin'" ng-click="lockGame(game.id,0)" class="btn btn_falsy">撤销开发占有</a>
-                <a href="" ng-if="!hasMyIp(game.testIp,myIp)||myRule=='admin'" ng-click="assignTestor(game.id,1)" class="btn">测试占有</a>
-                <a href="" ng-if="hasMyIp(game.testIp,myIp)||myRule=='admin'" ng-click="assignTestor(game.id,0,myIp)" class="btn btn_falsy">撤销测试占有</a>
-                <a href="" ng-if="!game.actcomplete&&game.ip==myIp||myRule=='admin'" ng-click="completeAct(game.id,1)" class="btn">完成美术集成</a>
-                <a href="" ng-if="game.actcomplete&&game.ip==myIp||myRule=='admin'" ng-click="completeAct(game.id,0)" class="btn btn_falsy">撤销美术集成</a>
-                <a href="" ng-if="!game.sharecomplete&&game.ip==myIp||myRule=='admin'" ng-click="completeShare(game.id,1)" class="btn">完成分享集成</a>
-                <a href="" ng-if="game.sharecomplete&&game.ip==myIp||myRule=='admin'" ng-click="completeShare(game.id,0)" class="btn btn_falsy">撤销分享集成</a>
-                <a href="" ng-if="!game.testcomplete&&game.ip==myIp||myRule=='admin'" ng-click="completeTest(game.id,1)" class="btn">完成测试</a>
-                <a href="" ng-if="game.testcomplete&&game.ip==myIp||myRule=='admin'" ng-click="completeTest(game.id,0)" class="btn btn_falsy">撤销完成测试</a>
-                <a href="" ng-if="myRule=='dev'||myRule=='admin'" ng-click="showTestCasePop(game.id)" class="btn btn_testcase">测试案例设置</a>
+                <a href="" ng-if="!game.ip&&myRule=='dev'||myRule=='admin'" ng-click="lockGame(game.id,1)" class="btn">开发占有</a>
+                <a href="" ng-if="game.ip&&game.ip==myIp&&myRule=='dev'||myRule=='admin'" ng-click="lockGame(game.id,0)" class="btn btn_falsy">撤销开发占有</a>
+                <a href="" ng-if="!hasMyIp(game.testIp,myIp)&&myRule=='test'||myRule=='admin'" ng-click="assignTestor(game.id,1)" class="btn">测试占有</a>
+                <a href="" ng-if="hasMyIp(game.testIp,myIp)&&myRule=='test'||myRule=='admin'" ng-click="assignTestor(game.id,0,myIp)" class="btn btn_falsy">撤销测试占有</a>
+                <a href="" ng-if="!game.actcomplete&&game.ip==myIp&&myRule=='dev'||myRule=='admin'" ng-click="completeAct(game.id,1)" class="btn">完成美术集成</a>
+                <a href="" ng-if="game.actcomplete&&game.ip==myIp&&myRule=='dev'||myRule=='admin'" ng-click="completeAct(game.id,0)" class="btn btn_falsy">撤销美术集成</a>
+                <a href="" ng-if="!game.sharecomplete&&game.ip==myIp&&myRule=='dev'||myRule=='admin'" ng-click="completeShare(game.id,1)" class="btn">完成分享集成</a>
+                <a href="" ng-if="game.sharecomplete&&game.ip==myIp&&myRule=='dev'||myRule=='admin'" ng-click="completeShare(game.id,0)" class="btn btn_falsy">撤销分享集成</a>
+                <a href="" ng-if="!game.testcomplete&&game.ip==myIp&&myRule=='test'||myRule=='admin'" ng-click="completeTest(game.id,1)" class="btn">完成测试</a>
+                <a href="" ng-if="game.testcomplete&&game.ip==myIp&&myRule=='test'||myRule=='admin'" ng-click="completeTest(game.id,0)" class="btn btn_falsy">撤销完成测试</a>
+                <a href="" ng-if="myRule=='dev'||myRule=='admin'||myRule=='test'" ng-click="showTestCasePop(game.id)" class="btn btn_testcase">测试状况设置</a>
             </td>
             <td>
                 <input type="text" name="" id="" ng-model="game.memo" ng-if="game.editMemo" ng-blur="confirmIt(game.id,'editMemo','memo')" />

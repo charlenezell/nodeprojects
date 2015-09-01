@@ -1,0 +1,55 @@
+{
+  "games": [],
+  "info": {
+    "testCaseConfig": [
+      {
+        "name": "红米测试",
+        "child": [
+          {
+            "name": "原生浏览器"
+          },
+          {
+            "name": "微信"
+          }
+        ]
+      },
+      {
+        "name": "iphon5测试",
+        "child": [
+          {
+            "name": "safari"
+          },
+          {
+            "name": "微信"
+          }
+        ]
+      }
+    ]
+  },
+  "_bkinfo": {
+    "testCaseConfig": [
+      {
+        "name": "红米测试",
+        "child": [
+          {
+            "name": "原生浏览器"
+          },
+          {
+            "name": "微信"
+          }
+        ]
+      },
+      {
+        "name": "iphon5测试",
+        "child": [
+          {
+            "name": "safari"
+          },
+          {
+            "name": "微信"
+          }
+        ]
+      }
+    ]
+  }
+}

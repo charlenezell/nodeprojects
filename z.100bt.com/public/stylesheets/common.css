@@ -44,7 +44,7 @@
 }
 .iconC{width:3em;min-width:3em;}
 .nameC{width:3em;min-width:3em;}
-.btnC{width:6em;min-width:6em;}
+.btnC{width:7em;min-width:7em;}
 .gameNameC{min-width:8em;}
 .gameItem{height: 30px;line-height: 30px;margin:5px 0;}
 .gameItem:hover{background: #EAEAEA;}
@@ -63,7 +63,7 @@
     border: 1px solid #CFCFCF;
     padding: 0 12px;
 }
-.gameStateTable th{padding:10px}
+.gameStateTable th{padding:5px;font-size:12px;}
 .descriptor{
   top: 0;
     display: inline-block;
