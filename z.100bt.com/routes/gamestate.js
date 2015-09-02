@@ -292,9 +292,14 @@ router.get('/:datestr/:action/:id', function(req, res, next) {
 
 function parseData(data,_date){
     var artRoot=path.join("Z:/豆豆游戏/",_date);
-     var source = glob.sync( path.join(artRoot, "/*")).map(function(v) {
+	try{
+		 var source = glob.sync( path.join(artRoot, "/*")).map(function(v) {
         return GPath.basename(v)
     });
+	}catch(e){
+		var source=[];
+	}
+    
     data.author = ip2Name[data.ip + ""] ? ip2Name[data.ip + ""].name : data.ip;
     data.testor = (function() {
         var str = null;
