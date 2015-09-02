@@ -1,0 +1,2782 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'i',
+1 verbose cli   'nslog@2.0.0' ]
+2 info using npm@3.3.1
+3 info using node@v0.12.6
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData nslog@2.0.0
+8 silly fetchNamedPackageData nslog
+9 silly mapToRegistry name nslog
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry http://registry.npm.taobao.org/
+12 silly mapToRegistry uri http://registry.npm.taobao.org/nslog
+13 verbose request uri http://registry.npm.taobao.org/nslog
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 12:02:49
+16 verbose request id 55205844a1d2a0cc
+17 verbose etag "1422481136000"
+18 http request GET http://registry.npm.taobao.org/nslog
+19 http 304 http://registry.npm.taobao.org/nslog
+20 silly get cb [ 304,
+20 silly get   { server: 'nginx/1.1.19',
+20 silly get     date: 'Wed, 02 Sep 2015 03:58:22 GMT',
+20 silly get     connection: 'keep-alive',
+20 silly get     etag: '"1422481136000"',
+20 silly get     'x-readtime': '11' } ]
+21 verbose etag http://registry.npm.taobao.org/nslog from cache
+22 verbose get saving nslog to C:\Users\huangguangyao\AppData\Roaming\npm-cache\registry.npm.taobao.org\nslog\.cache.json
+23 silly install normalizeTree
+24 silly loadCurrentTree Finishing
+25 silly loadIdealTree Starting
+26 silly install loadIdealTree
+27 silly cloneCurrentTree Starting
+28 silly install cloneCurrentTreeToIdealTree
+29 silly cloneCurrentTree Finishing
+30 silly loadShrinkwrap Starting
+31 silly install loadShrinkwrap
+32 silly loadShrinkwrap Finishing
+33 silly loadAllDepsIntoIdealTree Starting
+34 silly install loadAllDepsIntoIdealTree
+35 silly resolveWithNewModule nslog@2.0.0 checking installable status
+36 silly cache add args [ 'nslog@2.0.0', null ]
+37 verbose cache add spec nslog@2.0.0
+38 silly cache add parsed spec { raw: 'nslog@2.0.0',
+38 silly cache add   scope: null,
+38 silly cache add   name: 'nslog',
+38 silly cache add   rawSpec: '2.0.0',
+38 silly cache add   spec: '2.0.0',
+38 silly cache add   type: 'version' }
+39 silly addNamed nslog@2.0.0
+40 verbose addNamed "2.0.0" is a plain semver version for nslog
+41 silly mapToRegistry name nslog
+42 silly mapToRegistry using default registry
+43 silly mapToRegistry registry http://registry.npm.taobao.org/
+44 silly mapToRegistry uri http://registry.npm.taobao.org/nslog
+45 verbose addNameVersion registry:http://registry.npm.taobao.org/nslog not in flight; fetching
+46 verbose get http://registry.npm.taobao.org/nslog not expired, no request
+47 silly cache afterAdd nslog@2.0.0
+48 verbose afterAdd C:\Users\huangguangyao\AppData\Roaming\npm-cache\nslog\2.0.0\package\package.json not in flight; writing
+49 verbose afterAdd C:\Users\huangguangyao\AppData\Roaming\npm-cache\nslog\2.0.0\package\package.json written
+50 silly fetchOtherPackageData nan@https://atom.io/download/atom-shell/nan-1.6.1.tgz
+51 silly cache add args [ 'nan@https://atom.io/download/atom-shell/nan-1.6.1.tgz',
+51 silly cache add   null ]
+52 verbose cache add spec nan@https://atom.io/download/atom-shell/nan-1.6.1.tgz
+53 silly cache add parsed spec { raw: 'nan@https://atom.io/download/atom-shell/nan-1.6.1.tgz',
+53 silly cache add   scope: null,
+53 silly cache add   name: 'nan',
+53 silly cache add   rawSpec: 'https://atom.io/download/atom-shell/nan-1.6.1.tgz',
+53 silly cache add   spec: 'https://atom.io/download/atom-shell/nan-1.6.1.tgz',
+53 silly cache add   type: 'remote' }
+54 silly mapToRegistry name nan@https://atom.io/download/atom-shell/nan-1.6.1.tgz
+55 silly mapToRegistry using default registry
+56 silly mapToRegistry registry http://registry.npm.taobao.org/
+57 silly mapToRegistry uri http://registry.npm.taobao.org/nan@https://atom.io/download/atom-shell/nan-1.6.1.tgz
+58 verbose addRemoteTarball https://atom.io/download/atom-shell/nan-1.6.1.tgz not in flight; adding
+59 verbose addRemoteTarball [ 'https://atom.io/download/atom-shell/nan-1.6.1.tgz', null ]
+60 info retry fetch attempt 1 at 12:02:52
+61 info attempt registry request try #1 at 12:02:52
+62 http fetch GET https://atom.io/download/atom-shell/nan-1.6.1.tgz
+63 http fetch 200 https://atom.io/download/atom-shell/nan-1.6.1.tgz
+64 silly fetchAndShaCheck shasum 7b6427390dfb63981622df987ed72c68dc3957c6
+65 verbose addTmpTarball C:\Users\HUANGG~1\AppData\Local\Temp\npm-6804-9f9891c6\atom.io\download\atom-shell\nan-1.6.1.tgz not in flight; adding
+66 verbose addTmpTarball validating metadata from C:\Users\HUANGG~1\AppData\Local\Temp\npm-6804-9f9891c6\atom.io\download\atom-shell\nan-1.6.1.tgz
+67 verbose tar unpack C:\Users\HUANGG~1\AppData\Local\Temp\npm-6804-9f9891c6\atom.io\download\atom-shell\nan-1.6.1.tgz
+68 verbose tar unpacking to C:\Users\HUANGG~1\AppData\Local\Temp\npm-6804-9f9891c6\unpack-9c49f6b0d2395ed3425166543a804299
+69 silly gentlyRm C:\Users\HUANGG~1\AppData\Local\Temp\npm-6804-9f9891c6\unpack-9c49f6b0d2395ed3425166543a804299 is being purged
+70 verbose gentlyRm don't care about contents; nuking C:\Users\HUANGG~1\AppData\Local\Temp\npm-6804-9f9891c6\unpack-9c49f6b0d2395ed3425166543a804299
+71 silly gunzTarPerm modes [ '777', '666' ]
+72 silly gunzTarPerm extractEntry package.json
+73 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+74 silly gunzTarPerm extractEntry README.md
+75 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+76 silly gunzTarPerm extractEntry include_dirs.js
+77 silly gunzTarPerm modified mode [ 'include_dirs.js', 420, 438 ]
+78 silly gunzTarPerm extractEntry nan.h
+79 silly gunzTarPerm modified mode [ 'nan.h', 420, 438 ]
+80 silly gunzTarPerm extractEntry appveyor.yml
+81 silly gunzTarPerm modified mode [ 'appveyor.yml', 420, 438 ]
+82 silly gunzTarPerm extractEntry LICENSE.md
+83 silly gunzTarPerm modified mode [ 'LICENSE.md', 420, 438 ]
+84 silly gunzTarPerm extractEntry CHANGELOG.md
+85 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 438 ]
+86 silly gunzTarPerm extractEntry nan_implementation_12_inl.h
+87 silly gunzTarPerm modified mode [ 'nan_implementation_12_inl.h', 420, 438 ]
+88 silly gunzTarPerm extractEntry nan_implementation_pre_12_inl.h
+89 silly gunzTarPerm modified mode [ 'nan_implementation_pre_12_inl.h', 420, 438 ]
+90 silly gunzTarPerm extractEntry nan_new.h
+91 silly gunzTarPerm modified mode [ 'nan_new.h', 420, 438 ]
+92 silly gunzTarPerm extractEntry nan_string_bytes.h
+93 silly gunzTarPerm modified mode [ 'nan_string_bytes.h', 420, 438 ]
+94 silly gunzTarPerm extractEntry .dntrc
+95 silly gunzTarPerm modified mode [ '.dntrc', 420, 438 ]
+96 silly cache afterAdd nan@1.6.1
+97 verbose afterAdd C:\Users\huangguangyao\AppData\Roaming\npm-cache\nan\1.6.1\package\package.json not in flight; writing
+98 verbose afterAdd C:\Users\huangguangyao\AppData\Roaming\npm-cache\nan\1.6.1\package\package.json written
+99 silly resolveWithNewModule nan@1.6.1 checking installable status
+100 silly fetchNamedPackageData fsevents
+101 silly mapToRegistry name fsevents
+102 silly mapToRegistry using default registry
+103 silly mapToRegistry registry http://registry.npm.taobao.org/
+104 silly mapToRegistry uri http://registry.npm.taobao.org/fsevents
+105 verbose request uri http://registry.npm.taobao.org/fsevents
+106 verbose request no auth needed
+107 info attempt registry request try #1 at 12:03:03
+108 verbose etag "1438901096000"
+109 http request GET http://registry.npm.taobao.org/fsevents
+110 http 304 http://registry.npm.taobao.org/fsevents
+111 silly get cb [ 304,
+111 silly get   { server: 'nginx/1.1.19',
+111 silly get     date: 'Wed, 02 Sep 2015 03:58:36 GMT',
+111 silly get     connection: 'keep-alive',
+111 silly get     etag: '"1438901096000"',
+111 silly get     'x-readtime': '7' } ]
+112 verbose etag http://registry.npm.taobao.org/fsevents from cache
+113 verbose get saving fsevents to C:\Users\huangguangyao\AppData\Roaming\npm-cache\registry.npm.taobao.org\fsevents\.cache.json
+114 silly resolveWithNewModule fsevents@0.3.8 checking installable status
+115 warn install Couldn't install optional dependency: Unsupported
+116 verbose install Error: Unsupported
+116 verbose install     at checkPlatform (C:\nvm\v0.12.6\node_modules\npm\node_modules\npm-install-checks\index.js:46:14)
+116 verbose install     at Array.<anonymous> (C:\nvm\v0.12.6\node_modules\npm\node_modules\slide\lib\bind-actor.js:15:8)
+116 verbose install     at LOOP (C:\nvm\v0.12.6\node_modules\npm\node_modules\slide\lib\chain.js:15:14)
+116 verbose install     at C:\nvm\v0.12.6\node_modules\npm\node_modules\slide\lib\chain.js:18:7
+116 verbose install     at checkEngine (C:\nvm\v0.12.6\node_modules\npm\node_modules\npm-install-checks\index.js:25:10)
+116 verbose install     at Array.<anonymous> (C:\nvm\v0.12.6\node_modules\npm\node_modules\slide\lib\bind-actor.js:15:8)
+116 verbose install     at LOOP (C:\nvm\v0.12.6\node_modules\npm\node_modules\slide\lib\chain.js:15:14)
+116 verbose install     at chain (C:\nvm\v0.12.6\node_modules\npm\node_modules\slide\lib\chain.js:20:5)
+116 verbose install     at module.exports.isInstallable (C:\nvm\v0.12.6\node_modules\npm\lib\install\validate-args.js:26:3)
+116 verbose install     at resolveWithNewModule (C:\nvm\v0.12.6\node_modules\npm\lib\install\deps.js:408:12)
+117 silly fetchNamedPackageData appdmg
+118 silly mapToRegistry name appdmg
+119 silly mapToRegistry using default registry
+120 silly mapToRegistry registry http://registry.npm.taobao.org/
+121 silly mapToRegistry uri http://registry.npm.taobao.org/appdmg
+122 verbose request uri http://registry.npm.taobao.org/appdmg
+123 verbose request no auth needed
+124 info attempt registry request try #1 at 12:03:07
+125 verbose etag "1434537445000"
+126 http request GET http://registry.npm.taobao.org/appdmg
+127 http 304 http://registry.npm.taobao.org/appdmg
+128 silly get cb [ 304,
+128 silly get   { server: 'nginx/1.1.19',
+128 silly get     date: 'Wed, 02 Sep 2015 03:58:40 GMT',
+128 silly get     connection: 'keep-alive',
+128 silly get     etag: '"1434537445000"',
+128 silly get     'x-readtime': '18' } ]
+129 verbose etag http://registry.npm.taobao.org/appdmg from cache
+130 verbose get saving appdmg to C:\Users\huangguangyao\AppData\Roaming\npm-cache\registry.npm.taobao.org\appdmg\.cache.json
+131 silly resolveWithNewModule appdmg@0.3.2 checking installable status
+132 warn install Couldn't install optional dependency: Unsupported
+133 verbose install Error: Unsupported
+133 verbose install     at checkPlatform (C:\nvm\v0.12.6\node_modules\npm\node_modules\npm-install-checks\index.js:46:14)
+133 verbose install     at Array.<anonymous> (C:\nvm\v0.12.6\node_modules\npm\node_modules\slide\lib\bind-actor.js:15:8)
+133 verbose install     at LOOP (C:\nvm\v0.12.6\node_modules\npm\node_modules\slide\lib\chain.js:15:14)
+133 verbose install     at C:\nvm\v0.12.6\node_modules\npm\node_modules\slide\lib\chain.js:18:7
+133 verbose install     at checkEngine (C:\nvm\v0.12.6\node_modules\npm\node_modules\npm-install-checks\index.js:25:10)
+133 verbose install     at Array.<anonymous> (C:\nvm\v0.12.6\node_modules\npm\node_modules\slide\lib\bind-actor.js:15:8)
+133 verbose install     at LOOP (C:\nvm\v0.12.6\node_modules\npm\node_modules\slide\lib\chain.js:15:14)
+133 verbose install     at chain (C:\nvm\v0.12.6\node_modules\npm\node_modules\slide\lib\chain.js:20:5)
+133 verbose install     at module.exports.isInstallable (C:\nvm\v0.12.6\node_modules\npm\lib\install\validate-args.js:26:3)
+133 verbose install     at resolveWithNewModule (C:\nvm\v0.12.6\node_modules\npm\lib\install\deps.js:408:12)
+134 silly fetchNamedPackageData bufferutil
+135 silly mapToRegistry name bufferutil
+136 silly mapToRegistry using default registry
+137 silly mapToRegistry registry http://registry.npm.taobao.org/
+138 silly mapToRegistry uri http://registry.npm.taobao.org/bufferutil
+139 verbose request uri http://registry.npm.taobao.org/bufferutil
+140 verbose request no auth needed
+141 info attempt registry request try #1 at 12:03:10
+142 verbose etag "1440168548000"
+143 http request GET http://registry.npm.taobao.org/bufferutil
+144 http 304 http://registry.npm.taobao.org/bufferutil
+145 silly get cb [ 304,
+145 silly get   { server: 'nginx/1.1.19',
+145 silly get     date: 'Wed, 02 Sep 2015 03:58:42 GMT',
+145 silly get     connection: 'keep-alive',
+145 silly get     etag: '"1440168548000"',
+145 silly get     'x-readtime': '7' } ]
+146 verbose etag http://registry.npm.taobao.org/bufferutil from cache
+147 verbose get saving bufferutil to C:\Users\huangguangyao\AppData\Roaming\npm-cache\registry.npm.taobao.org\bufferutil\.cache.json
+148 silly resolveWithNewModule bufferutil@1.1.0 checking installable status
+149 silly cache add args [ 'bufferutil@1.1.x', null ]
+150 verbose cache add spec bufferutil@1.1.x
+151 silly cache add parsed spec { raw: 'bufferutil@1.1.x',
+151 silly cache add   scope: null,
+151 silly cache add   name: 'bufferutil',
+151 silly cache add   rawSpec: '1.1.x',
+151 silly cache add   spec: '>=1.1.0 <1.2.0',
+151 silly cache add   type: 'range' }
+152 silly addNamed bufferutil@>=1.1.0 <1.2.0
+153 verbose addNamed ">=1.1.0 <1.2.0" is a valid semver range for bufferutil
+154 silly addNameRange { name: 'bufferutil', range: '>=1.1.0 <1.2.0', hasData: false }
+155 silly mapToRegistry name bufferutil
+156 silly mapToRegistry using default registry
+157 silly mapToRegistry registry http://registry.npm.taobao.org/
+158 silly mapToRegistry uri http://registry.npm.taobao.org/bufferutil
+159 verbose addNameRange registry:http://registry.npm.taobao.org/bufferutil not in flight; fetching
+160 verbose get http://registry.npm.taobao.org/bufferutil not expired, no request
+161 silly addNameRange number 2 { name: 'bufferutil', range: '>=1.1.0 <1.2.0', hasData: true }
+162 silly addNameRange versions [ 'bufferutil',
+162 silly addNameRange   [ '1.2.1', '1.2.0', '1.1.0', '1.0.1', '1.0.0' ] ]
+163 silly addNamed bufferutil@1.1.0
+164 verbose addNamed "1.1.0" is a plain semver version for bufferutil
+165 silly cache afterAdd bufferutil@1.1.0
+166 verbose afterAdd C:\Users\huangguangyao\AppData\Roaming\npm-cache\bufferutil\1.1.0\package\package.json not in flight; writing
+167 verbose afterAdd C:\Users\huangguangyao\AppData\Roaming\npm-cache\bufferutil\1.1.0\package\package.json written
+168 silly fetchNamedPackageData nan
+169 silly mapToRegistry name nan
+170 silly mapToRegistry using default registry
+171 silly mapToRegistry registry http://registry.npm.taobao.org/
+172 silly mapToRegistry uri http://registry.npm.taobao.org/nan
+173 verbose request uri http://registry.npm.taobao.org/nan
+174 verbose request no auth needed
+175 info attempt registry request try #1 at 12:03:11
+176 verbose etag "1440750625000"
+177 http request GET http://registry.npm.taobao.org/nan
+178 http 304 http://registry.npm.taobao.org/nan
+179 silly get cb [ 304,
+179 silly get   { server: 'nginx/1.1.19',
+179 silly get     date: 'Wed, 02 Sep 2015 03:58:44 GMT',
+179 silly get     connection: 'keep-alive',
+179 silly get     etag: '"1440750625000"',
+179 silly get     'x-readtime': '7' } ]
+180 verbose etag http://registry.npm.taobao.org/nan from cache
+181 verbose get saving nan to C:\Users\huangguangyao\AppData\Roaming\npm-cache\registry.npm.taobao.org\nan\.cache.json
+182 silly resolveWithNewModule nan@1.8.4 checking installable status
+183 silly cache add args [ 'nan@1.8.x', null ]
+184 verbose cache add spec nan@1.8.x
+185 silly cache add parsed spec { raw: 'nan@1.8.x',
+185 silly cache add   scope: null,
+185 silly cache add   name: 'nan',
+185 silly cache add   rawSpec: '1.8.x',
+185 silly cache add   spec: '>=1.8.0 <1.9.0',
+185 silly cache add   type: 'range' }
+186 silly addNamed nan@>=1.8.0 <1.9.0
+187 verbose addNamed ">=1.8.0 <1.9.0" is a valid semver range for nan
+188 silly addNameRange { name: 'nan', range: '>=1.8.0 <1.9.0', hasData: false }
+189 silly mapToRegistry name nan
+190 silly mapToRegistry using default registry
+191 silly mapToRegistry registry http://registry.npm.taobao.org/
+192 silly mapToRegistry uri http://registry.npm.taobao.org/nan
+193 verbose addNameRange registry:http://registry.npm.taobao.org/nan not in flight; fetching
+194 verbose get http://registry.npm.taobao.org/nan not expired, no request
+195 silly addNameRange number 2 { name: 'nan', range: '>=1.8.0 <1.9.0', hasData: true }
+196 silly addNameRange versions [ 'nan',
+196 silly addNameRange   [ '2.0.8',
+196 silly addNameRange     '2.0.7',
+196 silly addNameRange     '2.0.6',
+196 silly addNameRange     '2.0.5',
+196 silly addNameRange     '2.0.4',
+196 silly addNameRange     '2.0.3',
+196 silly addNameRange     '2.0.2',
+196 silly addNameRange     '2.0.1',
+196 silly addNameRange     '2.0.0',
+196 silly addNameRange     '1.9.0',
+196 silly addNameRange     '1.8.4',
+196 silly addNameRange     '1.8.3',
+196 silly addNameRange     '1.8.2',
+196 silly addNameRange     '1.8.1',
+196 silly addNameRange     '1.8.0',
+196 silly addNameRange     '1.7.0',
+196 silly addNameRange     '1.6.2',
+196 silly addNameRange     '1.6.1',
+196 silly addNameRange     '1.5.3',
+196 silly addNameRange     '1.6.0',
+196 silly addNameRange     '1.5.2',
+196 silly addNameRange     '1.5.1',
+196 silly addNameRange     '1.4.3',
+196 silly addNameRange     '1.4.2',
+196 silly addNameRange     '1.5.0',
+196 silly addNameRange     '1.4.1',
+196 silly addNameRange     '1.4.0',
+196 silly addNameRange     '1.3.0',
+196 silly addNameRange     '1.2.0',
+196 silly addNameRange     '1.1.2',
+196 silly addNameRange     '1.1.1',
+196 silly addNameRange     '1.1.0',
+196 silly addNameRange     '1.0.0',
+196 silly addNameRange     '0.8.0',
+196 silly addNameRange     '0.7.1',
+196 silly addNameRange     '0.7.0',
+196 silly addNameRange     '0.6.0',
+196 silly addNameRange     '0.5.2',
+196 silly addNameRange     '0.5.1',
+196 silly addNameRange     '0.5.0',
+196 silly addNameRange     '0.4.4',
+196 silly addNameRange     '0.4.3',
+196 silly addNameRange     '0.4.2',
+196 silly addNameRange     '0.4.1',
+196 silly addNameRange     '0.4.0',
+196 silly addNameRange     '0.3.2',
+196 silly addNameRange     '0.3.1',
+196 silly addNameRange     '0.3.0',
+196 silly addNameRange     '0.3.0-wip2',
+196 silly addNameRange     '0.3.0-wip' ] ]
+197 silly addNamed nan@1.8.4
+198 verbose addNamed "1.8.4" is a plain semver version for nan
+199 silly cache afterAdd nan@1.8.4
+200 verbose afterAdd C:\Users\huangguangyao\AppData\Roaming\npm-cache\nan\1.8.4\package\package.json not in flight; writing
+201 verbose afterAdd C:\Users\huangguangyao\AppData\Roaming\npm-cache\nan\1.8.4\package\package.json written
+202 silly loadAllDepsIntoIdealTree Finishing
+203 silly idealTree:prePrune my-electron-app@0.1.0
+203 silly idealTree:prePrune ├── accepts@1.2.12
+203 silly idealTree:prePrune ├── after@0.8.1
+203 silly idealTree:prePrune ├─┬ align-text@0.1.3
+203 silly idealTree:prePrune │ └── kind-of@2.0.0
+203 silly idealTree:prePrune ├── alter@0.2.0
+203 silly idealTree:prePrune ├── amdefine@1.0.0
+203 silly idealTree:prePrune ├── ansi-green@0.1.1
+203 silly idealTree:prePrune ├── ansi-regex@2.0.0
+203 silly idealTree:prePrune ├── ansi-styles@2.1.0
+203 silly idealTree:prePrune ├── ansi-wrap@0.1.0
+203 silly idealTree:prePrune ├── anymatch@1.3.0
+203 silly idealTree:prePrune ├── arr-diff@1.0.1
+203 silly idealTree:prePrune ├── array-flatten@1.1.1
+203 silly idealTree:prePrune ├── array-slice@0.2.3
+203 silly idealTree:prePrune ├── array-unique@0.2.1
+203 silly idealTree:prePrune ├── arraybuffer.slice@0.0.6
+203 silly idealTree:prePrune ├── arrify@1.0.0
+203 silly idealTree:prePrune ├── asap@2.0.3
+203 silly idealTree:prePrune ├─┬ asar@0.6.1
+203 silly idealTree:prePrune │ ├── commander@2.3.0
+203 silly idealTree:prePrune │ └── minimatch@2.0.4
+203 silly idealTree:prePrune ├── asn1@0.1.11
+203 silly idealTree:prePrune ├── assert@1.3.0
+203 silly idealTree:prePrune ├── assert-plus@0.1.5
+203 silly idealTree:prePrune ├── ast-traverse@0.1.1
+203 silly idealTree:prePrune ├── ast-types@0.8.5
+203 silly idealTree:prePrune ├── async@1.4.2
+203 silly idealTree:prePrune ├── async-each@0.1.6
+203 silly idealTree:prePrune ├── autoprefixer-core@5.2.1
+203 silly idealTree:prePrune ├── aws-sign2@0.5.0
+203 silly idealTree:prePrune ├─┬ babel@5.8.23
+203 silly idealTree:prePrune │ └── source-map@0.4.4
+203 silly idealTree:prePrune ├─┬ babel-core@5.8.23
+203 silly idealTree:prePrune │ └── source-map@0.4.4
+203 silly idealTree:prePrune ├── babel-loader@5.3.2
+203 silly idealTree:prePrune ├── babel-plugin-constant-folding@1.0.1
+203 silly idealTree:prePrune ├── babel-plugin-dead-code-elimination@1.0.2
+203 silly idealTree:prePrune ├── babel-plugin-eval@1.0.1
+203 silly idealTree:prePrune ├── babel-plugin-inline-environment-variables@1.0.1
+203 silly idealTree:prePrune ├── babel-plugin-jscript@1.0.4
+203 silly idealTree:prePrune ├── babel-plugin-member-expression-literals@1.0.1
+203 silly idealTree:prePrune ├── babel-plugin-property-literals@1.0.1
+203 silly idealTree:prePrune ├── babel-plugin-proto-to-assign@1.0.4
+203 silly idealTree:prePrune ├── babel-plugin-react-constant-elements@1.0.3
+203 silly idealTree:prePrune ├── babel-plugin-react-display-name@1.0.3
+203 silly idealTree:prePrune ├── babel-plugin-remove-console@1.0.1
+203 silly idealTree:prePrune ├── babel-plugin-remove-debugger@1.0.1
+203 silly idealTree:prePrune ├── babel-plugin-runtime@1.0.7
+203 silly idealTree:prePrune ├── babel-plugin-undeclared-variables-check@1.0.2
+203 silly idealTree:prePrune ├── babel-plugin-undefined-to-void@1.1.6
+203 silly idealTree:prePrune ├── babylon@5.8.23
+203 silly idealTree:prePrune ├── backo2@1.0.2
+203 silly idealTree:prePrune ├── balanced-match@0.2.0
+203 silly idealTree:prePrune ├── base62@0.1.1
+203 silly idealTree:prePrune ├── Base64@0.2.1
+203 silly idealTree:prePrune ├── base64-arraybuffer@0.1.2
+203 silly idealTree:prePrune ├── base64-js@0.0.6
+203 silly idealTree:prePrune ├── base64id@0.1.0
+203 silly idealTree:prePrune ├── batch@0.5.2
+203 silly idealTree:prePrune ├── benchmark@1.0.0
+203 silly idealTree:prePrune ├── better-assert@1.0.2
+203 silly idealTree:prePrune ├── big.js@3.1.3
+203 silly idealTree:prePrune ├── binary-extensions@1.3.1
+203 silly idealTree:prePrune ├── bindings@1.2.1
+203 silly idealTree:prePrune ├─┬ bl@1.0.0
+203 silly idealTree:prePrune │ └── readable-stream@2.0.2
+203 silly idealTree:prePrune ├── blob@0.0.2
+203 silly idealTree:prePrune ├── bluebird@2.9.34
+203 silly idealTree:prePrune ├── boom@2.8.0
+203 silly idealTree:prePrune ├── brace-expansion@1.1.0
+203 silly idealTree:prePrune ├── braces@1.8.0
+203 silly idealTree:prePrune ├── breakable@1.0.0
+203 silly idealTree:prePrune ├── browserify-zlib@0.1.4
+203 silly idealTree:prePrune ├── browserslist@0.4.0
+203 silly idealTree:prePrune ├─┬ buffer@3.4.2
+203 silly idealTree:prePrune │ └── base64-js@0.0.8
+203 silly idealTree:prePrune ├─┬ bufferutil@1.1.0
+203 silly idealTree:prePrune │ └── nan@1.8.4
+203 silly idealTree:prePrune ├── callsite@1.0.0
+203 silly idealTree:prePrune ├── camelcase@1.2.1
+203 silly idealTree:prePrune ├── camelcase-keys@1.0.0
+203 silly idealTree:prePrune ├── caniuse-db@1.0.30000276
+203 silly idealTree:prePrune ├── caseless@0.11.0
+203 silly idealTree:prePrune ├── center-align@0.1.1
+203 silly idealTree:prePrune ├── chalk@1.1.1
+203 silly idealTree:prePrune ├── chokidar@1.0.5
+203 silly idealTree:prePrune ├── chromium-pickle-js@0.1.0
+203 silly idealTree:prePrune ├── cliui@2.1.0
+203 silly idealTree:prePrune ├── clone@1.0.2
+203 silly idealTree:prePrune ├── color@0.10.1
+203 silly idealTree:prePrune ├── color-convert@0.5.3
+203 silly idealTree:prePrune ├── color-name@1.0.0
+203 silly idealTree:prePrune ├── color-string@0.3.0
+203 silly idealTree:prePrune ├── colormin@1.0.4
+203 silly idealTree:prePrune ├── combined-stream@1.0.5
+203 silly idealTree:prePrune ├── commander@2.8.1
+203 silly idealTree:prePrune ├─┬ commoner@0.10.3
+203 silly idealTree:prePrune │ ├── commander@2.5.1
+203 silly idealTree:prePrune │ ├── glob@4.2.2
+203 silly idealTree:prePrune │ └── minimatch@1.0.0
+203 silly idealTree:prePrune ├── component-bind@1.0.0
+203 silly idealTree:prePrune ├── component-emitter@1.1.2
+203 silly idealTree:prePrune ├── component-inherit@0.0.3
+203 silly idealTree:prePrune ├── concat-map@0.0.1
+203 silly idealTree:prePrune ├─┬ concat-stream@1.5.0
+203 silly idealTree:prePrune │ └── readable-stream@2.0.2
+203 silly idealTree:prePrune ├── connect-history-api-fallback@1.1.0
+203 silly idealTree:prePrune ├── console-browserify@1.1.0
+203 silly idealTree:prePrune ├── constants-browserify@0.0.1
+203 silly idealTree:prePrune ├── content-disposition@0.5.0
+203 silly idealTree:prePrune ├── content-type@1.0.1
+203 silly idealTree:prePrune ├── convert-source-map@1.1.1
+203 silly idealTree:prePrune ├── cookie@0.1.3
+203 silly idealTree:prePrune ├── cookie-signature@1.0.6
+203 silly idealTree:prePrune ├── core-js@1.1.3
+203 silly idealTree:prePrune ├── core-util-is@1.0.1
+203 silly idealTree:prePrune ├── cryptiles@2.0.4
+203 silly idealTree:prePrune ├── crypto-browserify@3.2.8
+203 silly idealTree:prePrune ├── css-color-names@0.0.1
+203 silly idealTree:prePrune ├── css-list@0.1.2
+203 silly idealTree:prePrune ├── css-loader@0.15.6
+203 silly idealTree:prePrune ├── css-selector-tokenizer@0.5.4
+203 silly idealTree:prePrune ├── cssesc@0.1.0
+203 silly idealTree:prePrune ├── cssnano@2.6.1
+203 silly idealTree:prePrune ├── ctype@0.5.3
+203 silly idealTree:prePrune ├── cuint@0.1.5
+203 silly idealTree:prePrune ├── date-now@0.1.4
+203 silly idealTree:prePrune ├── debug@2.2.0
+203 silly idealTree:prePrune ├── decamelize@1.0.0
+203 silly idealTree:prePrune ├─┬ define-properties@1.1.1
+203 silly idealTree:prePrune │ └── object-keys@1.0.7
+203 silly idealTree:prePrune ├── defined@1.0.0
+203 silly idealTree:prePrune ├─┬ defs@1.1.0
+203 silly idealTree:prePrune │ └── esprima-fb@8001.1001.0-dev-harmony-fb
+203 silly idealTree:prePrune ├── delayed-stream@1.0.0
+203 silly idealTree:prePrune ├── depd@1.0.1
+203 silly idealTree:prePrune ├── destroy@1.0.3
+203 silly idealTree:prePrune ├── detect-indent@3.0.1
+203 silly idealTree:prePrune ├── domain-browser@1.1.4
+203 silly idealTree:prePrune ├── ee-first@1.1.1
+203 silly idealTree:prePrune ├── electron-builder@1.1.0
+203 silly idealTree:prePrune ├── electron-download@1.0.8
+203 silly idealTree:prePrune ├── electron-packager@4.2.0
+203 silly idealTree:prePrune ├── electron-prebuilt@0.28.3
+203 silly idealTree:prePrune ├─┬ engine.io@1.5.2
+203 silly idealTree:prePrune │ ├── debug@1.0.3
+203 silly idealTree:prePrune │ └── ms@0.6.2
+203 silly idealTree:prePrune ├─┬ engine.io-client@1.5.2
+203 silly idealTree:prePrune │ ├── debug@1.0.4
+203 silly idealTree:prePrune │ ├── ms@0.6.2
+203 silly idealTree:prePrune │ └── parseuri@0.0.4
+203 silly idealTree:prePrune ├── engine.io-parser@1.2.1
+203 silly idealTree:prePrune ├── enhanced-resolve@0.9.0
+203 silly idealTree:prePrune ├── envify@3.4.0
+203 silly idealTree:prePrune ├── errno@0.1.4
+203 silly idealTree:prePrune ├── es6-promise@2.3.0
+203 silly idealTree:prePrune ├── escape-html@1.0.2
+203 silly idealTree:prePrune ├── escape-string-regexp@1.0.3
+203 silly idealTree:prePrune ├── esprima-fb@13001.1001.0-dev-harmony-fb
+203 silly idealTree:prePrune ├── esutils@2.0.2
+203 silly idealTree:prePrune ├── etag@1.7.0
+203 silly idealTree:prePrune ├── eventemitter3@1.1.1
+203 silly idealTree:prePrune ├── events@1.0.2
+203 silly idealTree:prePrune ├── expand-brackets@0.1.3
+203 silly idealTree:prePrune ├── expand-range@1.8.1
+203 silly idealTree:prePrune ├── express@4.13.3
+203 silly idealTree:prePrune ├── extend@3.0.0
+203 silly idealTree:prePrune ├── extglob@0.3.1
+203 silly idealTree:prePrune ├─┬ extract-zip@1.0.3
+203 silly idealTree:prePrune │ ├── async@0.9.0
+203 silly idealTree:prePrune │ ├── debug@0.7.4
+203 silly idealTree:prePrune │ ├── minimist@0.1.0
+203 silly idealTree:prePrune │ ├─┬ mkdirp@0.5.0
+203 silly idealTree:prePrune │ │ └── minimist@0.0.8
+203 silly idealTree:prePrune │ ├── readable-stream@1.0.33
+203 silly idealTree:prePrune │ ├── through2@0.6.3
+203 silly idealTree:prePrune │ └── xtend@4.0.0
+203 silly idealTree:prePrune ├── fastparse@1.1.1
+203 silly idealTree:prePrune ├── fd-slicer@1.0.1
+203 silly idealTree:prePrune ├── filename-regex@2.0.0
+203 silly idealTree:prePrune ├── fill-range@2.2.2
+203 silly idealTree:prePrune ├── finalhandler@0.4.0
+203 silly idealTree:prePrune ├── flatten@0.0.1
+203 silly idealTree:prePrune ├── for-in@0.1.4
+203 silly idealTree:prePrune ├── for-own@0.1.3
+203 silly idealTree:prePrune ├── foreach@2.0.5
+203 silly idealTree:prePrune ├── forever-agent@0.6.1
+203 silly idealTree:prePrune ├── form-data@1.0.0-rc3
+203 silly idealTree:prePrune ├── forwarded@0.1.0
+203 silly idealTree:prePrune ├── fresh@0.3.0
+203 silly idealTree:prePrune ├── fs-extra@0.18.4
+203 silly idealTree:prePrune ├── fs-readdir-recursive@0.1.2
+203 silly idealTree:prePrune ├── gather-stream@1.0.0
+203 silly idealTree:prePrune ├── generate-function@2.0.0
+203 silly idealTree:prePrune ├── generate-object-property@1.2.0
+203 silly idealTree:prePrune ├── get-stdin@4.0.1
+203 silly idealTree:prePrune ├── glob@5.0.14
+203 silly idealTree:prePrune ├── glob-base@0.2.0
+203 silly idealTree:prePrune ├── glob-parent@1.2.0
+203 silly idealTree:prePrune ├── global@2.0.1
+203 silly idealTree:prePrune ├── globals@6.4.1
+203 silly idealTree:prePrune ├── graceful-fs@3.0.8
+203 silly idealTree:prePrune ├── graceful-readlink@1.0.1
+203 silly idealTree:prePrune ├── har-validator@1.8.0
+203 silly idealTree:prePrune ├── has-ansi@2.0.0
+203 silly idealTree:prePrune ├── has-binary@0.1.5
+203 silly idealTree:prePrune ├── has-binary-data@0.1.3
+203 silly idealTree:prePrune ├── has-cors@1.0.3
+203 silly idealTree:prePrune ├── has-flag@1.0.0
+203 silly idealTree:prePrune ├── hawk@3.1.0
+203 silly idealTree:prePrune ├── hoek@2.14.0
+203 silly idealTree:prePrune ├── home-or-tmp@1.0.0
+203 silly idealTree:prePrune ├── home-path@0.1.2
+203 silly idealTree:prePrune ├── http-browserify@1.7.0
+203 silly idealTree:prePrune ├── http-errors@1.3.1
+203 silly idealTree:prePrune ├── http-proxy@1.11.2
+203 silly idealTree:prePrune ├── http-signature@0.11.0
+203 silly idealTree:prePrune ├── https-browserify@0.0.0
+203 silly idealTree:prePrune ├── iconv-lite@0.4.11
+203 silly idealTree:prePrune ├── ieee754@1.1.6
+203 silly idealTree:prePrune ├── image-size@0.3.5
+203 silly idealTree:prePrune ├── indent-string@1.2.2
+203 silly idealTree:prePrune ├── indexes-of@1.0.1
+203 silly idealTree:prePrune ├── indexof@0.0.1
+203 silly idealTree:prePrune ├── inflight@1.0.4
+203 silly idealTree:prePrune ├── inherits@2.0.1
+203 silly idealTree:prePrune ├── install@0.1.8
+203 silly idealTree:prePrune ├── interpret@0.6.5
+203 silly idealTree:prePrune ├── ipaddr.js@1.0.1
+203 silly idealTree:prePrune ├── is-absolute-url@2.0.0
+203 silly idealTree:prePrune ├── is-array@1.0.1
+203 silly idealTree:prePrune ├── is-binary-path@1.0.1
+203 silly idealTree:prePrune ├── is-dotfile@1.0.1
+203 silly idealTree:prePrune ├── is-equal-shallow@0.1.3
+203 silly idealTree:prePrune ├── is-extglob@1.0.0
+203 silly idealTree:prePrune ├── is-finite@1.0.1
+203 silly idealTree:prePrune ├── is-glob@1.1.3
+203 silly idealTree:prePrune ├── is-integer@1.0.4
+203 silly idealTree:prePrune ├─┬ is-my-json-valid@2.12.2
+203 silly idealTree:prePrune │ └── xtend@4.0.0
+203 silly idealTree:prePrune ├── is-nan@1.2.1
+203 silly idealTree:prePrune ├── is-number@1.1.2
+203 silly idealTree:prePrune ├── is-plain-obj@1.0.0
+203 silly idealTree:prePrune ├── is-posix-bracket@0.1.0
+203 silly idealTree:prePrune ├── is-primitive@2.0.0
+203 silly idealTree:prePrune ├── is-property@1.0.2
+203 silly idealTree:prePrune ├── isarray@0.0.1
+203 silly idealTree:prePrune ├── isobject@1.0.2
+203 silly idealTree:prePrune ├── isstream@0.1.2
+203 silly idealTree:prePrune ├── javascript-natural-sort@0.7.1
+203 silly idealTree:prePrune ├── js-base64@2.1.9
+203 silly idealTree:prePrune ├── js-tokens@1.0.1
+203 silly idealTree:prePrune ├── jsesc@0.5.0
+203 silly idealTree:prePrune ├── json-stringify-safe@5.0.1
+203 silly idealTree:prePrune ├── json3@3.2.6
+203 silly idealTree:prePrune ├── json5@0.4.0
+203 silly idealTree:prePrune ├── jsonfile@2.2.1
+203 silly idealTree:prePrune ├── jsonpointer@2.0.0
+203 silly idealTree:prePrune ├── jstransform@10.1.0
+203 silly idealTree:prePrune ├── kind-of@1.1.0
+203 silly idealTree:prePrune ├── left-pad@0.0.3
+203 silly idealTree:prePrune ├─┬ less@2.5.1
+203 silly idealTree:prePrune │ ├── asap@1.0.0
+203 silly idealTree:prePrune │ ├── promise@6.1.0
+203 silly idealTree:prePrune │ └── source-map@0.4.4
+203 silly idealTree:prePrune ├── less-loader@2.2.0
+203 silly idealTree:prePrune ├── leven@1.0.2
+203 silly idealTree:prePrune ├── line-numbers@0.2.0
+203 silly idealTree:prePrune ├── loader-utils@0.2.11
+203 silly idealTree:prePrune ├── lodash@3.10.1
+203 silly idealTree:prePrune ├── lodash-node@2.4.1
+203 silly idealTree:prePrune ├── lodash._baseassign@3.2.0
+203 silly idealTree:prePrune ├── lodash._basecopy@3.0.1
+203 silly idealTree:prePrune ├── lodash._basetostring@3.0.1
+203 silly idealTree:prePrune ├── lodash._basevalues@3.0.0
+203 silly idealTree:prePrune ├── lodash._bindcallback@3.0.1
+203 silly idealTree:prePrune ├── lodash._createassigner@3.1.1
+203 silly idealTree:prePrune ├── lodash._createcompounder@3.0.0
+203 silly idealTree:prePrune ├── lodash._getnative@3.9.1
+203 silly idealTree:prePrune ├── lodash._isiterateecall@3.0.9
+203 silly idealTree:prePrune ├── lodash._reinterpolate@3.0.0
+203 silly idealTree:prePrune ├── lodash.assign@3.2.0
+203 silly idealTree:prePrune ├── lodash.camelcase@3.0.1
+203 silly idealTree:prePrune ├── lodash.deburr@3.0.2
+203 silly idealTree:prePrune ├── lodash.escape@3.0.0
+203 silly idealTree:prePrune ├── lodash.isarguments@3.0.4
+203 silly idealTree:prePrune ├── lodash.isarray@3.0.4
+203 silly idealTree:prePrune ├── lodash.keys@3.1.2
+203 silly idealTree:prePrune ├── lodash.restparam@3.6.1
+203 silly idealTree:prePrune ├── lodash.template@3.6.2
+203 silly idealTree:prePrune ├── lodash.templatesettings@3.1.0
+203 silly idealTree:prePrune ├── lodash.words@3.0.2
+203 silly idealTree:prePrune ├── longest@1.0.1
+203 silly idealTree:prePrune ├── lru-cache@2.6.5
+203 silly idealTree:prePrune ├── map-obj@1.0.1
+203 silly idealTree:prePrune ├── media-typer@0.3.0
+203 silly idealTree:prePrune ├── memory-fs@0.2.0
+203 silly idealTree:prePrune ├── meow@3.3.0
+203 silly idealTree:prePrune ├── merge-descriptors@1.0.0
+203 silly idealTree:prePrune ├── methods@1.1.1
+203 silly idealTree:prePrune ├── micromatch@2.2.0
+203 silly idealTree:prePrune ├── mime@1.3.4
+203 silly idealTree:prePrune ├── mime-db@1.17.0
+203 silly idealTree:prePrune ├── mime-types@2.1.5
+203 silly idealTree:prePrune ├── minimatch@2.0.10
+203 silly idealTree:prePrune ├── minimist@1.2.0
+203 silly idealTree:prePrune ├─┬ mkdirp@0.5.1
+203 silly idealTree:prePrune │ └── minimist@0.0.8
+203 silly idealTree:prePrune ├── ms@0.7.1
+203 silly idealTree:prePrune ├── mv@2.1.1
+203 silly idealTree:prePrune ├── nan@1.6.1
+203 silly idealTree:prePrune ├── ncp@2.0.0
+203 silly idealTree:prePrune ├── negotiator@0.5.3
+203 silly idealTree:prePrune ├── node-balanced@0.0.14
+203 silly idealTree:prePrune ├── node-libs-browser@0.5.2
+203 silly idealTree:prePrune ├── node-uuid@1.4.3
+203 silly idealTree:prePrune ├── normalize-selector@0.2.0
+203 silly idealTree:prePrune ├── normalize-url@1.3.0
+203 silly idealTree:prePrune ├─┬ npm@2.14.1
+203 silly idealTree:prePrune │ ├── abbrev@1.0.7
+203 silly idealTree:prePrune │ ├── ansi@0.3.0
+203 silly idealTree:prePrune │ ├── ansicolors@0.3.2
+203 silly idealTree:prePrune │ ├── ansistyles@0.1.3
+203 silly idealTree:prePrune │ ├── archy@1.0.0
+203 silly idealTree:prePrune │ ├── async-some@1.0.2
+203 silly idealTree:prePrune │ ├── block-stream@0.0.8
+203 silly idealTree:prePrune │ ├── char-spinner@1.0.1
+203 silly idealTree:prePrune │ ├── chmodr@1.0.1
+203 silly idealTree:prePrune │ ├── chownr@1.0.1
+203 silly idealTree:prePrune │ ├─┬ cmd-shim@2.0.1
+203 silly idealTree:prePrune │ │ └── graceful-fs@3.0.8
+203 silly idealTree:prePrune │ ├─┬ columnify@1.5.2
+203 silly idealTree:prePrune │ │ ├─┬ strip-ansi@3.0.0
+203 silly idealTree:prePrune │ │ │ └── ansi-regex@2.0.0
+203 silly idealTree:prePrune │ │ └─┬ wcwidth@1.0.0
+203 silly idealTree:prePrune │ │   └─┬ defaults@1.0.2
+203 silly idealTree:prePrune │ │     └── clone@0.1.19
+203 silly idealTree:prePrune │ ├─┬ config-chain@1.1.9
+203 silly idealTree:prePrune │ │ └── proto-list@1.2.4
+203 silly idealTree:prePrune │ ├─┬ dezalgo@1.0.3
+203 silly idealTree:prePrune │ │ └── asap@2.0.3
+203 silly idealTree:prePrune │ ├── editor@1.0.0
+203 silly idealTree:prePrune │ ├─┬ fs-vacuum@1.2.6
+203 silly idealTree:prePrune │ │ └── graceful-fs@3.0.8
+203 silly idealTree:prePrune │ ├─┬ fs-write-stream-atomic@1.0.3
+203 silly idealTree:prePrune │ │ └── graceful-fs@3.0.8
+203 silly idealTree:prePrune │ ├─┬ fstream@1.0.7
+203 silly idealTree:prePrune │ │ └── graceful-fs@3.0.8
+203 silly idealTree:prePrune │ ├─┬ fstream-npm@1.0.5
+203 silly idealTree:prePrune │ │ └── fstream-ignore@1.0.2
+203 silly idealTree:prePrune │ ├── github-url-from-git@1.4.0
+203 silly idealTree:prePrune │ ├── github-url-from-username-repo@1.0.2
+203 silly idealTree:prePrune │ ├─┬ glob@5.0.14
+203 silly idealTree:prePrune │ │ └── path-is-absolute@1.0.0
+203 silly idealTree:prePrune │ ├── graceful-fs@4.1.2
+203 silly idealTree:prePrune │ ├── hosted-git-info@2.1.4
+203 silly idealTree:prePrune │ ├── inflight@1.0.4
+203 silly idealTree:prePrune │ ├── inherits@2.0.1
+203 silly idealTree:prePrune │ ├── ini@1.3.4
+203 silly idealTree:prePrune │ ├─┬ init-package-json@1.8.0
+203 silly idealTree:prePrune │ │ └── promzard@0.3.0
+203 silly idealTree:prePrune │ ├── lockfile@1.0.1
+203 silly idealTree:prePrune │ ├── lru-cache@2.6.5
+203 silly idealTree:prePrune │ ├─┬ minimatch@2.0.10
+203 silly idealTree:prePrune │ │ └─┬ brace-expansion@1.1.0
+203 silly idealTree:prePrune │ │   ├── balanced-match@0.2.0
+203 silly idealTree:prePrune │ │   └── concat-map@0.0.1
+203 silly idealTree:prePrune │ ├─┬ mkdirp@0.5.1
+203 silly idealTree:prePrune │ │ └── minimist@0.0.8
+203 silly idealTree:prePrune │ ├─┬ node-gyp@2.0.2
+203 silly idealTree:prePrune │ │ ├─┬ glob@4.5.3
+203 silly idealTree:prePrune │ │ │ └─┬ minimatch@2.0.8
+203 silly idealTree:prePrune │ │ │   └─┬ brace-expansion@1.1.0
+203 silly idealTree:prePrune │ │ │     ├── balanced-match@0.2.0
+203 silly idealTree:prePrune │ │ │     └── concat-map@0.0.1
+203 silly idealTree:prePrune │ │ ├── graceful-fs@3.0.8
+203 silly idealTree:prePrune │ │ ├─┬ minimatch@1.0.0
+203 silly idealTree:prePrune │ │ │ └── sigmund@1.0.1
+203 silly idealTree:prePrune │ │ ├─┬ path-array@1.0.0
+203 silly idealTree:prePrune │ │ │ └─┬ array-index@0.1.1
+203 silly idealTree:prePrune │ │ │   └─┬ debug@2.2.0
+203 silly idealTree:prePrune │ │ │     └── ms@0.7.1
+203 silly idealTree:prePrune │ │ ├── semver@4.3.6
+203 silly idealTree:prePrune │ │ └── tar@1.0.3
+203 silly idealTree:prePrune │ ├── nopt@3.0.3
+203 silly idealTree:prePrune │ ├── normalize-git-url@3.0.1
+203 silly idealTree:prePrune │ ├── normalize-package-data@2.3.1
+203 silly idealTree:prePrune │ ├── npm-cache-filename@1.0.2
+203 silly idealTree:prePrune │ ├── npm-install-checks@1.0.6
+203 silly idealTree:prePrune │ ├── npm-package-arg@4.0.2
+203 silly idealTree:prePrune │ ├─┬ npm-registry-client@7.0.1
+203 silly idealTree:prePrune │ │ ├── chownr@1.0.1
+203 silly idealTree:prePrune │ │ ├─┬ concat-stream@1.5.0
+203 silly idealTree:prePrune │ │ │ ├─┬ readable-stream@2.0.2
+203 silly idealTree:prePrune │ │ │ │ ├── core-util-is@1.0.1
+203 silly idealTree:prePrune │ │ │ │ ├── isarray@0.0.1
+203 silly idealTree:prePrune │ │ │ │ ├── process-nextick-args@1.0.2
+203 silly idealTree:prePrune │ │ │ │ ├── string_decoder@0.10.31
+203 silly idealTree:prePrune │ │ │ │ └── util-deprecate@1.0.1
+203 silly idealTree:prePrune │ │ │ └── typedarray@0.0.6
+203 silly idealTree:prePrune │ │ └── graceful-fs@3.0.8
+203 silly idealTree:prePrune │ ├── npm-user-validate@0.1.2
+203 silly idealTree:prePrune │ ├─┬ npmlog@1.2.1
+203 silly idealTree:prePrune │ │ ├─┬ are-we-there-yet@1.0.4
+203 silly idealTree:prePrune │ │ │ └── delegates@0.1.0
+203 silly idealTree:prePrune │ │ └─┬ gauge@1.2.0
+203 silly idealTree:prePrune │ │   ├── has-unicode@1.0.0
+203 silly idealTree:prePrune │ │   ├── lodash._basetostring@3.0.0
+203 silly idealTree:prePrune │ │   ├─┬ lodash._createpadding@3.6.0
+203 silly idealTree:prePrune │ │   │ └── lodash.repeat@3.0.0
+203 silly idealTree:prePrune │ │   ├── lodash.pad@3.1.0
+203 silly idealTree:prePrune │ │   ├── lodash.padleft@3.1.1
+203 silly idealTree:prePrune │ │   └── lodash.padright@3.1.1
+203 silly idealTree:prePrune │ ├── once@1.3.2
+203 silly idealTree:prePrune │ ├── opener@1.4.1
+203 silly idealTree:prePrune │ ├─┬ osenv@0.1.3
+203 silly idealTree:prePrune │ │ ├── os-homedir@1.0.0
+203 silly idealTree:prePrune │ │ └── os-tmpdir@1.0.1
+203 silly idealTree:prePrune │ ├── path-is-inside@1.0.1
+203 silly idealTree:prePrune │ ├─┬ read@1.0.6
+203 silly idealTree:prePrune │ │ └── mute-stream@0.0.5
+203 silly idealTree:prePrune │ ├─┬ read-installed@4.0.2
+203 silly idealTree:prePrune │ │ ├── debuglog@1.0.1
+203 silly idealTree:prePrune │ │ ├── graceful-fs@3.0.8
+203 silly idealTree:prePrune │ │ ├── readdir-scoped-modules@1.0.1
+203 silly idealTree:prePrune │ │ └── util-extend@1.0.1
+203 silly idealTree:prePrune │ ├─┬ read-package-json@2.0.0
+203 silly idealTree:prePrune │ │ ├── graceful-fs@3.0.8
+203 silly idealTree:prePrune │ │ └─┬ json-parse-helpfulerror@1.0.3
+203 silly idealTree:prePrune │ │   └── jju@1.2.0
+203 silly idealTree:prePrune │ ├─┬ readable-stream@1.1.13
+203 silly idealTree:prePrune │ │ ├── core-util-is@1.0.1
+203 silly idealTree:prePrune │ │ ├── isarray@0.0.1
+203 silly idealTree:prePrune │ │ └── string_decoder@0.10.31
+203 silly idealTree:prePrune │ ├── realize-package-specifier@3.0.1
+203 silly idealTree:prePrune │ ├─┬ request@2.61.0
+203 silly idealTree:prePrune │ │ ├── aws-sign2@0.5.0
+203 silly idealTree:prePrune │ │ ├─┬ bl@1.0.0
+203 silly idealTree:prePrune │ │ │ └─┬ readable-stream@2.0.2
+203 silly idealTree:prePrune │ │ │   ├── core-util-is@1.0.1
+203 silly idealTree:prePrune │ │ │   ├── isarray@0.0.1
+203 silly idealTree:prePrune │ │ │   ├── process-nextick-args@1.0.2
+203 silly idealTree:prePrune │ │ │   ├── string_decoder@0.10.31
+203 silly idealTree:prePrune │ │ │   └── util-deprecate@1.0.1
+203 silly idealTree:prePrune │ │ ├── caseless@0.11.0
+203 silly idealTree:prePrune │ │ ├─┬ combined-stream@1.0.5
+203 silly idealTree:prePrune │ │ │ └── delayed-stream@1.0.0
+203 silly idealTree:prePrune │ │ ├── extend@3.0.0
+203 silly idealTree:prePrune │ │ ├── forever-agent@0.6.1
+203 silly idealTree:prePrune │ │ ├─┬ form-data@1.0.0-rc3
+203 silly idealTree:prePrune │ │ │ └── async@1.4.2
+203 silly idealTree:prePrune │ │ ├─┬ har-validator@1.8.0
+203 silly idealTree:prePrune │ │ │ ├── bluebird@2.9.34
+203 silly idealTree:prePrune │ │ │ ├─┬ chalk@1.1.1
+203 silly idealTree:prePrune │ │ │ │ ├── ansi-styles@2.1.0
+203 silly idealTree:prePrune │ │ │ │ ├── escape-string-regexp@1.0.3
+203 silly idealTree:prePrune │ │ │ │ ├─┬ has-ansi@2.0.0
+203 silly idealTree:prePrune │ │ │ │ │ └── ansi-regex@2.0.0
+203 silly idealTree:prePrune │ │ │ │ ├─┬ strip-ansi@3.0.0
+203 silly idealTree:prePrune │ │ │ │ │ └── ansi-regex@2.0.0
+203 silly idealTree:prePrune │ │ │ │ └── supports-color@2.0.0
+203 silly idealTree:prePrune │ │ │ ├─┬ commander@2.8.1
+203 silly idealTree:prePrune │ │ │ │ └── graceful-readlink@1.0.1
+203 silly idealTree:prePrune │ │ │ └─┬ is-my-json-valid@2.12.1
+203 silly idealTree:prePrune │ │ │   ├── generate-function@2.0.0
+203 silly idealTree:prePrune │ │ │   ├─┬ generate-object-property@1.2.0
+203 silly idealTree:prePrune │ │ │   │ └── is-property@1.0.2
+203 silly idealTree:prePrune │ │ │   ├── jsonpointer@1.1.0
+203 silly idealTree:prePrune │ │ │   └── xtend@4.0.0
+203 silly idealTree:prePrune │ │ ├─┬ hawk@3.1.0
+203 silly idealTree:prePrune │ │ │ ├── boom@2.8.0
+203 silly idealTree:prePrune │ │ │ ├── cryptiles@2.0.4
+203 silly idealTree:prePrune │ │ │ ├── hoek@2.14.0
+203 silly idealTree:prePrune │ │ │ └── sntp@1.0.9
+203 silly idealTree:prePrune │ │ ├─┬ http-signature@0.11.0
+203 silly idealTree:prePrune │ │ │ ├── asn1@0.1.11
+203 silly idealTree:prePrune │ │ │ ├── assert-plus@0.1.5
+203 silly idealTree:prePrune │ │ │ └── ctype@0.5.3
+203 silly idealTree:prePrune │ │ ├── isstream@0.1.2
+203 silly idealTree:prePrune │ │ ├── json-stringify-safe@5.0.1
+203 silly idealTree:prePrune │ │ ├─┬ mime-types@2.1.5
+203 silly idealTree:prePrune │ │ │ └── mime-db@1.17.0
+203 silly idealTree:prePrune │ │ ├── node-uuid@1.4.3
+203 silly idealTree:prePrune │ │ ├── oauth-sign@0.8.0
+203 silly idealTree:prePrune │ │ ├── qs@4.0.0
+203 silly idealTree:prePrune │ │ ├── stringstream@0.0.4
+203 silly idealTree:prePrune │ │ ├── tough-cookie@2.0.0
+203 silly idealTree:prePrune │ │ └── tunnel-agent@0.4.1
+203 silly idealTree:prePrune │ ├── retry@0.6.1
+203 silly idealTree:prePrune │ ├── rimraf@2.4.2
+203 silly idealTree:prePrune │ ├── semver@5.0.1
+203 silly idealTree:prePrune │ ├─┬ sha@1.3.0
+203 silly idealTree:prePrune │ │ └── graceful-fs@3.0.8
+203 silly idealTree:prePrune │ ├── slide@1.1.6
+203 silly idealTree:prePrune │ ├── sorted-object@1.0.0
+203 silly idealTree:prePrune │ ├─┬ spdx@0.4.1
+203 silly idealTree:prePrune │ │ └── spdx-license-ids@1.0.1
+203 silly idealTree:prePrune │ ├── tar@2.1.1
+203 silly idealTree:prePrune │ ├── text-table@0.2.0
+203 silly idealTree:prePrune │ ├── uid-number@0.0.6
+203 silly idealTree:prePrune │ ├── umask@1.1.0
+203 silly idealTree:prePrune │ ├─┬ validate-npm-package-license@2.0.0
+203 silly idealTree:prePrune │ │ └── spdx-correct@1.0.0
+203 silly idealTree:prePrune │ ├─┬ validate-npm-package-name@2.2.2
+203 silly idealTree:prePrune │ │ └── builtins@0.0.7
+203 silly idealTree:prePrune │ ├─┬ which@1.1.1
+203 silly idealTree:prePrune │ │ └─┬ is-absolute@0.1.7
+203 silly idealTree:prePrune │ │   └── is-relative@0.1.3
+203 silly idealTree:prePrune │ ├── wrappy@1.0.1
+203 silly idealTree:prePrune │ └─┬ write-file-atomic@1.1.2
+203 silly idealTree:prePrune │   └── graceful-fs@3.0.8
+203 silly idealTree:prePrune ├── nslog@2.0.0
+203 silly idealTree:prePrune ├── nugget@1.5.4
+203 silly idealTree:prePrune ├── num2fraction@1.1.0
+203 silly idealTree:prePrune ├── number-is-nan@1.0.0
+203 silly idealTree:prePrune ├── oauth-sign@0.8.0
+203 silly idealTree:prePrune ├── object-assign@3.0.0
+203 silly idealTree:prePrune ├── object-component@0.0.3
+203 silly idealTree:prePrune ├── object-keys@0.4.0
+203 silly idealTree:prePrune ├── object.omit@1.1.0
+203 silly idealTree:prePrune ├── on-finished@2.3.0
+203 silly idealTree:prePrune ├── once@1.3.2
+203 silly idealTree:prePrune ├─┬ optimist@0.6.1
+203 silly idealTree:prePrune │ └── minimist@0.0.10
+203 silly idealTree:prePrune ├── options@0.0.6
+203 silly idealTree:prePrune ├── os-browserify@0.1.2
+203 silly idealTree:prePrune ├── os-tmpdir@1.0.1
+203 silly idealTree:prePrune ├─┬ output-file-sync@1.1.1
+203 silly idealTree:prePrune │ └── xtend@4.0.0
+203 silly idealTree:prePrune ├── pako@0.2.7
+203 silly idealTree:prePrune ├── parse-glob@3.0.2
+203 silly idealTree:prePrune ├── parsejson@0.0.1
+203 silly idealTree:prePrune ├── parseqs@0.0.2
+203 silly idealTree:prePrune ├── parseuri@0.0.2
+203 silly idealTree:prePrune ├── parseurl@1.3.0
+203 silly idealTree:prePrune ├── path-browserify@0.0.0
+203 silly idealTree:prePrune ├── path-exists@1.0.0
+203 silly idealTree:prePrune ├── path-is-absolute@1.0.0
+203 silly idealTree:prePrune ├── path-to-regexp@0.1.7
+203 silly idealTree:prePrune ├── pbkdf2-compat@2.0.1
+203 silly idealTree:prePrune ├── pend@1.2.0
+203 silly idealTree:prePrune ├─┬ plist@1.1.0
+203 silly idealTree:prePrune │ └── util-deprecate@1.0.0
+203 silly idealTree:prePrune ├─┬ postcss@4.1.16
+203 silly idealTree:prePrune │ └── source-map@0.4.4
+203 silly idealTree:prePrune ├── postcss-calc@4.1.0
+203 silly idealTree:prePrune ├── postcss-colormin@1.2.5
+203 silly idealTree:prePrune ├── postcss-convert-values@1.2.4
+203 silly idealTree:prePrune ├── postcss-discard-comments@1.2.1
+203 silly idealTree:prePrune ├── postcss-discard-duplicates@1.1.5
+203 silly idealTree:prePrune ├── postcss-discard-empty@1.1.2
+203 silly idealTree:prePrune ├── postcss-discard-unused@1.0.3
+203 silly idealTree:prePrune ├── postcss-filter-plugins@1.0.0
+203 silly idealTree:prePrune ├── postcss-font-family@1.2.1
+203 silly idealTree:prePrune ├── postcss-merge-idents@1.0.1
+203 silly idealTree:prePrune ├── postcss-merge-longhand@1.0.2
+203 silly idealTree:prePrune ├── postcss-merge-rules@1.3.5
+203 silly idealTree:prePrune ├── postcss-message-helpers@2.0.0
+203 silly idealTree:prePrune ├── postcss-minify-font-weight@1.0.1
+203 silly idealTree:prePrune ├── postcss-minify-selectors@1.5.0
+203 silly idealTree:prePrune ├── postcss-modules-extract-imports@0.0.5
+203 silly idealTree:prePrune ├── postcss-modules-local-by-default@0.0.11
+203 silly idealTree:prePrune ├── postcss-modules-scope@0.0.8
+203 silly idealTree:prePrune ├── postcss-normalize-url@2.1.1
+203 silly idealTree:prePrune ├── postcss-ordered-values@1.0.1
+203 silly idealTree:prePrune ├── postcss-reduce-idents@1.0.2
+203 silly idealTree:prePrune ├── postcss-selector-parser@1.1.3
+203 silly idealTree:prePrune ├─┬ postcss-single-charset@0.3.0
+203 silly idealTree:prePrune │ ├── fs-extra@0.14.0
+203 silly idealTree:prePrune │ └── ncp@1.0.1
+203 silly idealTree:prePrune ├── postcss-unique-selectors@1.0.0
+203 silly idealTree:prePrune ├── postcss-value-parser@1.2.2
+203 silly idealTree:prePrune ├── postcss-zindex@1.1.3
+203 silly idealTree:prePrune ├── prepend-http@1.0.2
+203 silly idealTree:prePrune ├── preserve@0.2.0
+203 silly idealTree:prePrune ├── pretty-bytes@1.0.4
+203 silly idealTree:prePrune ├── private@0.1.6
+203 silly idealTree:prePrune ├── process@0.11.1
+203 silly idealTree:prePrune ├── process-nextick-args@1.0.2
+203 silly idealTree:prePrune ├─┬ progress-stream@1.1.1
+203 silly idealTree:prePrune │ └── single-line-log@0.3.1
+203 silly idealTree:prePrune ├── promise@7.0.4
+203 silly idealTree:prePrune ├── proxy-addr@1.0.8
+203 silly idealTree:prePrune ├── prr@0.0.0
+203 silly idealTree:prePrune ├── punycode@1.3.2
+203 silly idealTree:prePrune ├── q@1.1.2
+203 silly idealTree:prePrune ├── qs@4.0.0
+203 silly idealTree:prePrune ├── query-string@2.4.0
+203 silly idealTree:prePrune ├── querystring@0.2.0
+203 silly idealTree:prePrune ├── querystring-es3@0.2.1
+203 silly idealTree:prePrune ├── randomatic@1.1.0
+203 silly idealTree:prePrune ├── range-parser@1.0.2
+203 silly idealTree:prePrune ├── rcedit@0.3.0
+203 silly idealTree:prePrune ├── react@0.13.3
+203 silly idealTree:prePrune ├── read-file-stdin@0.2.0
+203 silly idealTree:prePrune ├── readable-stream@1.1.13
+203 silly idealTree:prePrune ├─┬ readdirp@1.4.0
+203 silly idealTree:prePrune │ ├── graceful-fs@4.1.2
+203 silly idealTree:prePrune │ ├── minimatch@0.2.14
+203 silly idealTree:prePrune │ └── readable-stream@1.0.33
+203 silly idealTree:prePrune ├─┬ recast@0.10.24
+203 silly idealTree:prePrune │ ├── esprima-fb@15001.1.0-dev-harmony-fb
+203 silly idealTree:prePrune │ └── source-map@0.4.4
+203 silly idealTree:prePrune ├─┬ reduce-css-calc@1.2.0
+203 silly idealTree:prePrune │ └── balanced-match@0.1.0
+203 silly idealTree:prePrune ├─┬ reduce-function-call@1.0.1
+203 silly idealTree:prePrune │ └── balanced-match@0.1.0
+203 silly idealTree:prePrune ├── regenerate@1.2.1
+203 silly idealTree:prePrune ├─┬ regenerator@0.8.35
+203 silly idealTree:prePrune │ └── esprima-fb@15001.1.0-dev-harmony-fb
+203 silly idealTree:prePrune ├── regex-cache@0.4.2
+203 silly idealTree:prePrune ├── regexpu@1.2.0
+203 silly idealTree:prePrune ├── regjsgen@0.2.0
+203 silly idealTree:prePrune ├── regjsparser@0.1.5
+203 silly idealTree:prePrune ├── repeat-element@1.1.2
+203 silly idealTree:prePrune ├── repeat-string@1.5.2
+203 silly idealTree:prePrune ├── repeating@1.1.3
+203 silly idealTree:prePrune ├── request@2.61.0
+203 silly idealTree:prePrune ├── requires-port@0.0.1
+203 silly idealTree:prePrune ├── resolve@1.1.6
+203 silly idealTree:prePrune ├── right-align@0.1.3
+203 silly idealTree:prePrune ├── rimraf@2.4.3
+203 silly idealTree:prePrune ├── ripemd160@0.2.0
+203 silly idealTree:prePrune ├── send@0.13.0
+203 silly idealTree:prePrune ├── serve-index@1.7.2
+203 silly idealTree:prePrune ├── serve-static@1.10.0
+203 silly idealTree:prePrune ├── sha.js@2.2.6
+203 silly idealTree:prePrune ├── shebang-regex@1.0.0
+203 silly idealTree:prePrune ├── sigmund@1.0.1
+203 silly idealTree:prePrune ├── simple-fmt@0.1.0
+203 silly idealTree:prePrune ├── simple-is@0.2.0
+203 silly idealTree:prePrune ├── single-line-log@0.4.1
+203 silly idealTree:prePrune ├── slash@1.0.0
+203 silly idealTree:prePrune ├── sntp@1.0.9
+203 silly idealTree:prePrune ├─┬ socket.io@1.3.6
+203 silly idealTree:prePrune │ ├── debug@2.1.0
+203 silly idealTree:prePrune │ └── ms@0.6.2
+203 silly idealTree:prePrune ├─┬ socket.io-adapter@0.3.1
+203 silly idealTree:prePrune │ ├── debug@1.0.2
+203 silly idealTree:prePrune │ ├── ms@0.6.2
+203 silly idealTree:prePrune │ ├── object-keys@1.0.1
+203 silly idealTree:prePrune │ └─┬ socket.io-parser@2.2.2
+203 silly idealTree:prePrune │   └── debug@0.7.4
+203 silly idealTree:prePrune ├─┬ socket.io-client@1.3.6
+203 silly idealTree:prePrune │ ├── debug@0.7.4
+203 silly idealTree:prePrune │ └── has-binary@0.1.6
+203 silly idealTree:prePrune ├─┬ socket.io-parser@2.2.4
+203 silly idealTree:prePrune │ └── debug@0.7.4
+203 silly idealTree:prePrune ├── sort-keys@1.1.1
+203 silly idealTree:prePrune ├── source-list-map@0.1.5
+203 silly idealTree:prePrune ├── source-map@0.1.31
+203 silly idealTree:prePrune ├─┬ source-map-support@0.2.10
+203 silly idealTree:prePrune │ └── source-map@0.1.32
+203 silly idealTree:prePrune ├── speedometer@0.1.4
+203 silly idealTree:prePrune ├── stable@0.1.5
+203 silly idealTree:prePrune ├── statuses@1.2.1
+203 silly idealTree:prePrune ├── stream-browserify@1.0.0
+203 silly idealTree:prePrune ├── stream-cache@0.0.2
+203 silly idealTree:prePrune ├── strict-uri-encode@1.0.2
+203 silly idealTree:prePrune ├── string_decoder@0.10.31
+203 silly idealTree:prePrune ├── stringmap@0.2.2
+203 silly idealTree:prePrune ├── stringset@0.2.1
+203 silly idealTree:prePrune ├── stringstream@0.0.4
+203 silly idealTree:prePrune ├── strip-ansi@3.0.0
+203 silly idealTree:prePrune ├── style-loader@0.12.3
+203 silly idealTree:prePrune ├── success-symbol@0.1.0
+203 silly idealTree:prePrune ├── supports-color@2.0.0
+203 silly idealTree:prePrune ├── tapable@0.1.9
+203 silly idealTree:prePrune ├── throttleit@0.0.2
+203 silly idealTree:prePrune ├── through@2.3.8
+203 silly idealTree:prePrune ├── through2@0.2.3
+203 silly idealTree:prePrune ├── timers-browserify@1.4.1
+203 silly idealTree:prePrune ├── to-array@0.1.3
+203 silly idealTree:prePrune ├── to-fast-properties@1.0.1
+203 silly idealTree:prePrune ├── tough-cookie@2.0.0
+203 silly idealTree:prePrune ├── trim-right@1.0.1
+203 silly idealTree:prePrune ├── try-resolve@1.0.1
+203 silly idealTree:prePrune ├── tryor@0.1.2
+203 silly idealTree:prePrune ├── tty-browserify@0.0.0
+203 silly idealTree:prePrune ├── tunnel-agent@0.4.1
+203 silly idealTree:prePrune ├── type-is@1.6.7
+203 silly idealTree:prePrune ├── typedarray@0.0.6
+203 silly idealTree:prePrune ├─┬ uglify-js@2.4.24
+203 silly idealTree:prePrune │ ├── async@0.2.10
+203 silly idealTree:prePrune │ ├── source-map@0.1.34
+203 silly idealTree:prePrune │ ├── window-size@0.1.0
+203 silly idealTree:prePrune │ └── yargs@3.5.4
+203 silly idealTree:prePrune ├── uglify-to-browserify@1.0.2
+203 silly idealTree:prePrune ├── ultron@1.0.2
+203 silly idealTree:prePrune ├── uniq@1.0.1
+203 silly idealTree:prePrune ├── uniqid@1.0.0
+203 silly idealTree:prePrune ├── uniqs@2.0.0
+203 silly idealTree:prePrune ├── unpipe@1.0.0
+203 silly idealTree:prePrune ├── url@0.10.3
+203 silly idealTree:prePrune ├── user-home@1.1.1
+203 silly idealTree:prePrune ├─┬ utf-8-validate@1.1.0
+203 silly idealTree:prePrune │ └── nan@1.8.4
+203 silly idealTree:prePrune ├── utf8@2.0.0
+203 silly idealTree:prePrune ├── util@0.10.3
+203 silly idealTree:prePrune ├── util-deprecate@1.0.1
+203 silly idealTree:prePrune ├── utils-merge@1.0.0
+203 silly idealTree:prePrune ├── vary@1.0.1
+203 silly idealTree:prePrune ├── vm-browserify@0.0.4
+203 silly idealTree:prePrune ├─┬ watchpack@0.2.8
+203 silly idealTree:prePrune │ └── async@0.9.2
+203 silly idealTree:prePrune ├─┬ webpack@1.12.0
+203 silly idealTree:prePrune │ ├── esprima@2.6.0
+203 silly idealTree:prePrune │ └── supports-color@3.1.0
+203 silly idealTree:prePrune ├─┬ webpack-core@0.6.6
+203 silly idealTree:prePrune │ └── source-map@0.4.4
+203 silly idealTree:prePrune ├── webpack-dev-middleware@1.2.0
+203 silly idealTree:prePrune ├─┬ webpack-dev-server@1.10.1
+203 silly idealTree:prePrune │ ├── ansi-regex@1.1.1
+203 silly idealTree:prePrune │ ├── strip-ansi@2.0.1
+203 silly idealTree:prePrune │ └── supports-color@1.3.1
+203 silly idealTree:prePrune ├── window-size@0.1.2
+203 silly idealTree:prePrune ├── wordwrap@0.0.2
+203 silly idealTree:prePrune ├── wrappy@1.0.1
+203 silly idealTree:prePrune ├── write-file-stdout@0.0.2
+203 silly idealTree:prePrune ├── ws@0.7.2
+203 silly idealTree:prePrune ├── xmlbuilder@2.2.1
+203 silly idealTree:prePrune ├── xmldom@0.1.19
+203 silly idealTree:prePrune ├── xmlhttprequest@1.5.0
+203 silly idealTree:prePrune ├── xtend@2.1.2
+203 silly idealTree:prePrune ├── y18n@3.1.0
+203 silly idealTree:prePrune ├── yargs@1.3.3
+203 silly idealTree:prePrune └── yauzl@2.3.1
+204 silly loadIdealTree Finishing
+205 silly currentTree my-electron-app@0.1.0
+205 silly currentTree ├── accepts@1.2.12
+205 silly currentTree ├── after@0.8.1
+205 silly currentTree ├─┬ align-text@0.1.3
+205 silly currentTree │ └── kind-of@2.0.0
+205 silly currentTree ├── alter@0.2.0
+205 silly currentTree ├── amdefine@1.0.0
+205 silly currentTree ├── ansi-green@0.1.1
+205 silly currentTree ├── ansi-regex@2.0.0
+205 silly currentTree ├── ansi-styles@2.1.0
+205 silly currentTree ├── ansi-wrap@0.1.0
+205 silly currentTree ├── anymatch@1.3.0
+205 silly currentTree ├── arr-diff@1.0.1
+205 silly currentTree ├── array-flatten@1.1.1
+205 silly currentTree ├── array-slice@0.2.3
+205 silly currentTree ├── array-unique@0.2.1
+205 silly currentTree ├── arraybuffer.slice@0.0.6
+205 silly currentTree ├── arrify@1.0.0
+205 silly currentTree ├── asap@2.0.3
+205 silly currentTree ├─┬ asar@0.6.1
+205 silly currentTree │ ├── commander@2.3.0
+205 silly currentTree │ └── minimatch@2.0.4
+205 silly currentTree ├── asn1@0.1.11
+205 silly currentTree ├── assert@1.3.0
+205 silly currentTree ├── assert-plus@0.1.5
+205 silly currentTree ├── ast-traverse@0.1.1
+205 silly currentTree ├── ast-types@0.8.5
+205 silly currentTree ├── async@1.4.2
+205 silly currentTree ├── async-each@0.1.6
+205 silly currentTree ├── autoprefixer-core@5.2.1
+205 silly currentTree ├── aws-sign2@0.5.0
+205 silly currentTree ├─┬ babel@5.8.23
+205 silly currentTree │ └── source-map@0.4.4
+205 silly currentTree ├─┬ babel-core@5.8.23
+205 silly currentTree │ └── source-map@0.4.4
+205 silly currentTree ├── babel-loader@5.3.2
+205 silly currentTree ├── babel-plugin-constant-folding@1.0.1
+205 silly currentTree ├── babel-plugin-dead-code-elimination@1.0.2
+205 silly currentTree ├── babel-plugin-eval@1.0.1
+205 silly currentTree ├── babel-plugin-inline-environment-variables@1.0.1
+205 silly currentTree ├── babel-plugin-jscript@1.0.4
+205 silly currentTree ├── babel-plugin-member-expression-literals@1.0.1
+205 silly currentTree ├── babel-plugin-property-literals@1.0.1
+205 silly currentTree ├── babel-plugin-proto-to-assign@1.0.4
+205 silly currentTree ├── babel-plugin-react-constant-elements@1.0.3
+205 silly currentTree ├── babel-plugin-react-display-name@1.0.3
+205 silly currentTree ├── babel-plugin-remove-console@1.0.1
+205 silly currentTree ├── babel-plugin-remove-debugger@1.0.1
+205 silly currentTree ├── babel-plugin-runtime@1.0.7
+205 silly currentTree ├── babel-plugin-undeclared-variables-check@1.0.2
+205 silly currentTree ├── babel-plugin-undefined-to-void@1.1.6
+205 silly currentTree ├── babylon@5.8.23
+205 silly currentTree ├── backo2@1.0.2
+205 silly currentTree ├── balanced-match@0.2.0
+205 silly currentTree ├── base62@0.1.1
+205 silly currentTree ├── Base64@0.2.1
+205 silly currentTree ├── base64-arraybuffer@0.1.2
+205 silly currentTree ├── base64-js@0.0.6
+205 silly currentTree ├── base64id@0.1.0
+205 silly currentTree ├── batch@0.5.2
+205 silly currentTree ├── benchmark@1.0.0
+205 silly currentTree ├── better-assert@1.0.2
+205 silly currentTree ├── big.js@3.1.3
+205 silly currentTree ├── binary-extensions@1.3.1
+205 silly currentTree ├── bindings@1.2.1
+205 silly currentTree ├─┬ bl@1.0.0
+205 silly currentTree │ └── readable-stream@2.0.2
+205 silly currentTree ├── blob@0.0.2
+205 silly currentTree ├── bluebird@2.9.34
+205 silly currentTree ├── boom@2.8.0
+205 silly currentTree ├── brace-expansion@1.1.0
+205 silly currentTree ├── braces@1.8.0
+205 silly currentTree ├── breakable@1.0.0
+205 silly currentTree ├── browserify-zlib@0.1.4
+205 silly currentTree ├── browserslist@0.4.0
+205 silly currentTree ├─┬ buffer@3.4.2
+205 silly currentTree │ └── base64-js@0.0.8
+205 silly currentTree ├── callsite@1.0.0
+205 silly currentTree ├── camelcase@1.2.1
+205 silly currentTree ├── camelcase-keys@1.0.0
+205 silly currentTree ├── caniuse-db@1.0.30000276
+205 silly currentTree ├── caseless@0.11.0
+205 silly currentTree ├── center-align@0.1.1
+205 silly currentTree ├── chalk@1.1.1
+205 silly currentTree ├── chokidar@1.0.5
+205 silly currentTree ├── chromium-pickle-js@0.1.0
+205 silly currentTree ├── cliui@2.1.0
+205 silly currentTree ├── clone@1.0.2
+205 silly currentTree ├── color@0.10.1
+205 silly currentTree ├── color-convert@0.5.3
+205 silly currentTree ├── color-name@1.0.0
+205 silly currentTree ├── color-string@0.3.0
+205 silly currentTree ├── colormin@1.0.4
+205 silly currentTree ├── combined-stream@1.0.5
+205 silly currentTree ├── commander@2.8.1
+205 silly currentTree ├─┬ commoner@0.10.3
+205 silly currentTree │ ├── commander@2.5.1
+205 silly currentTree │ ├── glob@4.2.2
+205 silly currentTree │ └── minimatch@1.0.0
+205 silly currentTree ├── component-bind@1.0.0
+205 silly currentTree ├── component-emitter@1.1.2
+205 silly currentTree ├── component-inherit@0.0.3
+205 silly currentTree ├── concat-map@0.0.1
+205 silly currentTree ├─┬ concat-stream@1.5.0
+205 silly currentTree │ └── readable-stream@2.0.2
+205 silly currentTree ├── connect-history-api-fallback@1.1.0
+205 silly currentTree ├── console-browserify@1.1.0
+205 silly currentTree ├── constants-browserify@0.0.1
+205 silly currentTree ├── content-disposition@0.5.0
+205 silly currentTree ├── content-type@1.0.1
+205 silly currentTree ├── convert-source-map@1.1.1
+205 silly currentTree ├── cookie@0.1.3
+205 silly currentTree ├── cookie-signature@1.0.6
+205 silly currentTree ├── core-js@1.1.3
+205 silly currentTree ├── core-util-is@1.0.1
+205 silly currentTree ├── cryptiles@2.0.4
+205 silly currentTree ├── crypto-browserify@3.2.8
+205 silly currentTree ├── css-color-names@0.0.1
+205 silly currentTree ├── css-list@0.1.2
+205 silly currentTree ├── css-loader@0.15.6
+205 silly currentTree ├── css-selector-tokenizer@0.5.4
+205 silly currentTree ├── cssesc@0.1.0
+205 silly currentTree ├── cssnano@2.6.1
+205 silly currentTree ├── ctype@0.5.3
+205 silly currentTree ├── cuint@0.1.5
+205 silly currentTree ├── date-now@0.1.4
+205 silly currentTree ├── debug@2.2.0
+205 silly currentTree ├── decamelize@1.0.0
+205 silly currentTree ├─┬ define-properties@1.1.1
+205 silly currentTree │ └── object-keys@1.0.7
+205 silly currentTree ├── defined@1.0.0
+205 silly currentTree ├─┬ defs@1.1.0
+205 silly currentTree │ └── esprima-fb@8001.1001.0-dev-harmony-fb
+205 silly currentTree ├── delayed-stream@1.0.0
+205 silly currentTree ├── depd@1.0.1
+205 silly currentTree ├── destroy@1.0.3
+205 silly currentTree ├── detect-indent@3.0.1
+205 silly currentTree ├── domain-browser@1.1.4
+205 silly currentTree ├── ee-first@1.1.1
+205 silly currentTree ├── electron-builder@1.1.0
+205 silly currentTree ├── electron-download@1.0.8
+205 silly currentTree ├── electron-packager@4.2.0
+205 silly currentTree ├── electron-prebuilt@0.28.3
+205 silly currentTree ├─┬ engine.io@1.5.2
+205 silly currentTree │ ├── debug@1.0.3
+205 silly currentTree │ └── ms@0.6.2
+205 silly currentTree ├─┬ engine.io-client@1.5.2
+205 silly currentTree │ ├── debug@1.0.4
+205 silly currentTree │ ├── ms@0.6.2
+205 silly currentTree │ └── parseuri@0.0.4
+205 silly currentTree ├── engine.io-parser@1.2.1
+205 silly currentTree ├── enhanced-resolve@0.9.0
+205 silly currentTree ├── envify@3.4.0
+205 silly currentTree ├── errno@0.1.4
+205 silly currentTree ├── es6-promise@2.3.0
+205 silly currentTree ├── escape-html@1.0.2
+205 silly currentTree ├── escape-string-regexp@1.0.3
+205 silly currentTree ├── esprima-fb@13001.1001.0-dev-harmony-fb
+205 silly currentTree ├── esutils@2.0.2
+205 silly currentTree ├── etag@1.7.0
+205 silly currentTree ├── eventemitter3@1.1.1
+205 silly currentTree ├── events@1.0.2
+205 silly currentTree ├── expand-brackets@0.1.3
+205 silly currentTree ├── expand-range@1.8.1
+205 silly currentTree ├── express@4.13.3
+205 silly currentTree ├── extend@3.0.0
+205 silly currentTree ├── extglob@0.3.1
+205 silly currentTree ├─┬ extract-zip@1.0.3
+205 silly currentTree │ ├── async@0.9.0
+205 silly currentTree │ ├── debug@0.7.4
+205 silly currentTree │ ├── minimist@0.1.0
+205 silly currentTree │ ├─┬ mkdirp@0.5.0
+205 silly currentTree │ │ └── minimist@0.0.8
+205 silly currentTree │ ├── readable-stream@1.0.33
+205 silly currentTree │ ├── through2@0.6.3
+205 silly currentTree │ └── xtend@4.0.0
+205 silly currentTree ├── fastparse@1.1.1
+205 silly currentTree ├── fd-slicer@1.0.1
+205 silly currentTree ├── filename-regex@2.0.0
+205 silly currentTree ├── fill-range@2.2.2
+205 silly currentTree ├── finalhandler@0.4.0
+205 silly currentTree ├── flatten@0.0.1
+205 silly currentTree ├── for-in@0.1.4
+205 silly currentTree ├── for-own@0.1.3
+205 silly currentTree ├── foreach@2.0.5
+205 silly currentTree ├── forever-agent@0.6.1
+205 silly currentTree ├── form-data@1.0.0-rc3
+205 silly currentTree ├── forwarded@0.1.0
+205 silly currentTree ├── fresh@0.3.0
+205 silly currentTree ├── fs-extra@0.18.4
+205 silly currentTree ├── fs-readdir-recursive@0.1.2
+205 silly currentTree ├── gather-stream@1.0.0
+205 silly currentTree ├── generate-function@2.0.0
+205 silly currentTree ├── generate-object-property@1.2.0
+205 silly currentTree ├── get-stdin@4.0.1
+205 silly currentTree ├── glob@5.0.14
+205 silly currentTree ├── glob-base@0.2.0
+205 silly currentTree ├── glob-parent@1.2.0
+205 silly currentTree ├── global@2.0.1
+205 silly currentTree ├── globals@6.4.1
+205 silly currentTree ├── graceful-fs@3.0.8
+205 silly currentTree ├── graceful-readlink@1.0.1
+205 silly currentTree ├── har-validator@1.8.0
+205 silly currentTree ├── has-ansi@2.0.0
+205 silly currentTree ├── has-binary@0.1.5
+205 silly currentTree ├── has-binary-data@0.1.3
+205 silly currentTree ├── has-cors@1.0.3
+205 silly currentTree ├── has-flag@1.0.0
+205 silly currentTree ├── hawk@3.1.0
+205 silly currentTree ├── hoek@2.14.0
+205 silly currentTree ├── home-or-tmp@1.0.0
+205 silly currentTree ├── home-path@0.1.2
+205 silly currentTree ├── http-browserify@1.7.0
+205 silly currentTree ├── http-errors@1.3.1
+205 silly currentTree ├── http-proxy@1.11.2
+205 silly currentTree ├── http-signature@0.11.0
+205 silly currentTree ├── https-browserify@0.0.0
+205 silly currentTree ├── iconv-lite@0.4.11
+205 silly currentTree ├── ieee754@1.1.6
+205 silly currentTree ├── image-size@0.3.5
+205 silly currentTree ├── indent-string@1.2.2
+205 silly currentTree ├── indexes-of@1.0.1
+205 silly currentTree ├── indexof@0.0.1
+205 silly currentTree ├── inflight@1.0.4
+205 silly currentTree ├── inherits@2.0.1
+205 silly currentTree ├── install@0.1.8
+205 silly currentTree ├── interpret@0.6.5
+205 silly currentTree ├── ipaddr.js@1.0.1
+205 silly currentTree ├── is-absolute-url@2.0.0
+205 silly currentTree ├── is-array@1.0.1
+205 silly currentTree ├── is-binary-path@1.0.1
+205 silly currentTree ├── is-dotfile@1.0.1
+205 silly currentTree ├── is-equal-shallow@0.1.3
+205 silly currentTree ├── is-extglob@1.0.0
+205 silly currentTree ├── is-finite@1.0.1
+205 silly currentTree ├── is-glob@1.1.3
+205 silly currentTree ├── is-integer@1.0.4
+205 silly currentTree ├─┬ is-my-json-valid@2.12.2
+205 silly currentTree │ └── xtend@4.0.0
+205 silly currentTree ├── is-nan@1.2.1
+205 silly currentTree ├── is-number@1.1.2
+205 silly currentTree ├── is-plain-obj@1.0.0
+205 silly currentTree ├── is-posix-bracket@0.1.0
+205 silly currentTree ├── is-primitive@2.0.0
+205 silly currentTree ├── is-property@1.0.2
+205 silly currentTree ├── isarray@0.0.1
+205 silly currentTree ├── isobject@1.0.2
+205 silly currentTree ├── isstream@0.1.2
+205 silly currentTree ├── javascript-natural-sort@0.7.1
+205 silly currentTree ├── js-base64@2.1.9
+205 silly currentTree ├── js-tokens@1.0.1
+205 silly currentTree ├── jsesc@0.5.0
+205 silly currentTree ├── json-stringify-safe@5.0.1
+205 silly currentTree ├── json3@3.2.6
+205 silly currentTree ├── json5@0.4.0
+205 silly currentTree ├── jsonfile@2.2.1
+205 silly currentTree ├── jsonpointer@2.0.0
+205 silly currentTree ├── jstransform@10.1.0
+205 silly currentTree ├── kind-of@1.1.0
+205 silly currentTree ├── left-pad@0.0.3
+205 silly currentTree ├─┬ less@2.5.1
+205 silly currentTree │ ├── asap@1.0.0
+205 silly currentTree │ ├── promise@6.1.0
+205 silly currentTree │ └── source-map@0.4.4
+205 silly currentTree ├── less-loader@2.2.0
+205 silly currentTree ├── leven@1.0.2
+205 silly currentTree ├── line-numbers@0.2.0
+205 silly currentTree ├── loader-utils@0.2.11
+205 silly currentTree ├── lodash@3.10.1
+205 silly currentTree ├── lodash-node@2.4.1
+205 silly currentTree ├── lodash._baseassign@3.2.0
+205 silly currentTree ├── lodash._basecopy@3.0.1
+205 silly currentTree ├── lodash._basetostring@3.0.1
+205 silly currentTree ├── lodash._basevalues@3.0.0
+205 silly currentTree ├── lodash._bindcallback@3.0.1
+205 silly currentTree ├── lodash._createassigner@3.1.1
+205 silly currentTree ├── lodash._createcompounder@3.0.0
+205 silly currentTree ├── lodash._getnative@3.9.1
+205 silly currentTree ├── lodash._isiterateecall@3.0.9
+205 silly currentTree ├── lodash._reinterpolate@3.0.0
+205 silly currentTree ├── lodash.assign@3.2.0
+205 silly currentTree ├── lodash.camelcase@3.0.1
+205 silly currentTree ├── lodash.deburr@3.0.2
+205 silly currentTree ├── lodash.escape@3.0.0
+205 silly currentTree ├── lodash.isarguments@3.0.4
+205 silly currentTree ├── lodash.isarray@3.0.4
+205 silly currentTree ├── lodash.keys@3.1.2
+205 silly currentTree ├── lodash.restparam@3.6.1
+205 silly currentTree ├── lodash.template@3.6.2
+205 silly currentTree ├── lodash.templatesettings@3.1.0
+205 silly currentTree ├── lodash.words@3.0.2
+205 silly currentTree ├── longest@1.0.1
+205 silly currentTree ├── lru-cache@2.6.5
+205 silly currentTree ├── map-obj@1.0.1
+205 silly currentTree ├── media-typer@0.3.0
+205 silly currentTree ├── memory-fs@0.2.0
+205 silly currentTree ├── meow@3.3.0
+205 silly currentTree ├── merge-descriptors@1.0.0
+205 silly currentTree ├── methods@1.1.1
+205 silly currentTree ├── micromatch@2.2.0
+205 silly currentTree ├── mime@1.3.4
+205 silly currentTree ├── mime-db@1.17.0
+205 silly currentTree ├── mime-types@2.1.5
+205 silly currentTree ├── minimatch@2.0.10
+205 silly currentTree ├── minimist@1.2.0
+205 silly currentTree ├─┬ mkdirp@0.5.1
+205 silly currentTree │ └── minimist@0.0.8
+205 silly currentTree ├── ms@0.7.1
+205 silly currentTree ├── mv@2.1.1
+205 silly currentTree ├── ncp@2.0.0
+205 silly currentTree ├── negotiator@0.5.3
+205 silly currentTree ├── node-balanced@0.0.14
+205 silly currentTree ├── node-libs-browser@0.5.2
+205 silly currentTree ├── node-uuid@1.4.3
+205 silly currentTree ├── normalize-selector@0.2.0
+205 silly currentTree ├── normalize-url@1.3.0
+205 silly currentTree ├─┬ npm@2.14.1
+205 silly currentTree │ ├── abbrev@1.0.7
+205 silly currentTree │ ├── ansi@0.3.0
+205 silly currentTree │ ├── ansicolors@0.3.2
+205 silly currentTree │ ├── ansistyles@0.1.3
+205 silly currentTree │ ├── archy@1.0.0
+205 silly currentTree │ ├── async-some@1.0.2
+205 silly currentTree │ ├── block-stream@0.0.8
+205 silly currentTree │ ├── char-spinner@1.0.1
+205 silly currentTree │ ├── chmodr@1.0.1
+205 silly currentTree │ ├── chownr@1.0.1
+205 silly currentTree │ ├─┬ cmd-shim@2.0.1
+205 silly currentTree │ │ └── graceful-fs@3.0.8
+205 silly currentTree │ ├─┬ columnify@1.5.2
+205 silly currentTree │ │ ├─┬ strip-ansi@3.0.0
+205 silly currentTree │ │ │ └── ansi-regex@2.0.0
+205 silly currentTree │ │ └─┬ wcwidth@1.0.0
+205 silly currentTree │ │   └─┬ defaults@1.0.2
+205 silly currentTree │ │     └── clone@0.1.19
+205 silly currentTree │ ├─┬ config-chain@1.1.9
+205 silly currentTree │ │ └── proto-list@1.2.4
+205 silly currentTree │ ├─┬ dezalgo@1.0.3
+205 silly currentTree │ │ └── asap@2.0.3
+205 silly currentTree │ ├── editor@1.0.0
+205 silly currentTree │ ├─┬ fs-vacuum@1.2.6
+205 silly currentTree │ │ └── graceful-fs@3.0.8
+205 silly currentTree │ ├─┬ fs-write-stream-atomic@1.0.3
+205 silly currentTree │ │ └── graceful-fs@3.0.8
+205 silly currentTree │ ├─┬ fstream@1.0.7
+205 silly currentTree │ │ └── graceful-fs@3.0.8
+205 silly currentTree │ ├─┬ fstream-npm@1.0.5
+205 silly currentTree │ │ └── fstream-ignore@1.0.2
+205 silly currentTree │ ├── github-url-from-git@1.4.0
+205 silly currentTree │ ├── github-url-from-username-repo@1.0.2
+205 silly currentTree │ ├─┬ glob@5.0.14
+205 silly currentTree │ │ └── path-is-absolute@1.0.0
+205 silly currentTree │ ├── graceful-fs@4.1.2
+205 silly currentTree │ ├── hosted-git-info@2.1.4
+205 silly currentTree │ ├── inflight@1.0.4
+205 silly currentTree │ ├── inherits@2.0.1
+205 silly currentTree │ ├── ini@1.3.4
+205 silly currentTree │ ├─┬ init-package-json@1.8.0
+205 silly currentTree │ │ └── promzard@0.3.0
+205 silly currentTree │ ├── lockfile@1.0.1
+205 silly currentTree │ ├── lru-cache@2.6.5
+205 silly currentTree │ ├─┬ minimatch@2.0.10
+205 silly currentTree │ │ └─┬ brace-expansion@1.1.0
+205 silly currentTree │ │   ├── balanced-match@0.2.0
+205 silly currentTree │ │   └── concat-map@0.0.1
+205 silly currentTree │ ├─┬ mkdirp@0.5.1
+205 silly currentTree │ │ └── minimist@0.0.8
+205 silly currentTree │ ├─┬ node-gyp@2.0.2
+205 silly currentTree │ │ ├─┬ glob@4.5.3
+205 silly currentTree │ │ │ └─┬ minimatch@2.0.8
+205 silly currentTree │ │ │   └─┬ brace-expansion@1.1.0
+205 silly currentTree │ │ │     ├── balanced-match@0.2.0
+205 silly currentTree │ │ │     └── concat-map@0.0.1
+205 silly currentTree │ │ ├── graceful-fs@3.0.8
+205 silly currentTree │ │ ├─┬ minimatch@1.0.0
+205 silly currentTree │ │ │ └── sigmund@1.0.1
+205 silly currentTree │ │ ├─┬ path-array@1.0.0
+205 silly currentTree │ │ │ └─┬ array-index@0.1.1
+205 silly currentTree │ │ │   └─┬ debug@2.2.0
+205 silly currentTree │ │ │     └── ms@0.7.1
+205 silly currentTree │ │ ├── semver@4.3.6
+205 silly currentTree │ │ └── tar@1.0.3
+205 silly currentTree │ ├── nopt@3.0.3
+205 silly currentTree │ ├── normalize-git-url@3.0.1
+205 silly currentTree │ ├── normalize-package-data@2.3.1
+205 silly currentTree │ ├── npm-cache-filename@1.0.2
+205 silly currentTree │ ├── npm-install-checks@1.0.6
+205 silly currentTree │ ├── npm-package-arg@4.0.2
+205 silly currentTree │ ├─┬ npm-registry-client@7.0.1
+205 silly currentTree │ │ ├── chownr@1.0.1
+205 silly currentTree │ │ ├─┬ concat-stream@1.5.0
+205 silly currentTree │ │ │ ├─┬ readable-stream@2.0.2
+205 silly currentTree │ │ │ │ ├── core-util-is@1.0.1
+205 silly currentTree │ │ │ │ ├── isarray@0.0.1
+205 silly currentTree │ │ │ │ ├── process-nextick-args@1.0.2
+205 silly currentTree │ │ │ │ ├── string_decoder@0.10.31
+205 silly currentTree │ │ │ │ └── util-deprecate@1.0.1
+205 silly currentTree │ │ │ └── typedarray@0.0.6
+205 silly currentTree │ │ └── graceful-fs@3.0.8
+205 silly currentTree │ ├── npm-user-validate@0.1.2
+205 silly currentTree │ ├─┬ npmlog@1.2.1
+205 silly currentTree │ │ ├─┬ are-we-there-yet@1.0.4
+205 silly currentTree │ │ │ └── delegates@0.1.0
+205 silly currentTree │ │ └─┬ gauge@1.2.0
+205 silly currentTree │ │   ├── has-unicode@1.0.0
+205 silly currentTree │ │   ├── lodash._basetostring@3.0.0
+205 silly currentTree │ │   ├─┬ lodash._createpadding@3.6.0
+205 silly currentTree │ │   │ └── lodash.repeat@3.0.0
+205 silly currentTree │ │   ├── lodash.pad@3.1.0
+205 silly currentTree │ │   ├── lodash.padleft@3.1.1
+205 silly currentTree │ │   └── lodash.padright@3.1.1
+205 silly currentTree │ ├── once@1.3.2
+205 silly currentTree │ ├── opener@1.4.1
+205 silly currentTree │ ├─┬ osenv@0.1.3
+205 silly currentTree │ │ ├── os-homedir@1.0.0
+205 silly currentTree │ │ └── os-tmpdir@1.0.1
+205 silly currentTree │ ├── path-is-inside@1.0.1
+205 silly currentTree │ ├─┬ read@1.0.6
+205 silly currentTree │ │ └── mute-stream@0.0.5
+205 silly currentTree │ ├─┬ read-installed@4.0.2
+205 silly currentTree │ │ ├── debuglog@1.0.1
+205 silly currentTree │ │ ├── graceful-fs@3.0.8
+205 silly currentTree │ │ ├── readdir-scoped-modules@1.0.1
+205 silly currentTree │ │ └── util-extend@1.0.1
+205 silly currentTree │ ├─┬ read-package-json@2.0.0
+205 silly currentTree │ │ ├── graceful-fs@3.0.8
+205 silly currentTree │ │ └─┬ json-parse-helpfulerror@1.0.3
+205 silly currentTree │ │   └── jju@1.2.0
+205 silly currentTree │ ├─┬ readable-stream@1.1.13
+205 silly currentTree │ │ ├── core-util-is@1.0.1
+205 silly currentTree │ │ ├── isarray@0.0.1
+205 silly currentTree │ │ └── string_decoder@0.10.31
+205 silly currentTree │ ├── realize-package-specifier@3.0.1
+205 silly currentTree │ ├─┬ request@2.61.0
+205 silly currentTree │ │ ├── aws-sign2@0.5.0
+205 silly currentTree │ │ ├─┬ bl@1.0.0
+205 silly currentTree │ │ │ └─┬ readable-stream@2.0.2
+205 silly currentTree │ │ │   ├── core-util-is@1.0.1
+205 silly currentTree │ │ │   ├── isarray@0.0.1
+205 silly currentTree │ │ │   ├── process-nextick-args@1.0.2
+205 silly currentTree │ │ │   ├── string_decoder@0.10.31
+205 silly currentTree │ │ │   └── util-deprecate@1.0.1
+205 silly currentTree │ │ ├── caseless@0.11.0
+205 silly currentTree │ │ ├─┬ combined-stream@1.0.5
+205 silly currentTree │ │ │ └── delayed-stream@1.0.0
+205 silly currentTree │ │ ├── extend@3.0.0
+205 silly currentTree │ │ ├── forever-agent@0.6.1
+205 silly currentTree │ │ ├─┬ form-data@1.0.0-rc3
+205 silly currentTree │ │ │ └── async@1.4.2
+205 silly currentTree │ │ ├─┬ har-validator@1.8.0
+205 silly currentTree │ │ │ ├── bluebird@2.9.34
+205 silly currentTree │ │ │ ├─┬ chalk@1.1.1
+205 silly currentTree │ │ │ │ ├── ansi-styles@2.1.0
+205 silly currentTree │ │ │ │ ├── escape-string-regexp@1.0.3
+205 silly currentTree │ │ │ │ ├─┬ has-ansi@2.0.0
+205 silly currentTree │ │ │ │ │ └── ansi-regex@2.0.0
+205 silly currentTree │ │ │ │ ├─┬ strip-ansi@3.0.0
+205 silly currentTree │ │ │ │ │ └── ansi-regex@2.0.0
+205 silly currentTree │ │ │ │ └── supports-color@2.0.0
+205 silly currentTree │ │ │ ├─┬ commander@2.8.1
+205 silly currentTree │ │ │ │ └── graceful-readlink@1.0.1
+205 silly currentTree │ │ │ └─┬ is-my-json-valid@2.12.1
+205 silly currentTree │ │ │   ├── generate-function@2.0.0
+205 silly currentTree │ │ │   ├─┬ generate-object-property@1.2.0
+205 silly currentTree │ │ │   │ └── is-property@1.0.2
+205 silly currentTree │ │ │   ├── jsonpointer@1.1.0
+205 silly currentTree │ │ │   └── xtend@4.0.0
+205 silly currentTree │ │ ├─┬ hawk@3.1.0
+205 silly currentTree │ │ │ ├── boom@2.8.0
+205 silly currentTree │ │ │ ├── cryptiles@2.0.4
+205 silly currentTree │ │ │ ├── hoek@2.14.0
+205 silly currentTree │ │ │ └── sntp@1.0.9
+205 silly currentTree │ │ ├─┬ http-signature@0.11.0
+205 silly currentTree │ │ │ ├── asn1@0.1.11
+205 silly currentTree │ │ │ ├── assert-plus@0.1.5
+205 silly currentTree │ │ │ └── ctype@0.5.3
+205 silly currentTree │ │ ├── isstream@0.1.2
+205 silly currentTree │ │ ├── json-stringify-safe@5.0.1
+205 silly currentTree │ │ ├─┬ mime-types@2.1.5
+205 silly currentTree │ │ │ └── mime-db@1.17.0
+205 silly currentTree │ │ ├── node-uuid@1.4.3
+205 silly currentTree │ │ ├── oauth-sign@0.8.0
+205 silly currentTree │ │ ├── qs@4.0.0
+205 silly currentTree │ │ ├── stringstream@0.0.4
+205 silly currentTree │ │ ├── tough-cookie@2.0.0
+205 silly currentTree │ │ └── tunnel-agent@0.4.1
+205 silly currentTree │ ├── retry@0.6.1
+205 silly currentTree │ ├── rimraf@2.4.2
+205 silly currentTree │ ├── semver@5.0.1
+205 silly currentTree │ ├─┬ sha@1.3.0
+205 silly currentTree │ │ └── graceful-fs@3.0.8
+205 silly currentTree │ ├── slide@1.1.6
+205 silly currentTree │ ├── sorted-object@1.0.0
+205 silly currentTree │ ├─┬ spdx@0.4.1
+205 silly currentTree │ │ └── spdx-license-ids@1.0.1
+205 silly currentTree │ ├── tar@2.1.1
+205 silly currentTree │ ├── text-table@0.2.0
+205 silly currentTree │ ├── uid-number@0.0.6
+205 silly currentTree │ ├── umask@1.1.0
+205 silly currentTree │ ├─┬ validate-npm-package-license@2.0.0
+205 silly currentTree │ │ └── spdx-correct@1.0.0
+205 silly currentTree │ ├─┬ validate-npm-package-name@2.2.2
+205 silly currentTree │ │ └── builtins@0.0.7
+205 silly currentTree │ ├─┬ which@1.1.1
+205 silly currentTree │ │ └─┬ is-absolute@0.1.7
+205 silly currentTree │ │   └── is-relative@0.1.3
+205 silly currentTree │ ├── wrappy@1.0.1
+205 silly currentTree │ └─┬ write-file-atomic@1.1.2
+205 silly currentTree │   └── graceful-fs@3.0.8
+205 silly currentTree ├── nugget@1.5.4
+205 silly currentTree ├── num2fraction@1.1.0
+205 silly currentTree ├── number-is-nan@1.0.0
+205 silly currentTree ├── oauth-sign@0.8.0
+205 silly currentTree ├── object-assign@3.0.0
+205 silly currentTree ├── object-component@0.0.3
+205 silly currentTree ├── object-keys@0.4.0
+205 silly currentTree ├── object.omit@1.1.0
+205 silly currentTree ├── on-finished@2.3.0
+205 silly currentTree ├── once@1.3.2
+205 silly currentTree ├─┬ optimist@0.6.1
+205 silly currentTree │ └── minimist@0.0.10
+205 silly currentTree ├── options@0.0.6
+205 silly currentTree ├── os-browserify@0.1.2
+205 silly currentTree ├── os-tmpdir@1.0.1
+205 silly currentTree ├─┬ output-file-sync@1.1.1
+205 silly currentTree │ └── xtend@4.0.0
+205 silly currentTree ├── pako@0.2.7
+205 silly currentTree ├── parse-glob@3.0.2
+205 silly currentTree ├── parsejson@0.0.1
+205 silly currentTree ├── parseqs@0.0.2
+205 silly currentTree ├── parseuri@0.0.2
+205 silly currentTree ├── parseurl@1.3.0
+205 silly currentTree ├── path-browserify@0.0.0
+205 silly currentTree ├── path-exists@1.0.0
+205 silly currentTree ├── path-is-absolute@1.0.0
+205 silly currentTree ├── path-to-regexp@0.1.7
+205 silly currentTree ├── pbkdf2-compat@2.0.1
+205 silly currentTree ├── pend@1.2.0
+205 silly currentTree ├─┬ plist@1.1.0
+205 silly currentTree │ └── util-deprecate@1.0.0
+205 silly currentTree ├─┬ postcss@4.1.16
+205 silly currentTree │ └── source-map@0.4.4
+205 silly currentTree ├── postcss-calc@4.1.0
+205 silly currentTree ├── postcss-colormin@1.2.5
+205 silly currentTree ├── postcss-convert-values@1.2.4
+205 silly currentTree ├── postcss-discard-comments@1.2.1
+205 silly currentTree ├── postcss-discard-duplicates@1.1.5
+205 silly currentTree ├── postcss-discard-empty@1.1.2
+205 silly currentTree ├── postcss-discard-unused@1.0.3
+205 silly currentTree ├── postcss-filter-plugins@1.0.0
+205 silly currentTree ├── postcss-font-family@1.2.1
+205 silly currentTree ├── postcss-merge-idents@1.0.1
+205 silly currentTree ├── postcss-merge-longhand@1.0.2
+205 silly currentTree ├── postcss-merge-rules@1.3.5
+205 silly currentTree ├── postcss-message-helpers@2.0.0
+205 silly currentTree ├── postcss-minify-font-weight@1.0.1
+205 silly currentTree ├── postcss-minify-selectors@1.5.0
+205 silly currentTree ├── postcss-modules-extract-imports@0.0.5
+205 silly currentTree ├── postcss-modules-local-by-default@0.0.11
+205 silly currentTree ├── postcss-modules-scope@0.0.8
+205 silly currentTree ├── postcss-normalize-url@2.1.1
+205 silly currentTree ├── postcss-ordered-values@1.0.1
+205 silly currentTree ├── postcss-reduce-idents@1.0.2
+205 silly currentTree ├── postcss-selector-parser@1.1.3
+205 silly currentTree ├─┬ postcss-single-charset@0.3.0
+205 silly currentTree │ ├── fs-extra@0.14.0
+205 silly currentTree │ └── ncp@1.0.1
+205 silly currentTree ├── postcss-unique-selectors@1.0.0
+205 silly currentTree ├── postcss-value-parser@1.2.2
+205 silly currentTree ├── postcss-zindex@1.1.3
+205 silly currentTree ├── prepend-http@1.0.2
+205 silly currentTree ├── preserve@0.2.0
+205 silly currentTree ├── pretty-bytes@1.0.4
+205 silly currentTree ├── private@0.1.6
+205 silly currentTree ├── process@0.11.1
+205 silly currentTree ├── process-nextick-args@1.0.2
+205 silly currentTree ├─┬ progress-stream@1.1.1
+205 silly currentTree │ └── single-line-log@0.3.1
+205 silly currentTree ├── promise@7.0.4
+205 silly currentTree ├── proxy-addr@1.0.8
+205 silly currentTree ├── prr@0.0.0
+205 silly currentTree ├── punycode@1.3.2
+205 silly currentTree ├── q@1.1.2
+205 silly currentTree ├── qs@4.0.0
+205 silly currentTree ├── query-string@2.4.0
+205 silly currentTree ├── querystring@0.2.0
+205 silly currentTree ├── querystring-es3@0.2.1
+205 silly currentTree ├── randomatic@1.1.0
+205 silly currentTree ├── range-parser@1.0.2
+205 silly currentTree ├── rcedit@0.3.0
+205 silly currentTree ├── react@0.13.3
+205 silly currentTree ├── read-file-stdin@0.2.0
+205 silly currentTree ├── readable-stream@1.1.13
+205 silly currentTree ├─┬ readdirp@1.4.0
+205 silly currentTree │ ├── graceful-fs@4.1.2
+205 silly currentTree │ ├── minimatch@0.2.14
+205 silly currentTree │ └── readable-stream@1.0.33
+205 silly currentTree ├─┬ recast@0.10.24
+205 silly currentTree │ ├── esprima-fb@15001.1.0-dev-harmony-fb
+205 silly currentTree │ └── source-map@0.4.4
+205 silly currentTree ├─┬ reduce-css-calc@1.2.0
+205 silly currentTree │ └── balanced-match@0.1.0
+205 silly currentTree ├─┬ reduce-function-call@1.0.1
+205 silly currentTree │ └── balanced-match@0.1.0
+205 silly currentTree ├── regenerate@1.2.1
+205 silly currentTree ├─┬ regenerator@0.8.35
+205 silly currentTree │ └── esprima-fb@15001.1.0-dev-harmony-fb
+205 silly currentTree ├── regex-cache@0.4.2
+205 silly currentTree ├── regexpu@1.2.0
+205 silly currentTree ├── regjsgen@0.2.0
+205 silly currentTree ├── regjsparser@0.1.5
+205 silly currentTree ├── repeat-element@1.1.2
+205 silly currentTree ├── repeat-string@1.5.2
+205 silly currentTree ├── repeating@1.1.3
+205 silly currentTree ├── request@2.61.0
+205 silly currentTree ├── requires-port@0.0.1
+205 silly currentTree ├── resolve@1.1.6
+205 silly currentTree ├── right-align@0.1.3
+205 silly currentTree ├── rimraf@2.4.3
+205 silly currentTree ├── ripemd160@0.2.0
+205 silly currentTree ├── send@0.13.0
+205 silly currentTree ├── serve-index@1.7.2
+205 silly currentTree ├── serve-static@1.10.0
+205 silly currentTree ├── sha.js@2.2.6
+205 silly currentTree ├── shebang-regex@1.0.0
+205 silly currentTree ├── sigmund@1.0.1
+205 silly currentTree ├── simple-fmt@0.1.0
+205 silly currentTree ├── simple-is@0.2.0
+205 silly currentTree ├── single-line-log@0.4.1
+205 silly currentTree ├── slash@1.0.0
+205 silly currentTree ├── sntp@1.0.9
+205 silly currentTree ├─┬ socket.io@1.3.6
+205 silly currentTree │ ├── debug@2.1.0
+205 silly currentTree │ └── ms@0.6.2
+205 silly currentTree ├─┬ socket.io-adapter@0.3.1
+205 silly currentTree │ ├── debug@1.0.2
+205 silly currentTree │ ├── ms@0.6.2
+205 silly currentTree │ ├── object-keys@1.0.1
+205 silly currentTree │ └─┬ socket.io-parser@2.2.2
+205 silly currentTree │   └── debug@0.7.4
+205 silly currentTree ├─┬ socket.io-client@1.3.6
+205 silly currentTree │ ├── debug@0.7.4
+205 silly currentTree │ └── has-binary@0.1.6
+205 silly currentTree ├─┬ socket.io-parser@2.2.4
+205 silly currentTree │ └── debug@0.7.4
+205 silly currentTree ├── sort-keys@1.1.1
+205 silly currentTree ├── source-list-map@0.1.5
+205 silly currentTree ├── source-map@0.1.31
+205 silly currentTree ├─┬ source-map-support@0.2.10
+205 silly currentTree │ └── source-map@0.1.32
+205 silly currentTree ├── speedometer@0.1.4
+205 silly currentTree ├── stable@0.1.5
+205 silly currentTree ├── statuses@1.2.1
+205 silly currentTree ├── stream-browserify@1.0.0
+205 silly currentTree ├── stream-cache@0.0.2
+205 silly currentTree ├── strict-uri-encode@1.0.2
+205 silly currentTree ├── string_decoder@0.10.31
+205 silly currentTree ├── stringmap@0.2.2
+205 silly currentTree ├── stringset@0.2.1
+205 silly currentTree ├── stringstream@0.0.4
+205 silly currentTree ├── strip-ansi@3.0.0
+205 silly currentTree ├── style-loader@0.12.3
+205 silly currentTree ├── success-symbol@0.1.0
+205 silly currentTree ├── supports-color@2.0.0
+205 silly currentTree ├── tapable@0.1.9
+205 silly currentTree ├── throttleit@0.0.2
+205 silly currentTree ├── through@2.3.8
+205 silly currentTree ├── through2@0.2.3
+205 silly currentTree ├── timers-browserify@1.4.1
+205 silly currentTree ├── to-array@0.1.3
+205 silly currentTree ├── to-fast-properties@1.0.1
+205 silly currentTree ├── tough-cookie@2.0.0
+205 silly currentTree ├── trim-right@1.0.1
+205 silly currentTree ├── try-resolve@1.0.1
+205 silly currentTree ├── tryor@0.1.2
+205 silly currentTree ├── tty-browserify@0.0.0
+205 silly currentTree ├── tunnel-agent@0.4.1
+205 silly currentTree ├── type-is@1.6.7
+205 silly currentTree ├── typedarray@0.0.6
+205 silly currentTree ├─┬ uglify-js@2.4.24
+205 silly currentTree │ ├── async@0.2.10
+205 silly currentTree │ ├── source-map@0.1.34
+205 silly currentTree │ ├── window-size@0.1.0
+205 silly currentTree │ └── yargs@3.5.4
+205 silly currentTree ├── uglify-to-browserify@1.0.2
+205 silly currentTree ├── ultron@1.0.2
+205 silly currentTree ├── uniq@1.0.1
+205 silly currentTree ├── uniqid@1.0.0
+205 silly currentTree ├── uniqs@2.0.0
+205 silly currentTree ├── unpipe@1.0.0
+205 silly currentTree ├── url@0.10.3
+205 silly currentTree ├── user-home@1.1.1
+205 silly currentTree ├─┬ utf-8-validate@1.1.0
+205 silly currentTree │ └── nan@1.8.4
+205 silly currentTree ├── utf8@2.0.0
+205 silly currentTree ├── util@0.10.3
+205 silly currentTree ├── util-deprecate@1.0.1
+205 silly currentTree ├── utils-merge@1.0.0
+205 silly currentTree ├── vary@1.0.1
+205 silly currentTree ├── vm-browserify@0.0.4
+205 silly currentTree ├─┬ watchpack@0.2.8
+205 silly currentTree │ └── async@0.9.2
+205 silly currentTree ├─┬ webpack@1.12.0
+205 silly currentTree │ ├── esprima@2.6.0
+205 silly currentTree │ └── supports-color@3.1.0
+205 silly currentTree ├─┬ webpack-core@0.6.6
+205 silly currentTree │ └── source-map@0.4.4
+205 silly currentTree ├── webpack-dev-middleware@1.2.0
+205 silly currentTree ├─┬ webpack-dev-server@1.10.1
+205 silly currentTree │ ├── ansi-regex@1.1.1
+205 silly currentTree │ ├── strip-ansi@2.0.1
+205 silly currentTree │ └── supports-color@1.3.1
+205 silly currentTree ├── window-size@0.1.2
+205 silly currentTree ├── wordwrap@0.0.2
+205 silly currentTree ├── wrappy@1.0.1
+205 silly currentTree ├── write-file-stdout@0.0.2
+205 silly currentTree ├── ws@0.7.2
+205 silly currentTree ├── xmlbuilder@2.2.1
+205 silly currentTree ├── xmldom@0.1.19
+205 silly currentTree ├── xmlhttprequest@1.5.0
+205 silly currentTree ├── xtend@2.1.2
+205 silly currentTree ├── y18n@3.1.0
+205 silly currentTree ├── yargs@1.3.3
+205 silly currentTree └── yauzl@2.3.1
+206 silly idealTree my-electron-app@0.1.0
+206 silly idealTree ├── accepts@1.2.12
+206 silly idealTree ├── after@0.8.1
+206 silly idealTree ├─┬ align-text@0.1.3
+206 silly idealTree │ └── kind-of@2.0.0
+206 silly idealTree ├── alter@0.2.0
+206 silly idealTree ├── amdefine@1.0.0
+206 silly idealTree ├── ansi-green@0.1.1
+206 silly idealTree ├── ansi-regex@2.0.0
+206 silly idealTree ├── ansi-styles@2.1.0
+206 silly idealTree ├── ansi-wrap@0.1.0
+206 silly idealTree ├── anymatch@1.3.0
+206 silly idealTree ├── arr-diff@1.0.1
+206 silly idealTree ├── array-flatten@1.1.1
+206 silly idealTree ├── array-slice@0.2.3
+206 silly idealTree ├── array-unique@0.2.1
+206 silly idealTree ├── arraybuffer.slice@0.0.6
+206 silly idealTree ├── arrify@1.0.0
+206 silly idealTree ├── asap@2.0.3
+206 silly idealTree ├─┬ asar@0.6.1
+206 silly idealTree │ ├── commander@2.3.0
+206 silly idealTree │ └── minimatch@2.0.4
+206 silly idealTree ├── asn1@0.1.11
+206 silly idealTree ├── assert@1.3.0
+206 silly idealTree ├── assert-plus@0.1.5
+206 silly idealTree ├── ast-traverse@0.1.1
+206 silly idealTree ├── ast-types@0.8.5
+206 silly idealTree ├── async@1.4.2
+206 silly idealTree ├── async-each@0.1.6
+206 silly idealTree ├── autoprefixer-core@5.2.1
+206 silly idealTree ├── aws-sign2@0.5.0
+206 silly idealTree ├─┬ babel@5.8.23
+206 silly idealTree │ └── source-map@0.4.4
+206 silly idealTree ├─┬ babel-core@5.8.23
+206 silly idealTree │ └── source-map@0.4.4
+206 silly idealTree ├── babel-loader@5.3.2
+206 silly idealTree ├── babel-plugin-constant-folding@1.0.1
+206 silly idealTree ├── babel-plugin-dead-code-elimination@1.0.2
+206 silly idealTree ├── babel-plugin-eval@1.0.1
+206 silly idealTree ├── babel-plugin-inline-environment-variables@1.0.1
+206 silly idealTree ├── babel-plugin-jscript@1.0.4
+206 silly idealTree ├── babel-plugin-member-expression-literals@1.0.1
+206 silly idealTree ├── babel-plugin-property-literals@1.0.1
+206 silly idealTree ├── babel-plugin-proto-to-assign@1.0.4
+206 silly idealTree ├── babel-plugin-react-constant-elements@1.0.3
+206 silly idealTree ├── babel-plugin-react-display-name@1.0.3
+206 silly idealTree ├── babel-plugin-remove-console@1.0.1
+206 silly idealTree ├── babel-plugin-remove-debugger@1.0.1
+206 silly idealTree ├── babel-plugin-runtime@1.0.7
+206 silly idealTree ├── babel-plugin-undeclared-variables-check@1.0.2
+206 silly idealTree ├── babel-plugin-undefined-to-void@1.1.6
+206 silly idealTree ├── babylon@5.8.23
+206 silly idealTree ├── backo2@1.0.2
+206 silly idealTree ├── balanced-match@0.2.0
+206 silly idealTree ├── base62@0.1.1
+206 silly idealTree ├── Base64@0.2.1
+206 silly idealTree ├── base64-arraybuffer@0.1.2
+206 silly idealTree ├── base64-js@0.0.6
+206 silly idealTree ├── base64id@0.1.0
+206 silly idealTree ├── batch@0.5.2
+206 silly idealTree ├── benchmark@1.0.0
+206 silly idealTree ├── better-assert@1.0.2
+206 silly idealTree ├── big.js@3.1.3
+206 silly idealTree ├── binary-extensions@1.3.1
+206 silly idealTree ├── bindings@1.2.1
+206 silly idealTree ├─┬ bl@1.0.0
+206 silly idealTree │ └── readable-stream@2.0.2
+206 silly idealTree ├── blob@0.0.2
+206 silly idealTree ├── bluebird@2.9.34
+206 silly idealTree ├── boom@2.8.0
+206 silly idealTree ├── brace-expansion@1.1.0
+206 silly idealTree ├── braces@1.8.0
+206 silly idealTree ├── breakable@1.0.0
+206 silly idealTree ├── browserify-zlib@0.1.4
+206 silly idealTree ├── browserslist@0.4.0
+206 silly idealTree ├─┬ buffer@3.4.2
+206 silly idealTree │ └── base64-js@0.0.8
+206 silly idealTree ├─┬ bufferutil@1.1.0
+206 silly idealTree │ └── nan@1.8.4
+206 silly idealTree ├── callsite@1.0.0
+206 silly idealTree ├── camelcase@1.2.1
+206 silly idealTree ├── camelcase-keys@1.0.0
+206 silly idealTree ├── caniuse-db@1.0.30000276
+206 silly idealTree ├── caseless@0.11.0
+206 silly idealTree ├── center-align@0.1.1
+206 silly idealTree ├── chalk@1.1.1
+206 silly idealTree ├── chokidar@1.0.5
+206 silly idealTree ├── chromium-pickle-js@0.1.0
+206 silly idealTree ├── cliui@2.1.0
+206 silly idealTree ├── clone@1.0.2
+206 silly idealTree ├── color@0.10.1
+206 silly idealTree ├── color-convert@0.5.3
+206 silly idealTree ├── color-name@1.0.0
+206 silly idealTree ├── color-string@0.3.0
+206 silly idealTree ├── colormin@1.0.4
+206 silly idealTree ├── combined-stream@1.0.5
+206 silly idealTree ├── commander@2.8.1
+206 silly idealTree ├─┬ commoner@0.10.3
+206 silly idealTree │ ├── commander@2.5.1
+206 silly idealTree │ ├── glob@4.2.2
+206 silly idealTree │ └── minimatch@1.0.0
+206 silly idealTree ├── component-bind@1.0.0
+206 silly idealTree ├── component-emitter@1.1.2
+206 silly idealTree ├── component-inherit@0.0.3
+206 silly idealTree ├── concat-map@0.0.1
+206 silly idealTree ├─┬ concat-stream@1.5.0
+206 silly idealTree │ └── readable-stream@2.0.2
+206 silly idealTree ├── connect-history-api-fallback@1.1.0
+206 silly idealTree ├── console-browserify@1.1.0
+206 silly idealTree ├── constants-browserify@0.0.1
+206 silly idealTree ├── content-disposition@0.5.0
+206 silly idealTree ├── content-type@1.0.1
+206 silly idealTree ├── convert-source-map@1.1.1
+206 silly idealTree ├── cookie@0.1.3
+206 silly idealTree ├── cookie-signature@1.0.6
+206 silly idealTree ├── core-js@1.1.3
+206 silly idealTree ├── core-util-is@1.0.1
+206 silly idealTree ├── cryptiles@2.0.4
+206 silly idealTree ├── crypto-browserify@3.2.8
+206 silly idealTree ├── css-color-names@0.0.1
+206 silly idealTree ├── css-list@0.1.2
+206 silly idealTree ├── css-loader@0.15.6
+206 silly idealTree ├── css-selector-tokenizer@0.5.4
+206 silly idealTree ├── cssesc@0.1.0
+206 silly idealTree ├── cssnano@2.6.1
+206 silly idealTree ├── ctype@0.5.3
+206 silly idealTree ├── cuint@0.1.5
+206 silly idealTree ├── date-now@0.1.4
+206 silly idealTree ├── debug@2.2.0
+206 silly idealTree ├── decamelize@1.0.0
+206 silly idealTree ├─┬ define-properties@1.1.1
+206 silly idealTree │ └── object-keys@1.0.7
+206 silly idealTree ├── defined@1.0.0
+206 silly idealTree ├─┬ defs@1.1.0
+206 silly idealTree │ └── esprima-fb@8001.1001.0-dev-harmony-fb
+206 silly idealTree ├── delayed-stream@1.0.0
+206 silly idealTree ├── depd@1.0.1
+206 silly idealTree ├── destroy@1.0.3
+206 silly idealTree ├── detect-indent@3.0.1
+206 silly idealTree ├── domain-browser@1.1.4
+206 silly idealTree ├── ee-first@1.1.1
+206 silly idealTree ├── electron-builder@1.1.0
+206 silly idealTree ├── electron-download@1.0.8
+206 silly idealTree ├── electron-packager@4.2.0
+206 silly idealTree ├── electron-prebuilt@0.28.3
+206 silly idealTree ├─┬ engine.io@1.5.2
+206 silly idealTree │ ├── debug@1.0.3
+206 silly idealTree │ └── ms@0.6.2
+206 silly idealTree ├─┬ engine.io-client@1.5.2
+206 silly idealTree │ ├── debug@1.0.4
+206 silly idealTree │ ├── ms@0.6.2
+206 silly idealTree │ └── parseuri@0.0.4
+206 silly idealTree ├── engine.io-parser@1.2.1
+206 silly idealTree ├── enhanced-resolve@0.9.0
+206 silly idealTree ├── envify@3.4.0
+206 silly idealTree ├── errno@0.1.4
+206 silly idealTree ├── es6-promise@2.3.0
+206 silly idealTree ├── escape-html@1.0.2
+206 silly idealTree ├── escape-string-regexp@1.0.3
+206 silly idealTree ├── esprima-fb@13001.1001.0-dev-harmony-fb
+206 silly idealTree ├── esutils@2.0.2
+206 silly idealTree ├── etag@1.7.0
+206 silly idealTree ├── eventemitter3@1.1.1
+206 silly idealTree ├── events@1.0.2
+206 silly idealTree ├── expand-brackets@0.1.3
+206 silly idealTree ├── expand-range@1.8.1
+206 silly idealTree ├── express@4.13.3
+206 silly idealTree ├── extend@3.0.0
+206 silly idealTree ├── extglob@0.3.1
+206 silly idealTree ├─┬ extract-zip@1.0.3
+206 silly idealTree │ ├── async@0.9.0
+206 silly idealTree │ ├── debug@0.7.4
+206 silly idealTree │ ├── minimist@0.1.0
+206 silly idealTree │ ├─┬ mkdirp@0.5.0
+206 silly idealTree │ │ └── minimist@0.0.8
+206 silly idealTree │ ├── readable-stream@1.0.33
+206 silly idealTree │ ├── through2@0.6.3
+206 silly idealTree │ └── xtend@4.0.0
+206 silly idealTree ├── fastparse@1.1.1
+206 silly idealTree ├── fd-slicer@1.0.1
+206 silly idealTree ├── filename-regex@2.0.0
+206 silly idealTree ├── fill-range@2.2.2
+206 silly idealTree ├── finalhandler@0.4.0
+206 silly idealTree ├── flatten@0.0.1
+206 silly idealTree ├── for-in@0.1.4
+206 silly idealTree ├── for-own@0.1.3
+206 silly idealTree ├── foreach@2.0.5
+206 silly idealTree ├── forever-agent@0.6.1
+206 silly idealTree ├── form-data@1.0.0-rc3
+206 silly idealTree ├── forwarded@0.1.0
+206 silly idealTree ├── fresh@0.3.0
+206 silly idealTree ├── fs-extra@0.18.4
+206 silly idealTree ├── fs-readdir-recursive@0.1.2
+206 silly idealTree ├── gather-stream@1.0.0
+206 silly idealTree ├── generate-function@2.0.0
+206 silly idealTree ├── generate-object-property@1.2.0
+206 silly idealTree ├── get-stdin@4.0.1
+206 silly idealTree ├── glob@5.0.14
+206 silly idealTree ├── glob-base@0.2.0
+206 silly idealTree ├── glob-parent@1.2.0
+206 silly idealTree ├── global@2.0.1
+206 silly idealTree ├── globals@6.4.1
+206 silly idealTree ├── graceful-fs@3.0.8
+206 silly idealTree ├── graceful-readlink@1.0.1
+206 silly idealTree ├── har-validator@1.8.0
+206 silly idealTree ├── has-ansi@2.0.0
+206 silly idealTree ├── has-binary@0.1.5
+206 silly idealTree ├── has-binary-data@0.1.3
+206 silly idealTree ├── has-cors@1.0.3
+206 silly idealTree ├── has-flag@1.0.0
+206 silly idealTree ├── hawk@3.1.0
+206 silly idealTree ├── hoek@2.14.0
+206 silly idealTree ├── home-or-tmp@1.0.0
+206 silly idealTree ├── home-path@0.1.2
+206 silly idealTree ├── http-browserify@1.7.0
+206 silly idealTree ├── http-errors@1.3.1
+206 silly idealTree ├── http-proxy@1.11.2
+206 silly idealTree ├── http-signature@0.11.0
+206 silly idealTree ├── https-browserify@0.0.0
+206 silly idealTree ├── iconv-lite@0.4.11
+206 silly idealTree ├── ieee754@1.1.6
+206 silly idealTree ├── image-size@0.3.5
+206 silly idealTree ├── indent-string@1.2.2
+206 silly idealTree ├── indexes-of@1.0.1
+206 silly idealTree ├── indexof@0.0.1
+206 silly idealTree ├── inflight@1.0.4
+206 silly idealTree ├── inherits@2.0.1
+206 silly idealTree ├── install@0.1.8
+206 silly idealTree ├── interpret@0.6.5
+206 silly idealTree ├── ipaddr.js@1.0.1
+206 silly idealTree ├── is-absolute-url@2.0.0
+206 silly idealTree ├── is-array@1.0.1
+206 silly idealTree ├── is-binary-path@1.0.1
+206 silly idealTree ├── is-dotfile@1.0.1
+206 silly idealTree ├── is-equal-shallow@0.1.3
+206 silly idealTree ├── is-extglob@1.0.0
+206 silly idealTree ├── is-finite@1.0.1
+206 silly idealTree ├── is-glob@1.1.3
+206 silly idealTree ├── is-integer@1.0.4
+206 silly idealTree ├─┬ is-my-json-valid@2.12.2
+206 silly idealTree │ └── xtend@4.0.0
+206 silly idealTree ├── is-nan@1.2.1
+206 silly idealTree ├── is-number@1.1.2
+206 silly idealTree ├── is-plain-obj@1.0.0
+206 silly idealTree ├── is-posix-bracket@0.1.0
+206 silly idealTree ├── is-primitive@2.0.0
+206 silly idealTree ├── is-property@1.0.2
+206 silly idealTree ├── isarray@0.0.1
+206 silly idealTree ├── isobject@1.0.2
+206 silly idealTree ├── isstream@0.1.2
+206 silly idealTree ├── javascript-natural-sort@0.7.1
+206 silly idealTree ├── js-base64@2.1.9
+206 silly idealTree ├── js-tokens@1.0.1
+206 silly idealTree ├── jsesc@0.5.0
+206 silly idealTree ├── json-stringify-safe@5.0.1
+206 silly idealTree ├── json3@3.2.6
+206 silly idealTree ├── json5@0.4.0
+206 silly idealTree ├── jsonfile@2.2.1
+206 silly idealTree ├── jsonpointer@2.0.0
+206 silly idealTree ├── jstransform@10.1.0
+206 silly idealTree ├── kind-of@1.1.0
+206 silly idealTree ├── left-pad@0.0.3
+206 silly idealTree ├─┬ less@2.5.1
+206 silly idealTree │ ├── asap@1.0.0
+206 silly idealTree │ ├── promise@6.1.0
+206 silly idealTree │ └── source-map@0.4.4
+206 silly idealTree ├── less-loader@2.2.0
+206 silly idealTree ├── leven@1.0.2
+206 silly idealTree ├── line-numbers@0.2.0
+206 silly idealTree ├── loader-utils@0.2.11
+206 silly idealTree ├── lodash@3.10.1
+206 silly idealTree ├── lodash-node@2.4.1
+206 silly idealTree ├── lodash._baseassign@3.2.0
+206 silly idealTree ├── lodash._basecopy@3.0.1
+206 silly idealTree ├── lodash._basetostring@3.0.1
+206 silly idealTree ├── lodash._basevalues@3.0.0
+206 silly idealTree ├── lodash._bindcallback@3.0.1
+206 silly idealTree ├── lodash._createassigner@3.1.1
+206 silly idealTree ├── lodash._createcompounder@3.0.0
+206 silly idealTree ├── lodash._getnative@3.9.1
+206 silly idealTree ├── lodash._isiterateecall@3.0.9
+206 silly idealTree ├── lodash._reinterpolate@3.0.0
+206 silly idealTree ├── lodash.assign@3.2.0
+206 silly idealTree ├── lodash.camelcase@3.0.1
+206 silly idealTree ├── lodash.deburr@3.0.2
+206 silly idealTree ├── lodash.escape@3.0.0
+206 silly idealTree ├── lodash.isarguments@3.0.4
+206 silly idealTree ├── lodash.isarray@3.0.4
+206 silly idealTree ├── lodash.keys@3.1.2
+206 silly idealTree ├── lodash.restparam@3.6.1
+206 silly idealTree ├── lodash.template@3.6.2
+206 silly idealTree ├── lodash.templatesettings@3.1.0
+206 silly idealTree ├── lodash.words@3.0.2
+206 silly idealTree ├── longest@1.0.1
+206 silly idealTree ├── lru-cache@2.6.5
+206 silly idealTree ├── map-obj@1.0.1
+206 silly idealTree ├── media-typer@0.3.0
+206 silly idealTree ├── memory-fs@0.2.0
+206 silly idealTree ├── meow@3.3.0
+206 silly idealTree ├── merge-descriptors@1.0.0
+206 silly idealTree ├── methods@1.1.1
+206 silly idealTree ├── micromatch@2.2.0
+206 silly idealTree ├── mime@1.3.4
+206 silly idealTree ├── mime-db@1.17.0
+206 silly idealTree ├── mime-types@2.1.5
+206 silly idealTree ├── minimatch@2.0.10
+206 silly idealTree ├── minimist@1.2.0
+206 silly idealTree ├─┬ mkdirp@0.5.1
+206 silly idealTree │ └── minimist@0.0.8
+206 silly idealTree ├── ms@0.7.1
+206 silly idealTree ├── mv@2.1.1
+206 silly idealTree ├── nan@1.6.1
+206 silly idealTree ├── ncp@2.0.0
+206 silly idealTree ├── negotiator@0.5.3
+206 silly idealTree ├── node-balanced@0.0.14
+206 silly idealTree ├── node-libs-browser@0.5.2
+206 silly idealTree ├── node-uuid@1.4.3
+206 silly idealTree ├── normalize-selector@0.2.0
+206 silly idealTree ├── normalize-url@1.3.0
+206 silly idealTree ├─┬ npm@2.14.1
+206 silly idealTree │ ├── abbrev@1.0.7
+206 silly idealTree │ ├── ansi@0.3.0
+206 silly idealTree │ ├── ansicolors@0.3.2
+206 silly idealTree │ ├── ansistyles@0.1.3
+206 silly idealTree │ ├── archy@1.0.0
+206 silly idealTree │ ├── async-some@1.0.2
+206 silly idealTree │ ├── block-stream@0.0.8
+206 silly idealTree │ ├── char-spinner@1.0.1
+206 silly idealTree │ ├── chmodr@1.0.1
+206 silly idealTree │ ├── chownr@1.0.1
+206 silly idealTree │ ├─┬ cmd-shim@2.0.1
+206 silly idealTree │ │ └── graceful-fs@3.0.8
+206 silly idealTree │ ├─┬ columnify@1.5.2
+206 silly idealTree │ │ ├─┬ strip-ansi@3.0.0
+206 silly idealTree │ │ │ └── ansi-regex@2.0.0
+206 silly idealTree │ │ └─┬ wcwidth@1.0.0
+206 silly idealTree │ │   └─┬ defaults@1.0.2
+206 silly idealTree │ │     └── clone@0.1.19
+206 silly idealTree │ ├─┬ config-chain@1.1.9
+206 silly idealTree │ │ └── proto-list@1.2.4
+206 silly idealTree │ ├─┬ dezalgo@1.0.3
+206 silly idealTree │ │ └── asap@2.0.3
+206 silly idealTree │ ├── editor@1.0.0
+206 silly idealTree │ ├─┬ fs-vacuum@1.2.6
+206 silly idealTree │ │ └── graceful-fs@3.0.8
+206 silly idealTree │ ├─┬ fs-write-stream-atomic@1.0.3
+206 silly idealTree │ │ └── graceful-fs@3.0.8
+206 silly idealTree │ ├─┬ fstream@1.0.7
+206 silly idealTree │ │ └── graceful-fs@3.0.8
+206 silly idealTree │ ├─┬ fstream-npm@1.0.5
+206 silly idealTree │ │ └── fstream-ignore@1.0.2
+206 silly idealTree │ ├── github-url-from-git@1.4.0
+206 silly idealTree │ ├── github-url-from-username-repo@1.0.2
+206 silly idealTree │ ├─┬ glob@5.0.14
+206 silly idealTree │ │ └── path-is-absolute@1.0.0
+206 silly idealTree │ ├── graceful-fs@4.1.2
+206 silly idealTree │ ├── hosted-git-info@2.1.4
+206 silly idealTree │ ├── inflight@1.0.4
+206 silly idealTree │ ├── inherits@2.0.1
+206 silly idealTree │ ├── ini@1.3.4
+206 silly idealTree │ ├─┬ init-package-json@1.8.0
+206 silly idealTree │ │ └── promzard@0.3.0
+206 silly idealTree │ ├── lockfile@1.0.1
+206 silly idealTree │ ├── lru-cache@2.6.5
+206 silly idealTree │ ├─┬ minimatch@2.0.10
+206 silly idealTree │ │ └─┬ brace-expansion@1.1.0
+206 silly idealTree │ │   ├── balanced-match@0.2.0
+206 silly idealTree │ │   └── concat-map@0.0.1
+206 silly idealTree │ ├─┬ mkdirp@0.5.1
+206 silly idealTree │ │ └── minimist@0.0.8
+206 silly idealTree │ ├─┬ node-gyp@2.0.2
+206 silly idealTree │ │ ├─┬ glob@4.5.3
+206 silly idealTree │ │ │ └─┬ minimatch@2.0.8
+206 silly idealTree │ │ │   └─┬ brace-expansion@1.1.0
+206 silly idealTree │ │ │     ├── balanced-match@0.2.0
+206 silly idealTree │ │ │     └── concat-map@0.0.1
+206 silly idealTree │ │ ├── graceful-fs@3.0.8
+206 silly idealTree │ │ ├─┬ minimatch@1.0.0
+206 silly idealTree │ │ │ └── sigmund@1.0.1
+206 silly idealTree │ │ ├─┬ path-array@1.0.0
+206 silly idealTree │ │ │ └─┬ array-index@0.1.1
+206 silly idealTree │ │ │   └─┬ debug@2.2.0
+206 silly idealTree │ │ │     └── ms@0.7.1
+206 silly idealTree │ │ ├── semver@4.3.6
+206 silly idealTree │ │ └── tar@1.0.3
+206 silly idealTree │ ├── nopt@3.0.3
+206 silly idealTree │ ├── normalize-git-url@3.0.1
+206 silly idealTree │ ├── normalize-package-data@2.3.1
+206 silly idealTree │ ├── npm-cache-filename@1.0.2
+206 silly idealTree │ ├── npm-install-checks@1.0.6
+206 silly idealTree │ ├── npm-package-arg@4.0.2
+206 silly idealTree │ ├─┬ npm-registry-client@7.0.1
+206 silly idealTree │ │ ├── chownr@1.0.1
+206 silly idealTree │ │ ├─┬ concat-stream@1.5.0
+206 silly idealTree │ │ │ ├─┬ readable-stream@2.0.2
+206 silly idealTree │ │ │ │ ├── core-util-is@1.0.1
+206 silly idealTree │ │ │ │ ├── isarray@0.0.1
+206 silly idealTree │ │ │ │ ├── process-nextick-args@1.0.2
+206 silly idealTree │ │ │ │ ├── string_decoder@0.10.31
+206 silly idealTree │ │ │ │ └── util-deprecate@1.0.1
+206 silly idealTree │ │ │ └── typedarray@0.0.6
+206 silly idealTree │ │ └── graceful-fs@3.0.8
+206 silly idealTree │ ├── npm-user-validate@0.1.2
+206 silly idealTree │ ├─┬ npmlog@1.2.1
+206 silly idealTree │ │ ├─┬ are-we-there-yet@1.0.4
+206 silly idealTree │ │ │ └── delegates@0.1.0
+206 silly idealTree │ │ └─┬ gauge@1.2.0
+206 silly idealTree │ │   ├── has-unicode@1.0.0
+206 silly idealTree │ │   ├── lodash._basetostring@3.0.0
+206 silly idealTree │ │   ├─┬ lodash._createpadding@3.6.0
+206 silly idealTree │ │   │ └── lodash.repeat@3.0.0
+206 silly idealTree │ │   ├── lodash.pad@3.1.0
+206 silly idealTree │ │   ├── lodash.padleft@3.1.1
+206 silly idealTree │ │   └── lodash.padright@3.1.1
+206 silly idealTree │ ├── once@1.3.2
+206 silly idealTree │ ├── opener@1.4.1
+206 silly idealTree │ ├─┬ osenv@0.1.3
+206 silly idealTree │ │ ├── os-homedir@1.0.0
+206 silly idealTree │ │ └── os-tmpdir@1.0.1
+206 silly idealTree │ ├── path-is-inside@1.0.1
+206 silly idealTree │ ├─┬ read@1.0.6
+206 silly idealTree │ │ └── mute-stream@0.0.5
+206 silly idealTree │ ├─┬ read-installed@4.0.2
+206 silly idealTree │ │ ├── debuglog@1.0.1
+206 silly idealTree │ │ ├── graceful-fs@3.0.8
+206 silly idealTree │ │ ├── readdir-scoped-modules@1.0.1
+206 silly idealTree │ │ └── util-extend@1.0.1
+206 silly idealTree │ ├─┬ read-package-json@2.0.0
+206 silly idealTree │ │ ├── graceful-fs@3.0.8
+206 silly idealTree │ │ └─┬ json-parse-helpfulerror@1.0.3
+206 silly idealTree │ │   └── jju@1.2.0
+206 silly idealTree │ ├─┬ readable-stream@1.1.13
+206 silly idealTree │ │ ├── core-util-is@1.0.1
+206 silly idealTree │ │ ├── isarray@0.0.1
+206 silly idealTree │ │ └── string_decoder@0.10.31
+206 silly idealTree │ ├── realize-package-specifier@3.0.1
+206 silly idealTree │ ├─┬ request@2.61.0
+206 silly idealTree │ │ ├── aws-sign2@0.5.0
+206 silly idealTree │ │ ├─┬ bl@1.0.0
+206 silly idealTree │ │ │ └─┬ readable-stream@2.0.2
+206 silly idealTree │ │ │   ├── core-util-is@1.0.1
+206 silly idealTree │ │ │   ├── isarray@0.0.1
+206 silly idealTree │ │ │   ├── process-nextick-args@1.0.2
+206 silly idealTree │ │ │   ├── string_decoder@0.10.31
+206 silly idealTree │ │ │   └── util-deprecate@1.0.1
+206 silly idealTree │ │ ├── caseless@0.11.0
+206 silly idealTree │ │ ├─┬ combined-stream@1.0.5
+206 silly idealTree │ │ │ └── delayed-stream@1.0.0
+206 silly idealTree │ │ ├── extend@3.0.0
+206 silly idealTree │ │ ├── forever-agent@0.6.1
+206 silly idealTree │ │ ├─┬ form-data@1.0.0-rc3
+206 silly idealTree │ │ │ └── async@1.4.2
+206 silly idealTree │ │ ├─┬ har-validator@1.8.0
+206 silly idealTree │ │ │ ├── bluebird@2.9.34
+206 silly idealTree │ │ │ ├─┬ chalk@1.1.1
+206 silly idealTree │ │ │ │ ├── ansi-styles@2.1.0
+206 silly idealTree │ │ │ │ ├── escape-string-regexp@1.0.3
+206 silly idealTree │ │ │ │ ├─┬ has-ansi@2.0.0
+206 silly idealTree │ │ │ │ │ └── ansi-regex@2.0.0
+206 silly idealTree │ │ │ │ ├─┬ strip-ansi@3.0.0
+206 silly idealTree │ │ │ │ │ └── ansi-regex@2.0.0
+206 silly idealTree │ │ │ │ └── supports-color@2.0.0
+206 silly idealTree │ │ │ ├─┬ commander@2.8.1
+206 silly idealTree │ │ │ │ └── graceful-readlink@1.0.1
+206 silly idealTree │ │ │ └─┬ is-my-json-valid@2.12.1
+206 silly idealTree │ │ │   ├── generate-function@2.0.0
+206 silly idealTree │ │ │   ├─┬ generate-object-property@1.2.0
+206 silly idealTree │ │ │   │ └── is-property@1.0.2
+206 silly idealTree │ │ │   ├── jsonpointer@1.1.0
+206 silly idealTree │ │ │   └── xtend@4.0.0
+206 silly idealTree │ │ ├─┬ hawk@3.1.0
+206 silly idealTree │ │ │ ├── boom@2.8.0
+206 silly idealTree │ │ │ ├── cryptiles@2.0.4
+206 silly idealTree │ │ │ ├── hoek@2.14.0
+206 silly idealTree │ │ │ └── sntp@1.0.9
+206 silly idealTree │ │ ├─┬ http-signature@0.11.0
+206 silly idealTree │ │ │ ├── asn1@0.1.11
+206 silly idealTree │ │ │ ├── assert-plus@0.1.5
+206 silly idealTree │ │ │ └── ctype@0.5.3
+206 silly idealTree │ │ ├── isstream@0.1.2
+206 silly idealTree │ │ ├── json-stringify-safe@5.0.1
+206 silly idealTree │ │ ├─┬ mime-types@2.1.5
+206 silly idealTree │ │ │ └── mime-db@1.17.0
+206 silly idealTree │ │ ├── node-uuid@1.4.3
+206 silly idealTree │ │ ├── oauth-sign@0.8.0
+206 silly idealTree │ │ ├── qs@4.0.0
+206 silly idealTree │ │ ├── stringstream@0.0.4
+206 silly idealTree │ │ ├── tough-cookie@2.0.0
+206 silly idealTree │ │ └── tunnel-agent@0.4.1
+206 silly idealTree │ ├── retry@0.6.1
+206 silly idealTree │ ├── rimraf@2.4.2
+206 silly idealTree │ ├── semver@5.0.1
+206 silly idealTree │ ├─┬ sha@1.3.0
+206 silly idealTree │ │ └── graceful-fs@3.0.8
+206 silly idealTree │ ├── slide@1.1.6
+206 silly idealTree │ ├── sorted-object@1.0.0
+206 silly idealTree │ ├─┬ spdx@0.4.1
+206 silly idealTree │ │ └── spdx-license-ids@1.0.1
+206 silly idealTree │ ├── tar@2.1.1
+206 silly idealTree │ ├── text-table@0.2.0
+206 silly idealTree │ ├── uid-number@0.0.6
+206 silly idealTree │ ├── umask@1.1.0
+206 silly idealTree │ ├─┬ validate-npm-package-license@2.0.0
+206 silly idealTree │ │ └── spdx-correct@1.0.0
+206 silly idealTree │ ├─┬ validate-npm-package-name@2.2.2
+206 silly idealTree │ │ └── builtins@0.0.7
+206 silly idealTree │ ├─┬ which@1.1.1
+206 silly idealTree │ │ └─┬ is-absolute@0.1.7
+206 silly idealTree │ │   └── is-relative@0.1.3
+206 silly idealTree │ ├── wrappy@1.0.1
+206 silly idealTree │ └─┬ write-file-atomic@1.1.2
+206 silly idealTree │   └── graceful-fs@3.0.8
+206 silly idealTree ├── nslog@2.0.0
+206 silly idealTree ├── nugget@1.5.4
+206 silly idealTree ├── num2fraction@1.1.0
+206 silly idealTree ├── number-is-nan@1.0.0
+206 silly idealTree ├── oauth-sign@0.8.0
+206 silly idealTree ├── object-assign@3.0.0
+206 silly idealTree ├── object-component@0.0.3
+206 silly idealTree ├── object-keys@0.4.0
+206 silly idealTree ├── object.omit@1.1.0
+206 silly idealTree ├── on-finished@2.3.0
+206 silly idealTree ├── once@1.3.2
+206 silly idealTree ├─┬ optimist@0.6.1
+206 silly idealTree │ └── minimist@0.0.10
+206 silly idealTree ├── options@0.0.6
+206 silly idealTree ├── os-browserify@0.1.2
+206 silly idealTree ├── os-tmpdir@1.0.1
+206 silly idealTree ├─┬ output-file-sync@1.1.1
+206 silly idealTree │ └── xtend@4.0.0
+206 silly idealTree ├── pako@0.2.7
+206 silly idealTree ├── parse-glob@3.0.2
+206 silly idealTree ├── parsejson@0.0.1
+206 silly idealTree ├── parseqs@0.0.2
+206 silly idealTree ├── parseuri@0.0.2
+206 silly idealTree ├── parseurl@1.3.0
+206 silly idealTree ├── path-browserify@0.0.0
+206 silly idealTree ├── path-exists@1.0.0
+206 silly idealTree ├── path-is-absolute@1.0.0
+206 silly idealTree ├── path-to-regexp@0.1.7
+206 silly idealTree ├── pbkdf2-compat@2.0.1
+206 silly idealTree ├── pend@1.2.0
+206 silly idealTree ├─┬ plist@1.1.0
+206 silly idealTree │ └── util-deprecate@1.0.0
+206 silly idealTree ├─┬ postcss@4.1.16
+206 silly idealTree │ └── source-map@0.4.4
+206 silly idealTree ├── postcss-calc@4.1.0
+206 silly idealTree ├── postcss-colormin@1.2.5
+206 silly idealTree ├── postcss-convert-values@1.2.4
+206 silly idealTree ├── postcss-discard-comments@1.2.1
+206 silly idealTree ├── postcss-discard-duplicates@1.1.5
+206 silly idealTree ├── postcss-discard-empty@1.1.2
+206 silly idealTree ├── postcss-discard-unused@1.0.3
+206 silly idealTree ├── postcss-filter-plugins@1.0.0
+206 silly idealTree ├── postcss-font-family@1.2.1
+206 silly idealTree ├── postcss-merge-idents@1.0.1
+206 silly idealTree ├── postcss-merge-longhand@1.0.2
+206 silly idealTree ├── postcss-merge-rules@1.3.5
+206 silly idealTree ├── postcss-message-helpers@2.0.0
+206 silly idealTree ├── postcss-minify-font-weight@1.0.1
+206 silly idealTree ├── postcss-minify-selectors@1.5.0
+206 silly idealTree ├── postcss-modules-extract-imports@0.0.5
+206 silly idealTree ├── postcss-modules-local-by-default@0.0.11
+206 silly idealTree ├── postcss-modules-scope@0.0.8
+206 silly idealTree ├── postcss-normalize-url@2.1.1
+206 silly idealTree ├── postcss-ordered-values@1.0.1
+206 silly idealTree ├── postcss-reduce-idents@1.0.2
+206 silly idealTree ├── postcss-selector-parser@1.1.3
+206 silly idealTree ├─┬ postcss-single-charset@0.3.0
+206 silly idealTree │ ├── fs-extra@0.14.0
+206 silly idealTree │ └── ncp@1.0.1
+206 silly idealTree ├── postcss-unique-selectors@1.0.0
+206 silly idealTree ├── postcss-value-parser@1.2.2
+206 silly idealTree ├── postcss-zindex@1.1.3
+206 silly idealTree ├── prepend-http@1.0.2
+206 silly idealTree ├── preserve@0.2.0
+206 silly idealTree ├── pretty-bytes@1.0.4
+206 silly idealTree ├── private@0.1.6
+206 silly idealTree ├── process@0.11.1
+206 silly idealTree ├── process-nextick-args@1.0.2
+206 silly idealTree ├─┬ progress-stream@1.1.1
+206 silly idealTree │ └── single-line-log@0.3.1
+206 silly idealTree ├── promise@7.0.4
+206 silly idealTree ├── proxy-addr@1.0.8
+206 silly idealTree ├── prr@0.0.0
+206 silly idealTree ├── punycode@1.3.2
+206 silly idealTree ├── q@1.1.2
+206 silly idealTree ├── qs@4.0.0
+206 silly idealTree ├── query-string@2.4.0
+206 silly idealTree ├── querystring@0.2.0
+206 silly idealTree ├── querystring-es3@0.2.1
+206 silly idealTree ├── randomatic@1.1.0
+206 silly idealTree ├── range-parser@1.0.2
+206 silly idealTree ├── rcedit@0.3.0
+206 silly idealTree ├── react@0.13.3
+206 silly idealTree ├── read-file-stdin@0.2.0
+206 silly idealTree ├── readable-stream@1.1.13
+206 silly idealTree ├─┬ readdirp@1.4.0
+206 silly idealTree │ ├── graceful-fs@4.1.2
+206 silly idealTree │ ├── minimatch@0.2.14
+206 silly idealTree │ └── readable-stream@1.0.33
+206 silly idealTree ├─┬ recast@0.10.24
+206 silly idealTree │ ├── esprima-fb@15001.1.0-dev-harmony-fb
+206 silly idealTree │ └── source-map@0.4.4
+206 silly idealTree ├─┬ reduce-css-calc@1.2.0
+206 silly idealTree │ └── balanced-match@0.1.0
+206 silly idealTree ├─┬ reduce-function-call@1.0.1
+206 silly idealTree │ └── balanced-match@0.1.0
+206 silly idealTree ├── regenerate@1.2.1
+206 silly idealTree ├─┬ regenerator@0.8.35
+206 silly idealTree │ └── esprima-fb@15001.1.0-dev-harmony-fb
+206 silly idealTree ├── regex-cache@0.4.2
+206 silly idealTree ├── regexpu@1.2.0
+206 silly idealTree ├── regjsgen@0.2.0
+206 silly idealTree ├── regjsparser@0.1.5
+206 silly idealTree ├── repeat-element@1.1.2
+206 silly idealTree ├── repeat-string@1.5.2
+206 silly idealTree ├── repeating@1.1.3
+206 silly idealTree ├── request@2.61.0
+206 silly idealTree ├── requires-port@0.0.1
+206 silly idealTree ├── resolve@1.1.6
+206 silly idealTree ├── right-align@0.1.3
+206 silly idealTree ├── rimraf@2.4.3
+206 silly idealTree ├── ripemd160@0.2.0
+206 silly idealTree ├── send@0.13.0
+206 silly idealTree ├── serve-index@1.7.2
+206 silly idealTree ├── serve-static@1.10.0
+206 silly idealTree ├── sha.js@2.2.6
+206 silly idealTree ├── shebang-regex@1.0.0
+206 silly idealTree ├── sigmund@1.0.1
+206 silly idealTree ├── simple-fmt@0.1.0
+206 silly idealTree ├── simple-is@0.2.0
+206 silly idealTree ├── single-line-log@0.4.1
+206 silly idealTree ├── slash@1.0.0
+206 silly idealTree ├── sntp@1.0.9
+206 silly idealTree ├─┬ socket.io@1.3.6
+206 silly idealTree │ ├── debug@2.1.0
+206 silly idealTree │ └── ms@0.6.2
+206 silly idealTree ├─┬ socket.io-adapter@0.3.1
+206 silly idealTree │ ├── debug@1.0.2
+206 silly idealTree │ ├── ms@0.6.2
+206 silly idealTree │ ├── object-keys@1.0.1
+206 silly idealTree │ └─┬ socket.io-parser@2.2.2
+206 silly idealTree │   └── debug@0.7.4
+206 silly idealTree ├─┬ socket.io-client@1.3.6
+206 silly idealTree │ ├── debug@0.7.4
+206 silly idealTree │ └── has-binary@0.1.6
+206 silly idealTree ├─┬ socket.io-parser@2.2.4
+206 silly idealTree │ └── debug@0.7.4
+206 silly idealTree ├── sort-keys@1.1.1
+206 silly idealTree ├── source-list-map@0.1.5
+206 silly idealTree ├── source-map@0.1.31
+206 silly idealTree ├─┬ source-map-support@0.2.10
+206 silly idealTree │ └── source-map@0.1.32
+206 silly idealTree ├── speedometer@0.1.4
+206 silly idealTree ├── stable@0.1.5
+206 silly idealTree ├── statuses@1.2.1
+206 silly idealTree ├── stream-browserify@1.0.0
+206 silly idealTree ├── stream-cache@0.0.2
+206 silly idealTree ├── strict-uri-encode@1.0.2
+206 silly idealTree ├── string_decoder@0.10.31
+206 silly idealTree ├── stringmap@0.2.2
+206 silly idealTree ├── stringset@0.2.1
+206 silly idealTree ├── stringstream@0.0.4
+206 silly idealTree ├── strip-ansi@3.0.0
+206 silly idealTree ├── style-loader@0.12.3
+206 silly idealTree ├── success-symbol@0.1.0
+206 silly idealTree ├── supports-color@2.0.0
+206 silly idealTree ├── tapable@0.1.9
+206 silly idealTree ├── throttleit@0.0.2
+206 silly idealTree ├── through@2.3.8
+206 silly idealTree ├── through2@0.2.3
+206 silly idealTree ├── timers-browserify@1.4.1
+206 silly idealTree ├── to-array@0.1.3
+206 silly idealTree ├── to-fast-properties@1.0.1
+206 silly idealTree ├── tough-cookie@2.0.0
+206 silly idealTree ├── trim-right@1.0.1
+206 silly idealTree ├── try-resolve@1.0.1
+206 silly idealTree ├── tryor@0.1.2
+206 silly idealTree ├── tty-browserify@0.0.0
+206 silly idealTree ├── tunnel-agent@0.4.1
+206 silly idealTree ├── type-is@1.6.7
+206 silly idealTree ├── typedarray@0.0.6
+206 silly idealTree ├─┬ uglify-js@2.4.24
+206 silly idealTree │ ├── async@0.2.10
+206 silly idealTree │ ├── source-map@0.1.34
+206 silly idealTree │ ├── window-size@0.1.0
+206 silly idealTree │ └── yargs@3.5.4
+206 silly idealTree ├── uglify-to-browserify@1.0.2
+206 silly idealTree ├── ultron@1.0.2
+206 silly idealTree ├── uniq@1.0.1
+206 silly idealTree ├── uniqid@1.0.0
+206 silly idealTree ├── uniqs@2.0.0
+206 silly idealTree ├── unpipe@1.0.0
+206 silly idealTree ├── url@0.10.3
+206 silly idealTree ├── user-home@1.1.1
+206 silly idealTree ├─┬ utf-8-validate@1.1.0
+206 silly idealTree │ └── nan@1.8.4
+206 silly idealTree ├── utf8@2.0.0
+206 silly idealTree ├── util@0.10.3
+206 silly idealTree ├── util-deprecate@1.0.1
+206 silly idealTree ├── utils-merge@1.0.0
+206 silly idealTree ├── vary@1.0.1
+206 silly idealTree ├── vm-browserify@0.0.4
+206 silly idealTree ├─┬ watchpack@0.2.8
+206 silly idealTree │ └── async@0.9.2
+206 silly idealTree ├─┬ webpack@1.12.0
+206 silly idealTree │ ├── esprima@2.6.0
+206 silly idealTree │ └── supports-color@3.1.0
+206 silly idealTree ├─┬ webpack-core@0.6.6
+206 silly idealTree │ └── source-map@0.4.4
+206 silly idealTree ├── webpack-dev-middleware@1.2.0
+206 silly idealTree ├─┬ webpack-dev-server@1.10.1
+206 silly idealTree │ ├── ansi-regex@1.1.1
+206 silly idealTree │ ├── strip-ansi@2.0.1
+206 silly idealTree │ └── supports-color@1.3.1
+206 silly idealTree ├── window-size@0.1.2
+206 silly idealTree ├── wordwrap@0.0.2
+206 silly idealTree ├── wrappy@1.0.1
+206 silly idealTree ├── write-file-stdout@0.0.2
+206 silly idealTree ├── ws@0.7.2
+206 silly idealTree ├── xmlbuilder@2.2.1
+206 silly idealTree ├── xmldom@0.1.19
+206 silly idealTree ├── xmlhttprequest@1.5.0
+206 silly idealTree ├── xtend@2.1.2
+206 silly idealTree ├── y18n@3.1.0
+206 silly idealTree ├── yargs@1.3.3
+206 silly idealTree └── yauzl@2.3.1
+207 silly generateActionsToTake Starting
+208 silly install generateActionsToTake
+209 silly generateActionsToTake Finishing
+210 silly diffTrees action count 4
+211 silly diffTrees add nan@1.8.4
+212 silly diffTrees add bufferutil@1.1.0
+213 silly diffTrees add nan@1.6.1
+214 silly diffTrees add nslog@2.0.0
+215 silly decomposeActions action count 32
+216 silly decomposeActions fetch nan@1.8.4
+217 silly decomposeActions extract nan@1.8.4
+218 silly decomposeActions preinstall nan@1.8.4
+219 silly decomposeActions build nan@1.8.4
+220 silly decomposeActions install nan@1.8.4
+221 silly decomposeActions postinstall nan@1.8.4
+222 silly decomposeActions test nan@1.8.4
+223 silly decomposeActions finalize nan@1.8.4
+224 silly decomposeActions fetch bufferutil@1.1.0
+225 silly decomposeActions extract bufferutil@1.1.0
+226 silly decomposeActions preinstall bufferutil@1.1.0
+227 silly decomposeActions build bufferutil@1.1.0
+228 silly decomposeActions install bufferutil@1.1.0
+229 silly decomposeActions postinstall bufferutil@1.1.0
+230 silly decomposeActions test bufferutil@1.1.0
+231 silly decomposeActions finalize bufferutil@1.1.0
+232 silly decomposeActions fetch nan@1.6.1
+233 silly decomposeActions extract nan@1.6.1
+234 silly decomposeActions preinstall nan@1.6.1
+235 silly decomposeActions build nan@1.6.1
+236 silly decomposeActions install nan@1.6.1
+237 silly decomposeActions postinstall nan@1.6.1
+238 silly decomposeActions test nan@1.6.1
+239 silly decomposeActions finalize nan@1.6.1
+240 silly decomposeActions fetch nslog@2.0.0
+241 silly decomposeActions extract nslog@2.0.0
+242 silly decomposeActions preinstall nslog@2.0.0
+243 silly decomposeActions build nslog@2.0.0
+244 silly decomposeActions install nslog@2.0.0
+245 silly decomposeActions postinstall nslog@2.0.0
+246 silly decomposeActions test nslog@2.0.0
+247 silly decomposeActions finalize nslog@2.0.0
+248 silly executeActions Starting
+249 silly install executeActions
+250 silly doSerial global-install 0
+251 silly doParallel fetch 4
+252 verbose lock using C:\Users\huangguangyao\AppData\Roaming\npm-cache\_locks\staging-d329b4776e3f4ada.lock for D:\electronreact\electron-react-tutorial\node_modules\.staging
+253 silly doParallel extract 4
+254 silly extract nan
+255 silly extract bufferutil
+256 silly extract nan
+257 silly extract nslog
+258 verbose unbuild node_modules\.staging\bufferutil-de35c469e9bb545a01ee48800f0bbb41
+259 verbose unbuild node_modules\.staging\nan-ab3050fa4c90beb3a0723cbd235a3380
+260 verbose unbuild node_modules\.staging\nslog-036f0c6497edeccecd17a9f4627025e7
+261 verbose unbuild node_modules\.staging\nan-cf3da099a56ad11d3ef0db9b0e0bbe22
+262 silly gentlyRm D:\electronreact\electron-react-tutorial\node_modules\.staging\bufferutil-de35c469e9bb545a01ee48800f0bbb41 is being purged from base D:\electronreact\electron-react-tutorial
+263 silly gentlyRm D:\electronreact\electron-react-tutorial\node_modules\.staging\nan-ab3050fa4c90beb3a0723cbd235a3380 is being purged from base D:\electronreact\electron-react-tutorial
+264 silly gentlyRm D:\electronreact\electron-react-tutorial\node_modules\.staging\nslog-036f0c6497edeccecd17a9f4627025e7 is being purged from base D:\electronreact\electron-react-tutorial
+265 silly gentlyRm D:\electronreact\electron-react-tutorial\node_modules\.staging\nan-cf3da099a56ad11d3ef0db9b0e0bbe22 is being purged from base D:\electronreact\electron-react-tutorial
+266 verbose gentlyRm don't care about contents; nuking D:\electronreact\electron-react-tutorial\node_modules\.staging\bufferutil-de35c469e9bb545a01ee48800f0bbb41
+267 verbose gentlyRm don't care about contents; nuking D:\electronreact\electron-react-tutorial\node_modules\.staging\nan-ab3050fa4c90beb3a0723cbd235a3380
+268 verbose gentlyRm don't care about contents; nuking D:\electronreact\electron-react-tutorial\node_modules\.staging\nslog-036f0c6497edeccecd17a9f4627025e7
+269 verbose gentlyRm don't care about contents; nuking D:\electronreact\electron-react-tutorial\node_modules\.staging\nan-cf3da099a56ad11d3ef0db9b0e0bbe22
+270 verbose tar unpack C:\Users\huangguangyao\AppData\Roaming\npm-cache\bufferutil\1.1.0\package.tgz
+271 verbose tar unpacking to D:\electronreact\electron-react-tutorial\node_modules\.staging\bufferutil-de35c469e9bb545a01ee48800f0bbb41
+272 silly gentlyRm D:\electronreact\electron-react-tutorial\node_modules\.staging\bufferutil-de35c469e9bb545a01ee48800f0bbb41 is being purged
+273 verbose tar unpack C:\Users\huangguangyao\AppData\Roaming\npm-cache\nan\1.8.4\package.tgz
+274 verbose tar unpacking to D:\electronreact\electron-react-tutorial\node_modules\.staging\nan-ab3050fa4c90beb3a0723cbd235a3380
+275 silly gentlyRm D:\electronreact\electron-react-tutorial\node_modules\.staging\nan-ab3050fa4c90beb3a0723cbd235a3380 is being purged
+276 verbose tar unpack C:\Users\huangguangyao\AppData\Roaming\npm-cache\nslog\2.0.0\package.tgz
+277 verbose tar unpacking to D:\electronreact\electron-react-tutorial\node_modules\.staging\nslog-036f0c6497edeccecd17a9f4627025e7
+278 silly gentlyRm D:\electronreact\electron-react-tutorial\node_modules\.staging\nslog-036f0c6497edeccecd17a9f4627025e7 is being purged
+279 verbose tar unpack C:\Users\huangguangyao\AppData\Roaming\npm-cache\nan\1.6.1\package.tgz
+280 verbose tar unpacking to D:\electronreact\electron-react-tutorial\node_modules\.staging\nan-cf3da099a56ad11d3ef0db9b0e0bbe22
+281 silly gentlyRm D:\electronreact\electron-react-tutorial\node_modules\.staging\nan-cf3da099a56ad11d3ef0db9b0e0bbe22 is being purged
+282 verbose gentlyRm don't care about contents; nuking D:\electronreact\electron-react-tutorial\node_modules\.staging\bufferutil-de35c469e9bb545a01ee48800f0bbb41
+283 verbose gentlyRm don't care about contents; nuking D:\electronreact\electron-react-tutorial\node_modules\.staging\nan-ab3050fa4c90beb3a0723cbd235a3380
+284 verbose gentlyRm don't care about contents; nuking D:\electronreact\electron-react-tutorial\node_modules\.staging\nslog-036f0c6497edeccecd17a9f4627025e7
+285 verbose gentlyRm don't care about contents; nuking D:\electronreact\electron-react-tutorial\node_modules\.staging\nan-cf3da099a56ad11d3ef0db9b0e0bbe22
+286 silly gunzTarPerm modes [ '777', '666' ]
+287 silly gunzTarPerm modes [ '777', '666' ]
+288 silly gunzTarPerm modes [ '777', '666' ]
+289 silly gunzTarPerm modes [ '777', '666' ]
+290 silly gunzTarPerm extractEntry package.json
+291 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+292 silly gunzTarPerm extractEntry package.json
+293 silly gunzTarPerm modified mode [ 'package.json', 436, 438 ]
+294 silly gunzTarPerm extractEntry package.json
+295 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+296 silly gunzTarPerm extractEntry package.json
+297 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+298 silly gunzTarPerm extractEntry .npmignore
+299 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+300 silly gunzTarPerm extractEntry fallback.js
+301 silly gunzTarPerm modified mode [ 'fallback.js', 420, 438 ]
+302 silly gunzTarPerm extractEntry README.md
+303 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+304 silly gunzTarPerm extractEntry binding.gyp
+305 silly gunzTarPerm modified mode [ 'binding.gyp', 420, 438 ]
+306 silly gunzTarPerm extractEntry README.md
+307 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+308 silly gunzTarPerm extractEntry README.md
+309 silly gunzTarPerm modified mode [ 'README.md', 436, 438 ]
+310 silly gunzTarPerm extractEntry include_dirs.js
+311 silly gunzTarPerm modified mode [ 'include_dirs.js', 436, 438 ]
+312 silly gunzTarPerm extractEntry include_dirs.js
+313 silly gunzTarPerm modified mode [ 'include_dirs.js', 420, 438 ]
+314 silly gunzTarPerm extractEntry index.js
+315 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+316 silly gunzTarPerm extractEntry binding.gyp
+317 silly gunzTarPerm modified mode [ 'binding.gyp', 420, 438 ]
+318 silly gunzTarPerm extractEntry lib/nslog.js
+319 silly gunzTarPerm modified mode [ 'lib/nslog.js', 420, 438 ]
+320 silly gunzTarPerm extractEntry LICENSE.md
+321 silly gunzTarPerm modified mode [ 'LICENSE.md', 420, 438 ]
+322 silly gunzTarPerm extractEntry nan.h
+323 silly gunzTarPerm modified mode [ 'nan.h', 420, 438 ]
+324 silly gunzTarPerm extractEntry appveyor.yml
+325 silly gunzTarPerm modified mode [ 'appveyor.yml', 420, 438 ]
+326 silly gunzTarPerm extractEntry LICENSE.md
+327 silly gunzTarPerm modified mode [ 'LICENSE.md', 420, 438 ]
+328 silly gunzTarPerm extractEntry LICENSE.md
+329 silly gunzTarPerm modified mode [ 'LICENSE.md', 436, 438 ]
+330 silly gunzTarPerm extractEntry .dntrc
+331 silly gunzTarPerm modified mode [ '.dntrc', 436, 438 ]
+332 silly gunzTarPerm extractEntry appveyor.yml
+333 silly gunzTarPerm modified mode [ 'appveyor.yml', 436, 438 ]
+334 silly gunzTarPerm extractEntry src/main.cc
+335 silly gunzTarPerm modified mode [ 'src/main.cc', 420, 438 ]
+336 silly gunzTarPerm extractEntry src/nslog.h
+337 silly gunzTarPerm modified mode [ 'src/nslog.h', 420, 438 ]
+338 silly gunzTarPerm extractEntry src/bufferutil.cc
+339 silly gunzTarPerm modified mode [ 'src/bufferutil.cc', 420, 438 ]
+340 silly gunzTarPerm extractEntry nan.h
+341 silly gunzTarPerm modified mode [ 'nan.h', 436, 438 ]
+342 silly gunzTarPerm extractEntry CHANGELOG.md
+343 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 438 ]
+344 silly gunzTarPerm extractEntry src/nslog_linux.cc
+345 silly gunzTarPerm modified mode [ 'src/nslog_linux.cc', 420, 438 ]
+346 silly gunzTarPerm extractEntry src/nslog_mac.mm
+347 silly gunzTarPerm modified mode [ 'src/nslog_mac.mm', 420, 438 ]
+348 silly gunzTarPerm extractEntry src/nslog_win.cc
+349 silly gunzTarPerm modified mode [ 'src/nslog_win.cc', 420, 438 ]
+350 silly gunzTarPerm extractEntry nan_implementation_12_inl.h
+351 silly gunzTarPerm modified mode [ 'nan_implementation_12_inl.h', 436, 438 ]
+352 silly gunzTarPerm extractEntry nan_implementation_12_inl.h
+353 silly gunzTarPerm modified mode [ 'nan_implementation_12_inl.h', 420, 438 ]
+354 silly gunzTarPerm extractEntry nan_implementation_pre_12_inl.h
+355 silly gunzTarPerm modified mode [ 'nan_implementation_pre_12_inl.h', 420, 438 ]
+356 silly gunzTarPerm extractEntry nan_implementation_pre_12_inl.h
+357 silly gunzTarPerm modified mode [ 'nan_implementation_pre_12_inl.h', 436, 438 ]
+358 silly gunzTarPerm extractEntry nan_new.h
+359 silly gunzTarPerm modified mode [ 'nan_new.h', 436, 438 ]
+360 silly gunzTarPerm extractEntry nan_string_bytes.h
+361 silly gunzTarPerm modified mode [ 'nan_string_bytes.h', 436, 438 ]
+362 silly gunzTarPerm extractEntry nan_new.h
+363 silly gunzTarPerm modified mode [ 'nan_new.h', 420, 438 ]
+364 silly gunzTarPerm extractEntry nan_string_bytes.h
+365 silly gunzTarPerm modified mode [ 'nan_string_bytes.h', 420, 438 ]
+366 silly gunzTarPerm extractEntry .dntrc
+367 silly gunzTarPerm modified mode [ '.dntrc', 420, 438 ]
+368 silly gunzTarPerm extractEntry CHANGELOG.md
+369 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 438 ]
+370 silly doParallel preinstall 4
+371 silly preinstall nan D:\electronreact\electron-react-tutorial\node_modules\.staging\nan-ab3050fa4c90beb3a0723cbd235a3380
+372 info lifecycle nan@1.8.4~preinstall: nan@1.8.4
+373 silly preinstall bufferutil D:\electronreact\electron-react-tutorial\node_modules\.staging\bufferutil-de35c469e9bb545a01ee48800f0bbb41
+374 info lifecycle bufferutil@1.1.0~preinstall: bufferutil@1.1.0
+375 silly preinstall nan D:\electronreact\electron-react-tutorial\node_modules\.staging\nan-cf3da099a56ad11d3ef0db9b0e0bbe22
+376 info lifecycle nan@1.6.1~preinstall: nan@1.6.1
+377 silly preinstall nslog D:\electronreact\electron-react-tutorial\node_modules\.staging\nslog-036f0c6497edeccecd17a9f4627025e7
+378 info lifecycle nslog@2.0.0~preinstall: nslog@2.0.0
+379 silly lifecycle nan@1.8.4~preinstall: no script for preinstall, continuing
+380 silly lifecycle bufferutil@1.1.0~preinstall: no script for preinstall, continuing
+381 silly lifecycle nan@1.6.1~preinstall: no script for preinstall, continuing
+382 silly lifecycle nslog@2.0.0~preinstall: no script for preinstall, continuing
+383 silly doReverseSerial remove 0
+384 silly doSerial move 0
+385 silly doSerial finalize 4
+386 silly finalize D:\electronreact\electron-react-tutorial\node_modules\bufferutil\node_modules\nan
+387 silly finalize D:\electronreact\electron-react-tutorial\node_modules\bufferutil
+388 silly finalize D:\electronreact\electron-react-tutorial\node_modules\nan
+389 silly finalize D:\electronreact\electron-react-tutorial\node_modules\nslog
+390 silly doSerial build 4
+391 silly build nan
+392 info linkStuff nan@1.8.4
+393 silly linkStuff nan@1.8.4 has D:\electronreact\electron-react-tutorial\node_modules\bufferutil\node_modules as its parent node_modules
+394 verbose linkBins nan@1.8.4
+395 verbose linkMans nan@1.8.4
+396 verbose rebuildBundles nan@1.8.4
+397 silly build bufferutil
+398 info linkStuff bufferutil@1.1.0
+399 silly linkStuff bufferutil@1.1.0 has D:\electronreact\electron-react-tutorial\node_modules as its parent node_modules
+400 verbose linkBins bufferutil@1.1.0
+401 verbose linkMans bufferutil@1.1.0
+402 verbose rebuildBundles bufferutil@1.1.0
+403 verbose rebuildBundles [ 'nan' ]
+404 silly build nan
+405 info linkStuff nan@1.6.1
+406 silly linkStuff nan@1.6.1 has D:\electronreact\electron-react-tutorial\node_modules as its parent node_modules
+407 verbose linkBins nan@1.6.1
+408 verbose linkMans nan@1.6.1
+409 verbose rebuildBundles nan@1.6.1
+410 silly build nslog
+411 info linkStuff nslog@2.0.0
+412 silly linkStuff nslog@2.0.0 has D:\electronreact\electron-react-tutorial\node_modules as its parent node_modules
+413 verbose linkBins nslog@2.0.0
+414 verbose linkMans nslog@2.0.0
+415 verbose rebuildBundles nslog@2.0.0
+416 silly doSerial global-link 0
+417 silly doParallel update-linked 0
+418 silly doSerial install 4
+419 silly install nan D:\electronreact\electron-react-tutorial\node_modules\.staging\nan-ab3050fa4c90beb3a0723cbd235a3380
+420 info lifecycle nan@1.8.4~install: nan@1.8.4
+421 silly lifecycle nan@1.8.4~install: no script for install, continuing
+422 silly install bufferutil D:\electronreact\electron-react-tutorial\node_modules\.staging\bufferutil-de35c469e9bb545a01ee48800f0bbb41
+423 info lifecycle bufferutil@1.1.0~install: bufferutil@1.1.0
+424 verbose lifecycle bufferutil@1.1.0~install: unsafe-perm in lifecycle true
+425 verbose lifecycle bufferutil@1.1.0~install: PATH: C:\nvm\v0.12.6\node_modules\npm\bin\node-gyp-bin;D:\electronreact\electron-react-tutorial\node_modules\bufferutil\node_modules\.bin;D:\electronreact\electron-react-tutorial\node_modules\.bin;C:\Ruby22-x64\bin;D:\Python27\;D:\Python27\Scripts;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x64;D:\olde\Program\jdk\jdk1.6.0_20;D:\olde\Program\jdk\jdk1.6.0_20\bin;D:\olde\Program\ant\bin;%TFSPowerToolDir%;%BPADir%;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE;C:\Program Files\TortoiseSVN\bin;D:\olde\projectA\source\web\ffmpeg\bin;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\nodejs\node_modules\casperjs\bin;C:\nvm;C:\nodejs;C:\nodejs\node_modules\casperjs\bin;C:\Tesseract-OCR;C:\NSIS;C:\NSIS\bin;D:\oldg\fmpp_0.9.14\bin\;D:\olde\projectA\source\web\myproject\doudou\.bin;D:\Python27\;D:\Python27\Scripts;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x64;D:\olde\Program\jdk\jdk1.6.0_20;D:\olde\Program\jdk\jdk1.6.0_20\bin;D:\olde\Program\ant\bin;%TFSPowerToolDir%;%BPADir%;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE;D:\olde\projectA\source\web;D:\olde\projectA\source\web;C:\Program Files\TortoiseSVN\bin;D:\olde\projectA\source\web\ffmpeg\bin;C:\Users\huangguangyao\AppData\Local\atom\bin;C:\nvm;C:\nodejs
+426 verbose lifecycle bufferutil@1.1.0~install: CWD: D:\electronreact\electron-react-tutorial\node_modules\bufferutil
+427 silly lifecycle bufferutil@1.1.0~install: Args: [ '/d /s /c', 'node-gyp rebuild' ]
+428 silly lifecycle bufferutil@1.1.0~install: Returned: code: 1  signal: null
+429 info lifecycle bufferutil@1.1.0~install: Failed to exec install script
+430 warn install:bufferutil bufferutil@1.1.0 install: `node-gyp rebuild`
+430 warn install:bufferutil Exit status 1
+431 verbose install:bufferutil Error: bufferutil@1.1.0 install: `node-gyp rebuild`
+431 verbose install:bufferutil Exit status 1
+431 verbose install:bufferutil     at EventEmitter.<anonymous> (C:\nvm\v0.12.6\node_modules\npm\lib\utils\lifecycle.js:233:16)
+431 verbose install:bufferutil     at EventEmitter.emit (events.js:110:17)
+431 verbose install:bufferutil     at ChildProcess.<anonymous> (C:\nvm\v0.12.6\node_modules\npm\lib\utils\spawn.js:24:14)
+431 verbose install:bufferutil     at ChildProcess.emit (events.js:110:17)
+431 verbose install:bufferutil     at maybeClose (child_process.js:1015:16)
+431 verbose install:bufferutil     at Process.ChildProcess._handle.onexit (child_process.js:1087:5)
+432 silly install nan D:\electronreact\electron-react-tutorial\node_modules\.staging\nan-cf3da099a56ad11d3ef0db9b0e0bbe22
+433 info lifecycle nan@1.6.1~install: nan@1.6.1
+434 silly lifecycle nan@1.6.1~install: no script for install, continuing
+435 silly install nslog D:\electronreact\electron-react-tutorial\node_modules\.staging\nslog-036f0c6497edeccecd17a9f4627025e7
+436 info lifecycle nslog@2.0.0~install: nslog@2.0.0
+437 verbose lifecycle nslog@2.0.0~install: unsafe-perm in lifecycle true
+438 verbose lifecycle nslog@2.0.0~install: PATH: C:\nvm\v0.12.6\node_modules\npm\bin\node-gyp-bin;D:\electronreact\electron-react-tutorial\node_modules\nslog\node_modules\.bin;D:\electronreact\electron-react-tutorial\node_modules\.bin;C:\Ruby22-x64\bin;D:\Python27\;D:\Python27\Scripts;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x64;D:\olde\Program\jdk\jdk1.6.0_20;D:\olde\Program\jdk\jdk1.6.0_20\bin;D:\olde\Program\ant\bin;%TFSPowerToolDir%;%BPADir%;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE;C:\Program Files\TortoiseSVN\bin;D:\olde\projectA\source\web\ffmpeg\bin;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\nodejs\node_modules\casperjs\bin;C:\nvm;C:\nodejs;C:\nodejs\node_modules\casperjs\bin;C:\Tesseract-OCR;C:\NSIS;C:\NSIS\bin;D:\oldg\fmpp_0.9.14\bin\;D:\olde\projectA\source\web\myproject\doudou\.bin;D:\Python27\;D:\Python27\Scripts;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x64;D:\olde\Program\jdk\jdk1.6.0_20;D:\olde\Program\jdk\jdk1.6.0_20\bin;D:\olde\Program\ant\bin;%TFSPowerToolDir%;%BPADir%;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE;D:\olde\projectA\source\web;D:\olde\projectA\source\web;C:\Program Files\TortoiseSVN\bin;D:\olde\projectA\source\web\ffmpeg\bin;C:\Users\huangguangyao\AppData\Local\atom\bin;C:\nvm;C:\nodejs
+439 verbose lifecycle nslog@2.0.0~install: CWD: D:\electronreact\electron-react-tutorial\node_modules\nslog
+440 silly lifecycle nslog@2.0.0~install: Args: [ '/d /s /c', 'node-gyp rebuild' ]
+441 silly lifecycle nslog@2.0.0~install: Returned: code: 1  signal: null
+442 info lifecycle nslog@2.0.0~install: Failed to exec install script
+443 verbose unlock done using C:\Users\huangguangyao\AppData\Roaming\npm-cache\_locks\staging-d329b4776e3f4ada.lock for D:\electronreact\electron-react-tutorial\node_modules\.staging
+444 silly rollbackFailedOptional Starting
+445 silly rollbackFailedOptional Finishing
+446 silly runTopLevelLifecycles Starting
+447 silly runTopLevelLifecycles Finishing
+448 silly install printInstalled
+449 warn EPACKAGEJSON my-electron-app@0.1.0 No repository field.
+450 warn EPACKAGEJSON my-electron-app@0.1.0 No license field.
+451 verbose stack Error: nslog@2.0.0 install: `node-gyp rebuild`
+451 verbose stack Exit status 1
+451 verbose stack     at EventEmitter.<anonymous> (C:\nvm\v0.12.6\node_modules\npm\lib\utils\lifecycle.js:233:16)
+451 verbose stack     at EventEmitter.emit (events.js:110:17)
+451 verbose stack     at ChildProcess.<anonymous> (C:\nvm\v0.12.6\node_modules\npm\lib\utils\spawn.js:24:14)
+451 verbose stack     at ChildProcess.emit (events.js:110:17)
+451 verbose stack     at maybeClose (child_process.js:1015:16)
+451 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1087:5)
+452 verbose pkgid nslog@2.0.0
+453 verbose cwd D:\electronreact\electron-react-tutorial
+454 error Windows_NT 6.1.7601
+455 error argv "C:\\nodejs\\\\node.exe" "C:\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "i" "nslog@2.0.0"
+456 error node v0.12.6
+457 error npm  v3.3.1
+458 error code ELIFECYCLE
+459 error nslog@2.0.0 install: `node-gyp rebuild`
+459 error Exit status 1
+460 error Failed at the nslog@2.0.0 install script 'node-gyp rebuild'.
+460 error This is most likely a problem with the nslog package,
+460 error not with npm itself.
+460 error Tell the author that this fails on your system:
+460 error     node-gyp rebuild
+460 error You can get their info via:
+460 error     npm owner ls nslog
+460 error There is likely additional logging output above.
+461 verbose exit [ 1, true ]
