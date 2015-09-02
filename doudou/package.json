@@ -1,0 +1,23 @@
+{
+  "name": "doudou",
+  "version": "1.0.0",
+  "description": "build doudou",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "doudou",
+    "builder"
+  ],
+  "author": "z.w",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^1.4.2",
+    "commander": "^2.8.1",
+    "glob": "^5.0.14",
+    "grunt": "^0.4.5",
+    "lodash": "^3.10.1",
+    "winattr": "^1.0.0"
+  }
+}

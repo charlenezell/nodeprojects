@@ -61,7 +61,13 @@
       "shareword": "想参加睡衣派对吗？穿一身芭比娃娃睡衣来吧！",
       "priority": 3,
       "id": "69eb4235-3bce-42b9-837a-3390d46300f0",
-      "memo": "留给平姐"
+      "memo": "留给平姐",
+      "ip": "10.18.6.65",
+      "sharecomplete": true,
+      "actcomplete": true,
+      "testIp": [
+        "10.18.6.82"
+      ]
     },
     {
       "name": "家禽卡丁车",

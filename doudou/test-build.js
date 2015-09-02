@@ -11,13 +11,7 @@ var path = require("path");
 var async = require("async");
 var winattr=require("winattr");
 
-try {
-    winattr.useNative();
-    console.log("native")
-} catch (err) {
-    winattr.useExec();
-    console.log("cscript")
-}
+
 
 grunt.option.init({
     verbose:true,
@@ -158,7 +152,8 @@ function build(gameName, callback) {
         ftl = path.normalize(g + "content.ftl"),
         config = path.normalize(g + "../locals.config"),
         output = path.normalize(g + "index.html");
-    var cmd = util.format("fmpp -s %s -o %s -C %s", ftl, output, config);
+    // var cmd = util.format("fmpp -s %s -o %s -C %s", ftl, output, config);
+    var cmd = util.format("fmpp -s %s -o %s", ftl, output);
     var orginHas = file.exists(localConfig);
     if (!orginHas) {
         grunt.log.debug("本地不存在")
@@ -169,7 +164,8 @@ function build(gameName, callback) {
         grunt.log.warn("output html not exist in fs : %s,i'll create one for you",output);
         file.write(output,"");
     }
-    winattr.get(output,function(er,attr){
+    // doit();
+    var attr=winattr.getSync(output);
         grunt.log.debug("getting index.html attr");
         //{ archive: false, hidden: false, readonly: true, system: false }
         if(!attr.readonly){
@@ -180,7 +176,6 @@ function build(gameName, callback) {
         }else{
             grunt.log.warn("这个文件是只读的哟，要嘛自己改属性要嘛就签出吧，签出的话可以使用build -c他会帮你获取然后签出")
         }
-    });
 }
 
 function commonCleanUp(option){
