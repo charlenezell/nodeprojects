@@ -44,7 +44,7 @@
 }
 .iconC{width:3em;min-width:3em;}
 .nameC{width:3em;min-width:3em;}
-.btnC{width:7em;min-width:7em;}
+.btnC{width:9em;min-width:9em;}
 .gameNameC{min-width:8em;}
 .gameItem{height: 30px;line-height: 30px;margin:5px 0;}
 .gameItem:hover{background: #EAEAEA;}
@@ -110,18 +110,21 @@
     position: fixed;
     top: 50%;
     left: 50%;
-    margin-left: -400px;
-    width: 800px;
+    margin-left: -500px;
+    width: 1000px;
     z-index: 102;
     background: white;
     box-shadow: 1px 1px 41px -9px black;
     border-radius: 5px;
     padding: 30px 37px 20px 20px;
-    height: 500px;
-    margin-top: -250px;
+    height: 700px;
+    margin-top: -350px;
+    overflow: hidden;
+}
+.testCasePop .testconfigpreviewer{
+      height: 700px;
     overflow-y: scroll;
 }
-
 .closeBtn:after{
   content: "×";
   position: absolute;
@@ -160,9 +163,11 @@
   -webkit-animation:hidePop 200ms 1;
 }
 .stringLongarea{width: 26em;height: 7em;display: block;}
+
 .testCasePop .testconfigpreviewer>.configItem>.configItem{
-  width:48%;
+
 }
+.toolbar{height:30px;}
 .testCasePop .btn {
   position: absolute;
   right: 0;

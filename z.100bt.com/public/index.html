@@ -45,10 +45,10 @@
                 <a href="" ng-if="game.ip&&game.ip==myIp&&myRule=='dev'||myRule=='admin'" ng-click="lockGame(game.id,0)" class="btn btn_falsy">撤销开发占有</a>
                 <a href="" ng-if="!hasMyIp(game.testIp,myIp)&&myRule=='test'||myRule=='admin'" ng-click="assignTestor(game.id,1)" class="btn">测试占有</a>
                 <a href="" ng-if="hasMyIp(game.testIp,myIp)&&myRule=='test'||myRule=='admin'" ng-click="assignTestor(game.id,0,myIp)" class="btn btn_falsy">撤销测试占有</a>
-                <a href="" ng-if="!game.actcomplete&&game.ip==myIp&&myRule=='dev'||myRule=='admin'" ng-click="completeAct(game.id,1)" class="btn">完成美术集成</a>
-                <a href="" ng-if="game.actcomplete&&game.ip==myIp&&myRule=='dev'||myRule=='admin'" ng-click="completeAct(game.id,0)" class="btn btn_falsy">撤销美术集成</a>
-                <a href="" ng-if="!game.sharecomplete&&game.ip==myIp&&myRule=='dev'||myRule=='admin'" ng-click="completeShare(game.id,1)" class="btn">完成分享集成</a>
-                <a href="" ng-if="game.sharecomplete&&game.ip==myIp&&myRule=='dev'||myRule=='admin'" ng-click="completeShare(game.id,0)" class="btn btn_falsy">撤销分享集成</a>
+                <a href="" ng-if="!game.actcomplete&&game.ip==myIp&&myRule=='dev'||myRule=='admin'||!game.actcomplete&&myRule=='test'" ng-click="completeAct(game.id,1)" class="btn">完成美术集成</a>
+                <a href="" ng-if="game.actcomplete&&game.ip==myIp&&myRule=='dev'||myRule=='admin'||game.actcomplete&&myRule=='test'" ng-click="completeAct(game.id,0)" class="btn btn_falsy">撤销美术集成</a>
+                <a href="" ng-if="!game.sharecomplete&&game.ip==myIp&&myRule=='dev'||myRule=='admin'||!game.sharecomplete&&myRule=='test'" ng-click="completeShare(game.id,1)" class="btn">完成分享集成</a>
+                <a href="" ng-if="game.sharecomplete&&game.ip==myIp&&myRule=='dev'||myRule=='admin'||game.sharecomplete&&myRule=='test'" ng-click="completeShare(game.id,0)" class="btn btn_falsy">撤销分享集成</a>
                 <a href="" ng-if="!game.testcomplete&&game.ip==myIp&&myRule=='test'||myRule=='admin'" ng-click="completeTest(game.id,1)" class="btn">完成测试</a>
                 <a href="" ng-if="game.testcomplete&&game.ip==myIp&&myRule=='test'||myRule=='admin'" ng-click="completeTest(game.id,0)" class="btn btn_falsy">撤销完成测试</a>
                 <a href="" ng-if="myRule=='dev'||myRule=='admin'||myRule=='test'" ng-click="showTestCasePop(game.id)" class="btn btn_testcase">测试状况设置</a>

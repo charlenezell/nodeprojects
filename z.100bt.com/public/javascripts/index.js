@@ -226,7 +226,7 @@ myapp.controller('bodyController', function($scope, $http, $filter, $location, $
         $scope["testCasePop"]=$scope["testCasePop"]={};
         $scope["testCasePop"].confirm=function(id){
             $http.post("/gamestate/" + db + "/update/"+id,$scope["testCasePop"].viewvalue).success(function(data) {
-                alert(JSON.stringify(data.result));
+                // alert(JSON.stringify(data.result));
                 $scope["testCasePop"]["isShow"] = false;
                 $scope.overlayIsShow = false;
                 $scope.updateGameData();

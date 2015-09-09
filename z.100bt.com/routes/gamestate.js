@@ -96,6 +96,9 @@ router.get('/:datestr/export', function(req, res, next) {
 
     function a(obj, name) {
         if (obj.child && obj.child.length > 0) {
+            if(!obj.noedit){
+                gobj.push(name);
+            }
             obj.child.forEach(function(v, k) {
                 a(v, name + "_" + v.name)
             })
@@ -108,10 +111,11 @@ router.get('/:datestr/export', function(req, res, next) {
     var clones = ld(db("games").cloneDeep()).value();
     var gobj=[];
     var configArray=ld(db("info").cloneDeep()).value();
+
     configArray.testCaseConfig.forEach(function(v, k) {
       a(v, v.name)
     })
-
+    gobj.sort();
 
     var data = [
         ["名字", "链接", "备注", "开发","测试"].concat(gobj)
@@ -134,10 +138,10 @@ router.get('/:datestr/export', function(req, res, next) {
                     return ip2Name[iv + ""] ? ip2Name[iv + ""].name : iv;
                 }).join(",")
             }
-            return str
+            return str||"空"
         })();
         var author = ip2Name[v.ip + ""] ? ip2Name[v.ip + ""].name : v.ip;
-        var _temp=[v.name, v.link || "空", v.memo || "空", author||"空", testor||"空"].concat(gobj.map(function(value){
+        var _temp=["<p style='white-space:nowrap;'>"+v.name+"</p>", (v.link || "空"), (v.memo || "空"), ("<p style='white-space:nowrap;'>"+author+"</p>"||"空"), ("<p style='white-space:nowrap;'>"+testor+"</p>")].concat(gobj.map(function(value){
             return v[value+"_content"]||"-";
         }));
         data.push(_temp);
@@ -151,12 +155,14 @@ router.get('/:datestr/export', function(req, res, next) {
     function parse(str){
         return str.replace(/(http:\/\/.*?)(?:([\s]|$))/,"<a href='$1' target='_blank'>$1</a>");
     }
-var str="<link rel='stylesheet' href='/stylesheets/editstylesheet.css' /><style>table{text-align:center;border-collapse:collapse;margin-top:50px;table-layout:fixed;}th{background:rgb(163,0,0);color:white;}th,td{border:1px solid #CFCFCF;padding:0 12px;}th{padding:5px;font-size:12px;}</style>";
+var str="<link rel='stylesheet' href='/stylesheets/editstylesheet.css' /><style>*{margin:0;padding:0}table{text-align:center;border-collapse:collapse;margin-top:50px;table-layout:fixed;}th{background:rgb(163,0,0);color:white;}th,td{border:1px solid #CFCFCF;padding:0 12px;}th{padding:5px;font-size:12px;}</style>";
     str+="<h1 style='text-align:center;'>"+_date+"豆豆游戏集成和测试状况</h1>";
     str+="<table>"
     str+=data.map(function(v,k){
         return "<tr>"+v.map(function(v,ik){
-            return k==0?"<th>"+v+"</th>":"<td>"+parse(v)+"</td>";
+            return k==0?"<th style='"+(v.indexOf("_")>-1?"vertical-align: top;":"")+"'>"+v.split("_").map(function(v){
+                return "<p style='white-space: nowrap;'>"+v+"</p>"
+            }).join("")+"</th>":"<td>"+parse(v)+"</td>";
         }).join("")+"</tr>";
     }).join("");
     str+="</table>"
@@ -168,7 +174,7 @@ router.get('/:datestr/manage', function(req, res, next) {
     var db = low(_date + '.json');
     db.object.info=db.object.info||{};
     res.json({
-        result: ld(ld(db.object.info).cloneDeep()).extend({gameDataPath:GPath.join(process.cwd(),_date + '.json'),testTreeDataPath:GPath.join(process.cwd(),_date + '_testTree.json')}).value(),
+        result: ld(ld(db.object.info).cloneDeep()).value(),
         code: 1,
         clientIp: getClientIp(req)
     });
@@ -411,10 +417,11 @@ router.post('/:datestr/update/:id', function(req, res, next) {
     var _id = req.___id;
     var _params=req.___params;
     var db = low(req.___date + '.json')
-    console.log(_params);
+
     var rst = db("games").chain().find({
         id: req.___id
     }).assign(_params).value();
+
     db.save();
     res.json({
         result: rst,
@@ -427,9 +434,11 @@ router.post('/:datestr/lockTest/:id', function(req, res, next) {
     var _params=req.___params;
     var db = low(_date + '.json')
     _params.testIp = getClientIp(req);
+
     var orgips = db("games").chain().find({
         id: _id
     }).value();
+    console.log(orgips)
     if (ld.isUndefined(orgips.testIp) || ld.isNull(orgips.testIp)) {
         orgips.testIp = []
         orgips.testIp.push(_params.testIp);
@@ -439,6 +448,7 @@ router.post('/:datestr/lockTest/:id', function(req, res, next) {
     } else if (ld.isArray(orgips.testIp)) {
         orgips.testIp.push(_params.testIp);
     }
+    console.log(orgips.testIp)
     var rst = db.save();
     res.json({
         result: rst,

@@ -10,21 +10,39 @@
       "ip": "127.0.0.1",
       "actcomplete": true,
       "sharecomplete": true,
-      "红米测试_浏览器_content": "1x",
-      "红米测试_微信_content": "3",
-      "三星测试_浏览器_content": "2",
-      "三星测试_微信_content": "4",
-      "华为测试_浏览器_content": "5",
-      "华为测试_微信_content": "7",
-      "iphone5s测试_浏览器_content": "6",
-      "iphone5s测试_微信_content": "8",
+      "红米测试_浏览器_content": "",
+      "红米测试_微信_content": "",
+      "三星测试_浏览器_content": "",
+      "三星测试_微信_content": "",
+      "华为测试_浏览器_content": "",
+      "华为测试_微信_content": "",
+      "iphone5s测试_浏览器_content": "",
+      "iphone5s测试_微信_content": "",
       "iphone5s测试_浏览器_xxxmoshi1_content": "",
       "iphone5s测试_浏览器_xxxmoshi2_content": "",
-      "iphone6plus测试_浏览器_content": "jpojlpkl<br><ol><li>asdf</li><li>fdj<span class=\"wysiwyg-color-red\">kf</span></li></ol><span class=\"wysiwyg-color-green\"></span>",
+      "iphone6plus测试_浏览器_content": "cdcd<span class=\"wysiwyg-color-green\"></span>",
       "iphone6plus测试_微信_content": "",
       "testIp": [
         "10.18.6.63"
-      ]
+      ],
+      "红米测试_浏览器_原生_content": "",
+      "红米测试_浏览器_手机百度_content": "",
+      "红米测试_浏览器_uc_content": "",
+      "三星测试_浏览器_原生_content": "",
+      "三星测试_浏览器_手机百度_content": "",
+      "三星测试_浏览器_uc_content": "",
+      "华为测试_浏览器_原生_content": "",
+      "华为测试_浏览器_手机百度_content": "",
+      "华为测试_浏览器_uc_content": "",
+      "iphone5s测试_浏览器_原生_content": "",
+      "iphone5s测试_浏览器_手机百度_content": "",
+      "iphone5s测试_浏览器_uc_content": "",
+      "红米测试_content": "",
+      "三星测试_content": "",
+      "华为测试_content": "",
+      "iphone5s测试_content": "",
+      "iphone6plus测试_content": "",
+      "testcomplete": false
     },
     {
       "name": "爱就块一起吧",
@@ -80,16 +98,56 @@
       "ip": "10.18.6.67",
       "sharecomplete": true,
       "actcomplete": true,
-      "testcomplete": false
+      "testcomplete": false,
+      "红米测试_浏览器_content": "",
+      "红米测试_浏览器_原生_content": "",
+      "红米测试_浏览器_手机百度_content": "",
+      "红米测试_浏览器_uc_content": "",
+      "红米测试_微信_content": "",
+      "三星测试_浏览器_content": "",
+      "三星测试_浏览器_原生_content": "",
+      "三星测试_浏览器_手机百度_content": "",
+      "三星测试_浏览器_uc_content": "",
+      "三星测试_微信_content": "",
+      "华为测试_浏览器_content": "",
+      "华为测试_浏览器_原生_content": "",
+      "华为测试_浏览器_手机百度_content": "",
+      "华为测试_浏览器_uc_content": "",
+      "华为测试_微信_content": "",
+      "iphone5s测试_浏览器_content": "<span>原本游戏就是不能加载出来（原生浏览器）</span>",
+      "iphone5s测试_浏览器_原生_content": "1.游戏加载不出来",
+      "iphone5s测试_浏览器_手机百度_content": "",
+      "iphone5s测试_浏览器_uc_content": "1.会出现游戏结束后回到开始页面，开始页面按钮都没有显示的现象。",
+      "iphone5s测试_微信_content": "",
+      "iphone6plus测试_浏览器_content": "",
+      "iphone6plus测试_微信_content": "",
+      "红米测试_content": "",
+      "三星测试_content": "",
+      "华为测试_content": "",
+      "iphone5s测试_content": "",
+      "iphone6plus测试_content": ""
     }
   ],
   "info": {
     "testCaseConfig": [
       {
         "name": "红米测试",
+        "noedit": true,
         "child": [
           {
-            "name": "浏览器"
+            "name": "浏览器",
+            "noedit": true,
+            "child": [
+              {
+                "name": "原生"
+              },
+              {
+                "name": "手机百度"
+              },
+              {
+                "name": "uc"
+              }
+            ]
           },
           {
             "name": "微信"
@@ -98,9 +156,22 @@
       },
       {
         "name": "三星测试",
+        "noedit": true,
         "child": [
           {
-            "name": "浏览器"
+            "name": "浏览器",
+            "noedit": true,
+            "child": [
+              {
+                "name": "原生"
+              },
+              {
+                "name": "手机百度"
+              },
+              {
+                "name": "uc"
+              }
+            ]
           },
           {
             "name": "微信"
@@ -109,9 +180,22 @@
       },
       {
         "name": "华为测试",
+        "noedit": true,
         "child": [
           {
-            "name": "浏览器"
+            "name": "浏览器",
+            "noedit": true,
+            "child": [
+              {
+                "name": "原生"
+              },
+              {
+                "name": "手机百度"
+              },
+              {
+                "name": "uc"
+              }
+            ]
           },
           {
             "name": "微信"
@@ -120,9 +204,22 @@
       },
       {
         "name": "iphone5s测试",
+        "noedit": true,
         "child": [
           {
-            "name": "浏览器"
+            "name": "浏览器",
+            "noedit": true,
+            "child": [
+              {
+                "name": "原生"
+              },
+              {
+                "name": "手机百度"
+              },
+              {
+                "name": "uc"
+              }
+            ]
           },
           {
             "name": "微信"
@@ -131,65 +228,7 @@
       },
       {
         "name": "iphone6plus测试",
-        "child": [
-          {
-            "name": "浏览器"
-          },
-          {
-            "name": "微信"
-          }
-        ]
-      }
-    ]
-  },
-  "_bkinfo": {
-    "testCaseConfig": [
-      {
-        "name": "红米测试",
-        "child": [
-          {
-            "name": "浏览器"
-          },
-          {
-            "name": "微信"
-          }
-        ]
-      },
-      {
-        "name": "三星测试",
-        "child": [
-          {
-            "name": "浏览器"
-          },
-          {
-            "name": "微信"
-          }
-        ]
-      },
-      {
-        "name": "华为测试",
-        "child": [
-          {
-            "name": "浏览器"
-          },
-          {
-            "name": "微信"
-          }
-        ]
-      },
-      {
-        "name": "iphone5s测试",
-        "child": [
-          {
-            "name": "浏览器"
-          },
-          {
-            "name": "微信"
-          }
-        ]
-      },
-      {
-        "name": "iphone6plus测试",
+        "noedit": true,
         "child": [
           {
             "name": "浏览器"

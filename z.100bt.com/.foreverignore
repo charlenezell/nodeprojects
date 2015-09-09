@@ -1,4 +1,8 @@
 public/*
 views/*
 data/*
-routes/*
+bkdata/*
+node_modules/*
+err.log
+out.log
+package.json

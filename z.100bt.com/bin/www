@@ -7,7 +7,29 @@
 var app = require('../app');
 var debug = require('debug')('z.100bt.com:server');
 var http = require('http');
+var glob= require("glob");
+var path=require("path");
+var grunt=require("grunt");
+var del=require("del");
 
+function ibk(){
+  var base=path.join(__dirname,"..");
+  glob.sync(path.join(base,"data/*")).forEach(function(v, k) {
+    grunt.file.copy(v, path.join(base,"bkdata/" + new Date().toUTCString().replace(/[,: ]/g,"").toLowerCase()+"/" + path.basename(v)))
+  });
+}
+setInterval(function(){
+  ibk();
+},10*1000*60);/*十分钟备份一次*/
+ibk();
+/*清理100条前的历史记录*/
+function clean() {
+  var base = path.join(__dirname, "..");
+  glob.sync(path.join(base,"bkdata/*")).sort().reverse().slice(100).forEach(function(v) {
+    del(v);
+  });
+}
+clean();
 /**
  * Get port from environment and store in Express.
  */

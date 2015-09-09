@@ -6,8 +6,8 @@ myapp.directive('testConfigPreviewer', function() {
         containerStr = "",
         sLight = 40,
         elight = 100;
-    var tt = '${selector}{background-color:hsl(207,80%,${light}%);}'
-    for (var i = sLight; i < elight; i = i + 20) {
+    var tt = '${selector}{background-color:hsl(207,80%,${light}%);margin:10px;padding:10px;}'
+    for (var i = sLight; i < elight; i = i + 15) {
         containerStr += addcontainerSelector;
         s += Util.template(tt, {
             selector: containerStr,
@@ -31,6 +31,7 @@ if(!window.hasInsertTestConfigPreviewerCSS){
     <a class="toolbarbtns colorgreen" data-wysihtml5-command="foreColor" data-wysihtml5-command-value="green">green</a>\
     <a class="toolbarbtns colorblue" data-wysihtml5-command="foreColor" data-wysihtml5-command-value="blue">blue</a>\
     <a class="toolbarbtns htmlswitch" data-wysihtml5-action="change_view">switch to html view</a>';
+
         var typeHtmlMap={
             "stringLong":'<div><div class="toolbar">'+toolBar+'</div><textarea id="${fieldName}" ng-change="testCasePop.changeInput()" name="testCaseField" cols="10" rows="10" data-postdataname="${fieldName}" class="stringLongarea">${value}</textarea></div>',
             "stringSort":'<div><div class="toolbar">'+toolBar+'</div><input type="text" id="${fieldName}" ng-change="testCasePop.changeInput()" name="testCaseField" data-postdataname="${fieldName}" value="${value}"></div>'
@@ -44,15 +45,20 @@ if(!window.hasInsertTestConfigPreviewerCSS){
         if(_.keys(fieldsObj).length<=0){
             fieldsObj={content:""};
         }
+        var ov=v;
         var htmls=_.keys(fieldsObj).map(function(v){
             var t=typeHtmlMap[v]?typeHtmlMap[v]:typeHtmlMap["stringLong"];
             var curValue=gamedata[path+"_"+v];
-            return Util.template(t,{
-                id:path+"_"+v,
-                key:v,
-                fieldName:path+"_"+v,
-                value:curValue?curValue:""
-            });
+            if(ov.noedit){
+                return "";
+            }else{
+                return Util.template(t, {
+                    id: path + "_" + v,
+                    key: v,
+                    fieldName: path + "_" + v,
+                    value: curValue ? curValue : ""
+                });
+            }
         });
         return htmls;
     }
@@ -63,11 +69,14 @@ if(!window.hasInsertTestConfigPreviewerCSS){
         }catch(e){
             alert(e);
         }
+        if(!gamedata){
+            gamedata=[];
+        }
         var itemT=""
         if(mode=="write"){
             itemT = '<div class="configItem"><span class="name">${name}</span>${inputHTML}${childHTML}</div>';
         }else{
-            itemT = '<div class="configItem"><span class="name">${name}</span>${childHTML}</div>';
+            itemT = '<div class="configItem"><span class="name">${name}${editText}</span>${childHTML}</div>';
         }
 
         try {
@@ -79,8 +88,9 @@ if(!window.hasInsertTestConfigPreviewerCSS){
             var g = a.map(function(v) {
                 return Util.template(itemT, {
                     name: v.name,
-                    childHTML: getChildHTML(v,v.name)
-                    // inputHTML:getFieldHTML(v,v.name,gamedata)
+                    editText:v.noedit?"(noedit)":"",
+                    childHTML: getChildHTML(v,v.name),
+                    inputHTML:getFieldHTML(v,v.name,gamedata)
                 })
             }).join("")
             $scope.error=null;
@@ -95,6 +105,7 @@ if(!window.hasInsertTestConfigPreviewerCSS){
                 return root.child.map(function(v, k) {
                     return Util.template(itemT, {
                         name: v.name,
+                        editText:v.noedit?"(noedit)":"",
                         childHTML: getChildHTML(v,path+"_"+v.name),
                         inputHTML:mode=="write"?getFieldHTML(v,path+"_"+v.name,gamedata):""
                     });
