@@ -26,7 +26,7 @@ ibk();
 function clean() {
   var base = path.join(__dirname, "..");
   glob.sync(path.join(base,"bkdata/*")).sort().reverse().slice(100).forEach(function(v) {
-    del(v);
+    del(v,{force:true});
   });
 }
 clean();

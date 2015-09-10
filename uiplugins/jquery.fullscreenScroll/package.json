@@ -1,0 +1,27 @@
+{
+  "name": "jquery.fullscreenscroll",
+  "version": "1.0.0",
+  "description": "scroll full screenly jquery plugin",
+  "main": "dist/jquery.fullscreenScroll.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "jquery",
+    "plugin",
+    "fullscreen",
+    "scroll"
+  ],
+  "author": "z.w",
+  "license": "ISC",
+  "dependencies": {
+    "del": "^2.0.2",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.2.1",
+    "gulp-jshint": "^1.11.2",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "^1.4.1",
+    "gulp-util": "^3.0.6",
+    "jshint-stylish": "^2.0.1"
+  }
+}
