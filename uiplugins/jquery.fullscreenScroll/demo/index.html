@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>奥拉五周年</title>
+<!--公共样式-->
+<link type="text/css" href="http://www.100bt.com/resource/style/css.css" rel="stylesheet" />
+<link href="http://www.100bt.com/resource/js/nav/commonNav.css" rel="stylesheet" type="text/css" />
+<link type="text/css" href="http://www.100bt.com/movie/20150619/style/me.css?v=3" rel="stylesheet" />
+
+<!--jQuery-->
+<script type="text/javascript" src="http://www.100bt.com/resource/js/lib/jquery-mig-min.js"></script>
+<script type="text/javascript" src="http://www.100bt.com/resource/js/lib/underscore-min.js"></script>
+<script type="text/javascript" src="http://www.100bt.com/resource/js/nav/in-min.js"></script>
+<script type="text/javascript">
+var ST_startTime=new Date();
+var ST_DOMLoadedTime=ST_LoadTime=0;
+$(function(){
+  ST_DOMLoadedTime=new Date()-ST_startTime;
+});
+$(window).load(function(){
+  ST_LoadTime=new Date()-ST_startTime;
+  /*setDate*/
+  window.setUserModelValue&&setUserModelValue("ST_DOMLoadedTime",ST_DOMLoadedTime);
+  window.setUserModelValue&&setUserModelValue("ST_LoadTime",ST_LoadTime);
+  window.DC_SendUserModelData&&DC_SendUserModelData();
+});
+</script>
+<style>
+  body,html{height:100%;}
+</style>
+</head>
+<body class="">
+<!--公用导航-->
+<div id="baseNav"></div>
+  <div class="wrapbg"></div>
+  <a href="###" class="nextBtn" style="position: fixed;bottom:20px;left:50%;z-index:3;">next</a>
+  <a href="###" class="prevBtn" style="position: fixed;bottom:20px;left:30%;z-index:3;">prev</a>
+  <select name="" id="hello"></select>
+  <input type="range"  min="100" max="5000" id="duration" step="100"/><input type="text" name="" id="showduration" disabled />
+  <select name="" id="effect">
+    <option value="fullscreenScrollaFn01">fullscreenScrollaFn01</option>
+    <option value="fullscreenScrollaFn02">fullscreenScrollaFn02</option>
+    <option value="fullscreenScrollaFn03">fullscreenScrollaFn03</option>
+  </select>
+  <a href="###" class="goBtn" style="position: fixed;bottom:20px;left:40%;z-index:3;">go</a>
+<!--视频弹窗-->
+</body>
+<!--公用脚本-->
+<script type="text/javascript" src="http://www.100bt.com/resource/js/util/newcommon/util.js"></script>
+<script type="text/javascript" src="http://www.100bt.com/resource/js/util/newcommon/login.js"></script>
+<script src="http://www.100bt.com/resource/js/util/newcommon/common.js"></script>
+<script src="../dist/jquery.fullscreenScroll.js"></script>
+<!--END 公用脚本-->
+<script>
+var data=[
+  {img:"tt/a1l.jpg",title:"a1l",link:"link_a1l"},
+  {img:"tt/a2l.jpg",title:"a2l",link:"link_a2l"},
+  {img:"tt/a3l.jpg",title:"a3l",link:"link_a3l"},
+  {img:"tt/sp1.jpg",title:"sp1",link:"link_sp1"},
+  {img:"tt/sp3.jpg",title:"sp3",link:"link_sp3"}
+];
+$("#duration").change(function(){
+  $(".wrapbg").data("fullscreenScroll_duration",$(this).val());
+  $("#showduration").val($(this).val()+"ms");
+}).change();
+$("#effect").change(function(){
+  $(".wrapbg").data("fullscreenScroll_easing",$(this).val());
+});
+$("#hello").append($($.map(data,function(v,k){return "<option value='"+(k)+"'>"+(k+1)+"</option>"}).join("")));
+
+$(".wrapbg").fullscreenScroll("init",{data:data,onanimatecomplete:function(){
+  /*内置三个效果*/
+  // fullscreenScrollaFn01
+  // fullscreenScrollaFn02
+  // fullscreenScrollaFn03
+},duration:800,easing:"fullscreenScrollaFn03"});
+
+$(".nextBtn").click(function(){
+  $(".wrapbg").fullscreenScroll("next");
+});
+
+$(".prevBtn").click(function(){
+  $(".wrapbg").fullscreenScroll("prev");
+});
+
+$(".goBtn").click(function  () {
+  var v=$("#hello").val();
+  var curIndex=$(".wrapbg").fullscreenScroll("curIndex");
+  if(v>curIndex){
+    $(".wrapbg").fullscreenScroll("showIndex",{index:v,rev:true});
+  }else{
+    $(".wrapbg").fullscreenScroll("showIndex",{index:v,rev:false});
+  }
+
+});
+
+</script>
+<!--平台的统计-->
+<script type="text/javascript" src="http://dc.100bt.com/js/dc.js"></script>
+<!--百度统计-->
+<script type="text/javascript" src="http://www.100bt.com/resource/js/lib/bdStatistic.js"></script>
+</html>
+

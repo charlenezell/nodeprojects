@@ -142,7 +142,11 @@ router.get('/:datestr/export', function(req, res, next) {
         })();
         var author = ip2Name[v.ip + ""] ? ip2Name[v.ip + ""].name : v.ip;
         var _temp=["<p style='white-space:nowrap;'>"+v.name+"</p>", (v.link || "空"), (v.memo || "空"), ("<p style='white-space:nowrap;'>"+author+"</p>"||"空"), ("<p style='white-space:nowrap;'>"+testor+"</p>")].concat(gobj.map(function(value){
-            return v[value+"_content"]||"-";
+            var ggg=v[value+"_content"];
+            if(ld.isUndefined(v[value+"_content"])){
+                ggg=""
+            }
+            return String.prototype.trim.call(ggg)?('<div style="background:#FFE9E9">'+v[value+"_content"]+'</div>'):"-";
         }));
         data.push(_temp);
     });
