@@ -1,12 +1,12 @@
 /**author:z.w*/
-if(DEBUG){
-    console.log("%c兄弟你正在使用的是debug的release,要product release的话请去gulpfile里面修改DEBUG=false","color:green;font-size:12px;font-family:'Consolas';border:1px dotted;line-height:25px;");
-}
 $.fn.fullscreenScroll = function(command, data) {
+
   function noop() {}
+
   function erTxt(txt) {
     return ["[fullscreenScroll]", txt].join('');
   }
+
   function implementsShowNext(src, done) {
     var root = $(this);
     var ww = $(window).width();
@@ -76,7 +76,6 @@ $.fn.fullscreenScroll = function(command, data) {
           });
         },
         complete: function complete() {
-
           curruntDisplayer.remove();
           tempLayer.removeClass("fullscreenScroll_displayerTemp").addClass("fullscreenScroll_displayer");
           renderDisplayer.call(root, false);
@@ -271,6 +270,7 @@ $.fn.fullscreenScroll = function(command, data) {
   function getCurIndex() {
     return parseInt($(this).data("curIndex"));
   }
+
   var api = {
     next: {
       fn: next
