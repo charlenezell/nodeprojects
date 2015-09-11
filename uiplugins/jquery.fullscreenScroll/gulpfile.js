@@ -1,4 +1,4 @@
-const DEBUG = false;
+const DEBUG = true;
 var gulp = require("gulp");
 var uglify = require("gulp-uglify");
 var hint = require("gulp-jshint");
@@ -43,3 +43,4 @@ gulp.task("cleanjs", function(cb) {
     cb();
   });
 });
+
