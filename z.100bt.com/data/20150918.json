@@ -1,0 +1,170 @@
+{
+  "games": [
+    {
+      "name": "抓妖记找茬",
+      "reflink": "http://play.7724.com/olgames/zyjzc/",
+      "shareword": "据说看过抓妖记的都能找出所有不同，快来试试吧！",
+      "priority": 3,
+      "id": "de998395-d215-463b-9714-5779ad580f31",
+      "testIp": [
+        "10.18.6.82"
+      ],
+      "ip": "10.18.6.67",
+      "link": "http://www.doudou.in/play/45-zyjzc/",
+      "sharecomplete": true,
+      "actcomplete": true
+    },
+    {
+      "name": "情人节偷吻",
+      "reflink": "http://play.7724.com/olgames/yhqrj/",
+      "shareword": "情人节要上班怎么办？背着老板偷偷约会吧…",
+      "priority": 3,
+      "id": "6a3d98d3-fd5a-4c24-8ae4-bb35f2ea66d8",
+      "testIp": [
+        "10.18.6.82"
+      ],
+      "link": "http://www.doudou.in/play/45-qrjtw/",
+      "ip": "10.18.6.67",
+      "actcomplete": true,
+      "sharecomplete": true
+    },
+    {
+      "name": "跳跳先生跑酷",
+      "reflink": "http://flash1.7k7k.com/h5/2015/ttxs/index.html",
+      "shareword": "我在跳跳先生跑酷中获得xx分，快来挑战吧！",
+      "priority": 3,
+      "id": "29fc26b0-52c2-4ce2-9c0c-13ed27c55dc2",
+      "ip": "10.18.6.67",
+      "testIp": [
+        "10.18.6.63"
+      ],
+      "link": "http://www.doudou.in/play/45-ttpk/",
+      "actcomplete": true,
+      "sharecomplete": true
+    },
+    {
+      "name": "花千骨",
+      "priority": 3,
+      "id": "45a0d241-4d6a-4253-a5cd-77646e568dd0",
+      "ip": "10.18.6.67",
+      "actcomplete": true,
+      "sharecomplete": true,
+      "link": "http://www.doudou.in/play/45-ccnshqgds/",
+      "testIp": [
+        "10.18.6.63"
+      ]
+    }
+  ],
+  "info": {
+    "testCaseConfig": [
+      {
+        "name": "红米测试",
+        "noedit": true,
+        "child": [
+          {
+            "name": "浏览器",
+            "noedit": true,
+            "child": [
+              {
+                "name": "原生"
+              },
+              {
+                "name": "手机百度"
+              },
+              {
+                "name": "uc"
+              }
+            ]
+          },
+          {
+            "name": "微信"
+          }
+        ]
+      },
+      {
+        "name": "三星测试",
+        "noedit": true,
+        "child": [
+          {
+            "name": "浏览器",
+            "noedit": true,
+            "child": [
+              {
+                "name": "原生"
+              },
+              {
+                "name": "手机百度"
+              },
+              {
+                "name": "uc"
+              }
+            ]
+          },
+          {
+            "name": "微信"
+          }
+        ]
+      },
+      {
+        "name": "华为测试",
+        "noedit": true,
+        "child": [
+          {
+            "name": "浏览器",
+            "noedit": true,
+            "child": [
+              {
+                "name": "原生"
+              },
+              {
+                "name": "手机百度"
+              },
+              {
+                "name": "uc"
+              }
+            ]
+          },
+          {
+            "name": "微信"
+          }
+        ]
+      },
+      {
+        "name": "iphone5s测试",
+        "noedit": true,
+        "child": [
+          {
+            "name": "浏览器",
+            "noedit": true,
+            "child": [
+              {
+                "name": "原生"
+              },
+              {
+                "name": "手机百度"
+              },
+              {
+                "name": "uc"
+              }
+            ]
+          },
+          {
+            "name": "微信"
+          }
+        ]
+      },
+      {
+        "name": "iphone6plus测试",
+        "noedit": true,
+        "child": [
+          {
+            "name": "浏览器"
+          },
+          {
+            "name": "微信"
+          }
+        ]
+      }
+    ]
+  }
+}
