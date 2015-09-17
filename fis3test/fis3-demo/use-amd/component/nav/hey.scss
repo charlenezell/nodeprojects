@@ -1,0 +1,8 @@
+$hello:200px;
+html{
+  color:green;
+  body{
+    padding:100px;
+    margin:$hello;
+  }
+}

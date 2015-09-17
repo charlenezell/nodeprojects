@@ -7,7 +7,7 @@ webpacktest/node_modules/*
 workflow/node_modules/*
 doudou/node_modules/*
 z.100bt.com/node_modules/*
-uiplugins/jquery.fullscreenScroll/node_modules/*
+
 z.100bt.com/bkdata/*
 reactest/node_modules/*
 electrontest/node_modules/*
@@ -18,3 +18,5 @@ sass/.sass-cache/*
 sass/dest/*
 webpacktest/modulardemo/dest/*
 webpacktest/multipage/build/*
+*/node_modules/*
+*/node_modules
