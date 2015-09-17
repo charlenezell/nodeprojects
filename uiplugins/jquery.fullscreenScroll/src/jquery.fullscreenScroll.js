@@ -1,5 +1,4 @@
 /**author:z.w*/
-
 $.fn.fullscreenScroll = function(command, data) {
 
   function noop() {}
