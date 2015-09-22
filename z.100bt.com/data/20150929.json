@@ -1,0 +1,81 @@
+{
+  "games": [
+    {
+      "name": "帝国防卫军",
+      "reflink": "http://flash1.7k7k.com/h5/2015/jyswja/index.html",
+      "shareword": "经典好玩的帝国防卫军，我已经停不下来了…",
+      "priority": 1,
+      "id": "46d08c6d-f08f-402b-8b9a-6f14c6ad3bb2"
+    },
+    {
+      "name": "尾行高手",
+      "reflink": "http://flash1.7k7k.com/h5/2015/whgs/game.html",
+      "shareword": "尾行高手-豆豆游戏",
+      "priority": 1,
+      "id": "4d3fd22a-d049-43c7-898a-3c375826d2a1"
+    },
+    {
+      "name": "约会换装",
+      "reflink": "http://szhong.4399.com/4399swf/upload_swf/ftp16/ssj/20150613/t1/1y/index.html",
+      "shareword": "要约会了，赶紧换套美美的装扮哦！！！",
+      "priority": 1,
+      "id": "c45ede95-2be3-46af-82a9-42e10b64e8f1"
+    },
+    {
+      "name": "荒岛极限跑酷",
+      "reflink": "http://szhong.4399.com/4399swf/upload_swf/ftp17/yzg/20150907/1/game.htm",
+      "shareword": "荒岛极限跑酷-豆豆游戏",
+      "priority": 1,
+      "id": "53d72f97-6a54-40c8-8e88-aa50fb8af9fc"
+    },
+    {
+      "name": "军团偷袭战",
+      "reflink": "http://flash1.7k7k.com/h5/2015/jttxz/index.html",
+      "shareword": "军团偷袭战-豆豆游戏",
+      "priority": 1,
+      "id": "e287d6c9-6ea4-4c78-9752-2242903fdbc0"
+    },
+    {
+      "name": "糖果对对碰",
+      "reflink": "http://flash1.7k7k.com/h5/2015/tgddp/index.html",
+      "shareword": "我在<糖果对对碰>中获得xx分，你也试下吧！",
+      "priority": 2,
+      "id": "8d6ea343-5d57-4d9a-bd7e-fbce9100de2e"
+    },
+    {
+      "name": "偏偏喜欢你找茬",
+      "reflink": "http://182.254.208.115/h/ppxhn/",
+      "shareword": "偏偏喜欢你找茬-豆豆游戏",
+      "priority": 2,
+      "id": "ef034efb-ec50-452c-a780-2029cf331bc9"
+    },
+    {
+      "name": "儿童拼图",
+      "reflink": "http://flash1.7k7k.com/h5/2015/etpt1/index.html",
+      "shareword": "儿童拼图-豆豆游戏",
+      "priority": 2,
+      "id": "34731ba4-f34d-4d1c-9d2b-6b69d241a967"
+    },
+    {
+      "name": "宠物消消看",
+      "reflink": "http://sda.4399.com/4399swf/upload_swf/ftp17/yzg/20150909/1/index.htm",
+      "shareword": "我在<宠物消消看>中获得xx分，你也试下吧！",
+      "priority": 2,
+      "id": "4ae8c3ee-5776-4478-8f46-1b7410241a78"
+    },
+    {
+      "name": "卡通拼图",
+      "reflink": "http://flash1.7k7k.com/h5/2014/kpmh/game.html",
+      "shareword": "卡通拼图-豆豆游戏",
+      "priority": 2,
+      "id": "48c15261-447a-4e41-882a-2f588112a370"
+    },
+    {
+      "name": "美眉换装",
+      "reflink": "http://szhong.4399.com/4399swf/upload_swf/ftp16/ssj/20150623/h2a/y1/game.html",
+      "shareword": "快点来帮漂亮的美眉换装咯！！！",
+      "priority": 1,
+      "id": "a7882fac-d070-4abc-b1d4-44fc4bb98b3e"
+    }
+  ]
+}

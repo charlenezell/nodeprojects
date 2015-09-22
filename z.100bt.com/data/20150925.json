@@ -26,7 +26,9 @@
       "reflink": "http://flash1.7k7k.com/h5/2015/ccice/game.htm",
       "shareword": "我在<菜菜冰淇淋>中获得xx分，来挑战吧！",
       "priority": 3,
-      "id": "102b9474-da15-4c57-8ec8-4342c7243901"
+      "id": "102b9474-da15-4c57-8ec8-4342c7243901",
+      "ip": "10.18.6.12",
+      "link": "http://www.doudou.in/play/46-9_ccbql/"
     },
     {
       "name": "安娜生宝宝",
@@ -54,7 +56,9 @@
       "reflink": "http://h.4399.com/play/139734.htm",
       "shareword": "我在<僵尸连连看>中获得xx分，快来试试吧！",
       "priority": 3,
-      "id": "646dc18c-f3d1-4370-9f5d-bc25ca23ca53"
+      "id": "646dc18c-f3d1-4370-9f5d-bc25ca23ca53",
+      "ip": "10.18.6.12",
+      "link": "http://www.doudou.in/play/46-1_jsllk/"
     },
     {
       "name": "璀璨宝石对对碰",
@@ -68,7 +72,9 @@
       "reflink": "http://flash1.7k7k.com/h5/2015/hdxmppl/game.html",
       "shareword": "我在<海盗兄妹泡泡龙>中获得xx分，快来试试吧！",
       "priority": 3,
-      "id": "4ef1d742-625d-4e73-8e38-f6386b153682"
+      "id": "4ef1d742-625d-4e73-8e38-f6386b153682",
+      "ip": "10.18.6.12",
+      "link": "http://www.doudou.in/play/46-6_hdxmppl/"
     }
   ]
 }

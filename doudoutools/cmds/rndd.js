@@ -1,5 +1,5 @@
-/* indexpingyingname commander component
- * To use add require('../cmds/indexpingyingname.js')(program) to your commander.js based node executable before program.parse
+/* rndd commander component
+ * To use add require('../cmds/rndd.js')(program) to your commander.js based node executable before program.parse
  */
 'use strict';
 var glob = require("glob");
@@ -9,12 +9,11 @@ var util = require("./util.js");
 var tr = require('transliteration').slugify;
 
 module.exports = function(program) {
-
 	program
-		.command('indexpingyingname <dir>')
+		.command('rndd <dir> <series>')
 		.version('0.0.1')
 		.description('prefix with index and translate to captial pingying ')
-		.action(function(dir){
+		.action(function(dir,series){
 			glob.sync(dir).forEach(function(v, k) {
 				var filename = path.basename(v).replace(path.extname(v), "");
 				filename=tr(filename,{
@@ -22,7 +21,7 @@ module.exports = function(program) {
 				}).split("-").map(function(v){
 					return v.charAt(0);
 				}).join("");
-				var rst = v.replace(path.basename(v), (k+1)+"_"+filename+path.extname(v));
+				var rst = v.replace(path.basename(v), series+"-"+(k+1)+"_"+filename+path.extname(v));
 				fs.renameSync(v, rst);
 			})
 		});
