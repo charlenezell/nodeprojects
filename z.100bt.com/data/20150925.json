@@ -1,0 +1,74 @@
+{
+  "games": [
+    {
+      "name": "学校小战士",
+      "reflink": "http://play.7724.com/olgames/xxdxzs/",
+      "shareword": "我在<学校的小战士>中获得xx分，你也来试试吧！",
+      "priority": 3,
+      "id": "3b2370ad-1767-47c7-b61a-d76293aefb04"
+    },
+    {
+      "name": "极速赛车",
+      "reflink": "http://flash1.7k7k.com/h5/2015/jspdsc/index.html",
+      "shareword": "我在<极速赛车>中行驶xx米，你也来试试吧！",
+      "priority": 3,
+      "id": "42fc81e2-722d-45f5-a2e2-ba76b3cc7881"
+    },
+    {
+      "name": "飞行器连连看",
+      "reflink": "http://flash1.7k7k.com/h5/2015/fxqllk/game.html",
+      "shareword": "我在<飞行器连连看>中获得xx分，快来试试吧！",
+      "priority": 3,
+      "id": "8954ed26-74b6-4159-b015-80ec217c51e1"
+    },
+    {
+      "name": "菜菜冰淇淋",
+      "reflink": "http://flash1.7k7k.com/h5/2015/ccice/game.htm",
+      "shareword": "我在<菜菜冰淇淋>中获得xx分，来挑战吧！",
+      "priority": 3,
+      "id": "102b9474-da15-4c57-8ec8-4342c7243901"
+    },
+    {
+      "name": "安娜生宝宝",
+      "reflink": "http://flash1.7k7k.com/h5/2015/ansbb/index.html",
+      "shareword": "我帮助安娜顺利产下了宝宝，你也来体验吧！",
+      "priority": 3,
+      "id": "2b5fb951-6e68-47a5-aeb7-7a25e9d36bd6"
+    },
+    {
+      "name": "水果对对碰",
+      "reflink": "http://h.4399.com/play/160389.htm",
+      "shareword": "我在水果对对碰中获得xx分，敢来挑战吗！",
+      "priority": 3,
+      "id": "a2d5bc62-1edf-47ef-a923-4248f21091ab"
+    },
+    {
+      "name": "老虎亲子换装秀",
+      "reflink": "http://h.4399.com/play/159348.htm",
+      "shareword": "我帮助虎妈虎仔穿了好漂亮的衣服，你也来试试吧！",
+      "priority": 3,
+      "id": "d271edf0-903b-44e6-9b8e-27e977b391ca"
+    },
+    {
+      "name": "僵尸连连看",
+      "reflink": "http://h.4399.com/play/139734.htm",
+      "shareword": "我在<僵尸连连看>中获得xx分，快来试试吧！",
+      "priority": 3,
+      "id": "646dc18c-f3d1-4370-9f5d-bc25ca23ca53"
+    },
+    {
+      "name": "璀璨宝石对对碰",
+      "reflink": "http://h.4399.com/play/154481.htm",
+      "shareword": "我在<璀璨宝石对对碰>中获得xx分，快来试试吧！",
+      "priority": 3,
+      "id": "e0218fce-0977-412d-a7cb-f41c49148ab5"
+    },
+    {
+      "name": "海盗兄妹泡泡龙",
+      "reflink": "http://flash1.7k7k.com/h5/2015/hdxmppl/game.html",
+      "shareword": "我在<海盗兄妹泡泡龙>中获得xx分，快来试试吧！",
+      "priority": 3,
+      "id": "4ef1d742-625d-4e73-8e38-f6386b153682"
+    }
+  ]
+}

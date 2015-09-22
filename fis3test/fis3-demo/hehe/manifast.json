@@ -1,0 +1,79 @@
+{
+    "res": {
+        "component/nav/hello.css": {
+            "uri": "/component/nav/hello_3c2c119.css",
+            "type": "css"
+        },
+        "component/nav/hey.scss": {
+            "uri": "/component/nav/hey_207fe5e.css",
+            "type": "css"
+        },
+        "component/nav/index.js": {
+            "uri": "/component/nav/index_63d2595.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "component/nav/index"
+            },
+            "deps": [
+                "lib/require.js",
+                "component/sidebar/index.js"
+            ]
+        },
+        "component/sidebar/index.js": {
+            "uri": "/component/sidebar/index_b2298c0.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "component/sidebar/index"
+            },
+            "deps": [
+                "lib/require.js"
+            ]
+        },
+        "lib/require.js": {
+            "uri": "/lib/require_1aa6b58.js",
+            "type": "js"
+        },
+        "component/player/index.js": {
+            "uri": "/component/player/index_23a3542.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "component/player/index"
+            },
+            "deps": [
+                "lib/require.js",
+                "components/jquery/jquery.js"
+            ]
+        },
+        "components/jquery/jquery.js": {
+            "uri": "/components/jquery/jquery.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery/jquery"
+            }
+        },
+        "page/index.js": {
+            "uri": "/page/index_a70f3ff.js",
+            "type": "js",
+            "deps": [
+                "component/nav/index.js",
+                "component/player/index.js"
+            ]
+        },
+        "page/index.html": {
+            "uri": "/page/index.html",
+            "type": "html"
+        },
+        "page/list.js": {
+            "uri": "/page/list_da40d37.js",
+            "type": "js",
+            "deps": [
+                "component/nav/index.js"
+            ]
+        },
+        "page/list.html": {
+            "uri": "/page/list.html",
+            "type": "html"
+        }
+    },
+    "pkg": {}
+}

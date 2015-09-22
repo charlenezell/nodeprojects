@@ -1,0 +1,1 @@
+require(["component/nav/index"],function(n){n.showNav(),n.showSideBarNav()}),require(["component/player/index"],function(n){console.log(n)});

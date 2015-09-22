@@ -1,0 +1,1 @@
+define("component/player/index",["require","exports","module","components/jquery/jquery"],function(e){var o=e("components/jquery/jquery");console.log("fromPlayer"),o("body").css({color:"red"})});

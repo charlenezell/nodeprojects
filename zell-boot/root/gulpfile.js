@@ -119,7 +119,7 @@ gulp.task("sprite",function(){
             }
 
             function getParamList(_a) {
-                /*p8,v,h,s  默认用_分割，潜规则是图片命名不能有_*/
+                /*v,h,s  默认用_分割，潜规则是图片命名不能有_*/
                 var a = path.basename(_a);
                 var arg = a.split("_");
                 arg.pop();
@@ -169,15 +169,7 @@ gulp.task("sprite",function(){
                 basePath: _basePath
             };
             cssBundles[v].push(spMixStream.css);
-            var needP8Renderer=ld.contains(getParamList(a), "p8");
-            if (needP8Renderer) {
-                spMixStream.img.pipe(pngmin())
-            } else {
-                spMixStream.img.pipe(imagemin({
-                    optimizationLevel: 0
-                }))
-            }
-            return spMixStream.img.pipe(gulp.dest("dest/" + _basePath));
+            return spMixStream.img.pipe(pngmin()).pipe(gulp.dest("dest/" + _basePath));
         });
         var imgJob = es.concat.apply(null, _map);
         if (_map.length > 0) {

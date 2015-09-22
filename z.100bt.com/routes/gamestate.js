@@ -26,7 +26,7 @@ var ip2Name = {
     },
     "10.18.6.12": {
         name: "光耀",
-        rule:"admin"
+        rule:"dev"
     },
     "10.18.6.67": {
         name: "建强",

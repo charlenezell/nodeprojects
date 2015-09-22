@@ -1,0 +1,1 @@
+define("component/sidebar/index",["require","exports","module"],function(e,n){n.hehe=function(){console.log("hehe imSidebar")}});
