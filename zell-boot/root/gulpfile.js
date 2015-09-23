@@ -254,8 +254,8 @@ gulp.task("html",["javascript","css"],function(){
     return merge(
         gulp.src("./src/wap/*.html")
         .pipe(assets2)
-        .pipe(gulp.dest("./dest/wap/"))
-        .pipe(assets2.restore())
+        .pipe(gulp.dest("./dest/wap/")),
+        gulp.src("./src/wap/*.html")
         .pipe(useref())
         .pipe(mapStream(ldTemplate))
         .pipe(htmlmin({
@@ -265,8 +265,8 @@ gulp.task("html",["javascript","css"],function(){
         .pipe(gulp.dest("./dest/wap/")),
         gulp.src("./src/web/*.html")
         .pipe(assets1)
-        .pipe(gulp.dest("./dest/web/"))
-        .pipe(assets1.restore())
+        .pipe(gulp.dest("./dest/web/")),
+        gulp.src("./src/web/*.html")
         .pipe(useref())
         .pipe(mapStream(ldTemplate))
         .pipe(htmlmin({
