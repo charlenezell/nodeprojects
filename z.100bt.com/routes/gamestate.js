@@ -12,6 +12,18 @@ var multipart = require('connect-multiparty');
 var multipartMiddleware = multipart();
 var path=require("path");
 var ip2Name = {
+  "10.19.7.31":{
+    name:"思飞",
+    rule:"art"
+  },
+  "10.19.7.21":{
+    name:"振权",
+    rule:"art"
+  },
+  "10.19.7.244":{
+    name:"思凡",
+    rule:"art"
+  },
     "10.18.6.209": {
         name: "浩源",
         rule:"dev"
@@ -86,6 +98,7 @@ router.get('/:datestr/query', function(req, res, next) {
         result: data,
         code: 1,
         clientIp: getClientIp(req),
+        clientName:ip2Name[getClientIp(req)]?ip2Name[getClientIp(req)].name:"",
         clientRule:ip2Name[getClientIp(req)]?ip2Name[getClientIp(req)].rule:""
     });
 });

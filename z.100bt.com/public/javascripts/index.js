@@ -36,11 +36,13 @@ myapp.controller('gameList', function($scope, $http, $filter, $location) {
         $scope.weekMost = "";
         $scope.lessthan5 = false;
         $scope.testCaseView=false;
+        $scope.randomWord=_.shuffle(["天气很不错哦","别吃这么油腻","累了去泡个茶怎样","中午出去走走？"])[0];
         $http.get("/gamestate/" + db + "/query/").success(function(data) {
             $scope.infoFlag = false;
             $scope.flash = true;
             $scope.games = data.result;
             $scope.myIp = data.clientIp;
+            $scope.myName = data.clientName;
             $scope.info=data.info||{};
             $scope.info.testCaseConfigStr=JSON.stringify($scope.info.testCaseConfig);
             $scope.myRule = data.clientRule;

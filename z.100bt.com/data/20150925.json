@@ -4,38 +4,68 @@
       "name": "学校小战士",
       "reflink": "http://play.7724.com/olgames/xxdxzs/",
       "shareword": "我在<学校的小战士>中获得xx分，你也来试试吧！",
-      "priority": 3,
-      "id": "3b2370ad-1767-47c7-b61a-d76293aefb04"
+      "priority": 1,
+      "id": "3b2370ad-1767-47c7-b61a-d76293aefb04",
+      "testIp": [
+        "10.18.6.63"
+      ],
+      "ip": "10.18.6.12",
+      "link": "http://www.doudou.in/play/46-2_xxxzs/",
+      "memo": "",
+      "actcomplete": true,
+      "sharecomplete": true
     },
     {
       "name": "极速赛车",
       "reflink": "http://flash1.7k7k.com/h5/2015/jspdsc/index.html",
       "shareword": "我在<极速赛车>中行驶xx米，你也来试试吧！",
-      "priority": 3,
-      "id": "42fc81e2-722d-45f5-a2e2-ba76b3cc7881"
+      "priority": 1,
+      "id": "42fc81e2-722d-45f5-a2e2-ba76b3cc7881",
+      "testIp": [
+        "10.18.6.63"
+      ],
+      "ip": "10.18.6.12",
+      "link": "http://www.doudou.in/play/46-4_jspdsc/",
+      "actcomplete": true,
+      "sharecomplete": true
     },
     {
       "name": "飞行器连连看",
       "reflink": "http://flash1.7k7k.com/h5/2015/fxqllk/game.html",
       "shareword": "我在<飞行器连连看>中获得xx分，快来试试吧！",
       "priority": 3,
-      "id": "8954ed26-74b6-4159-b015-80ec217c51e1"
+      "id": "8954ed26-74b6-4159-b015-80ec217c51e1",
+      "testIp": [
+        "10.18.6.63"
+      ]
     },
     {
       "name": "菜菜冰淇淋",
       "reflink": "http://flash1.7k7k.com/h5/2015/ccice/game.htm",
       "shareword": "我在<菜菜冰淇淋>中获得xx分，来挑战吧！",
-      "priority": 3,
+      "priority": 1,
       "id": "102b9474-da15-4c57-8ec8-4342c7243901",
       "ip": "10.18.6.12",
-      "link": "http://www.doudou.in/play/46-9_ccbql/"
+      "link": "http://www.doudou.in/play/46-9_ccbql/",
+      "actcomplete": true,
+      "sharecomplete": true,
+      "testIp": [
+        "10.18.6.82"
+      ]
     },
     {
       "name": "安娜生宝宝",
       "reflink": "http://flash1.7k7k.com/h5/2015/ansbb/index.html",
       "shareword": "我帮助安娜顺利产下了宝宝，你也来体验吧！",
-      "priority": 3,
-      "id": "2b5fb951-6e68-47a5-aeb7-7a25e9d36bd6"
+      "priority": 1,
+      "id": "2b5fb951-6e68-47a5-aeb7-7a25e9d36bd6",
+      "testIp": [
+        "10.18.6.82"
+      ],
+      "ip": "10.18.6.12",
+      "link": "http://www.doudou.in/play/46-3_ansbb/",
+      "actcomplete": true,
+      "sharecomplete": true
     },
     {
       "name": "水果对对碰",
@@ -57,8 +87,11 @@
       "shareword": "我在<僵尸连连看>中获得xx分，快来试试吧！",
       "priority": 3,
       "id": "646dc18c-f3d1-4370-9f5d-bc25ca23ca53",
-      "ip": "10.18.6.12",
-      "link": "http://www.doudou.in/play/46-1_jsllk/"
+      "ip": null,
+      "link": "http://www.doudou.in/play/46-1_jsllk/",
+      "testIp": [
+        "10.18.6.63"
+      ]
     },
     {
       "name": "璀璨宝石对对碰",
@@ -73,8 +106,12 @@
       "shareword": "我在<海盗兄妹泡泡龙>中获得xx分，快来试试吧！",
       "priority": 3,
       "id": "4ef1d742-625d-4e73-8e38-f6386b153682",
-      "ip": "10.18.6.12",
-      "link": "http://www.doudou.in/play/46-6_hdxmppl/"
+      "ip": "127.0.0.1",
+      "link": "http://www.doudou.in/play/46-6_hdxmppl/",
+      "testIp": [
+        "10.18.6.63"
+      ]
     }
-  ]
+  ],
+  "info": []
 }

@@ -153,15 +153,18 @@ gulp.task("sprite",function(){
                 return alg;
             }
             var imgName = getRealName(a),
+                imgName2=ld.contains(getParamList(a), "jpeg")?imgName.replace(path.extname(imgName),".jpeg"):imgName;
                 cssName = path.basename(a) + ".scss",
                 allImgGlob=path.join(a,"**/*.{jpg,png}");
                 console.log(imgName,cssName);
 
             var spMixStream = gulp.src(allImgGlob).pipe(sp({
-                imgName: imgName,
+                imgName:imgName2,
                 cssName: cssName,
-                imgPath: "img/sprite/" + imgName,
+                engine:"gmsmith",
+                imgPath: "img/sprite/" + imgName2,
                 algorithm: chooseAlgorithm(a),
+                imgOpts: {quality: 100},
                 cssVarMap: function(sp) {
                     var spriteImgName = getRealName(a);
                     sp.name = spriteImgName.replace(path.extname(spriteImgName),"")
@@ -177,19 +180,15 @@ gulp.task("sprite",function(){
             };
             cssBundles[v].push(spMixStream.css);
             var needP8Renderer=ld.contains(getParamList(a), "p8");
+            var hasOptimised=ld.contains(getParamList(a), "jpeg");
             if (needP8Renderer) {
-                spMixStream.img.pipe(pngmin());
-            } else {
-                spMixStream.img.pipe(imagemin({
-                    optimizationLevel: 3
-                }));
-            }
-            if (needP8Renderer) {
-                return spMixStream.img.pipe(pngmin()).pipe(gulp.dest("./dest/" + _basePath));
-            } else {
-                return spMixStream.img.pipe(imagemin({
-                    optimizationLevel: 3
-                })).pipe(gulp.dest("./dest/" + _basePath));
+               return spMixStream.img.pipe(pngmin()).pipe(gulp.dest("./dest/" + _basePath));
+            } else if(hasOptimised){
+               return spMixStream.img.pipe(gulp.dest("./dest/" + _basePath));
+            }else{
+               return spMixStream.img.pipe(imagemin({
+                   optimizationLevel: 3
+               })).pipe(gulp.dest("./dest/" + _basePath));
             }
         });
         var imgJob = es.concat.apply(null, _map);
