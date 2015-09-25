@@ -67,7 +67,7 @@
 <span class="cp">#</span><span class="nf">end</span><span class="x"> </span>
 </pre></div>
 
-        <p>以上示例通过<code>esc.h?block()</code> 定义了一个区域<code>body_content</code>，那么在子模板中，就可以像以下方式填充它</p>
+        <p>以上示例通过<code>helloblock()</code> 定义了一个区域<code>body_content</code>，那么在子模板中，就可以像以下方式填充它</p>
 
         <div class="highlight highlight-velocity"><pre><span class="cp">#</span><span class="nf">extends</span><span class="p">(</span><span class="s2">"layout.vm"</span><span class="p">)</span><span class="x"></span>
 <span class="x">    </span><span class="cp">#</span><span class="nf">block</span><span class="p">(</span><span class="s2">"body_content"</span><span class="p">)</span><span class="x"></span>
@@ -78,22 +78,22 @@
 
         <div class="bs-callout bs-callout-warning">
             <h4>说明</h4>
-            <p>以上示例，只需关心<code>esc.h?block()</code>和<code>esc.h?extends()</code>标签，其他标签可以忽略</p>
+            <p>以上示例，只需关心<code>helloblock()</code>和<code>helloextends()</code>标签，其他标签可以忽略</p>
         </div>
 
         <h2>覆盖模式</h2>
 
-        <p>默认，在子模板中同名 <code>esc.h?block()</code> 将会覆盖掉父模板中的同名 <code>esc.h?block()</code>，有时候，我们希望是扩充，而不是生硬的覆盖。</p>
+        <p>默认，在子模板中同名 <code>helloblock()</code> 将会覆盖掉父模板中的同名 <code>helloblock()</code>，有时候，我们希望是扩充，而不是生硬的覆盖。</p>
 
-        <p>新版的 jello 扩充了一个新的 <code>directive</code> <code>esc.h?parent()</code> 通过它可以用来引用被覆盖的block</p>
+        <p>新版的 jello 扩充了一个新的 <code>directive</code> <code>helloparent()</code> 通过它可以用来引用被覆盖的block</p>
 
         <div class="highlight highlight-velocity">
-            <pre lang="velocity"><code>esc.h?extends("layout.vm")
-    esc.h?block("body_content")
-    esc.h?parent()
+            <pre lang="velocity"><code>helloextends("layout.vm")
+    helloblock("body_content")
+    helloparent()
     &lt;h1&gt;Hello Demo&lt;/h1&gt;
-    esc.h?end
-esc.h?end
+    helloend
+helloend
 </code></pre>
         </div>
 

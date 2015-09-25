@@ -5,6 +5,12 @@ fis.match('/static/libs/**.js', {
   isMod: true
 });
 
+fis.match('/zelltest/static/components/**.js', {
+  isMod: true
+});
+fis.match('/zelltest/page/**.js', {
+  isMod: true
+});
 // jello 里面默认用的 commonjs 这里改成 amd 方案。
 fis.unhook('commonjs');
 fis.hook('amd', {
@@ -50,7 +56,7 @@ fis.media('prod')
         '/widget/**.scss'
       ],
       'pkg/boot.js': [
-        'static/js/require.js', 
+        'static/js/require.js',
         'components/jquery/jquery.js',
         'components/bootstrap/bootstrap.js',
         'components/bootstrap/bootstrap.js:deps' // 匹配依赖部分
@@ -60,4 +66,6 @@ fis.media('prod')
         'page/examples/form.js:deps'
       ]
     })
-  })
+  }).match('*.js',{
+    useHash:true
+  });
