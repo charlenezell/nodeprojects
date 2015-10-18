@@ -25,7 +25,7 @@
         <li><code>var</code> 设置 widget 中局部变量</li>
     </ul>
 
-    <div class="highlight highlight-velocity"><pre><span class="cp">#</span><span class="nf">widget</span><span class="p">(</span><span class="s2">"widget/sidebarmenus/sidebarmenus.vm"</span> <span class="s2">"with:esc.d?sidebar"</span> <span class="s2">"var:literal=字面量"</span> <span class="s2">"var:variable=esc.d?sidebar"</span><span class="p">)</span><span class="x"></span>
+    <div class="highlight highlight-velocity"><pre><span class="cp">#</span><span class="nf">widget</span><span class="p">(</span><span class="s2">"widget/sidebarmenus/sidebarmenus.vm"</span> <span class="s2">"with:hellosidebar"</span> <span class="s2">"var:literal=字面量"</span> <span class="s2">"var:variable=hellosidebar"</span><span class="p">)</span><span class="x"></span>
 </pre></div>
 
     <div class="bs-callout bs-callout-warning">
@@ -34,8 +34,8 @@
 
         <div class="highlight highlight-velocity"><pre><span class="cp">#</span><span class="nf">set</span><span class="p">($</span><span class="nv">numbers</span> <span class="o">=</span> <span class="o">[</span><span class="m">1</span><span class="p">,</span> <span class="m">2</span><span class="p">,</span> <span class="m">3</span><span class="p">])</span><span class="x">;</span>
 
-<span class="cp">esc.h?esc.h?</span><span class="c"> 这样在 sidebarmenus.vm 模板里面，就可以使用 list 变量，而这个变量的值为数组 [1, 2, 3]</span><span class="x"></span>
-<span class="cp">#</span><span class="nf">widget</span><span class="p">(</span><span class="s2">"widget/sidebarmenus/sidebarmenus.vm"</span> <span class="s2">"var:list=esc.d?numbers"</span><span class="p">)</span><span class="x"></span>
+<span class="cp">hellohello</span><span class="c"> 这样在 sidebarmenus.vm 模板里面，就可以使用 list 变量，而这个变量的值为数组 [1, 2, 3]</span><span class="x"></span>
+<span class="cp">#</span><span class="nf">widget</span><span class="p">(</span><span class="s2">"widget/sidebarmenus/sidebarmenus.vm"</span> <span class="s2">"var:list=hellonumbers"</span><span class="p">)</span><span class="x"></span>
 </pre></div>
     </div>
 

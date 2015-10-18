@@ -150,6 +150,14 @@ myapp.controller('gameList', function($scope, $http, $filter, $location) {
             $scope.updateGameData();
         });
     }
+    $scope.assignArtist = function(id, flag, artIP) {
+        $http.post("/gamestate/" + db + "/" + (flag == 1 ? "lockArt" : "unlockArt") + "/" + id, {
+            newTestIp: artIP
+        }).success(function(data) {
+            console.log(data);
+            $scope.updateGameData();
+        });
+    }
     $scope.completeAct = function(id, flag) {
         $http.post("/gamestate/" + db + "/update/" + id, {
             actcomplete: flag == 0 ? false : true

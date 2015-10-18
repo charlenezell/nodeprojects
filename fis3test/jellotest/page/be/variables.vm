@@ -9,13 +9,13 @@
 
 <p>在 jello 模拟环境下，是有很些全局变量可以使用，整入到后端后不一定有，如何让 spring 开发这些变量？</p>
 
-<h2>esc.d?request</h2>
+<h2>hellorequest</h2>
 <p>在 spring 的 xml 配置中， <code>viewResolver</code>下设置<code><span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">"requestContextAttribute"</span> <span class="na">value=</span><span class="s">"request"</span> <span class="nt">/&gt;</span></code></p>
 
-<h2>esc.d?session</h2>
+<h2>hellosession</h2>
 <p>在 spring 的 xml 配置中， <code>viewResolver</code>下设置<code><span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">"exposeSessionAttributes"</span> <span class="na">value=</span><span class="s">"true"</span> <span class="nt">/&gt;</span></code></p>
 
-<h2>esc.d?rc</h2>
+<h2>hellorc</h2>
 
 <p>在 spring 的 xml 配置中， <code>viewResolver</code>下设置<code><span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">"exposeSpringMacroHelpers"</span> <span class="na">value=</span><span class="s">"true"</span><span class="nt">/&gt;</span></code></p>
 
@@ -38,7 +38,7 @@
 <span class="o">}</span>
 </pre></div>
 
-<p>以上的例子，给所有 vm 都添加了 esc.d?previewServer 变量。</p>
+<p>以上的例子，给所有 vm 都添加了 hellopreviewServer 变量。</p>
 
 #end## end of body
 

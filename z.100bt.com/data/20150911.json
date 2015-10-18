@@ -234,7 +234,119 @@
             "name": "浏览器"
           },
           {
+            "name": "微信x"
+          }
+        ]
+      }
+    ]
+  },
+  "_bkinfo": {
+    "testCaseConfig": [
+      {
+        "name": "红米测试",
+        "noedit": true,
+        "child": [
+          {
+            "name": "浏览器",
+            "noedit": true,
+            "child": [
+              {
+                "name": "原生"
+              },
+              {
+                "name": "手机百度"
+              },
+              {
+                "name": "uc"
+              }
+            ]
+          },
+          {
             "name": "微信"
+          }
+        ]
+      },
+      {
+        "name": "三星测试",
+        "noedit": true,
+        "child": [
+          {
+            "name": "浏览器",
+            "noedit": true,
+            "child": [
+              {
+                "name": "原生"
+              },
+              {
+                "name": "手机百度"
+              },
+              {
+                "name": "uc"
+              }
+            ]
+          },
+          {
+            "name": "微信"
+          }
+        ]
+      },
+      {
+        "name": "华为测试",
+        "noedit": true,
+        "child": [
+          {
+            "name": "浏览器",
+            "noedit": true,
+            "child": [
+              {
+                "name": "原生"
+              },
+              {
+                "name": "手机百度"
+              },
+              {
+                "name": "uc"
+              }
+            ]
+          },
+          {
+            "name": "微信"
+          }
+        ]
+      },
+      {
+        "name": "iphone5s测试",
+        "noedit": true,
+        "child": [
+          {
+            "name": "浏览器",
+            "noedit": true,
+            "child": [
+              {
+                "name": "原生"
+              },
+              {
+                "name": "手机百度"
+              },
+              {
+                "name": "uc"
+              }
+            ]
+          },
+          {
+            "name": "微信"
+          }
+        ]
+      },
+      {
+        "name": "iphone6plus测试",
+        "noedit": true,
+        "child": [
+          {
+            "name": "浏览器"
+          },
+          {
+            "name": "微信x"
           }
         ]
       }

@@ -1,4 +1,8 @@
-<%@ page contentType="text/html;charset=utf-8" %><%@ page import="java.util.*" %><%@ taglib uri="/fis" prefix="fis"%><%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %><%
+<%@ page contentType="text/html;charset=utf-8" %>
+<%@ page import="java.util.*" %>
+<%@ taglib uri="/fis" prefix="fis"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%
 
     String layout = request.getParameter("layout");
     String parent = "page/layout/2columns-with-left-sidebar.jsp";
@@ -15,7 +19,8 @@
 
     request.setAttribute("layout", layout);
     request.setAttribute("parent", parent);
-%><fis:extends name="parent">
+%>
+<fis:extends name="hello">
 
     <c:set var="pageTitle" value="JSP 模板继承" scope="request" />
     <c:set var="title" value="JSP 模板继承" scope="request" />
@@ -26,7 +31,7 @@
 
     <fis:block name="sidebarSecondary">
         <%--with 表示把整个对象里面的成员展开，作为局部变量。--%>
-        <fis:widget name="/widget/sidebarmenus/sidebarmenus.jsp" with="sidebar" />
+        <fis:widget name="/widget/sidebarmenus/sidebarmenus.jsp" with="hello" />
     </fis:block>
 
     <fis:block name="content">
@@ -44,9 +49,9 @@
             <h4>先点击示例看效果</h4>
             <p>请切换下面这三个按钮看效果，同样的内容在不同的骨架下的效果。</p>
             <div class="btn-group">
-                <a type="button" href="?layout=left" class="btn btn-info <c:if test="left">active</c:if>">两栏布局 - 带左边栏</a>
-                <a type="button" href="?layout=both" class="btn btn-info <c:if test="left">active</c:if>">三栏布局</a>
-                <a type="button" href="?layout=right" class="btn btn-info <c:if test="left">active</c:if>">两栏布局 - 带右边栏</a>
+                <a type="button" href="?layout=left" class="btn btn-info <c:if test="hello">active</c:if>">两栏布局 - 带左边栏</a>
+                <a type="button" href="?layout=both" class="btn btn-info <c:if test="hello">active</c:if>">三栏布局</a>
+                <a type="button" href="?layout=right" class="btn btn-info <c:if test="hello">active</c:if>">两栏布局 - 带右边栏</a>
             </div>
         </div>
 
@@ -89,7 +94,7 @@
 
         <h2 id="局部变量">局部变量</h2>
 
-        <p>请直接查看 widget 中的局部变量用法，用法一样。<a href="p.r.c/jsp/widget#局部变量">传送门</a></p>
+        <p>请直接查看 widget 中的局部变量用法，用法一样。<a href="hello/jsp/widget#局部变量">传送门</a></p>
 
     </fis:block>
 </fis:extends>

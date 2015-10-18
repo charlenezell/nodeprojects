@@ -23,7 +23,7 @@ myapp.controller('weekgamesInfo', function($scope, $http, $filter, $location) {
         $http.post("/gamestate/"+db+"/manage/",{
             testCaseConfig:$scope.info.testCaseConfigStr
         }).success(function(data){
-            alert(data);
+            alert(data.result);
         });
     }
     $scope.getInfoByDbStr(db);

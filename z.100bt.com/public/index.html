@@ -36,7 +36,7 @@
     <table class="gameStateTable" ng-show="!testCaseView">
         <thead>
         <tr>
-            <th class="iconC">美术资源</th><th class="iconC">美术集成</th><th class="iconC">分享集成</th><th class="iconC">完成测试</th><th class="gameNameC">游戏名</th><th class="nameC">开发</th><th  class="nameC">测试</th><th class="btnC">可选操作</th><th>备注</th><th>doudou链接</th><th>分享文案</th><th>参考链接</th>
+            <th class="iconC">美术资源</th><th class="iconC">美术集成</th><th class="iconC">分享集成</th><th class="iconC">完成测试</th><th class="gameNameC">游戏名</th><th class="nameC">美术</th><th class="nameC">开发</th><th  class="nameC">测试</th><th class="btnC">可选操作</th><th>备注</th><th>doudou链接</th><th>分享文案</th><th>参考链接</th>
         </tr>
         </thead>
         <tbody>
@@ -46,9 +46,12 @@
             <td><span ng-if="game.sharecomplete" class='tickicon'>√</span><span ng-if="!game.sharecomplete" class='crossicon'>×</span></td>
             <td><span ng-if="game.testcomplete" class='tickicon'>√</span><span ng-if="!game.testcomplete" class='crossicon'>×</span></td>
             <td class="gameName">{{game.name}}</td>
+            <td ng-class="{noArt:!game.hasArt}">{{game.artist||"待定"}}</td>
             <td>{{game.author||"待定"}}</td>
             <td ng-class="{noTest:game.actcomplete&&game.sharecomplete&&(ipstrisNull(game.testIp))&&flash}">{{game.testor||"待定"}}</td>
             <td>
+                <a href="" ng-if="!game.artIP&&myRule=='art'||myRule=='admin'" ng-click="assignArtist(game.id,1)" class="btn">美术占有</a>
+                <a href="" ng-if="game.artIP&&game.artIP==myIp&&myRule=='art'||myRule=='admin'" ng-click="assignArtist(game.id,0)" class="btn btn_falsy">撤销美术占有</a>
                 <a href="" ng-if="!game.ip&&myRule=='dev'||myRule=='admin'" ng-click="lockGame(game.id,1)" class="btn">开发占有</a>
                 <a href="" ng-if="game.ip&&game.ip==myIp&&myRule=='dev'||myRule=='admin'" ng-click="lockGame(game.id,0)" class="btn btn_falsy">撤销开发占有</a>
                 <a href="" ng-if="!hasMyIp(game.testIp,myIp)&&myRule=='test'||myRule=='admin'" ng-click="assignTestor(game.id,1)" class="btn">测试占有</a>

@@ -38,7 +38,7 @@ var ip2Name = {
     },
     "10.18.6.12": {
         name: "光耀",
-        rule:"dev"
+        rule:"art"
     },
     "10.18.6.67": {
         name: "建强",
@@ -131,7 +131,7 @@ router.get('/:datestr/export', function(req, res, next) {
     gobj.sort();
 
     var data = [
-        ["名字", "链接", "备注", "开发","测试"].concat(gobj)
+        ["名字","链接", "备注", "美术","开发","测试"].concat(gobj)
     ];
 
     if(_query.type&&_query.type=="nocomplete"){
@@ -153,8 +153,9 @@ router.get('/:datestr/export', function(req, res, next) {
             }
             return str||"空"
         })();
-        var author = ip2Name[v.ip + ""] ? ip2Name[v.ip + ""].name : v.ip;
-        var _temp=["<p style='white-space:nowrap;'>"+v.name+"</p>", (v.link || "空"), (v.memo || "空"), ("<p style='white-space:nowrap;'>"+author+"</p>"||"空"), ("<p style='white-space:nowrap;'>"+testor+"</p>")].concat(gobj.map(function(value){
+        var author = (ip2Name[v.ip + ""] ? ip2Name[v.ip + ""].name : v.ip)||"空";
+        var artist = (ip2Name[v.artIP + ""] ? ip2Name[v.artIP + ""].name : v.artIP)||"空";
+        var _temp=["<p style='white-space:nowrap;'>"+v.name+"</p>", (v.link || "空"), (v.memo || "空"),("<p style='white-space:nowrap;'>"+artist+"</p>"), ("<p style='white-space:nowrap;'>"+author+"</p>"), ("<p style='white-space:nowrap;'>"+testor+"</p>")].concat(gobj.map(function(value){
             var ggg=v[value+"_content"];
             if(ld.isUndefined(v[value+"_content"])){
                 ggg=""
@@ -172,7 +173,7 @@ router.get('/:datestr/export', function(req, res, next) {
     function parse(str){
         return str.replace(/(http:\/\/.*?)(?:([\s]|$))/,"<a href='$1' target='_blank'>$1</a>");
     }
-var str="<link rel='stylesheet' href='/stylesheets/editstylesheet.css' /><style>*{margin:0;padding:0}table{text-align:center;border-collapse:collapse;margin-top:50px;table-layout:fixed;}th{background:rgb(163,0,0);color:white;}th,td{border:1px solid #CFCFCF;padding:0 12px;}th{padding:5px;font-size:12px;}</style>";
+var str="<link rel='stylesheet' href='/stylesheets/editstylesheet.css' /><style>*{margin:0;padding:0}table{margin: 0 auto;text-align:center;border-collapse:collapse;margin-top:50px;table-layout:fixed;}th{background:rgb(163,0,0);color:white;}th,td{border:1px solid #CFCFCF;padding:0 12px;}th{padding:5px;font-size:12px;}</style>";
     str+="<h1 style='text-align:center;'>"+_date+"豆豆游戏集成和测试状况</h1>";
     str+="<table>"
     str+=data.map(function(v,k){
@@ -325,6 +326,7 @@ function parseData(data,_date){
   }
 // var source=[];
     data.author = ip2Name[data.ip + ""] ? ip2Name[data.ip + ""].name : data.ip;
+    data.artist = ip2Name[data.artIP + ""] ? ip2Name[data.artIP + ""].name : data.artIP;
     data.testor = (function() {
         var str = null;
         if (!data.testIp) {
@@ -498,6 +500,39 @@ router.post('/:datestr/unlockTest/:id', function(req, res, next) {
         result: rst,
         code: 1
     });
+
+});
+router.post('/:datestr/lockArt/:id', function(req, res, next) {
+    var _date = req.___date;
+            var _id = req.___id;
+            var _params=req.___params;
+
+        var db = low(_date + '.json')
+        _params.artIP = getClientIp(req);
+        var rst = db("games").chain().find({
+            id: _id
+        }).assign(_params).value();
+        db.save();
+        res.json({
+            result: rst,
+            code: 1
+        });
+});
+router.post('/:datestr/unlockArt/:id', function(req, res, next) {
+    var _date = req.___date;
+            var _id = req.___id;
+            var _params=req.___params;
+
+        var db = low(_date + '.json')
+        _params.artIP = null;
+        var rst = db("games").chain().find({
+            id: _id
+        }).assign(_params).value();
+        db.save();
+        res.json({
+            result: rst,
+            code: 1
+        });
 
 });
 router.post('/:datestr/lockDev/:id', function(req, res, next) {

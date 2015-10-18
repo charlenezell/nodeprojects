@@ -11,9 +11,9 @@
             <div class="row">
                 <div class="col-md-3"><fis:block name="sidebar"></fis:block></div>
                 <div class="col-md-9">
-                    <c:if test="hellotitle?">
+                    <c:if test="hello">
                         <div class="page-header">
-                            <h1>pagetitle<c:if test="hellotitle?"><small>subtitle</small></c:if></h1>
+                            <h1>hello<c:if test="hello"><small>hello</small></c:if></h1>
                         </div>
                     </c:if>
                     <div id="content"><fis:block name="content"></fis:block></div>
