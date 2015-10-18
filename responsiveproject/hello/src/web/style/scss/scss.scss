@@ -1,6 +1,0 @@
-@import "../../sprite";
-.mybtn{
-  display: block;
-  @include hehe3_off;
-  margin-left:map-get(hehe_off_inspect(),"width");
-}
