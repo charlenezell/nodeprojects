@@ -1,0 +1,251 @@
+@mixin btns_bao01($x:null,$y:null) {
+  background-image: url(img/sprite/btns.png);
+  $ix:-144px;
+  $iy:0px;
+  @if $x != null {
+  $ix:$x;
+  }
+  @if $y !=null{
+    $iy:$y;
+  }
+  background-position: $ix $iy;
+  width: 150px;
+  height: 36px;
+}
+
+@function  btns_bao01_inspect() {
+  $ix:-144px;
+  $iy:0px;
+  $iw:150px;
+  $ih:36px;
+  $img:"img/sprite/btns.png";
+  @return (height:$ih,width:$iw,x:$ix,y:$iy,img:$img);
+}
+
+@mixin btns_bao02($x:null,$y:null) {
+  background-image: url(img/sprite/btns.png);
+  $ix:-144px;
+  $iy:-36px;
+  @if $x != null {
+  $ix:$x;
+  }
+  @if $y !=null{
+    $iy:$y;
+  }
+  background-position: $ix $iy;
+  width: 150px;
+  height: 36px;
+}
+
+@function  btns_bao02_inspect() {
+  $ix:-144px;
+  $iy:-36px;
+  $iw:150px;
+  $ih:36px;
+  $img:"img/sprite/btns.png";
+  @return (height:$ih,width:$iw,x:$ix,y:$iy,img:$img);
+}
+
+@mixin btns_watch01($x:null,$y:null) {
+  background-image: url(img/sprite/btns.png);
+  $ix:0px;
+  $iy:0px;
+  @if $x != null {
+  $ix:$x;
+  }
+  @if $y !=null{
+    $iy:$y;
+  }
+  background-position: $ix $iy;
+  width: 144px;
+  height: 50px;
+}
+
+@function  btns_watch01_inspect() {
+  $ix:0px;
+  $iy:0px;
+  $iw:144px;
+  $ih:50px;
+  $img:"img/sprite/btns.png";
+  @return (height:$ih,width:$iw,x:$ix,y:$iy,img:$img);
+}
+
+@mixin btns_watch02($x:null,$y:null) {
+  background-image: url(img/sprite/btns.png);
+  $ix:0px;
+  $iy:-50px;
+  @if $x != null {
+  $ix:$x;
+  }
+  @if $y !=null{
+    $iy:$y;
+  }
+  background-position: $ix $iy;
+  width: 144px;
+  height: 50px;
+}
+
+@function  btns_watch02_inspect() {
+  $ix:0px;
+  $iy:-50px;
+  $iw:144px;
+  $ih:50px;
+  $img:"img/sprite/btns.png";
+  @return (height:$ih,width:$iw,x:$ix,y:$iy,img:$img);
+}
+
+
+
+
+@mixin hehe2_off($x:null,$y:null) {
+  background-image: url(img/sprite/hehe2.png);
+  $ix:0px;
+  $iy:0px;
+  @if $x != null {
+  $ix:$x;
+  }
+  @if $y !=null{
+    $iy:$y;
+  }
+  background-position: $ix $iy;
+  width: 90px;
+  height: 90px;
+}
+
+@function  hehe2_off_inspect() {
+  $ix:0px;
+  $iy:0px;
+  $iw:90px;
+  $ih:90px;
+  $img:"img/sprite/hehe2.png";
+  @return (height:$ih,width:$iw,x:$ix,y:$iy,img:$img);
+}
+
+@mixin hehe2_on($x:null,$y:null) {
+  background-image: url(img/sprite/hehe2.png);
+  $ix:-90px;
+  $iy:0px;
+  @if $x != null {
+  $ix:$x;
+  }
+  @if $y !=null{
+    $iy:$y;
+  }
+  background-position: $ix $iy;
+  width: 90px;
+  height: 90px;
+}
+
+@function  hehe2_on_inspect() {
+  $ix:-90px;
+  $iy:0px;
+  $iw:90px;
+  $ih:90px;
+  $img:"img/sprite/hehe2.png";
+  @return (height:$ih,width:$iw,x:$ix,y:$iy,img:$img);
+}
+
+
+
+
+@mixin hehe3_off($x:null,$y:null) {
+  background-image: url(img/sprite/hehe3.png);
+  $ix:0px;
+  $iy:0px;
+  @if $x != null {
+  $ix:$x;
+  }
+  @if $y !=null{
+    $iy:$y;
+  }
+  background-position: $ix $iy;
+  width: 90px;
+  height: 90px;
+}
+
+@function  hehe3_off_inspect() {
+  $ix:0px;
+  $iy:0px;
+  $iw:90px;
+  $ih:90px;
+  $img:"img/sprite/hehe3.png";
+  @return (height:$ih,width:$iw,x:$ix,y:$iy,img:$img);
+}
+
+@mixin hehe3_on($x:null,$y:null) {
+  background-image: url(img/sprite/hehe3.png);
+  $ix:-90px;
+  $iy:-90px;
+  @if $x != null {
+  $ix:$x;
+  }
+  @if $y !=null{
+    $iy:$y;
+  }
+  background-position: $ix $iy;
+  width: 90px;
+  height: 90px;
+}
+
+@function  hehe3_on_inspect() {
+  $ix:-90px;
+  $iy:-90px;
+  $iw:90px;
+  $ih:90px;
+  $img:"img/sprite/hehe3.png";
+  @return (height:$ih,width:$iw,x:$ix,y:$iy,img:$img);
+}
+
+
+
+
+@mixin hehe_off($x:null,$y:null) {
+  background-image: url(img/sprite/hehe.png);
+  $ix:0px;
+  $iy:0px;
+  @if $x != null {
+  $ix:$x;
+  }
+  @if $y !=null{
+    $iy:$y;
+  }
+  background-position: $ix $iy;
+  width: 90px;
+  height: 90px;
+}
+
+@function  hehe_off_inspect() {
+  $ix:0px;
+  $iy:0px;
+  $iw:90px;
+  $ih:90px;
+  $img:"img/sprite/hehe.png";
+  @return (height:$ih,width:$iw,x:$ix,y:$iy,img:$img);
+}
+
+@mixin hehe_on($x:null,$y:null) {
+  background-image: url(img/sprite/hehe.png);
+  $ix:0px;
+  $iy:-90px;
+  @if $x != null {
+  $ix:$x;
+  }
+  @if $y !=null{
+    $iy:$y;
+  }
+  background-position: $ix $iy;
+  width: 90px;
+  height: 90px;
+}
+
+@function  hehe_on_inspect() {
+  $ix:0px;
+  $iy:-90px;
+  $iw:90px;
+  $ih:90px;
+  $img:"img/sprite/hehe.png";
+  @return (height:$ih,width:$iw,x:$ix,y:$iy,img:$img);
+}
+
+
+
