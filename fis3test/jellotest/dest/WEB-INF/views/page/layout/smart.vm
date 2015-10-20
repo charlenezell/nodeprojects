@@ -1,0 +1,13 @@
+## 只能判断，是否来源于 ajax
+#if($request.getHeader("X-Requested-With").equals("XMLHttpRequest"))
+    #extends("page/layout/spa.vm")
+  ## auto inject by fis3-preprocess-extlang
+  #require("page/layout/smart.vm")
+#end
+#else
+    #extends("page/layout/2columns-with-left-sidebar.vm")
+  ## auto inject by fis3-preprocess-extlang
+  #require("page/layout/smart.vm")
+#end
+#end
+

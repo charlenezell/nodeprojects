@@ -1,0 +1,51 @@
+.jello-toc {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #f7f5fa;
+  text-shadow: #fff 0 1px 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px; }
+  .jello-toc .nav > li > a {
+    display: block;
+    color: #716b7a;
+    padding: 5px 20px; }
+  .jello-toc .nav > .active > a, .jello-toc .nav > .active:hover > a, .jello-toc .nav > .active:focus > a {
+    font-weight: bold;
+    color: #563d7c;
+    background-color: transparent;
+    border-right: 1px solid #563d7c;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0; }
+  .jello-toc .nav .nav {
+    display: none;
+    margin-bottom: 8px; }
+    .jello-toc .nav .nav > li > a {
+      padding-top: 3px;
+      padding-bottom: 3px;
+      padding-left: 30px;
+      font-size: 90%; }
+  .jello-toc.affix {
+    position: static; }
+
+@media (min-width: 992px) {
+  .jello-toc.affix {
+    position: fixed;
+    width: 213px;
+    top: 50px; }
+  .jello-toc.affix-bottom {
+    position: absolute;
+    width: 213px; }
+  .jello-toc .nav > .active > ul {
+    display: block; } }
+
+@media (min-width: 1200px) {
+  .jello-toc.affix, .jello-toc.affix-bottom {
+    width: 263px; } }

@@ -1,0 +1,82 @@
+define('components/jquery-ui/i18n/datepicker-id', ['require', 'exports', 'module', 'components/jquery-ui/datepicker'], function(require, exports, module) {
+
+  /* Indonesian initialisation for the jQuery UI date picker plugin. */
+  /* Written by Deden Fathurahman (dedenf@gmail.com). */
+  
+  (function (factory) {
+      // AMD. Register as an anonymous module.
+      
+      module.exports = factory(require('components/jquery-ui/datepicker'));;
+  }(function (datepicker) {
+      datepicker.regional['id'] = {
+          closeText: 'Tutup',
+          prevText: '&#x3C;mundur',
+          nextText: 'maju&#x3E;',
+          currentText: 'hari ini',
+          monthNames: [
+              'Januari',
+              'Februari',
+              'Maret',
+              'April',
+              'Mei',
+              'Juni',
+              'Juli',
+              'Agustus',
+              'September',
+              'Oktober',
+              'Nopember',
+              'Desember'
+          ],
+          monthNamesShort: [
+              'Jan',
+              'Feb',
+              'Mar',
+              'Apr',
+              'Mei',
+              'Jun',
+              'Jul',
+              'Agus',
+              'Sep',
+              'Okt',
+              'Nop',
+              'Des'
+          ],
+          dayNames: [
+              'Minggu',
+              'Senin',
+              'Selasa',
+              'Rabu',
+              'Kamis',
+              'Jumat',
+              'Sabtu'
+          ],
+          dayNamesShort: [
+              'Min',
+              'Sen',
+              'Sel',
+              'Rab',
+              'kam',
+              'Jum',
+              'Sab'
+          ],
+          dayNamesMin: [
+              'Mg',
+              'Sn',
+              'Sl',
+              'Rb',
+              'Km',
+              'jm',
+              'Sb'
+          ],
+          weekHeader: 'Mg',
+          dateFormat: 'dd/mm/yy',
+          firstDay: 0,
+          isRTL: false,
+          showMonthAfterYear: false,
+          yearSuffix: ''
+      };
+      datepicker.setDefaults(datepicker.regional['id']);
+      return datepicker.regional['id'];
+  }));
+
+});

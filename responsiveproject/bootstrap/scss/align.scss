@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+@mixin center-abs($width, $height) {
+    & {
+        width: if(unitless($width), #{$width}px, $width);
+        height: if(unitless($height), #{$height}px, $height);
+        position: relative;
+    }
+
+    .center-abs {
+        &__content {
+            margin: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}
+
+.env1 {
+    @include center-abs(500, 400);
+}
+
+@mixin center-tablecellinline($width, $height) {
+    & {
+        width: if(unitless($width), #{$width}px, $width);
+        height: if(unitless($height), #{$height}px, $height);
+        display: table;
+        text-align: center;
+        .ct-content {
+            display: table-cell;
+            vertical-align: middle;
+            *display: inline-block;
+        }
+
+        .ct-faker {
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+        }
+    }
+}
+.maxwidth400{
+  max-width:400px;
+  _width:400px;
+  display: inline-block;
+}
+.ct-container{
+  @include center-tablecellinline(500,600);
+}
+.ct-container2{
+  @include center-tablecellinline(800,600);
+}
+.Center-Container {
+    width: 500px;
+    height: 400px;
+    background-color: red;
+    margin-bottom: 20px;
+}
+
+.is-Table {
+    display: table;
+}
+
+.is-Table .Table-Cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.is-Table .Center-Block {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.is-Inline {
+    text-align: center;
+    overflow: auto;
+}
+
+.is-Inline:after,
+.is-Inline .Center-Block {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.is-Inline:after {
+    content: '';
+    height: 100%;
+    margin-left: -0.25em;
+    /* To offset spacing. May vary by font */
+}
+
+.is-Inline .Center-Block {
+    max-width: 99%;
+    /* Prevents issues with long content causes the content block to be pushed to the top */
+    /* max-width: calc(100% - 0.25em) /* Only for IE9+ */
+}
+
+.wsomething-semantic {
+    background-color: green;
+    width: 500px;
+    height: 400px;
+}
+
+.something-semantic {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.something-else-semantic {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.block {
+    text-align: center;
+    background: #c0c0c0;
+    border: #a0a0a0 solid 1px;
+    margin: 20px;
+}
+
+.block:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em;
+
+    /* Adjusts for spacing */
+
+    /* For visualization
+    background: #808080; width: 5px;
+    */
+}
+
+.centered {
+    display: inline-block;
+    vertical-align: middle;
+    width: 300px;
+    padding: 10px 15px;
+    border: #a0a0a0 solid 1px;
+    background: #f5f5f5;
+}

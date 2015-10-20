@@ -1,4 +1,3 @@
-// @require /lib/require.js
 var cal = require('../sidebar/index');
 
 exports.showNav=function(){

@@ -5,3 +5,4 @@ sass/dest/*
 webpacktest/modulardemo/dest/*
 webpacktest/multipage/build/*
 **/node_modules/*
+**/.sass-cache/*

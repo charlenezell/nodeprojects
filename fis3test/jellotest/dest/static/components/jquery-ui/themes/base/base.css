@@ -1,0 +1,28 @@
+/*!
+ * jQuery UI CSS Framework 1.11.2
+ * http://jqueryui.com
+ *
+ * Copyright 2014 jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/category/theming/
+ */
+@import url("/static/components/jquery-ui/themes/base/core.css");
+
+@import url("/static/components/jquery-ui/themes/base/accordion.css");
+@import url("/static/components/jquery-ui/themes/base/autocomplete.css");
+@import url("/static/components/jquery-ui/themes/base/button.css");
+@import url("/static/components/jquery-ui/themes/base/datepicker.css");
+@import url("/static/components/jquery-ui/themes/base/dialog.css");
+@import url("/static/components/jquery-ui/themes/base/draggable.css");
+@import url("/static/components/jquery-ui/themes/base/menu.css");
+@import url("/static/components/jquery-ui/themes/base/progressbar.css");
+@import url("/static/components/jquery-ui/themes/base/resizable.css");
+@import url("/static/components/jquery-ui/themes/base/selectable.css");
+@import url("/static/components/jquery-ui/themes/base/selectmenu.css");
+@import url("/static/components/jquery-ui/themes/base/sortable.css");
+@import url("/static/components/jquery-ui/themes/base/slider.css");
+@import url("/static/components/jquery-ui/themes/base/spinner.css");
+@import url("/static/components/jquery-ui/themes/base/tabs.css");
+@import url("/static/components/jquery-ui/themes/base/tooltip.css");
