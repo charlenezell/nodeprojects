@@ -58,4 +58,18 @@
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/utilities";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
 
-.content{height: 100px;}
+.zitem{
+  &__name{
+    display: block;
+    text-align: center;
+    font-style: 14px;
+  }
+  &__img{
+    width:100%;
+  }
+}
+
+.row>div{
+  transition: all 200ms ease;
+}
+

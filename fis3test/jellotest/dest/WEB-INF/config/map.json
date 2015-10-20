@@ -1,0 +1,2582 @@
+{
+    "res": {
+        "components/bootstrap/affix.js": {
+            "uri": "/static/components/bootstrap/affix.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/bootstrap/affix"
+            },
+            "deps": [
+                "components/jquery/jquery.js"
+            ]
+        },
+        "components/jquery/jquery.js": {
+            "uri": "/static/components/jquery/jquery.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery/jquery"
+            }
+        },
+        "components/bootstrap/alert.js": {
+            "uri": "/static/components/bootstrap/alert.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/bootstrap/alert"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/bootstrap/transition.js"
+            ]
+        },
+        "components/bootstrap/transition.js": {
+            "uri": "/static/components/bootstrap/transition.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/bootstrap/transition"
+            },
+            "deps": [
+                "components/jquery/jquery.js"
+            ]
+        },
+        "components/bootstrap/bootstrap.js": {
+            "uri": "/static/components/bootstrap/bootstrap.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/bootstrap/bootstrap"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/bootstrap/alert.js",
+                "components/bootstrap/button.js",
+                "components/bootstrap/carousel.js",
+                "components/bootstrap/collapse.js",
+                "components/bootstrap/dropdown.js",
+                "components/bootstrap/modal.js",
+                "components/bootstrap/tooltip.js",
+                "components/bootstrap/popover.js",
+                "components/bootstrap/scrollspy.js",
+                "components/bootstrap/tab.js",
+                "components/bootstrap/affix.js"
+            ]
+        },
+        "components/bootstrap/button.js": {
+            "uri": "/static/components/bootstrap/button.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/bootstrap/button"
+            },
+            "deps": [
+                "components/jquery/jquery.js"
+            ]
+        },
+        "components/bootstrap/carousel.js": {
+            "uri": "/static/components/bootstrap/carousel.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/bootstrap/carousel"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/bootstrap/transition.js"
+            ]
+        },
+        "components/bootstrap/collapse.js": {
+            "uri": "/static/components/bootstrap/collapse.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/bootstrap/collapse"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/bootstrap/transition.js"
+            ]
+        },
+        "components/bootstrap/dropdown.js": {
+            "uri": "/static/components/bootstrap/dropdown.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/bootstrap/dropdown"
+            },
+            "deps": [
+                "components/jquery/jquery.js"
+            ]
+        },
+        "components/bootstrap/modal.js": {
+            "uri": "/static/components/bootstrap/modal.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/bootstrap/modal"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/bootstrap/transition.js"
+            ]
+        },
+        "components/bootstrap/tooltip.js": {
+            "uri": "/static/components/bootstrap/tooltip.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/bootstrap/tooltip"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/bootstrap/transition.js"
+            ]
+        },
+        "components/bootstrap/popover.js": {
+            "uri": "/static/components/bootstrap/popover.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/bootstrap/popover"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/bootstrap/tooltip.js"
+            ]
+        },
+        "components/bootstrap/scrollspy.js": {
+            "uri": "/static/components/bootstrap/scrollspy.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/bootstrap/scrollspy"
+            },
+            "deps": [
+                "components/jquery/jquery.js"
+            ]
+        },
+        "components/bootstrap/tab.js": {
+            "uri": "/static/components/bootstrap/tab.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/bootstrap/tab"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/bootstrap/transition.js"
+            ]
+        },
+        "components/bootstrap/css/bootstrap-theme.css": {
+            "uri": "/static/components/bootstrap/css/bootstrap-theme.css",
+            "type": "css"
+        },
+        "components/bootstrap/css/bootstrap.css": {
+            "uri": "/static/components/bootstrap/css/bootstrap.css",
+            "type": "css"
+        },
+        "components/font-awesome/css/font-awesome.css": {
+            "uri": "/static/components/font-awesome/css/font-awesome.css",
+            "type": "css"
+        },
+        "components/font-awesome/less/bordered-pulled.less": {
+            "uri": "/static/components/font-awesome/less/bordered-pulled.css",
+            "type": "css"
+        },
+        "components/font-awesome/less/core.less": {
+            "uri": "/static/components/font-awesome/less/core.css",
+            "type": "css"
+        },
+        "components/font-awesome/less/extras.less": {
+            "uri": "/static/components/font-awesome/less/extras.css",
+            "type": "css"
+        },
+        "components/font-awesome/less/fixed-width.less": {
+            "uri": "/static/components/font-awesome/less/fixed-width.css",
+            "type": "css"
+        },
+        "components/font-awesome/less/font-awesome.less": {
+            "uri": "/static/components/font-awesome/less/font-awesome.css",
+            "type": "css"
+        },
+        "components/font-awesome/less/icons.less": {
+            "uri": "/static/components/font-awesome/less/icons.css",
+            "type": "css"
+        },
+        "components/font-awesome/less/larger.less": {
+            "uri": "/static/components/font-awesome/less/larger.css",
+            "type": "css"
+        },
+        "components/font-awesome/less/list.less": {
+            "uri": "/static/components/font-awesome/less/list.css",
+            "type": "css"
+        },
+        "components/font-awesome/less/mixins.less": {
+            "uri": "/static/components/font-awesome/less/mixins.css",
+            "type": "css"
+        },
+        "components/font-awesome/less/path.less": {
+            "uri": "/static/components/font-awesome/less/path.css",
+            "type": "css"
+        },
+        "components/font-awesome/less/rotated-flipped.less": {
+            "uri": "/static/components/font-awesome/less/rotated-flipped.css",
+            "type": "css"
+        },
+        "components/font-awesome/less/spinning.less": {
+            "uri": "/static/components/font-awesome/less/spinning.css",
+            "type": "css"
+        },
+        "components/font-awesome/less/stacked.less": {
+            "uri": "/static/components/font-awesome/less/stacked.css",
+            "type": "css"
+        },
+        "components/font-awesome/less/variables.less": {
+            "uri": "/static/components/font-awesome/less/variables.css",
+            "type": "css"
+        },
+        "components/font-awesome/scss/font-awesome.scss": {
+            "uri": "/static/components/font-awesome/scss/font-awesome.css",
+            "type": "css"
+        },
+        "components/jquery-ui/accordion.js": {
+            "uri": "/static/components/jquery-ui/accordion.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/accordion"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-ui/core.js",
+                "components/jquery-ui/widget.js"
+            ]
+        },
+        "components/jquery-ui/core.js": {
+            "uri": "/static/components/jquery-ui/core.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/core"
+            },
+            "deps": [
+                "components/jquery/jquery.js"
+            ]
+        },
+        "components/jquery-ui/widget.js": {
+            "uri": "/static/components/jquery-ui/widget.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/widget"
+            },
+            "deps": [
+                "components/jquery/jquery.js"
+            ]
+        },
+        "components/jquery-ui/autocomplete.js": {
+            "uri": "/static/components/jquery-ui/autocomplete.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/autocomplete"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-ui/core.js",
+                "components/jquery-ui/widget.js",
+                "components/jquery-ui/position.js",
+                "components/jquery-ui/menu.js"
+            ]
+        },
+        "components/jquery-ui/position.js": {
+            "uri": "/static/components/jquery-ui/position.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/position"
+            },
+            "deps": [
+                "components/jquery/jquery.js"
+            ]
+        },
+        "components/jquery-ui/menu.js": {
+            "uri": "/static/components/jquery-ui/menu.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/menu"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-ui/core.js",
+                "components/jquery-ui/widget.js",
+                "components/jquery-ui/position.js"
+            ]
+        },
+        "components/jquery-ui/button.js": {
+            "uri": "/static/components/jquery-ui/button.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/button"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-ui/core.js",
+                "components/jquery-ui/widget.js"
+            ]
+        },
+        "components/jquery-ui/datepicker.js": {
+            "uri": "/static/components/jquery-ui/datepicker.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/datepicker"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-ui/core.js"
+            ]
+        },
+        "components/jquery-ui/dialog.js": {
+            "uri": "/static/components/jquery-ui/dialog.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/dialog"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-ui/core.js",
+                "components/jquery-ui/widget.js",
+                "components/jquery-ui/button.js",
+                "components/jquery-ui/draggable.js",
+                "components/jquery-ui/mouse.js",
+                "components/jquery-ui/position.js",
+                "components/jquery-ui/resizable.js"
+            ]
+        },
+        "components/jquery-ui/draggable.js": {
+            "uri": "/static/components/jquery-ui/draggable.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/draggable"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-ui/core.js",
+                "components/jquery-ui/mouse.js",
+                "components/jquery-ui/widget.js"
+            ]
+        },
+        "components/jquery-ui/mouse.js": {
+            "uri": "/static/components/jquery-ui/mouse.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/mouse"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-ui/widget.js"
+            ]
+        },
+        "components/jquery-ui/resizable.js": {
+            "uri": "/static/components/jquery-ui/resizable.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/resizable"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-ui/core.js",
+                "components/jquery-ui/mouse.js",
+                "components/jquery-ui/widget.js"
+            ]
+        },
+        "components/jquery-ui/droppable.js": {
+            "uri": "/static/components/jquery-ui/droppable.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/droppable"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-ui/core.js",
+                "components/jquery-ui/widget.js",
+                "components/jquery-ui/mouse.js",
+                "components/jquery-ui/draggable.js"
+            ]
+        },
+        "components/jquery-ui/effect-blind.js": {
+            "uri": "/static/components/jquery-ui/effect-blind.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/effect-blind"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-ui/effect.js"
+            ]
+        },
+        "components/jquery-ui/effect.js": {
+            "uri": "/static/components/jquery-ui/effect.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/effect"
+            },
+            "deps": [
+                "components/jquery/jquery.js"
+            ]
+        },
+        "components/jquery-ui/effect-bounce.js": {
+            "uri": "/static/components/jquery-ui/effect-bounce.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/effect-bounce"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-ui/effect.js"
+            ]
+        },
+        "components/jquery-ui/effect-clip.js": {
+            "uri": "/static/components/jquery-ui/effect-clip.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/effect-clip"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-ui/effect.js"
+            ]
+        },
+        "components/jquery-ui/effect-drop.js": {
+            "uri": "/static/components/jquery-ui/effect-drop.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/effect-drop"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-ui/effect.js"
+            ]
+        },
+        "components/jquery-ui/effect-explode.js": {
+            "uri": "/static/components/jquery-ui/effect-explode.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/effect-explode"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-ui/effect.js"
+            ]
+        },
+        "components/jquery-ui/effect-fade.js": {
+            "uri": "/static/components/jquery-ui/effect-fade.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/effect-fade"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-ui/effect.js"
+            ]
+        },
+        "components/jquery-ui/effect-fold.js": {
+            "uri": "/static/components/jquery-ui/effect-fold.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/effect-fold"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-ui/effect.js"
+            ]
+        },
+        "components/jquery-ui/effect-highlight.js": {
+            "uri": "/static/components/jquery-ui/effect-highlight.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/effect-highlight"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-ui/effect.js"
+            ]
+        },
+        "components/jquery-ui/effect-puff.js": {
+            "uri": "/static/components/jquery-ui/effect-puff.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/effect-puff"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-ui/effect.js",
+                "components/jquery-ui/effect-scale.js"
+            ]
+        },
+        "components/jquery-ui/effect-scale.js": {
+            "uri": "/static/components/jquery-ui/effect-scale.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/effect-scale"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-ui/effect.js",
+                "components/jquery-ui/effect-size.js"
+            ]
+        },
+        "components/jquery-ui/effect-size.js": {
+            "uri": "/static/components/jquery-ui/effect-size.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/effect-size"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-ui/effect.js"
+            ]
+        },
+        "components/jquery-ui/effect-pulsate.js": {
+            "uri": "/static/components/jquery-ui/effect-pulsate.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/effect-pulsate"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-ui/effect.js"
+            ]
+        },
+        "components/jquery-ui/effect-shake.js": {
+            "uri": "/static/components/jquery-ui/effect-shake.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/effect-shake"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-ui/effect.js"
+            ]
+        },
+        "components/jquery-ui/effect-slide.js": {
+            "uri": "/static/components/jquery-ui/effect-slide.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/effect-slide"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-ui/effect.js"
+            ]
+        },
+        "components/jquery-ui/effect-transfer.js": {
+            "uri": "/static/components/jquery-ui/effect-transfer.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/effect-transfer"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-ui/effect.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-af.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-af.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-af"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-ar-DZ.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-ar-DZ.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-ar-DZ"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-ar.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-ar.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-ar"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-az.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-az.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-az"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-be.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-be.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-be"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-bg.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-bg.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-bg"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-bs.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-bs.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-bs"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-ca.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-ca.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-ca"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-cs.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-cs.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-cs"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-cy-GB.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-cy-GB.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-cy-GB"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-da.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-da.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-da"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-de.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-de.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-de"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-el.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-el.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-el"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-en-AU.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-en-AU.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-en-AU"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-en-GB.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-en-GB.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-en-GB"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-en-NZ.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-en-NZ.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-en-NZ"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-eo.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-eo.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-eo"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-es.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-es.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-es"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-et.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-et.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-et"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-eu.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-eu.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-eu"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-fa.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-fa.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-fa"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-fi.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-fi.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-fi"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-fo.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-fo.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-fo"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-fr-CA.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-fr-CA.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-fr-CA"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-fr-CH.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-fr-CH.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-fr-CH"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-fr.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-fr.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-fr"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-gl.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-gl.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-gl"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-he.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-he.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-he"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-hi.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-hi.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-hi"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-hr.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-hr.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-hr"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-hu.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-hu.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-hu"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-hy.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-hy.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-hy"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-id.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-id.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-id"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-is.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-is.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-is"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-it-CH.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-it-CH.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-it-CH"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-it.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-it.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-it"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-ja.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-ja.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-ja"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-ka.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-ka.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-ka"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-kk.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-kk.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-kk"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-km.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-km.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-km"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-ko.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-ko.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-ko"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-ky.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-ky.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-ky"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-lb.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-lb.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-lb"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-lt.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-lt.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-lt"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-lv.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-lv.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-lv"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-mk.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-mk.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-mk"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-ml.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-ml.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-ml"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-ms.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-ms.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-ms"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-nb.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-nb.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-nb"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-nl-BE.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-nl-BE.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-nl-BE"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-nl.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-nl.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-nl"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-nn.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-nn.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-nn"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-no.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-no.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-no"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-pl.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-pl.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-pl"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-pt-BR.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-pt-BR.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-pt-BR"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-pt.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-pt.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-pt"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-rm.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-rm.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-rm"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-ro.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-ro.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-ro"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-ru.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-ru.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-ru"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-sk.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-sk.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-sk"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-sl.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-sl.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-sl"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-sq.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-sq.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-sq"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-sr-SR.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-sr-SR.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-sr-SR"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-sr.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-sr.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-sr"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-sv.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-sv.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-sv"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-ta.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-ta.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-ta"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-th.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-th.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-th"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-tj.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-tj.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-tj"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-tr.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-tr.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-tr"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-uk.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-uk.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-uk"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-vi.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-vi.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-vi"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-zh-CN.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-zh-CN.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-zh-CN"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-zh-HK.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-zh-HK.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-zh-HK"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/i18n/datepicker-zh-TW.js": {
+            "uri": "/static/components/jquery-ui/i18n/datepicker-zh-TW.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/i18n/datepicker-zh-TW"
+            },
+            "deps": [
+                "components/jquery-ui/datepicker.js"
+            ]
+        },
+        "components/jquery-ui/progressbar.js": {
+            "uri": "/static/components/jquery-ui/progressbar.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/progressbar"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-ui/core.js",
+                "components/jquery-ui/widget.js"
+            ]
+        },
+        "components/jquery-ui/selectable.js": {
+            "uri": "/static/components/jquery-ui/selectable.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/selectable"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-ui/core.js",
+                "components/jquery-ui/mouse.js",
+                "components/jquery-ui/widget.js"
+            ]
+        },
+        "components/jquery-ui/selectmenu.js": {
+            "uri": "/static/components/jquery-ui/selectmenu.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/selectmenu"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-ui/core.js",
+                "components/jquery-ui/widget.js",
+                "components/jquery-ui/position.js",
+                "components/jquery-ui/menu.js"
+            ]
+        },
+        "components/jquery-ui/slider.js": {
+            "uri": "/static/components/jquery-ui/slider.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/slider"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-ui/core.js",
+                "components/jquery-ui/mouse.js",
+                "components/jquery-ui/widget.js"
+            ]
+        },
+        "components/jquery-ui/sortable.js": {
+            "uri": "/static/components/jquery-ui/sortable.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/sortable"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-ui/core.js",
+                "components/jquery-ui/mouse.js",
+                "components/jquery-ui/widget.js"
+            ]
+        },
+        "components/jquery-ui/spinner.js": {
+            "uri": "/static/components/jquery-ui/spinner.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/spinner"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-ui/core.js",
+                "components/jquery-ui/widget.js",
+                "components/jquery-ui/button.js"
+            ]
+        },
+        "components/jquery-ui/tabs.js": {
+            "uri": "/static/components/jquery-ui/tabs.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/tabs"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-ui/core.js",
+                "components/jquery-ui/widget.js"
+            ]
+        },
+        "components/jquery-ui/themes/base/accordion.css": {
+            "uri": "/static/components/jquery-ui/themes/base/accordion.css",
+            "type": "css"
+        },
+        "components/jquery-ui/themes/base/all.css": {
+            "uri": "/static/components/jquery-ui/themes/base/all.css",
+            "type": "css"
+        },
+        "components/jquery-ui/themes/base/autocomplete.css": {
+            "uri": "/static/components/jquery-ui/themes/base/autocomplete.css",
+            "type": "css"
+        },
+        "components/jquery-ui/themes/base/base.css": {
+            "uri": "/static/components/jquery-ui/themes/base/base.css",
+            "type": "css"
+        },
+        "components/jquery-ui/themes/base/core.css": {
+            "uri": "/static/components/jquery-ui/themes/base/core.css",
+            "type": "css"
+        },
+        "components/jquery-ui/themes/base/button.css": {
+            "uri": "/static/components/jquery-ui/themes/base/button.css",
+            "type": "css"
+        },
+        "components/jquery-ui/themes/base/datepicker.css": {
+            "uri": "/static/components/jquery-ui/themes/base/datepicker.css",
+            "type": "css"
+        },
+        "components/jquery-ui/themes/base/dialog.css": {
+            "uri": "/static/components/jquery-ui/themes/base/dialog.css",
+            "type": "css"
+        },
+        "components/jquery-ui/themes/base/draggable.css": {
+            "uri": "/static/components/jquery-ui/themes/base/draggable.css",
+            "type": "css"
+        },
+        "components/jquery-ui/themes/base/menu.css": {
+            "uri": "/static/components/jquery-ui/themes/base/menu.css",
+            "type": "css"
+        },
+        "components/jquery-ui/themes/base/progressbar.css": {
+            "uri": "/static/components/jquery-ui/themes/base/progressbar.css",
+            "type": "css"
+        },
+        "components/jquery-ui/themes/base/resizable.css": {
+            "uri": "/static/components/jquery-ui/themes/base/resizable.css",
+            "type": "css"
+        },
+        "components/jquery-ui/themes/base/selectable.css": {
+            "uri": "/static/components/jquery-ui/themes/base/selectable.css",
+            "type": "css"
+        },
+        "components/jquery-ui/themes/base/selectmenu.css": {
+            "uri": "/static/components/jquery-ui/themes/base/selectmenu.css",
+            "type": "css"
+        },
+        "components/jquery-ui/themes/base/sortable.css": {
+            "uri": "/static/components/jquery-ui/themes/base/sortable.css",
+            "type": "css"
+        },
+        "components/jquery-ui/themes/base/slider.css": {
+            "uri": "/static/components/jquery-ui/themes/base/slider.css",
+            "type": "css"
+        },
+        "components/jquery-ui/themes/base/spinner.css": {
+            "uri": "/static/components/jquery-ui/themes/base/spinner.css",
+            "type": "css"
+        },
+        "components/jquery-ui/themes/base/tabs.css": {
+            "uri": "/static/components/jquery-ui/themes/base/tabs.css",
+            "type": "css"
+        },
+        "components/jquery-ui/themes/base/tooltip.css": {
+            "uri": "/static/components/jquery-ui/themes/base/tooltip.css",
+            "type": "css"
+        },
+        "components/jquery-ui/themes/base/theme.css": {
+            "uri": "/static/components/jquery-ui/themes/base/theme.css",
+            "type": "css"
+        },
+        "components/jquery-ui/tooltip.js": {
+            "uri": "/static/components/jquery-ui/tooltip.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-ui/tooltip"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-ui/core.js",
+                "components/jquery-ui/widget.js",
+                "components/jquery-ui/position.js"
+            ]
+        },
+        "components/jquery-validation/additional-methods.js": {
+            "uri": "/static/components/jquery-validation/additional-methods.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/additional-methods"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/jquery.validate.js": {
+            "uri": "/static/components/jquery-validation/jquery.validate.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/jquery.validate"
+            },
+            "deps": [
+                "components/jquery/jquery.js"
+            ]
+        },
+        "components/jquery-validation/localization/messages_ar.js": {
+            "uri": "/static/components/jquery-validation/localization/messages_ar.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/messages_ar"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/messages_bg.js": {
+            "uri": "/static/components/jquery-validation/localization/messages_bg.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/messages_bg"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/messages_ca.js": {
+            "uri": "/static/components/jquery-validation/localization/messages_ca.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/messages_ca"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/messages_cs.js": {
+            "uri": "/static/components/jquery-validation/localization/messages_cs.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/messages_cs"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/messages_da.js": {
+            "uri": "/static/components/jquery-validation/localization/messages_da.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/messages_da"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/messages_de.js": {
+            "uri": "/static/components/jquery-validation/localization/messages_de.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/messages_de"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/messages_el.js": {
+            "uri": "/static/components/jquery-validation/localization/messages_el.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/messages_el"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/messages_es_AR.js": {
+            "uri": "/static/components/jquery-validation/localization/messages_es_AR.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/messages_es_AR"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/messages_es.js": {
+            "uri": "/static/components/jquery-validation/localization/messages_es.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/messages_es"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/messages_et.js": {
+            "uri": "/static/components/jquery-validation/localization/messages_et.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/messages_et"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/messages_eu.js": {
+            "uri": "/static/components/jquery-validation/localization/messages_eu.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/messages_eu"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/messages_fa.js": {
+            "uri": "/static/components/jquery-validation/localization/messages_fa.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/messages_fa"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/messages_fi.js": {
+            "uri": "/static/components/jquery-validation/localization/messages_fi.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/messages_fi"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/messages_fr.js": {
+            "uri": "/static/components/jquery-validation/localization/messages_fr.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/messages_fr"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/messages_gl.js": {
+            "uri": "/static/components/jquery-validation/localization/messages_gl.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/messages_gl"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/messages_he.js": {
+            "uri": "/static/components/jquery-validation/localization/messages_he.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/messages_he"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/messages_hr.js": {
+            "uri": "/static/components/jquery-validation/localization/messages_hr.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/messages_hr"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/messages_hu.js": {
+            "uri": "/static/components/jquery-validation/localization/messages_hu.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/messages_hu"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/messages_id.js": {
+            "uri": "/static/components/jquery-validation/localization/messages_id.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/messages_id"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/messages_is.js": {
+            "uri": "/static/components/jquery-validation/localization/messages_is.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/messages_is"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/messages_it.js": {
+            "uri": "/static/components/jquery-validation/localization/messages_it.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/messages_it"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/messages_ja.js": {
+            "uri": "/static/components/jquery-validation/localization/messages_ja.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/messages_ja"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/messages_ka.js": {
+            "uri": "/static/components/jquery-validation/localization/messages_ka.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/messages_ka"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/messages_kk.js": {
+            "uri": "/static/components/jquery-validation/localization/messages_kk.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/messages_kk"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/messages_ko.js": {
+            "uri": "/static/components/jquery-validation/localization/messages_ko.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/messages_ko"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/messages_lt.js": {
+            "uri": "/static/components/jquery-validation/localization/messages_lt.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/messages_lt"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/messages_lv.js": {
+            "uri": "/static/components/jquery-validation/localization/messages_lv.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/messages_lv"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/messages_my.js": {
+            "uri": "/static/components/jquery-validation/localization/messages_my.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/messages_my"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/messages_nl.js": {
+            "uri": "/static/components/jquery-validation/localization/messages_nl.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/messages_nl"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/messages_no.js": {
+            "uri": "/static/components/jquery-validation/localization/messages_no.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/messages_no"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/messages_pl.js": {
+            "uri": "/static/components/jquery-validation/localization/messages_pl.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/messages_pl"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/messages_pt_BR.js": {
+            "uri": "/static/components/jquery-validation/localization/messages_pt_BR.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/messages_pt_BR"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/messages_pt_PT.js": {
+            "uri": "/static/components/jquery-validation/localization/messages_pt_PT.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/messages_pt_PT"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/messages_ro.js": {
+            "uri": "/static/components/jquery-validation/localization/messages_ro.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/messages_ro"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/messages_ru.js": {
+            "uri": "/static/components/jquery-validation/localization/messages_ru.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/messages_ru"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/messages_si.js": {
+            "uri": "/static/components/jquery-validation/localization/messages_si.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/messages_si"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/messages_sk.js": {
+            "uri": "/static/components/jquery-validation/localization/messages_sk.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/messages_sk"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/messages_sl.js": {
+            "uri": "/static/components/jquery-validation/localization/messages_sl.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/messages_sl"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/messages_sr_lat.js": {
+            "uri": "/static/components/jquery-validation/localization/messages_sr_lat.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/messages_sr_lat"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/messages_sr.js": {
+            "uri": "/static/components/jquery-validation/localization/messages_sr.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/messages_sr"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/messages_sv.js": {
+            "uri": "/static/components/jquery-validation/localization/messages_sv.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/messages_sv"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/messages_th.js": {
+            "uri": "/static/components/jquery-validation/localization/messages_th.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/messages_th"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/messages_tj.js": {
+            "uri": "/static/components/jquery-validation/localization/messages_tj.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/messages_tj"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/messages_tr.js": {
+            "uri": "/static/components/jquery-validation/localization/messages_tr.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/messages_tr"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/messages_uk.js": {
+            "uri": "/static/components/jquery-validation/localization/messages_uk.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/messages_uk"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/messages_vi.js": {
+            "uri": "/static/components/jquery-validation/localization/messages_vi.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/messages_vi"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/messages_zh_TW.js": {
+            "uri": "/static/components/jquery-validation/localization/messages_zh_TW.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/messages_zh_TW"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/messages_zh.js": {
+            "uri": "/static/components/jquery-validation/localization/messages_zh.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/messages_zh"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/methods_de.js": {
+            "uri": "/static/components/jquery-validation/localization/methods_de.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/methods_de"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/methods_es_CL.js": {
+            "uri": "/static/components/jquery-validation/localization/methods_es_CL.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/methods_es_CL"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/methods_fi.js": {
+            "uri": "/static/components/jquery-validation/localization/methods_fi.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/methods_fi"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/methods_nl.js": {
+            "uri": "/static/components/jquery-validation/localization/methods_nl.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/methods_nl"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "components/jquery-validation/localization/methods_pt.js": {
+            "uri": "/static/components/jquery-validation/localization/methods_pt.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation/localization/methods_pt"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js"
+            ]
+        },
+        "page/be/spring.vm": {
+            "uri": "/page/be/spring.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "page/layout/2columns-with-left-sidebar.vm": {
+            "uri": "/page/layout/2columns-with-left-sidebar.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "page/layout/frame.vm": {
+            "uri": "/page/layout/frame.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true,
+                "async": [
+                    "components/bootstrap/bootstrap.js"
+                ]
+            }
+        },
+        "static/js/require.js": {
+            "uri": "/static/js/require.js",
+            "type": "js"
+        },
+        "static/scss/normalize.css": {
+            "uri": "/static/scss/normalize.css",
+            "type": "css"
+        },
+        "static/scss/global.scss": {
+            "uri": "/static/scss/global.css",
+            "type": "css"
+        },
+        "widget/header/header.vm": {
+            "uri": "/widget/header/header.vm",
+            "type": "vm"
+        },
+        "widget/footer/footer.vm": {
+            "uri": "/widget/footer/footer.vm",
+            "type": "vm"
+        },
+        "widget/sidebarmenus/sidebarmenus.vm": {
+            "uri": "/widget/sidebarmenus/sidebarmenus.vm",
+            "type": "vm",
+            "extras": {
+                "async": [
+                    "widget/sidebarmenus/sidebarmenus.js"
+                ]
+            }
+        },
+        "widget/sidebarmenus/sidebarmenus.js": {
+            "uri": "/static/widget/sidebarmenus/sidebarmenus.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "widget/sidebarmenus/sidebarmenus"
+            },
+            "deps": [
+                "static/libs/scrollspy.js",
+                "components/jquery/jquery.js"
+            ]
+        },
+        "static/libs/scrollspy.js": {
+            "uri": "/static/libs/scrollspy.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "static/libs/scrollspy"
+            },
+            "deps": [
+                "components/bootstrap/bootstrap.js",
+                "components/jquery/jquery.js"
+            ]
+        },
+        "page/be/variables.vm": {
+            "uri": "/page/be/variables.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "page/doc/binding.vm": {
+            "uri": "/page/doc/binding.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "page/doc/layout.vm": {
+            "uri": "/page/doc/layout.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "page/layout/2columns-with-right-sidebar.vm": {
+            "uri": "/page/layout/2columns-with-right-sidebar.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "page/layout/3columns.vm": {
+            "uri": "/page/layout/3columns.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "page/doc/rewrite.vm": {
+            "uri": "/page/doc/rewrite.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "page/doc/standard.vm": {
+            "uri": "/page/doc/standard.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "page/doc/widget.vm": {
+            "uri": "/page/doc/widget.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "page/examples/data.js": {
+            "uri": "/static/page/examples/data.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "page/examples/data"
+            },
+            "deps": [
+                "components/bootstrap/bootstrap.js",
+                "components/jquery/jquery.js",
+                "static/libs/alert.js"
+            ]
+        },
+        "static/libs/alert.js": {
+            "uri": "/static/libs/alert.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "static/libs/alert"
+            },
+            "deps": [
+                "components/bootstrap/bootstrap.js",
+                "components/jquery/jquery.js"
+            ]
+        },
+        "page/examples/data.vm": {
+            "uri": "/page/examples/data.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true,
+                "async": [
+                    "page/examples/data.js"
+                ]
+            }
+        },
+        "page/examples/form.js": {
+            "uri": "/static/page/examples/form.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "page/examples/form"
+            },
+            "deps": [
+                "static/libs/validator.js",
+                "components/jquery/jquery.js"
+            ]
+        },
+        "static/libs/validator.js": {
+            "uri": "/static/libs/validator.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "static/libs/validator"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "components/jquery-validation/jquery.validate.js",
+                "components/jquery-validation/localization/messages_zh.js"
+            ]
+        },
+        "page/examples/form.vm": {
+            "uri": "/page/examples/form.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true,
+                "async": [
+                    "page/examples/form.js"
+                ]
+            }
+        },
+        "page/examples/pagination.vm": {
+            "uri": "/page/examples/pagination.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "page/examples/partial.vm": {
+            "uri": "/page/examples/partial.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true,
+                "async": [
+                    "components/jquery/jquery.js",
+                    "static/libs/modal.js"
+                ]
+            }
+        },
+        "static/libs/modal.js": {
+            "uri": "/static/libs/modal.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "static/libs/modal"
+            },
+            "deps": [
+                "components/font-awesome/css/font-awesome.css",
+                "components/bootstrap/bootstrap.js",
+                "components/jquery/jquery.js"
+            ]
+        },
+        "page/examples/partial/form.vm": {
+            "uri": "/page/examples/partial/form.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true,
+                "async": [
+                    "page/examples/form.js"
+                ]
+            }
+        },
+        "page/layout/ajax.vm": {
+            "uri": "/page/layout/ajax.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "page/examples/spa/page1.vm": {
+            "uri": "/page/examples/spa/page1.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true,
+                "async": [
+                    "page/examples/spa/spa.js"
+                ]
+            }
+        },
+        "page/layout/smart.vm": {
+            "uri": "/page/layout/smart.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "page/layout/spa.vm": {
+            "uri": "/page/layout/spa.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "page/examples/spa/spa.js": {
+            "uri": "/static/page/examples/spa/spa.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "page/examples/spa/spa"
+            },
+            "deps": [
+                "components/jquery/jquery.js"
+            ]
+        },
+        "page/examples/spa/page2.vm": {
+            "uri": "/page/examples/spa/page2.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true,
+                "async": [
+                    "page/examples/spa/spa.js"
+                ]
+            }
+        },
+        "page/examples/spa/page3.vm": {
+            "uri": "/page/examples/spa/page3.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true,
+                "async": [
+                    "page/examples/spa/spa.js"
+                ]
+            }
+        },
+        "page/html/index.html": {
+            "uri": "/page/html/index.html",
+            "type": "html",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "page/index.vm": {
+            "uri": "/page/index.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "page/layout/front.vm": {
+            "uri": "/page/layout/front.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "page/jsp/binding.jsp": {
+            "uri": "/page/jsp/binding.jsp",
+            "type": "jsp",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "page/layout/2columns-with-left-sidebar.jsp": {
+            "uri": "/page/layout/2columns-with-left-sidebar.jsp",
+            "type": "jsp",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "page/layout/frame.jsp": {
+            "uri": "/page/layout/frame.jsp",
+            "type": "jsp",
+            "extras": {
+                "isPage": true,
+                "async": [
+                    "components/bootstrap/bootstrap.js"
+                ]
+            }
+        },
+        "widget/header/header.jsp": {
+            "uri": "/widget/header/header.jsp",
+            "type": "jsp"
+        },
+        "widget/footer/footer.jsp": {
+            "uri": "/widget/footer/footer.jsp",
+            "type": "jsp"
+        },
+        "widget/sidebarmenus/sidebarmenus.jsp": {
+            "uri": "/widget/sidebarmenus/sidebarmenus.jsp",
+            "type": "jsp",
+            "extras": {
+                "async": [
+                    "widget/sidebarmenus/sidebarmenus.js"
+                ]
+            }
+        },
+        "page/jsp/index.jsp": {
+            "uri": "/page/jsp/index.jsp",
+            "type": "jsp",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "page/jsp/layout.jsp": {
+            "uri": "/page/jsp/layout.jsp",
+            "type": "jsp",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "page/jsp/rewrite.jsp": {
+            "uri": "/page/jsp/rewrite.jsp",
+            "type": "jsp",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "page/jsp/test.jsp": {
+            "uri": "/page/jsp/test.jsp",
+            "type": "jsp",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "page/jsp/widget.jsp": {
+            "uri": "/page/jsp/widget.jsp",
+            "type": "jsp",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "page/layout/2columns-with-right-sidebar.jsp": {
+            "uri": "/page/layout/2columns-with-right-sidebar.jsp",
+            "type": "jsp",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "page/layout/3columns.jsp": {
+            "uri": "/page/layout/3columns.jsp",
+            "type": "jsp",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "page/layout/front.jsp": {
+            "uri": "/page/layout/front.jsp",
+            "type": "jsp",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "page/velocity/index.vm": {
+            "uri": "/page/velocity/index.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "page/velocity/jello.vm": {
+            "uri": "/page/velocity/jello.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "page/velocity/tools.vm": {
+            "uri": "/page/velocity/tools.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "page/velocity/variables.vm": {
+            "uri": "/page/velocity/variables.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "static/js/esl.js": {
+            "uri": "/static/js/esl.js",
+            "type": "js"
+        },
+        "static/js/mod-amd.js": {
+            "uri": "/static/js/mod-amd.js",
+            "type": "js"
+        },
+        "static/libs/confirm.js": {
+            "uri": "/static/libs/confirm.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "static/libs/confirm"
+            },
+            "deps": [
+                "components/bootstrap/bootstrap.js",
+                "components/jquery/jquery.js"
+            ]
+        },
+        "widget/sidebarmenus/sidebarmenus.scss": {
+            "uri": "/static/widget/sidebarmenus/sidebarmenus.css",
+            "type": "css"
+        },
+        "zelltest/page/index/index.css": {
+            "uri": "/static/zelltest/.css",
+            "type": "css"
+        },
+        "zelltest/page/index/index.js": {
+            "uri": "/static/zelltest/page/index/index.js",
+            "type": "js"
+        },
+        "zelltest/page/index/index.jsp": {
+            "uri": "/zelltest/page/index/index.jsp",
+            "type": "jsp",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "zelltest/static/components/jquery.js": {
+            "uri": "/static/zelltest/static/components/jquery.js",
+            "type": "js"
+        }
+    },
+    "pkg": {}
+}

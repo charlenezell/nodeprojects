@@ -22,11 +22,11 @@ fis.match('::package', {
     // 分析 __RESOURCE_MAP__ 结构，来解决资源加载问题
     // packager:fis.plugin("depscombine"),
     postpackager: fis.plugin('loader', {
-        /*resourceType: 'amd',*/
-        allInOne: {
+        resourceType: 'amd',
+        /*allInOne: {
             ignore:["lib/**.js","components/**.js"]
-        }/*,
-        useInlineMap: true */// 资源映射表内嵌
+        }*/
+        useInlineMap: true/// 资源映射表内嵌
     })
 });
 

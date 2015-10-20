@@ -1,0 +1,37 @@
+<h1 id="%3Ca%20href%3D%22http%3A%2F%2Fjqueryui.com%2F%22%3Ejquery%20ui%3C%2Fa%3E%20-%20interactions%20and%20widgets%20for%20the%20web"><a href="http://jqueryui.com/">jQuery UI</a> - Interactions and Widgets for the web</h1>
+<p>jQuery UI is a curated set of user interface interactions, effects, widgets, and themes built on top of jQuery. Whether you&#39;re building highly interactive web applications, or you just need to add a date picker to a form control, jQuery UI is the perfect choice.</p>
+<p>If you want to use jQuery UI, go to <a href="http://jqueryui.com">jqueryui.com</a> to get started, <a href="http://jqueryui.com/demos/">jqueryui.com/demos/</a> for demos, <a href="http://api.jqueryui.com/">api.jqueryui.com</a> for API documentation, or the <a href="http://forum.jquery.com/using-jquery-ui">Using jQuery UI Forum</a> for discussions and questions.</p>
+<p>If you want to report a bug/issue, please visit <a href="http://bugs.jqueryui.com">bugs.jqueryui.com</a>.</p>
+<p>If you are interested in helping develop jQuery UI, you are in the right place.<br>To discuss development with team members and the community, visit the <a href="http://forum.jquery.com/developing-jquery-ui">Developing jQuery UI Forum</a> or <a href="http://irc.jquery.org/">#jqueryui-dev on irc.freenode.net</a>.</p>
+<h2 id="for%20contributors">For contributors</h2>
+<p>If you want to help and provide a patch for a bugfix or new feature, please take<br>a few minutes and look at <a href="http://wiki.jqueryui.com/w/page/35263114/Getting-Involved">our Getting Involved guide</a>.<br>In particular check out the <a href="http://wiki.jqueryui.com/w/page/12137737/Coding-standards">Coding standards</a><br>and <a href="http://contribute.jquery.org/commits-and-pull-requests/#commit-guidelines">Commit Message Style Guide</a>.</p>
+<p>In general, fork the project, create a branch for a specific change and send a<br>pull request for that branch. Don&#39;t mix unrelated changes. You can use the commit<br>message as the description for the pull request.</p>
+<h2 id="running%20the%20unit%20tests">Running the Unit Tests</h2>
+<p>Run the unit tests with a local server that supports PHP. No database is required. Pre-configured php local servers are available for Windows and Mac. Here are some options:</p>
+<ul>
+<li>Windows: <a href="http://www.wampserver.com/en/">WAMP download</a></li>
+<li>Mac: <a href="http://www.mamp.info/en/index.html">MAMP download</a></li>
+<li>Linux: <a href="https://www.linux.com/learn/tutorials/288158-easy-lamp-server-installation">Setting up LAMP</a></li>
+<li><a href="http://code.google.com/p/mongoose/">Mongoose (most platforms)</a></li>
+</ul>
+<h2 id="building%20jquery%20ui">Building jQuery UI</h2>
+<p>jQuery UI uses the <a href="http://github.com/gruntjs/grunt">Grunt</a> build system.</p>
+<p>To build jQuery UI, you must have <a href="http://nodejs.org/">node.js</a> installed and then run the following commands:</p>
+<pre><code class="hljs sh">
+<span class="hljs-comment"># Install the Grunt CLI</span>
+npm install -g grunt-cli
+
+<span class="hljs-comment"># Clone the jQuery UI git repo</span>
+git <span class="hljs-built_in">clone</span> git://github.com/jquery/jquery-ui.git
+<span class="hljs-built_in">cd</span> jquery-ui
+
+<span class="hljs-comment"># Install the node module dependencies</span>
+npm install
+
+<span class="hljs-comment"># Run the concat task to concatenate files</span>
+grunt concat
+
+<span class="hljs-comment"># There are many other tasks that can be run through Grunt.</span>
+<span class="hljs-comment"># For a list of all tasks:</span>
+grunt --help
+</code></pre>
