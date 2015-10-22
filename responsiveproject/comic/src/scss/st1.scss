@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+@import "common/variables";
+@import "common/mixins";
+@import "component/ranklist01";
+@import "component/zheader01";
+@import "component/zitem01";
+@import "component/index__slider";
+@import "../../lib/swiper/idangerous.swiper";
+
+//                                                __
+//                                               /\ \__
+//   ____     __   _____      __     _ __    __  \ \ ,_\    __
+//  /',__\  /'__`\/\ '__`\  /'__`\  /\`'__\/'__`\ \ \ \/  /'__`\
+// /\__, `\/\  __/\ \ \L\ \/\ \L\.\_\ \ \//\ \L\.\_\ \ \_/\  __/
+// \/\____/\ \____\\ \ ,__/\ \__/.\_\\ \_\\ \__/.\_\\ \__\ \____\
+//  \/___/  \/____/ \ \ \/  \/__/\/_/ \/_/ \/__/\/_/ \/__/\/____/
+
+.layout_index {
+  //首页的响应式布局
+  @include blockCenter;
+
+  @include clearfix;
+
+  width: $pcMainWidth;
+
+  &__main {
+    width: 695px;
+
+    @include float(left);
+  }
+
+  &__side {
+    width: $pcMainWidth / 4;
+
+    @include float(right);
+  }
+
+  @include when(mobile) {
+    width: 100%;
+
+    &__side {
+      width: 100%;
+    }
+
+    &__main {
+      width: 100%;
+    }
+  }
+}

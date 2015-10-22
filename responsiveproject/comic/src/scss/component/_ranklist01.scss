@@ -1,0 +1,88 @@
+@charset "utf-8";
+//                                                __
+//                                               /\ \__
+//   ____     __   _____      __     _ __    __  \ \ ,_\    __
+//  /',__\  /'__`\/\ '__`\  /'__`\  /\`'__\/'__`\ \ \ \/  /'__`\
+// /\__, `\/\  __/\ \ \L\ \/\ \L\.\_\ \ \//\ \L\.\_\ \ \_/\  __/
+// \/\____/\ \____\\ \ ,__/\ \__/.\_\\ \_\\ \__/.\_\\ \__\ \____\
+//  \/___/  \/____/ \ \ \/  \/__/\/_/ \/_/ \/__/\/_/ \/__/\/____/
+.rank01 {
+  $heihgt: $fontSize_title_large;
+  $heihgtrem: $fontSize_title_largerem;
+
+  &__title {}
+
+  &__wlist {}
+
+  &__list {}
+
+  &__item {
+    height: $heihgt;
+    line-height: $heihgt;
+
+    @include toe;
+  }
+
+  &__order {
+    background-color: #323232;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+  }
+
+  &__order--special {
+    background-color: #FD6500;
+  }
+
+  &__name {
+    color: #000;
+    text-decoration: none;
+    padding-left: 5px;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__marks {}
+
+  @include when(mobile) {
+    &__order {
+      width: $fontSize_title_normalrem;
+      height: $fontSize_title_normalrem;
+      line-height: $fontSize_title_normalrem;
+    }
+
+    &__item {
+      height: $heihgtrem;
+      line-height: $heihgtrem;
+
+      &:nth-child(-n+5) {
+        @include float(left);
+
+        clear: both;
+      }
+
+      @include layout-w-1-2;
+
+      margin: 0;
+      padding: 0 5px;
+    }
+
+    &__name {
+      display: inline-block;
+      vertical-align: middle;
+      width: 93%;
+
+      @include toe;
+    }
+
+    &__marks {
+      display: none;
+    }
+  }
+}
