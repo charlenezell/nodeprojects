@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <title>Document</title>
+  <script type="text/javascript" src="http://www.100bt.com/resource/js/lib/jquery-mig-min.js"></script>
+  <script>
+  function callback(data){
+      $("body").text(data);
+    }
+
+  </script>
+</head>
+<body>
+  <form action="http://mynoden.100bt.com/to_postform.html" method="post" enctype="multipart/form-data" target="hidden_frame">
+    <input type="text" name="mytext" id="" />
+    <select name="myselect" id="">
+      <option value="0">0</option>
+      <option value="1">1</option>
+    </select>
+    <input type="radio" value="v1" name="myradio" id="" /><input type="radio" name="myradio" id="" value="v2"/>
+    <input type="checkbox" name="mycheckbox" id="" value="c1"/><input type="checkbox" name="mycheckbox" id="" value="c2"/>
+    <input type="file" name="myfile1" id="" />
+    <input type="file" name="myfile2" id="" />
+    <input type="submit" value="submitit" />
+  </form>
+  <iframe src="" frameborder="0" name="hidden_frame" id="hidden_frame"></iframe>
+</body>
+</html>
