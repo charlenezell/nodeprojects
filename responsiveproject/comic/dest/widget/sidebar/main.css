@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/*侧边栏*/
+.gc_sidebar {
+  z-index: 10;
+  position: fixed;
+  bottom: 20px;
+  _position: absolute;
+  _bottom: auto;
+  _top: expression((function(ele) { var wh=document.documentElement.clientHeight; var eh=ele.clientHeight; if(document.compatMode && document.compatMode=='CSS1Compat') { return document.documentElement.scrollTop+wh-eh-20; } else { return document.body.scrollTop+wh-eh-20; } } )(this));
+  background-repeat: no-repeat;
+  width: 90px;
+  border: 1px solid #e6e6e6;
+  background-color: #fff; }
+  .gc_sidebar__btn {
+    margin: 0 10px;
+    color: #666;
+    font-size: 14px;
+    height: 40px;
+    border-bottom: 1px dotted #ccc;
+    display: block;
+    text-align: center;
+    line-height: 40px; }
+  .gc_sidebar__wbtn:hover {
+    background-color: #37bd37;
+    border-color: #5ac05a; }
+  .gc_sidebar__wbtn:hover .gc_sidebar__btn {
+    text-decoration: none;
+    color: #fff; }
+  .gc_sidebar__btn--last {
+    border: none; }
+  .gc_sidebar__topicon {
+    background-image: url(sidebar.png?6f14530591);
+    background-position: -24px 0px;
+    width: 24px;
+    height: 21px;
+    display: inline-block;
+    vertical-align: middle; }
+  .gc_sidebar__wbtn:hover .gc_sidebar__topicon {
+    background-position: 0px 0px;
+    width: 24px;
+    height: 21px; }
+  .gc_sidebar--lowResSidebar {
+    right: 0; }
+
+  .gc_sidebar--highResSidebar {
+    left: 50%;
+    margin-left: 500px; }
+  @media (max-width: 540px) {
+    .gc_sidebar {
+      display: none; } }

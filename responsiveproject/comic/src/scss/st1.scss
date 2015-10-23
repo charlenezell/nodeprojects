@@ -1,7 +1,18 @@
 @charset "utf-8";
-
 @import "common/variables";
 @import "common/mixins";
+
+.title{
+  font-size:$fontSize_title_large;
+  heigth:$fontSize_title_large * 2;
+  margin-top: 10px;
+  @include when(mobile){
+    font-size:$fontSize_title_largerem;
+    heigth:$fontSize_title_largerem * 2;
+    margin-top: (10/12) rem ;
+  }
+}
+
 @import "component/ranklist01";
 @import "component/zheader01";
 @import "component/zitem01";

@@ -1,0 +1,1 @@
+"use strict";define(["require","exports","module"],function(n,e,i){e.sayHello=function(){alert("hello")},e.commonInit=function(){n(["sidebar"],function(n){n.init()})}});
