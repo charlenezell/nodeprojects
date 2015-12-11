@@ -3,6 +3,8 @@ var fs = require('fs');
 var http = require('http');
 var path = require('path');
 var r_url = require('url');
+var URLS = process.argv[2].split(',');
+var rootdir = process.argv[3];
 
 var dirCache = {};//缓存减少判断
 function makedir (pathStr, callback) {
@@ -46,7 +48,7 @@ var downImgFromCss = function (URL) {
           let imgUrl = r_url.resolve(URL, url);
           if (!isDownMap[imgUrl]) {
             var uo = r_url.parse(imgUrl);
-            let filepath = CWD + '/' + uo.hostname + uo.pathname;
+            let filepath = rootdir + uo.hostname + uo.pathname;
             makedir(path.dirname(filepath), function () {
               http.get(imgUrl, function (res) {
                 res.pipe(fs.createWriteStream(filepath));
@@ -60,24 +62,30 @@ var downImgFromCss = function (URL) {
   });
 }
 
-var URLS = process.argv[2].split(',');
-var CWD = process.cwd();
+
+// var CWD = process.cwd();
 //下载资源
 URLS.forEach(function (URL) {
   var uo = r_url.parse(URL);
   var filepath;
   if (uo.pathname == '/' || uo.pathname == '') {
-    filepath = CWD + '/' + uo.hostname + '/index.html';
+    filepath = rootdir  + uo.hostname + '/index.html';
   } else {
-    filepath = CWD + '/' + uo.hostname + uo.pathname;
+    filepath = rootdir  + uo.hostname + uo.pathname;
   }
   makedir(path.dirname(filepath), function () {
-    http.get(URL, function (res) {
-      if (URL.indexOf('.css') != -1 || (res.headers["content-type"] && res.headers["content-type"].indexOf('text/css')!= -1)) {
-        console.log('down images form css file:' + URL + '.');
-        downImgFromCss(URL);
-      }
-      res.pipe(fs.createWriteStream(filepath));
-    })
+
+    try{
+        http.get(URL, function (res) {
+          // if (URL.indexOf('.css') != -1 || (res.headers["content-type"] && res.headers["content-type"].indexOf('text/css')!= -1)) {
+          //   console.log('down images form css file:' + URL + '.');
+          //   downImgFromCss(URL);
+          // }
+          res.pipe(fs.createWriteStream(filepath));
+        })
+
+    }catch(e){
+
+    }
   });
 });
