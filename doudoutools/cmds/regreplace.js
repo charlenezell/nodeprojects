@@ -7,7 +7,6 @@ var fs = require("fs");
 var path = require("path");
 var util = require("./util.js");
 module.exports = function(program) {
-
 	program
 		.command('regreplace <dir> <reg> <capturesexpression>')
 		.version('0.0.1')
@@ -18,8 +17,8 @@ module.exports = function(program) {
 				var _capturesexpression = util.template(capturesexpression, {
 					index: k
 				});
-				var filename = path.basename(v).replace(path.extname(v), "");
-				var rst = v.replace(path.basename(v), filename.replace(_reg, _capturesexpression) + path.extname(v));
+				//var filename = path.basename(v).replace(path.extname(v), "");
+				var rst = v.replace(path.basename(v), path.basename(v).replace(_reg, _capturesexpression));
 				fs.renameSync(v, rst);
 			})
 		});
