@@ -102,27 +102,31 @@ var system = require('system'),
           if(resourceNumb<=1&&isDone!=true){
             itimeout=setTimeout(function(){
               makeDownloadFile(gamename);
-            },5000);
+            },8000);
           }
         }
     }
 
 
       function makeDownloadFile(gamename){
-        isDone=true;
-        console.log("makeDownloadFile!!!")
-        var rootdir=buildName+gamename;
-        fs.makeDirectory(rootdir);
-        var child = spawn("node", ["downloadresource.js", urls.join(','),rootdir+"/"])
-        child.on("exit", function (code) {
-         done();
-        })
-        child.stdout.on("data", function (data) {
-               console.log(data);
-              });
-              child.stderr.on("data", function (data) {
-               console.log(data);
-              });
+        if(isDone){return }
+          fs.write("hehe.json",'{"data":['+urls.map(function(v){return '"'+v+'"'}).join(",")+']}');
+          done();
+        // isDone=true;
+        // var rootdir=buildName+gamename;
+        // fs.makeDirectory(rootdir);
+        // console.log("makeDownloadFile!!!")
+        // var child = spawn("node", ["downloadresource.js", urls.join(','),rootdir+"/"])
+        // child.on("exit", function (code) {
+        //   console.log("exit?")
+        //  done();
+        // })
+        // child.stdout.on("data", function (data) {
+        //        console.log(data);
+        //       });
+        //       child.stderr.on("data", function (data) {
+        //        console.log(data);
+        //       });
       }
 
     page.open(page.address, function (status) {
