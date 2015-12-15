@@ -1,5 +1,11 @@
 {
   "games":[
-    {"url":"http://sda.4399.com/4399swf/upload_swf/ftp17/ssj/20150824/j2/y/","name":"轻音少女装扮"}
+    {"url":"http://sda.4399.com/4399swf/upload_swf/ftp17/ssj/20150824/j2/y/","name":"轻音少女装扮"},
+    {"url":"http://szhong.4399.com/4399swf/upload_swf/ftp16/ssj/20150701/h2/p2/game.html","name":"换装"},
+    {"url":"http://flash1.7k7k.com/h5/2015/qkldl/game.htm","name":"巧克力"},
+    {"url":"http://flash1.7k7k.com/h5/2015/bwcbrw/game.html","name":"承包"},
+    {"url":"http://flash1.7k7k.com/h5/2015/aspingtu/game.html","name":"su"},
+    {"url":"http://sda.4399.com/4399swf/upload_swf/ftp17/yzg/20150911/01/index.html","name":"美甲"},
+    {"url":"http://sda.4399.com/4399swf/upload_swf/ftp17/yzg/20150910/1/game.html","name":"偷菜"}
   ]
 }
