@@ -1,0 +1,10 @@
+﻿{
+  "games":[
+  {"url":"http://aola.100bt.com/","name":"aola"},
+  {"url":"http://aoqi.100bt.com/","name":"aoqi"},
+  {"url":"http://aoya.100bt.com/","name":"aoya"},
+  {"url":"http://lds.100bt.com/","name":"lds"},
+  {"url":"http://www.100bt.com/","name":"www"},
+  {"url":"http://www.100bt.com/manhua/","name":"manhua"}
+  ]
+}

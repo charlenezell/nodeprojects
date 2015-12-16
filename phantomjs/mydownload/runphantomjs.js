@@ -39,8 +39,9 @@ var system = require('system'),
     }
   })();
   var data=fs.read("./game.json");
-  var buildName="./"+new Date().toISOString().replace(/:/img,'');
-  console.log(buildName)
+  // var buildName="./"+new Date().toISOString().replace(/:/img,'');
+  var buildName="./dest";
+  // console.log(buildName)
   fs.makeDirectory(buildName);
   try{
     data=JSON.parse(data);
@@ -60,11 +61,12 @@ var system = require('system'),
         function getResource(address,gamename,done){
           var resourceNumb=0;
           var page = require('webpage').create();
+          window.onerror=function(){}
           var urls = [];
           page.address = address;
           var itimeout=0,isDone=false;
-          page.settings.resourceTimeout=20*1000;
-          page.settings.userAgent="Mozilla/5.0 (iPhone; CPU iPhone OS 7_0 like Mac OS X; en-us) AppleWebKit/537.51.1 (KHTML, like Gecko) Version/7.0 Mobile/11A465 Safari/9537.53"
+          page.settings.resourceTimeout=10*1000;
+          page.settings.userAgent="Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36";
           page.onResourceRequested = function (res) {
             clearTimeout(itimeout);
             resourceNumb++;
@@ -74,7 +76,7 @@ var system = require('system'),
               // if(res.url.search(zURL.getDomain(address))>=0&&res.url.search(/\.(jpg|jpeg|png|mp3|mp4|svg|ogg|gif|js|css|json,html,htm)/img)>=0){
                 // console.log(zURL.getDomain(address),zURL.getDomain(res.url))
               if(address==res.url||zURL.getDomain(address)==zURL.getDomain(res.url)){
-                urls.push(res.url);
+                urls.push(res.url.replace(/\?.*?$/,""));
               }
             // }
           };
@@ -95,8 +97,8 @@ var system = require('system'),
               if(response.stage=="end"){
                 resourceNumb--;
                 // console.log("consume SUCCESS ||||"+response.url+"|||| resourceNumb: ==="+gamename+">"+resourceNumb);
-                console.log(resourceNumb);
-                if(resourceNumb<=1&&isDone!=true){
+                console.log("game "+gamename+" left "+resourceNumb+" resource to download");
+                if(resourceNumb<1){
                   itimeout=setTimeout(function(){
                     makeDownloadFile(gamename);
                   },10000);
@@ -116,7 +118,7 @@ var system = require('system'),
               }catch(e){
                 console.log(e)
               }
-              console.log('{"data":['+urls.map(function(v){return '"'+v+'"'}).join(",")+']}');
+              // console.log('{"data":['+urls.map(function(v){return '"'+v+'"'}).join(",")+']}');
               isDone=true;
               done();
 

@@ -1,0 +1,1 @@
+.\node_modules\.bin\open-browser.cmd ./dest -p 8990 -e debug

@@ -8,7 +8,8 @@ var glob=require("glob");
 var inquirer = require("inquirer");
 var ui = new inquirer.ui.BottomBar();
 // var URLS = process.argv[2].split(',');
-var dir=process.argv[2];
+// var dir=process.argv[2];
+var dir="./dest";
 var rootdir = dir;
 var sites=[]
 glob.sync(dir+"/*/*.json").forEach(function(v){
@@ -22,7 +23,7 @@ function renderUI(){
   var gamestates=ld.map(globalState.games,function(v,k){
       return `${k}(${v.orglength-v.ilength}/${v.orglength})`;
   }).join("====");
-  ui.updateBottomBar(`你有${globalState.siteLength}个游戏在下载,信息如下：${gamestates}....请稍后`);
+  ui.updateBottomBar(`你有${globalState.siteLength}个游戏在下载,信息如下：${gamestates},完成请自行叉掉`);
 }
 globalState.games={};
 sites.forEach(function(data){
@@ -46,9 +47,9 @@ sites.forEach(function(data){
     r.run(function(err,files){
       renderUI();
       if(err){
-        // console.log("error in download->",err,files,URL);
+         //console.log("error in download->",err,files,URL);
       }else{
-        // console.log("success in download->%s",URL);
+         //console.log("success in download->%s",URL);
       }
       --stateObj.ilength;
       renderUI();
