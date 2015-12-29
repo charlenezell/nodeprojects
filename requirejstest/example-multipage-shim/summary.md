@@ -1,4 +1,4 @@
-#小结一下r.js的examples#
+# 小结一下r.js的examples #
 ```javascript
 //下面为build.js
 {
