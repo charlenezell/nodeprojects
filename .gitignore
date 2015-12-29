@@ -7,3 +7,5 @@ webpacktest/multipage/build/*
 **/node_modules/*
 **/.sass-cache/*
 phantomjs/download/*
+requirejstest/example-multipage-shim/www-built/*
+requirejstest/example-multipage-shim/www-ghpages/*
