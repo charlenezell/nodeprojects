@@ -1,3 +1,4 @@
+#小结一下r.js的examples#
 ```javascript
 //下面为build.js
 {
@@ -20,7 +21,10 @@
         {
             name: 'app/main2',
             exclude: ['../common']
-        }//依赖是可以用requirejs的amd的require([...])或者cmd的require(name)传入但是嵌套的require不会生效只能通过在这里配置include项目来注入，(嵌套的require表达的是一种异步的依赖，看看是否可以放到同步依赖上面，或者说本来就是必须异步的话就没有必要合并了。。。这里需要权衡和注意）
+        }/*依赖是可以用requirejs的amd的require([...])或者cmd的require(name)
+        传入但是嵌套的require不会生效只能通过在这里配置include项目来注入，
+        (嵌套的require表达的是一种异步的依赖，看看是否可以放到同步依赖上面，或者说
+        本来就是必须异步的话就没有必要合并了。。。这里需要权衡和注意）*/
     ]
 }
 //下面为common.js
