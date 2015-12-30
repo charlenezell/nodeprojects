@@ -1,37 +1,37 @@
-#安装方式
+#安装方式#
 1. node,npm环境
 2. ruby,ruby-sass环境
 3. 安装zell-boot
-<pre>
-    npm install -g zell-boot
-</pre>
+```Shell
+   $ npm install -g zell-boot
+```
 4. 初始化项目
-<pre>
+```Shell
     $ mkdir projectPath
     $ cd projectPath
     $ zell-boot
-</pre>
+```
 选择各种选项创建好项目框架。
 5. 安装项目依赖
-<pre>
-    npm install
-</pre>
+```Shell
+  $ npm install
+```
 6. 构建项目
-<pre>
-    gulp
-</pre>
+```Shell
+  $ gulp
+```
 
-#配置说明
+#配置说明#
  env.json
- ===
-<pre>
+
+```JSON
 {
     "deployPath":"./dp/",
     "sourceUrl":"http://xxx.100bt.com/resource/",
     "resourcePath":"./resource/",
     "spriteGeneratTemplate":"./sptemplate.hb"
 }
-</pre>
+```
 
 1. deployPath 站点部署路径
 2. sourceUrl 站点的根url
@@ -39,12 +39,12 @@
 4. spriteGeneratTemplate 图片雪碧图生成中间scss代码的模板
 
 sptemplate.hb
-===
+
 项目使用scss作为css的预编译语言，sprite会根据目录结构生成相应名字和格式的图片。
 比如如下目录结构。
-<pre>
+```Shell
     sprite/p8_v_sprite/*.{png,jpg}
-</pre>
+```
 
 这样子的话会生成一个叫做sprite的图片，图片内容为文件夹内的所有图片；
 而p8,v,s,h等前缀会作为参数去改变雪碧图的生成规则
@@ -54,7 +54,7 @@ s:阶梯状拼接图片
 h:horizontal地拼接图片
 此时会在src目录里面生成一个佳作sprite.scss的雪碧图定义scss;
 内容就是通过sptemplate.hb模板定义的。
-<pre>
+```Handlebars
 {{#block "sprites"}}
     {{#each sprites}}
     @mixin {{{strings.name}}}($x:null,$y:null) {
@@ -83,14 +83,14 @@ h:horizontal地拼接图片
 
     {{/each}}
 {{/block}}
-</pre>
+```
 
 这里是handlebars的语法。
 比如:
 sprite/p8_v_spritename/hello.png
 会正常一份这样子的scss mixin 和一个自省的函数
 
-<pre>
+```SCSS
 @mixin spritename_hello($x:null,$y:null) {
   background-image: url(img/sprite/spritename.png);
   $ix:-144px;
@@ -114,15 +114,15 @@ sprite/p8_v_spritename/hello.png
   $img:"img/sprite/spritename.png";
   @return (height:$ih,width:$iw,x:$ix,y:$iy,img:$img);
 }
-</pre>
+```
 
 这样子就可以通过其他入口scss去引用这个scss来做灵活的sprite处理；
 
-<pre>
+```SCSS
 @import "sprite";
 .hellobtn{
     border:1px solid red;
     @include spritename_hello;//注入sprite的mixin
     margin-left:map-get(spritename_hello_inspect(),"width");//注入图片的大小等自省的数据
 }
-</pre>
+```
