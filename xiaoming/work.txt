@@ -1,2 +1,3 @@
 doing thing 1
 fix bug 1
+done thing 2
