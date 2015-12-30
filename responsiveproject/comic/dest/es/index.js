@@ -1,1 +1,0 @@
-"use strict";define(["require","exports","module","common","swiper"],function(i,e,n,r,o){r.commonInit(),$(window).resize(),window.mySwiper=new Swiper(".swiper-container",{pagination:".indexslider__pager",paginationClickable:!0,grabCursor:!0})});
