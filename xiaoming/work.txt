@@ -1,3 +1,4 @@
 doing thing 1
 fix bug 1
 done thing 2
+做完新的事情1
