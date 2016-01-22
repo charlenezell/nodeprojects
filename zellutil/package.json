@@ -1,0 +1,29 @@
+{
+  "name": "zellutil",
+  "version": "0.0.1",
+  "description": "utils commanline tool",
+  "private": true,
+  "bin": {
+    "zellutil": "./bin/zellutil"
+  },
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "author": {
+    "name": "charlenezell",
+    "email": "charlenezell@gmail.com",
+    "url": "https://github.com/charlenezell"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/charlenezell/zellutil"
+  },
+  "license": "MIT",
+  "bugs": "https://github.com/charlenezell/zellutil/issues",
+  "dependencies": {
+    "commander": "~2.0.0",
+    "autocmdr": "~0.0.7"
+  },
+  "devDependencies": {
+  }
+}
