@@ -1,0 +1,46 @@
+{
+  "name": "zell-grr",
+  "version": "0.0.3",
+  "description": "Rewrite occurences of filenames which have been renamed by gulp-rev",
+  "main": "index.js",
+  "dependencies": {
+    "event-stream": "^3.2.2",
+    "gulp-util": "~2.2.14",
+    "through2": "~0.4.1"
+  },
+  "devDependencies": {
+    "event-stream": "^3.1.7",
+    "gulp-filter": "~0.4.0",
+    "gulp-rev": "~0.3.2",
+    "mocha": "~1.18.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "charlenezell"
+  },
+  "license": "ISC",
+  "_id": "zell-grr@0.0.2",
+  "_shasum": "44c746f30080a801d03fe3823d9db6f458969c45",
+  "_from": "zell-grr@0.0.2",
+  "_npmVersion": "2.12.1",
+  "_nodeVersion": "0.10.22",
+  "_npmUser": {
+    "name": "charlenezell",
+    "email": "charlenezell@gmail.com"
+  },
+  "dist": {
+    "shasum": "14acd6d14bf715701f4676827b08c3ec4c0e7728",
+    "tarball": "http://registry.npmjs.org/zell-grr/-/zell-grr-0.0.1.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "charlenezell",
+      "email": "charlenezell@gmail.com"
+    }
+  ],
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/zell-grr/-/zell-grr-0.0.1.tgz",
+  "readme": "ERROR: No README data found!"
+}
