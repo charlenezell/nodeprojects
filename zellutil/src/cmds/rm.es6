@@ -9,6 +9,7 @@ module.exports = function (program, opts) {
     .command('rm <path>')
     .action(function(_path){
       var rst,toDel;
+        debugger;
       if(program.patterns.length>0){
         toDel=program.patterns.map((v)=>path.join(_path,v));
       }else{
