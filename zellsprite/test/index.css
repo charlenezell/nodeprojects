@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.b, .c {
+  display: inline-block; }
+
+.b {
+  background-image: url(imgDest/popbtns.png);
+  width: 116px;
+  height: 39px;
+  background-position: -348px -117px; }
+  @media (max-width: 540px) {
+    .b {
+      width: 20rem;
+      height: 6.72414rem; } }
+  @media (max-width: 540px) {
+    .b {
+      background-position: 7.62489% 10.34483%;
+      background-size: 4034.48276% 3000%; } }
+  .b:hover {
+    background-image: url(imgDest/popbtns.png);
+    width: 116px;
+    height: 39px;
+    background-position: -464px -156px; }
+    @media (max-width: 540px) {
+      .b:hover {
+        width: 20rem;
+        height: 6.72414rem; } }
+    @media (max-width: 540px) {
+      .b:hover {
+        background-position: 10.16652% 13.7931%;
+        background-size: 4034.48276% 3000%; } }
+
+.c {
+  background-image: url(imgDest/popbtns.png);
+  width: 196px;
+  height: 39px;
+  background-position: -4092px -1053px; }
+  @media (max-width: 540px) {
+    .c {
+      width: 10rem;
+      height: 1.9898rem; } }
+  @media (max-width: 540px) {
+    .c {
+      background-position: 91.25781% 93.10345%;
+      background-size: 2387.7551% 3000%; } }
+  .c:hover {
+    background-image: url(imgDest/popbtns.png);
+    width: 196px;
+    height: 39px;
+    background-position: -3896px -1014px; }
+    @media (max-width: 540px) {
+      .c:hover {
+        width: 10rem;
+        height: 1.9898rem; } }
+    @media (max-width: 540px) {
+      .c:hover {
+        background-position: 86.88671% 89.65517%;
+        background-size: 2387.7551% 3000%; } }

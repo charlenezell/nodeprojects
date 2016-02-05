@@ -1,0 +1,18 @@
+@charset "utf-8";
+@import "variables";
+@import "lib/mixins";
+@import "./imgDest/popbtns.png";
+*{margin:0;padding:0;}
+.b,.c{display: inline-block;}
+.b{
+  @include popbtns_ok(20rem);
+  &:hover{
+    @include popbtns_ok-h(20rem);
+  }
+}
+.c{
+  @include popbtns_oktry(10rem);
+  &:hover{
+    @include popbtns_oktry-h(10rem);
+  }
+}

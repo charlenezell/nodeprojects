@@ -11,7 +11,8 @@ var imagemin = require("gulp-imagemin");
 var pngmin = require('gulp-pngmin');
 var rename = require('gulp-rename');
 var path = require("path");
-
+var chalk = require('chalk');
+var modulepath = __dirname;
 function getRealName(w) {
     var a = w.split("/").pop();
     var realName = a.split("_").pop() + ".png";
@@ -47,27 +48,40 @@ function chooseAlgorithm(pathToCal) {
     });
     return alg;
 }
+var defaultOption = {
+    src: "./style/r_imgSrc/",
+    dest: "./style/r_imgDest/",
+    taskName: "sprite",
+    templateFile: path.join(modulepath, "./sptemplate.hb")
+};
+function main(gulp) {
+    var options = arguments.length <= 1 || arguments[1] === undefined ? {} : arguments[1];
 
-function main(gulp, _ref) {
-    var _ref$src = _ref.src;
-    var src = _ref$src === undefined ? "./style/r_imgSrc/" : _ref$src;
-    var _ref$dest = _ref.dest;
-    var dest = _ref$dest === undefined ? "./style/r_imgDest/" : _ref$dest;
+    var config = Object.assign({}, defaultOption, options);
+    var configInfo = Object.keys(config).map(function (k) {
+        return "using " + k + "=" + config[k];
+    }).join("\n");
+    console.log(chalk.bgGreen.red(configInfo));
+    var dest = config.dest;
+    var src = config.src;
+    var taskName = config.taskName;
+    var templateFile = config.templateFile;
 
-    gulp.task("sprite", function () {
+    gulp.task(taskName, function () {
         var jobs = [];
         var spriteGlob = path.join(src, "*"); //图片目录的直接子项作为sprite图片的名字
-        var dest = path.join(dest);
+        var _dest = path.join(dest);
         var cssBundles = [];
         var _map = glob.sync(spriteGlob).map(function (a) {
             var imgName = getRealName(a),
-                imgName2 = ld.includes(getParamList(a), "jpeg") ? imgName.replace(path.extname(imgName), ".jpeg") : imgName;
-            cssName = path.basename(a) + ".scss", allImgGlob = path.join(a, "**/*.{jpg,png}");
+                imgName2 = ld.includes(getParamList(a), "jpeg") ? imgName.replace(path.extname(imgName), ".jpeg") : imgName,
+                cssName = path.basename(a) + ".scss",
+                allImgGlob = path.join(a, "**/*.{jpg,png}");
             var spMixStream = gulp.src(allImgGlob).pipe(sp({
                 imgName: imgName2,
                 cssName: cssName,
                 engine: "gmsmith",
-                imgPath: path.posix.join("./pimgdest", imgName2),
+                imgPath: path.posix.join(dest, imgName2),
                 algorithm: chooseAlgorithm(a),
                 imgOpts: {
                     quality: 100
@@ -76,7 +90,7 @@ function main(gulp, _ref) {
                     var spriteImgName = getRealName(a);
                     sp.name = spriteImgName.replace(path.extname(spriteImgName), "") + "_" + sp.name;
                 },
-                cssTemplate: "./sptemplate.hb"
+                cssTemplate: templateFile
             }));
 
             cssBundles.extraData = {
@@ -88,13 +102,13 @@ function main(gulp, _ref) {
             var needP8Renderer = ld.includes(getParamList(a), "p8");
             var hasOptimised = ld.includes(getParamList(a), "jpeg");
             if (needP8Renderer) {
-                return spMixStream.img.pipe(pngmin()).pipe(gulp.dest(dest));
+                return spMixStream.img.pipe(pngmin()).pipe(gulp.dest(_dest));
             } else if (hasOptimised) {
-                return spMixStream.img.pipe(gulp.dest(dest));
+                return spMixStream.img.pipe(gulp.dest(_dest));
             } else {
                 return spMixStream.img.pipe(imagemin({
                     optimizationLevel: 3
-                })).pipe(gulp.dest(dest));
+                })).pipe(gulp.dest(_dest));
             }
         });
         var imgJob = es.concat.apply(null, _map);
@@ -105,7 +119,7 @@ function main(gulp, _ref) {
         cssBundles.forEach(function (v) {
             jobs.push(v.pipe(rename(function (path) {
                 path.basename = "_" + getRealName(path.basename);
-            })).pipe(gulp.dest("./style/")));
+            })).pipe(gulp.dest(_dest)));
         });
         if (jobs.length > 0) {
             return es.concat.apply(this, jobs);

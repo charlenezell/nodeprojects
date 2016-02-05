@@ -1,0 +1,810 @@
+@charset "utf-8";
+//                                                __
+//                                               /\ \__
+//   ____     __   _____      __     _ __    __  \ \ ,_\    __
+//  /',__\  /'__`\/\ '__`\  /'__`\  /\`'__\/'__`\ \ \ \/  /'__`\
+// /\__, `\/\  __/\ \ \L\ \/\ \L\.\_\ \ \//\ \L\.\_\ \ \_/\  __/
+// \/\____/\ \____\\ \ ,__/\ \__/.\_\\ \_\\ \__/.\_\\ \__\ \____\
+//  \/___/  \/____/ \ \ \/  \/__/\/_/ \/_/ \/__/\/_/ \/__/\/____/
+
+@mixin when($alias) {
+  @if $alias == mobile {
+    @media (max-width: $mobileBreakPointWidth) {
+      @content;
+    }
+  }
+  @if $alias == pc {
+    @media (min-width: ($mobileBreakPointWidth + 1px)) {
+      @warn "这个when(pc)接口已经废弃请勿使用,在base.jsp里面实现了在html里面加class的操作，可以考虑使用.html--inpc .html--inmobile实现相关功能";
+      @content;
+    }
+  }
+  @if $alias == pcmain {
+    @media (max-width: $pcMainWidth) {
+      @content;
+    }
+  }
+}
+
+//                                                __
+//                                               /\ \__
+//   ____     __   _____      __     _ __    __  \ \ ,_\    __
+//  /',__\  /'__`\/\ '__`\  /'__`\  /\`'__\/'__`\ \ \ \/  /'__`\
+// /\__, `\/\  __/\ \ \L\ \/\ \L\.\_\ \ \//\ \L\.\_\ \ \_/\  __/
+// \/\____/\ \____\\ \ ,__/\ \__/.\_\\ \_\\ \__/.\_\\ \__\ \____\
+//  \/___/  \/____/ \ \ \/  \/__/\/_/ \/_/ \/__/\/_/ \/__/\/____/
+//2个等级的字体
+
+@mixin setfontfamily($type) {
+  @if $type == 1 {
+    font-family: $fontFamily_normal;
+  }
+
+  @if $type == 2 {
+    font-family: $fontFamily_special;
+  }
+}
+
+@mixin sethlhSame($height){
+  height:$height;
+  line-height:$height;
+}
+
+@mixin sethlh($type){
+  @if $type == 1 {
+    height:$fontSize_small * 2;
+    line-height:$fontSize_small * 2;
+    @include when(mobile) {
+      height:$fontSize_smallrem * 2;
+      line-height:$fontSize_smallrem * 2;
+    }
+  }
+
+  @if $type == 2 {
+    height: $fontSize_normal * 2;
+    line-height: $fontSize_normal * 2;
+
+    @include when(mobile) {
+      height: $fontSize_normalrem * 2;
+      line-height: $fontSize_normalrem * 2;
+    }
+  }
+
+  @if $type == 3 {
+    height: $fontSize_normal2 * 2;
+    line-height: $fontSize_normal2 * 2;
+
+    @include when(mobile) {
+      height: $fontSize_normal2rem * 2;
+      line-height: $fontSize_normal2rem * 2;
+    }
+  }
+
+  @if $type == 4 {
+    height: $fontSize_title_normal * 2;
+    line-height: $fontSize_title_normal * 2;
+
+    @include when(mobile) {
+      height: $fontSize_title_normalrem * 2;
+      line-height: $fontSize_title_normalrem * 2;
+    }
+  }
+
+
+  @if $type == 5 {
+    height: $fontSize_title_large * 2;
+    line-height: $fontSize_title_large * 2;
+
+    @include when(mobile) {
+      height: $fontSize_title_largerem * 2;
+      line-height: $fontSize_title_largerem * 2;
+    }
+  }
+}
+
+//5个等级的字体大小
+@mixin setfontsize($type,$force:false) {
+  @if $type == 1 {
+    font-size: #{$fontSize_small}(if($force,#{"!important"},#{""}));
+
+    @include when(mobile) {
+      font-size: #{$fontSize_small}(if($force,#{"!important"},#{""}));
+      font-size: #{$fontSize_smallrem}(if($force,#{"!important"},#{""}));
+    }
+  }
+
+  @if $type == 2 {
+    font-size: #{$fontSize_normal}(if($force,#{"!important"},#{""}));
+
+    @include when(mobile) {
+      font-size: #{$fontSize_normal}(if($force,#{"!important"},#{""}));
+      font-size: #{$fontSize_normalrem}(if($force,#{"!important"},#{""}));
+    }
+  }
+
+  @if $type == 3 {
+    font-size: #{$fontSize_normal2}(if($force,#{"!important"},#{""}));
+
+    @include when(mobile) {
+      font-size: #{$fontSize_normal2}(if($force,#{"!important"},#{""}));
+      font-size: #{$fontSize_normal2rem}(if($force,#{"!important"},#{""}));
+    }
+  }
+
+  @if $type == 4 {
+    font-size: #{$fontSize_title_normal}(if($force,#{"!important"},#{""}));
+
+    @include when(mobile) {
+      font-size: #{$fontSize_title_normal}(if($force,#{"!important"},#{""}));
+      font-size: #{$fontSize_title_normalrem}(if($force,#{"!important"},#{""}));
+    }
+  }
+
+
+  @if $type == 5 {
+    font-size: #{$fontSize_title_large}(if($force,#{"!important"},#{""}));
+
+    @include when(mobile) {
+      font-size: #{$fontSize_title_large}(if($force,#{"!important"},#{""}));
+      font-size: #{$fontSize_title_largerem}(if($force,#{"!important"},#{""}));
+    }
+  }
+}
+
+//                                                __
+//                                               /\ \__
+//   ____     __   _____      __     _ __    __  \ \ ,_\    __
+//  /',__\  /'__`\/\ '__`\  /'__`\  /\`'__\/'__`\ \ \ \/  /'__`\
+// /\__, `\/\  __/\ \ \L\ \/\ \L\.\_\ \ \//\ \L\.\_\ \ \_/\  __/
+// \/\____/\ \____\\ \ ,__/\ \__/.\_\\ \_\\ \__/.\_\\ \__\ \____\
+//  \/___/  \/____/ \ \ \/  \/__/\/_/ \/_/ \/__/\/_/ \/__/\/____/
+
+@mixin toe($isscroll:false) {
+  //文字省略?
+  overflow: hidden !important;
+  @if $isscroll==true {overflow-x: scroll !important;}
+  white-space: nowrap !important;
+  text-overflow: ellipsis !important;
+}
+
+@mixin toeline($linenumb:1) {
+  display:block;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  -webkit-line-clamp: $linenumb;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+//                                                __
+//                                               /\ \__
+//   ____     __   _____      __     _ __    __  \ \ ,_\    __
+//  /',__\  /'__`\/\ '__`\  /'__`\  /\`'__\/'__`\ \ \ \/  /'__`\
+// /\__, `\/\  __/\ \ \L\ \/\ \L\.\_\ \ \//\ \L\.\_\ \ \_/\  __/
+// \/\____/\ \____\\ \ ,__/\ \__/.\_\\ \_\\ \__/.\_\\ \__\ \____\
+//  \/___/  \/____/ \ \ \/  \/__/\/_/ \/_/ \/__/\/_/ \/__/\/____/
+
+@mixin textCenter {
+  //文字居中
+  text-align: center !important;
+}
+
+//                                                __
+//                                               /\ \__
+//   ____     __   _____      __     _ __    __  \ \ ,_\    __
+//  /',__\  /'__`\/\ '__`\  /'__`\  /\`'__\/'__`\ \ \ \/  /'__`\
+// /\__, `\/\  __/\ \ \L\ \/\ \L\.\_\ \ \//\ \L\.\_\ \ \_/\  __/
+// \/\____/\ \____\\ \ ,__/\ \__/.\_\\ \_\\ \__/.\_\\ \__\ \____\
+//  \/___/  \/____/ \ \ \/  \/__/\/_/ \/_/ \/__/\/_/ \/__/\/____/
+
+@mixin blockCenter {
+  //块居?
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+//                                                __
+//                                               /\ \__
+//   ____     __   _____      __     _ __    __  \ \ ,_\    __
+//  /',__\  /'__`\/\ '__`\  /'__`\  /\`'__\/'__`\ \ \ \/  /'__`\
+// /\__, `\/\  __/\ \ \L\ \/\ \L\.\_\ \ \//\ \L\.\_\ \ \_/\  __/
+// \/\____/\ \____\\ \ ,__/\ \__/.\_\\ \_\\ \__/.\_\\ \__\ \____\
+//  \/___/  \/____/ \ \ \/  \/__/\/_/ \/_/ \/__/\/_/ \/__/\/____/
+
+@mixin siteColorConfig {
+  @include when(mobile){
+    ::-webkit-scrollbar-track-piece{
+      background-color:#fff;
+      -webkit-border-radius:3;
+    }
+    ::-webkit-scrollbar{
+      width:0px;
+      height:0px;
+    }
+    ::-webkit-scrollbar-thumb{
+      height:1px;
+      background-color:#999;
+      -webkit-border-radius:7px;
+      outline:2px solid #fff;
+      outline-offset:-2px;
+      border: 2px solid #fff;
+    }
+  };
+  ::selection {
+    background: $bgc_selection;
+    color: $color_selectioin;
+  }
+
+  //站点通用配置
+  //链接颜色
+  html{background-color: #fff;}
+  *{
+    outline:none;
+    border:none;
+  }
+  a {
+
+    color: $color_link;
+    text-decoration: none;
+    &:hover {
+      color: $color_link__Hover;
+      text-decoration: underline;
+    }
+  }
+
+  ul, ol, dl {
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  //全局字体和行高设?
+  html {
+    line-height: 1;
+    font-family: $fontFamily_normal;
+
+    @include setfontsize(2);
+  }
+  .justPC{
+    @include when(mobile){
+      display: none!important;
+    };
+  }
+
+  .justMobileB{
+    display: none;
+    @include when(mobile){
+      display: block;
+    };
+  }
+
+  .justMobileIB{
+    display: none;
+    @include when(mobile){
+      display: inline-block;
+    };
+  }
+  .justMobileI{
+    display: none;
+    @include when(mobile){
+      display:inline;
+    };
+  }
+}
+
+//                                                __
+//                                               /\ \__
+//   ____     __   _____      __     _ __    __  \ \ ,_\    __
+//  /',__\  /'__`\/\ '__`\  /'__`\  /\`'__\/'__`\ \ \ \/  /'__`\
+// /\__, `\/\  __/\ \ \L\ \/\ \L\.\_\ \ \//\ \L\.\_\ \ \_/\  __/
+// \/\____/\ \____\\ \ ,__/\ \__/.\_\\ \_\\ \__/.\_\\ \__\ \____\
+//  \/___/  \/____/ \ \ \/  \/__/\/_/ \/_/ \/__/\/_/ \/__/\/____/
+
+@mixin layout-w-1-2 {
+  width: percentage(1 / 2);
+  box-sizing: border-box;
+}
+
+@mixin layout-w-1-3 {
+  width: percentage(1 / 3);
+  box-sizing: border-box;
+}
+
+@mixin layout-w-2-3 {
+  width: percentage(2 / 3);
+  box-sizing: border-box;
+}
+
+@mixin layout-w-1-4 {
+  width: percentage(1 / 4);
+  box-sizing: border-box;
+}
+
+@mixin layout-w-3-4 {
+  width: percentage(3 / 4);
+  box-sizing: border-box;
+}
+
+@mixin layout-w-1-5 {
+  width: percentage(1 / 5);
+  box-sizing: border-box;
+}
+
+@mixin layout-w-2-5 {
+  width: percentage(2 / 5);
+  box-sizing: border-box;
+}
+
+@mixin layout-w-3-5 {
+  width: percentage(3 / 5);
+  box-sizing: border-box;
+}
+
+@mixin layout-w-4-5 {
+  width: percentage(4 / 5);
+  box-sizing: border-box;
+}
+@mixin layout-w-1-6 {
+  width: percentage(1 / 6);
+  box-sizing: border-box;
+}
+@mixin layout-w-1-7 {
+  width: percentage(1 / 7);
+  box-sizing: border-box;
+}
+@mixin layout-w-2-7 {
+  width: percentage(2 / 7);
+  box-sizing: border-box;
+}
+@mixin layout-w-3-7 {
+  width: percentage(3 / 7);
+  box-sizing: border-box;
+}
+@mixin layout-w-2-9 {
+  width: percentage(2 / 9);
+  box-sizing: border-box;
+}
+
+//                                                __
+//                                               /\ \__
+//   ____     __   _____      __     _ __    __  \ \ ,_\    __
+//  /',__\  /'__`\/\ '__`\  /'__`\  /\`'__\/'__`\ \ \ \/  /'__`\
+// /\__, `\/\  __/\ \ \L\ \/\ \L\.\_\ \ \//\ \L\.\_\ \ \_/\  __/
+// \/\____/\ \____\\ \ ,__/\ \__/.\_\\ \_\\ \__/.\_\\ \__\ \____\
+//  \/___/  \/____/ \ \ \/  \/__/\/_/ \/_/ \/__/\/_/ \/__/\/____/
+
+//这个可以这样?
+// <div class="ct-container2">容器
+//   <span class="ct-content">！！！！这个必须是span！！！！
+//     <div class="maxwidth400"这个必须是inlineblock如果要自动水平居中的?<h1>Some text</h1><p>But he stole up to us again, and suddenly clapping his hand on my shoulder, said?Did ye see anything looking like men going towards that ship a while ago?"</p></div>
+//   </span><b class="ct-faker"></b>这个必须写出?
+// </div>
+//.ct-container2{@include center-tablecelinline(800,400)}
+//但是如果内容大过一屏的话就只能在大过一屏的大内容块里面居中所以更加通用的弹窗用不了这个东西
+@mixin center-tablecellinline($width, $height) {
+  & {
+    width: if(unitless($width), #{$width}px, $width);
+    height: if(unitless($height), #{$height}px, $height);
+    display: table;
+    text-align: center;
+
+    .ct-content {
+      display: table-cell;
+      vertical-align: middle;
+      *display: inline-block;
+    }
+
+    .ct-faker {
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+  }
+}
+
+//                                                __
+//                                               /\ \__
+//   ____     __   _____      __     _ __    __  \ \ ,_\    __
+//  /',__\  /'__`\/\ '__`\  /'__`\  /\`'__\/'__`\ \ \ \/  /'__`\
+// /\__, `\/\  __/\ \ \L\ \/\ \L\.\_\ \ \//\ \L\.\_\ \ \_/\  __/
+// \/\____/\ \____\\ \ ,__/\ \__/.\_\\ \_\\ \__/.\_\\ \__\ \____\
+//  \/___/  \/____/ \ \ \/  \/__/\/_/ \/_/ \/__/\/_/ \/__/\/____/
+
+@mixin bgrgba($args...) {
+  @if type-of(nth($args, 1)) == "color" {
+    background: rgba(nth($args, 1), nth($args, 2));
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled='true',startcolorstr=#{ie-hex-str(rgba(nth($args, 1), nth($args, 2)))},endcolorstr=#{ie-hex-str(rgba(nth($args, 1), nth($args, 2)))});
+  }
+
+  @if type-of(nth($args, 1)) == "number" {
+    background: rgba(nth($args, 1), nth($args, 2), nth($args, 3), nth($args, 4));
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled='true',startcolorstr=#{ie-hex-str(rgba(nth($args, 1), nth($args, 2), nth($args, 3), nth($args, 4)))},endcolorstr=#{ie-hex-str(rgba(nth($args, 1), nth($args, 2), nth($args, 3), nth($args, 4)))});
+  }
+}
+
+//                                                __
+//                                               /\ \__
+//   ____     __   _____      __     _ __    __  \ \ ,_\    __
+//  /',__\  /'__`\/\ '__`\  /'__`\  /\`'__\/'__`\ \ \ \/  /'__`\
+// /\__, `\/\  __/\ \ \L\ \/\ \L\.\_\ \ \//\ \L\.\_\ \ \_/\  __/
+// \/\____/\ \____\\ \ ,__/\ \__/.\_\\ \_\\ \__/.\_\\ \__\ \____\
+//  \/___/  \/____/ \ \ \/  \/__/\/_/ \/_/ \/__/\/_/ \/__/\/____/
+
+@mixin float($side) {
+  float: unquote($side);
+  display: inline-block;
+}
+
+//                                                __
+//                                               /\ \__
+//   ____     __   _____      __     _ __    __  \ \ ,_\    __
+//  /',__\  /'__`\/\ '__`\  /'__`\  /\`'__\/'__`\ \ \ \/  /'__`\
+// /\__, `\/\  __/\ \ \L\ \/\ \L\.\_\ \ \//\ \L\.\_\ \ \_/\  __/
+// \/\____/\ \____\\ \ ,__/\ \__/.\_\\ \_\\ \__/.\_\\ \__\ \____\
+//  \/___/  \/____/ \ \ \/  \/__/\/_/ \/_/ \/__/\/_/ \/__/\/____/
+
+@mixin clearfix {
+  display: block;
+  *zoom: 1;
+
+  &:after {
+    content: "\20";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    overflow: hidden;
+  }
+}
+
+//                                                __
+//                                               /\ \__
+//   ____     __   _____      __     _ __    __  \ \ ,_\    __
+//  /',__\  /'__`\/\ '__`\  /'__`\  /\`'__\/'__`\ \ \ \/  /'__`\
+// /\__, `\/\  __/\ \ \L\ \/\ \L\.\_\ \ \//\ \L\.\_\ \ \_/\  __/
+// \/\____/\ \____\\ \ ,__/\ \__/.\_\\ \_\\ \__/.\_\\ \__\ \____\
+//  \/___/  \/____/ \ \ \/  \/__/\/_/ \/_/ \/__/\/_/ \/__/\/____/
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  filter: alpha(opacity = $opacity * 100);
+}
+
+//                                                __
+//                                               /\ \__
+//   ____     __   _____      __     _ __    __  \ \ ,_\    __
+//  /',__\  /'__`\/\ '__`\  /'__`\  /\`'__\/'__`\ \ \ \/  /'__`\
+// /\__, `\/\  __/\ \ \L\ \/\ \L\.\_\ \ \//\ \L\.\_\ \ \_/\  __/
+// \/\____/\ \____\\ \ ,__/\ \__/.\_\\ \_\\ \__/.\_\\ \__\ \____\
+//  \/___/  \/____/ \ \ \/  \/__/\/_/ \/_/ \/__/\/_/ \/__/\/____/
+
+@mixin min-height($height) {
+  min-height: $height;
+  height: auto !important;
+  _height: $height;
+}
+
+@mixin min-width($width) {
+  min-width: $width;
+  width: auto !important;
+  _width: $width;
+}
+
+@mixin max-height($height) {
+  max-height: $height;
+  height: auto !important;
+  _height: $height;
+}
+
+@mixin max-width($width) {
+  max-width: $width;
+  width: auto !important;
+  _width: $width;
+}
+
+//                                                __
+//                                               /\ \__
+//   ____     __   _____      __     _ __    __  \ \ ,_\    __
+//  /',__\  /'__`\/\ '__`\  /'__`\  /\`'__\/'__`\ \ \ \/  /'__`\
+// /\__, `\/\  __/\ \ \L\ \/\ \L\.\_\ \ \//\ \L\.\_\ \ \_/\  __/
+// \/\____/\ \____\\ \ ,__/\ \__/.\_\\ \_\\ \__/.\_\\ \__\ \____\
+//  \/___/  \/____/ \ \ \/  \/__/\/_/ \/_/ \/__/\/_/ \/__/\/____/
+
+// div.logo {
+//   background: url("logo.png") no-repeat;
+//   @include image-2x("logo2x.png", 100px, 25px);
+// }
+
+// outputing
+
+// div.logo {
+//   background: url("logo.png") no-repeat;
+// }
+// @media (min--moz-device-pixel-ratio: 1.3),
+//        (-o-min-device-pixel-ratio: 2.6 / 2),
+//        (-webkit-min-device-pixel-ratio: 1.3),
+//        (min-device-pixel-ratio: 1.3),
+//        (min-resolution: 1.3dppx) {
+//         div.logo {
+//             background-image: url("logo2x.png");
+//             background-size: 100px 25px;
+//         }
+// }
+@mixin image-2x($image, $width, $height) {
+  @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+    /* on retina, use image that's scaled by 2 */
+    background-image: url($image);
+    background-size: $width $height;
+  }
+}
+
+// .pop {
+//   background-color: red;
+//   position: relative;
+//   float: left;
+//   padding: 20px;
+
+//   .hello {
+//     top: -8px;
+
+//     @include triangle(up, 8px, red, white);
+//   }
+// }
+
+// <div class="pop"><div class="hello"></div>hellomynameis</div>
+
+@mixin triangle($direction, $size: 6px, $color: #222, $color2: transparent) {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  border:0;
+  @if $direction == "up" {
+    border-bottom: $size solid $color;
+    border-left: (3 / 4 * $size) solid $color2;
+    border-right: (3 / 4 * $size) solid $color2;
+  }
+  @else if $direction == "down" {
+    border-top: $size solid $color;
+    border-left: (3 / 4 * $size) solid $color2;
+    border-right: (3 / 4 * $size) solid $color2;
+  }
+  @else if $direction == "left" {
+    border-top: (3 / 4 * $size) solid $color2;
+    border-bottom: (3 / 4 * $size) solid $color2;
+    border-right: $size solid $color;
+  }
+  @else if $direction == "right" {
+    border-top: (3 / 4 * $size) solid $color2;
+    border-bottom: (3 / 4 * $size) solid $color2;
+    border-left: $size solid $color;
+  }
+}
+
+@mixin imgAlpha($absurl){
+  background:url($absurl) no-repeat;
+  _background-image:none;
+  _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='$absurl');
+}
+
+@mixin abstl($t:0,$l:0){position: absolute!important;top:$t;left:$l;right:auto!important;bottom:auto!important;}
+@mixin abstr($t:0,$r:0){position: absolute!important;top:$t;left:auto!important;right:$r;bottom:auto!important;}
+@mixin absbl($l:0,$b:0){position: absolute!important;top:auto!important;left:$l;right:auto!important;bottom:$b;}
+@mixin absbr($b:0,$r:0){position: absolute!important;top:auto!important;left:auto!important;right:$r;bottom:$b;}
+
+@mixin wh($w,$h) {
+  width: $w;
+  height: $h
+}
+@mixin h-lh($h){
+  height: $h;
+  line-height: $h
+}
+@mixin mainWidget($width:1000px){
+  width: $width;margin: 0 auto;
+}
+@mixin pa{position:absolute;}
+@mixin pr{position:relative;}
+@mixin toh{white-space:nowrap;
+  text-overflow:ellipsis;
+  -o-text-overflow:ellipsis;
+  overflow: hidden;}
+@mixin wbk{
+  word-break: break-all;
+  word-wrap: break-word;
+}
+@mixin dibWrap{font-size:0;*word-spacing:-1px;}
+@mixin dib{font-size: 12px;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align:top;
+	 display: inline-block;
+    *display:inline;
+    *zoom:1;
+	}
+//日后补上sass生成sprite获取位置的办?
+// @mixin mobileicon($iconwidth,$iconheight,$destWidth,$destHeight){
+//     $height:(50/12/2);
+//     $width:(50/12/2) * (115/41);
+//     $xscale:$width;
+//     line-height: $height;
+//     @include wh($width#{rem},$height#{rem});
+//     background-size:$xscale#{rem} auto;
+// }
+
+@mixin noinlinespace {
+    font-size: 0;
+    -webkit-text-size-adjust:none;
+}
+
+@function calmobile($n) {
+  @return #{($n/12/2)}rem;
+}
+@mixin fontsetting($size,$lineheight,$msize:null,$mlineheight:null,$color:null,$hcolor:null) {
+  font-size: if(unitless($size),#{$size}px,$size);
+  @if (unitless($lineheight) and $lineheight >= 12){
+    //假定没有单位且小于12有可能用行高倍数来做so...
+    line-height: #{$lineheight}px;
+  }@else{
+    line-height: $lineheight;
+  }
+  @if ($color != null) {
+    color:$color;
+  }
+  @if ($hcolor != null) {
+    &:hover{color:$hcolor;}
+  }
+  @if ($msize != null and $mlineheight != null) {
+    @include when(mobile){
+      font-size: calmobile($msize);
+      line-height: calmobile($mlineheight);
+    };
+  }
+}
+@function getbgpct($iconlength,$imgposition,$imglength){
+  @if $imgposition == 0 {
+    @return 0;
+  }
+  @return percentage(($imgposition)/($imglength - $iconlength));
+}
+@mixin bgp($imgw,$imgh,$ofx,$ofy,$bgw,$bgh) {
+  background-position:-$ofx#{px} -$ofy#{px};//ie某些认不出两位小数的精确度百分比so
+  @include when(mobile){
+    background-position:getbgpct($imgw,$ofx,$bgw) getbgpct($imgh,$ofy,$bgh);
+    background-size:percentage($bgw / $imgw) percentage($bgh / $imgh);
+  };
+}
+@mixin addCommonInnerBorder(){
+  &{
+    position: relative;
+  }
+  &:after{
+    content:" ";
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    right: 1px;
+    bottom: 1px;
+    outline: 1px solid #ccc;
+    outline-color: rgba(0, 0, 0, 0.1);
+  }
+}
+@mixin addCommonImgBrighter(){
+  &{
+    position: relative;
+  }
+  &:before{
+    display: none;
+    content:" ";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-image: url(http://resource.a0bi.com/marketnew/common/dest/scss/img_s/alpha20.png);
+  }
+  &:hover:before{
+    display: block;
+  }
+}
+@mixin animated ($duration:1s,$count:infinite){
+    animation-duration: $duration;
+    animation-fill-mode: both;
+    animation-iteration-count: $count;
+}
+@mixin animatePulse_scale($scale:1.01,$duration:2s) {
+    @include animated($duration:$duration);
+    animation-name: pulse;
+  @at-root{
+      @keyframes pulse {
+        0% {
+            transform: scale3d(1,1,1)
+        }
+        50% {
+            transform: scale3d($scale,$scale,$scale)
+        }
+        100% {
+            transform: scale3d(1,1,1)
+        }
+    }
+  }
+}
+
+//                             ___    ___    __
+//                           /\_ \  /\_ \  /\ \
+//   ____    ___   _ __   ___\//\ \ \//\ \ \ \ \____     __     _ __
+//  /',__\  /'___\/\`'__\/ __`\\ \ \  \ \ \ \ \ '__`\  /'__`\  /\`'__\
+// /\__, `\/\ \__/\ \ \//\ \L\ \\_\ \_ \_\ \_\ \ \L\ \/\ \L\.\_\ \ \/
+// \/\____/\ \____\\ \_\\ \____//\____\/\____\\ \_,__/\ \__/.\_\\ \_\
+//  \/___/  \/____/ \/_/ \/___/ \/____/\/____/ \/___/  \/__/\/_/ \/_/
+
+
+@mixin scrollbar-button($char,$color) {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='12px' width='12px'><text x='0' y='12' fill='#{$color}' font-size='12'>#{$char}</text></svg>");
+}
+
+@mixin scrollbar-buttons($color) {
+    &:vertical:decrement {
+        @include scrollbar-button("▲", $color);
+    }
+    &:vertical:increment {
+        @include scrollbar-button("▼", $color);
+    }
+    &:horizontal:decrement {
+        @include scrollbar-button("◄", $color);
+    }
+    &:horizontal:increment {
+        @include scrollbar-button("►", $color);
+    }
+}
+
+@mixin initscrollbar-buttons{
+  ::-webkit-scrollbar-button {
+     & {
+        background-repeat: no-repeat;
+        height: 15px;
+        width: 15px;
+        @include scrollbar-buttons(#535353);
+
+        &:vertical:decrement {
+            background-position: 0 -2px;
+        }
+        &:vertical:increment {
+            background-position: 0 1px;
+        }
+        &:horizontal:decrement {
+            background-position: 0 -2px;
+        }
+        &:horizontal:increment {
+            background-position: 3px -2px;
+        }
+
+
+        &:hover,
+        &:focus {
+            background-color: #c0c0c0;
+        }
+        &:active {
+            background-color: #7a7a7a;
+            @include scrollbar-buttons(#cbcbcb);
+        }
+    }
+
+    // Dark scrollbars
+    .platform-win.dark & {
+        @include scrollbar-buttons(#ababab);
+
+        &:hover,
+        &:focus {
+            background-color: #595959;
+        }
+        &:active {
+            background-color: #a9a9a9;
+            @include scrollbar-buttons(#000);
+        }
+    }
+}
+}

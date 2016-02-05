@@ -4,7 +4,7 @@
   "description": "make sprite metadata inspired by android r feature",
   "main": "main.js",
   "scripts": {
-    "test": "node_modules/.bin/gulp.cmd --gulpfile test/gulpfile.js sprite",
+    "test": "node_modules/.bin/gulp.cmd --gulpfile test/gulpfile.js",
     "watch": "node_modules/.bin/gulp.cmd",
     "build": "node_modules/.bin/gulp.cmd build"
   },
@@ -19,6 +19,7 @@
   "author": "zell.w",
   "license": "ISC",
   "dependencies": {
+    "chalk": "^1.1.1",
     "event-stream": "^3.3.2",
     "glob": "^6.0.4",
     "gulp-imagemin": "^2.4.0",
@@ -30,6 +31,8 @@
   "devDependencies": {
     "babel-preset-es2015": "^6.3.13",
     "gulp": "^3.9.0",
-    "gulp-babel": "^6.1.2"
+    "gulp-babel": "^6.1.2",
+    "gulp-ruby-sass": "^2.0.6",
+    "run-sequence": "^1.1.5"
   }
 }
