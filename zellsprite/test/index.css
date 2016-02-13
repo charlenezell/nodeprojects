@@ -1,60 +1,57 @@
-* {
-  margin: 0;
-  padding: 0; }
+/*
+Error: File to import not found or unreadable: variables.
+       Load path: E:/projectA/source/web/resource/marketnew/common/src/scss/common
+        on line 2 of ./index.scss
 
-.b, .c {
-  display: inline-block; }
+1: @charset "utf-8";
+2: @import "variables";
+3: @import "lib/mixins";
+4: @import "./imgDest/popbtns.png";
+5: *{margin:0;padding:0;}
+6: .b,.c{display: inline-block;}
+7: .b{
 
-.b {
-  background-image: url(imgDest/popbtns.png);
-  width: 116px;
-  height: 39px;
-  background-position: -348px -117px; }
-  @media (max-width: 540px) {
-    .b {
-      width: 20rem;
-      height: 6.72414rem; } }
-  @media (max-width: 540px) {
-    .b {
-      background-position: 7.62489% 10.34483%;
-      background-size: 4034.48276% 3000%; } }
-  .b:hover {
-    background-image: url(imgDest/popbtns.png);
-    width: 116px;
-    height: 39px;
-    background-position: -464px -156px; }
-    @media (max-width: 540px) {
-      .b:hover {
-        width: 20rem;
-        height: 6.72414rem; } }
-    @media (max-width: 540px) {
-      .b:hover {
-        background-position: 10.16652% 13.7931%;
-        background-size: 4034.48276% 3000%; } }
-
-.c {
-  background-image: url(imgDest/popbtns.png);
-  width: 196px;
-  height: 39px;
-  background-position: -4092px -1053px; }
-  @media (max-width: 540px) {
-    .c {
-      width: 10rem;
-      height: 1.9898rem; } }
-  @media (max-width: 540px) {
-    .c {
-      background-position: 91.25781% 93.10345%;
-      background-size: 2387.7551% 3000%; } }
-  .c:hover {
-    background-image: url(imgDest/popbtns.png);
-    width: 196px;
-    height: 39px;
-    background-position: -3896px -1014px; }
-    @media (max-width: 540px) {
-      .c:hover {
-        width: 10rem;
-        height: 1.9898rem; } }
-    @media (max-width: 540px) {
-      .c:hover {
-        background-position: 86.88671% 89.65517%;
-        background-size: 2387.7551% 3000%; } }
+Backtrace:
+./index.scss:2
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/import_node.rb:67:in `rescue in import'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/import_node.rb:45:in `import'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/import_node.rb:28:in `imported_file'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/import_node.rb:37:in `css_import?'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:311:in `visit_import'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:157:in `visit'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/root_node.rb:20:in `render'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:278:in `render'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin.rb:82:in `update_stylesheets'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/exec/sass_scss.rb:361:in `watch_or_update'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/exec/sass_scss.rb:51:in `process_result'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/exec/base.rb:52:in `parse'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/exec/base.rb:19:in `parse!'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/bin/sass:13:in `<top (required)>'
+C:/Ruby22-x64/bin/sass:23:in `load'
+C:/Ruby22-x64/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: variables.\A        Load path: E:/projectA/source/web/resource/marketnew/common/src/scss/common\A         on line 2 of ./index.scss\A \A 1: @charset \"utf-8\";\A 2: @import \"variables\";\A 3: @import \"lib/mixins\";\A 4: @import \"./imgDest/popbtns.png\";\A 5: *{margin:0;padding:0;}\A 6: .b,.c{display: inline-block;}\A 7: .b{"; }

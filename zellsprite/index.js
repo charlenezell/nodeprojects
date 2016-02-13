@@ -77,7 +77,7 @@ function main(gulp) {
                 imgName2 = ld.includes(getParamList(a), "jpeg") ? imgName.replace(path.extname(imgName), ".jpeg") : imgName,
                 cssName = path.basename(a) + ".scss",
                 allImgGlob = path.join(a, "**/*.{jpg,png}");
-            var spMixStream = gulp.src(allImgGlob).pipe(sp({
+            var spMixStream = gulp.src(allImgGlob, { read: false }).pipe(sp({
                 imgName: imgName2,
                 cssName: cssName,
                 engine: "gmsmith",

@@ -22,9 +22,11 @@
     "chalk": "^1.1.1",
     "event-stream": "^3.3.2",
     "glob": "^6.0.4",
+    "gmsmith": "^1.0.0",
     "gulp-imagemin": "^2.4.0",
     "gulp-pngmin": "^0.1.4",
     "gulp-rename": "^1.2.2",
+    "gulp.spritesmith": "^6.2.0",
     "lodash": "^4.2.1",
     "spritesmith": "^3.1.0"
   },
