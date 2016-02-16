@@ -29,7 +29,7 @@
     });
 ```
 
-#配置项说明configuration info#
+#配置项说明configuration info
 1. options
     ```javascript
 
@@ -72,7 +72,13 @@
 
 原来设计的目的是让sprite更加灵活，
 因为雪碧的任意数据都可以通过修改模板来实现坐标和图片大小等东西的运算做成中间可编程的scss控件。
+
+eg:可以这样使用
+```handlebars
+@include popbtns_exchange-h(10rem);
+```
+
 ![output files and image][outputRef]
 
-[outputRef]:rst.png "output files and image"
+[outputRef]:https://github.com/charlenezell/nodeprojects/raw/master/zellsprite/rst.png "output files and image"
 
